@@ -1,0 +1,24 @@
+language: python
+
+# Supported CPython versions:
+# https://en.wikipedia.org/wiki/CPython#Version_history
+python:
+ - "pypy3"
+ - "pypy"
+ - "2.7"
+ - "3.6"
+ - "3.5"
+ - "3.4"
+
+sudo: false
+
+install:
+ - pip install black flake8
+
+script:
+ # Static analysis
+ - flake8 .
+ - black --check --diff .
+
+matrix:
+  fast_finish: true
