@@ -64,8 +64,7 @@ def yyyy_mm_to_ints(yyyy_mm):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Save pip installs from PyPI over time",
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+        description=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
     parser.add_argument(
         "-p", "--package", default="''", help="Show data for this package"
