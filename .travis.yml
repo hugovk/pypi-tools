@@ -13,12 +13,14 @@ python:
 sudo: false
 
 install:
- - pip install black flake8
+ - pip install flake8
+ - if [[ $TRAVIS_PYTHON_VERSION == 3.6 ]]; then pip install black flake8; fi
+
 
 script:
  # Static analysis
  - flake8 .
- - black --check --diff .
+ - if [[ $TRAVIS_PYTHON_VERSION == 3.6 ]]; then black --check --diff .; fi
 
 matrix:
   fast_finish: true
