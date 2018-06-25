@@ -104,8 +104,11 @@ if __name__ == "__main__":
         if last >= now:
             sys.exit("  End date should be in the past")
 
-        # TODO include package in filename (and handle package=='' case)
-        outfile = "{}-{:02d}.json".format(year, month)
+        if args.package in ['""', "''"]:
+            prefix = ""
+        else:
+            prefix = args.package + "-"
+        outfile = "{}{}-{:02d}.json".format(prefix, year, month)
         outfile = os.path.join("data", outfile)
         if os.path.isfile(outfile):
             print("  {} exists, skipping".format(outfile))
