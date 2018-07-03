@@ -35,7 +35,6 @@ if __name__ == "__main__":
 
     files = glob.glob(args.inspec)
     files = sorted(files)
-    pprint(files)
 
     for f in files:
         month_name = os.path.splitext(os.path.basename(f))[0]
@@ -45,13 +44,11 @@ if __name__ == "__main__":
             # pprint(d)
             month_data = {"yyyy-mm": month_name}
             for row in d["rows"]:
-                print(row)
                 month_data[row["python_version"]] = float(row["percent"]) * 100
                 all_versions.add(row["python_version"])
-            pprint(month_data)
         all_data.append(month_data)
 
-    pprint(all_data)
+    # pprint(all_data)
     pprint(all_versions)
     all_versions = list(sorted(all_versions))
 
@@ -59,11 +56,9 @@ if __name__ == "__main__":
     f.writerow(["", "Python version"])
     f.writerow(["Month"] + all_versions)
     for x in all_data:
-        pprint(x)
         row = [x["yyyy-mm"]]
         for version in all_versions:
             row.append(x.get(version, 0))
-        pprint(row)
         f.writerow(row)
 
 # End of file
