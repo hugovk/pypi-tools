@@ -15,12 +15,17 @@ sudo: false
 install:
  - pip install flake8
  - if [[ $TRAVIS_PYTHON_VERSION == 3.6 ]]; then pip install black flake8; fi
+ - pip install -r requirements.txt
 
 
 script:
  # Static analysis
  - flake8 .
  - if [[ $TRAVIS_PYTHON_VERSION == 3.6 ]]; then black --check --diff .; fi
+
+ # Test run
+ - python pypi-trends.py --dry-run
+ - python jsons2csv.py
 
 matrix:
   fast_finish: true
