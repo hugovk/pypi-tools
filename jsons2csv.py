@@ -53,7 +53,7 @@ if __name__ == "__main__":
     all_versions = list(sorted(all_versions))
 
     f = csv.writer(open(os.path.join("data", "pypi-trends.csv"), "w+"))
-    f.writerow(["", "Python version"])
+    # f.writerow(["", "Python version"])
     f.writerow(["Month"] + all_versions)
     for x in all_data:
         row = [x["yyyy-mm"]]
