@@ -44,7 +44,8 @@ if __name__ == "__main__":
             # pprint(d)
             month_data = {"yyyy-mm": month_name}
             for row in d["rows"]:
-                month_data[row["python_version"]] = float(row["percent"]) * 100
+                # month_data[row["python_version"]] = float(row["percent"]) * 100
+                month_data[row["python_version"]] = row["download_count"]
                 all_versions.add(row["python_version"])
         all_data.append(month_data)
 
