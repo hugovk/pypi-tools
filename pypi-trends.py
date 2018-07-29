@@ -131,8 +131,9 @@ if __name__ == "__main__":
             exitcode, output = subprocess.getstatusoutput(cmd)
             if exitcode != 0:
                 print(output)
+                if os.path.getsize(outfile) == 0:
+                    os.remove(outfile)
                 sys.exit(exitcode)
-                # TODO write output to outfile only if exitcode is good
 
 
 # End of file
