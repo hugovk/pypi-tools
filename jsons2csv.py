@@ -10,6 +10,7 @@ import csv
 import glob
 import json
 import os
+import re
 from pprint import pprint
 
 all_data = []
@@ -37,8 +38,9 @@ if __name__ == "__main__":
     files = sorted(files)
 
     for f in files:
-        month_name = os.path.splitext(os.path.basename(f))[0]
-        print(f)
+        # Get the yyyy-dd from the filename
+        month_name = "".join(re.findall(r"\d{4}-\d{2}", f))
+        print(f, month_name)
         with open(f) as json_data:
             d = json.load(json_data)
             # pprint(d)
