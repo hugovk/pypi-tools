@@ -8,6 +8,7 @@ from __future__ import print_function, unicode_literals
 import argparse
 import csv
 import glob
+import hashlib
 import json
 import os
 import re
@@ -26,11 +27,111 @@ def month_year_iter(start_month, start_year, end_month, end_year):
         yield y, m + 1
 
 
+def inspec_to_name(inspec):
+    """
+    data/X*.json -> X
+    data/201*.json -> None
+    """
+    name = inspec.lstrip("data/").rstrip("*")
+    if name.isdigit():
+        return None
+    return name
+
+
+def dopplr(name):
+    """
+    Take the MD5 digest of a name,
+    convert it to hex and take the
+    first 6 characters as an RGB value.
+    """
+    return "#" + hashlib.sha224(name.encode()).hexdigest()[:6]
+
+
+# https://python-graph-gallery.com/255-percentage-stacked-area-chart/
+def make_chart(data, index, project_name, no_show):
+
+    import matplotlib.pyplot as plt  # pip install matplotlib
+    import numpy as np  # pip install numpy
+    import pandas as pd  # pip install pandas
+    from matplotlib.ticker import FuncFormatter
+
+    labels = data.keys()
+
+    data = pd.DataFrame(data, index=index)
+
+    # We need to transform the data from raw data to percentage (fraction)
+    data_perc = data.divide(data.sum(axis=1), axis=0)
+
+    # Use a hash function to always use the same colour for each version number,
+    # regardless of which versions are present in this data
+    colors = [dopplr(s) for s in labels]
+    print(colors)
+
+    # Make the plot
+    plt.stackplot(index, data_perc.T, labels=labels, colors=colors)
+
+    ax = plt.gca()
+
+    # Convert Y axis from 0..1 to 0%..100%
+    ax.yaxis.set_major_formatter(FuncFormatter(lambda y, _: "{:.0%}".format(y)))
+
+    # Major ticks every 10% or 0.1
+    major_ticks = np.arange(0, 1.2, 0.1)
+    ax.set_yticks(major_ticks)
+
+    plt.xticks(rotation=90)
+
+    # Pad margins so that markers don't get clipped by the axes
+    # plt.margins(0.2)
+
+    # Tweak spacing to prevent clipping of tick-labels
+    plt.subplots_adjust(bottom=0.2)
+
+    plt.grid()
+
+    plt.margins(0, 0)
+
+    # Shrink current axis by 20% so legend is outside chart
+    box = ax.get_position()
+    ax.set_position([box.x0, box.y0, box.width * 0.9, box.height])
+
+    # To reverse the legend order
+    handles, labels = ax.get_legend_handles_labels()
+
+    # Put a legend to the right of the current axis
+    ax.legend(
+        handles[::-1],
+        labels[::-1],
+        title="Line",
+        loc="center left",
+        bbox_to_anchor=(1, 0.5),
+    )
+
+    if project_name:
+        outfile = "{}.png".format(project_name)
+        title = "{}'s pip installs from PyPI over time, by Python version".format(
+            project_name
+        )
+    else:
+        outfile = "all.png"
+        title = "pip installs from PyPI over time, by Python version"
+    plt.title(title, y=1.05)
+
+    print(outfile)
+    plt.savefig(outfile, dpi=96 * 2.5)
+    if not no_show:
+        plt.show()
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
     parser.add_argument("-i", "--inspec", default="data/*.json", help="Input file spec")
+    parser.add_argument("-c", "--chart", action="store_true", help="Create a chart")
+    parser.add_argument(
+        "-ns", "--no-show", action="store_true", help="Don't show the chart"
+    )
 
     args = parser.parse_args()
 
@@ -58,10 +159,30 @@ if __name__ == "__main__":
     f = csv.writer(open(os.path.join("data", "pypi-trends.csv"), "w+"))
     # f.writerow(["", "Python version"])
     f.writerow(["Month"] + all_versions)
+    rows = []
     for x in all_data:
         row = [x["yyyy-mm"]]
         for version in all_versions:
             row.append(x.get(version, 0))
         f.writerow(row)
+        rows.append(row)
+
+    if args.chart:
+        data = {}
+        index = []
+
+        # Initialise dict
+        for version in all_versions:
+            # print(version)
+            data[version] = []
+
+        for month_data in all_data:
+            index.append(month_data["yyyy-mm"])
+            for version in all_versions:
+                downloads = month_data.get(version, 0)
+                data[version].append(downloads)
+
+        make_chart(data, index, inspec_to_name(args.inspec), args.no_show)
+
 
 # End of file

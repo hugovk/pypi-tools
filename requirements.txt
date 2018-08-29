@@ -1,2 +1,5 @@
+matplotlib
+numpy
+pandas
 pypinfo
 python-dateutil
