@@ -1,4 +1,6 @@
 language: python
+sudo: false
+cache: pip
 
 # Supported CPython versions:
 # https://en.wikipedia.org/wiki/CPython#Version_history
@@ -7,8 +9,6 @@ python:
  - "3.6"
  - "3.5"
  - "3.4"
-
-sudo: false
 
 install:
  - pip install flake8
