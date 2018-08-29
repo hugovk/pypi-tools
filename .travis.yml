@@ -11,7 +11,7 @@ python:
 
 install:
  - pip install flake8
- - if [[ $TRAVIS_PYTHON_VERSION == 3.6 ]]; then pip install black flake8; fi
+ - if [[ $TRAVIS_PYTHON_VERSION == 3.6 ]]; then pip install black; fi
  - pip install -r requirements.txt
 
 
