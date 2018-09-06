@@ -108,15 +108,15 @@ def make_chart(data, index, project_name, no_show):
     )
 
     if project_name:
-        outfile = "{}.png".format(project_name)
         title = "{}'s pip installs from PyPI over time, by Python version".format(
             project_name
         )
     else:
-        outfile = "all.png"
         title = "pip installs from PyPI over time, by Python version"
+        project_name = "all"
     plt.title(title, y=1.05)
 
+    outfile = "data/pip-install-{}.png".format(project_name)
     print(outfile)
     plt.savefig(outfile, dpi=96 * 2.5)
     if not no_show:
