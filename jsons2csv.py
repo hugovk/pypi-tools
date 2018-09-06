@@ -104,6 +104,7 @@ def make_chart(data, index, project_name, no_show):
         labels[::-1],
         loc="center left",
         bbox_to_anchor=(1, 0.5),
+        fontsize=8,
     )
 
     if project_name:
