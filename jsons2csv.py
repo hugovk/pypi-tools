@@ -102,7 +102,6 @@ def make_chart(data, index, project_name, no_show):
     ax.legend(
         handles[::-1],
         labels[::-1],
-        title="Line",
         loc="center left",
         bbox_to_anchor=(1, 0.5),
     )
