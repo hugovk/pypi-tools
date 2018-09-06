@@ -16,19 +16,27 @@ all months uses up a lot of free BigQuery quota.
 
 ## jsons2csv.py
 
-jsons2csv.py converts the JSON files into a single CSV file for
-chart-wrangling in a spreadsheet.
+jsons2csv.py converts the JSON files into a single CSV file for chart-wrangling 
+in a spreadsheet, and can generate a chart using Matplotlib.
 
 ## Examples
 
 Here the pip installs for all packages from the Python Package Index (PyPI),
-between January 2016 and June 2018:
+between January 2016 and July 2018:
 
-![alt text](data/pip-install-all.png "Chart showing pip installs for Python 3 increasing from under 10% in 2016-01 to around 35% in 2018-06")
+![Chart showing pip installs for Python 3 increasing from under 10% to around 35%](data/pip-install-all.png)
 
-And for the [Pillow](https://github.com/python-pillow/Pillow) imaging library:
+For the [NumPy](https://github.com/numpy/numpy) scientific computing library:
 
-![alt text](data/pip-install-pillow.png "Chart showing pip installs for Python 3 increasing from under 10% in 2016-01 to around 35% in 2018-06")
+!["Chart showing pip installs for Python 3 increasing from under 20% to around 55%"](data/pip-install-numpy.png)
+
+For the [Pillow](https://github.com/python-pillow/Pillow) imaging library:
+
+!["Chart showing pip installs for Python 3 increasing from under 20% to around 55%"](data/pip-install-pillow.png)
+
+And for the [pylast](https://github.com/pylast/pylast) interface to Last.fm:
+
+!["Chart showing pip installs for Python 3 increasing from under 20% to over 50%"](data/pip-install-pylast.png)
 
 ## See also
 
