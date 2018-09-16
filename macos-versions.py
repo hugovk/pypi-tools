@@ -21,9 +21,12 @@ import json
 import os
 from collections import OrderedDict
 from distutils.version import LooseVersion
-from pprint import pprint
 
-from pytablewriter import Align, MarkdownTableWriter  # pip install pytablewriter
+# pip install pytablewriter
+from pytablewriter import Align, MarkdownTableWriter
+
+# from pprint import pprint
+
 
 all_data = []
 all_versions = set()
