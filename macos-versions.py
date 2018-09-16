@@ -101,20 +101,17 @@ if __name__ == "__main__":
 
     # pprint(new_rows)
 
+    fieldnames = ["system_name", "distro_version", "percent", "download_count"]
+    with open("macos.csv", "w+") as output_file:
+        dict_writer = csv.DictWriter(output_file, fieldnames=fieldnames)
+        dict_writer.writeheader()
+        dict_writer.writerows(new_rows)
 
-fieldnames = ["system_name", "distro_version", "percent", "download_count"]
-with open("macos.csv", "w+") as output_file:
-    dict_writer = csv.DictWriter(output_file, fieldnames=fieldnames)
-    dict_writer.writeheader()
-    dict_writer.writerows(new_rows)
-
-
-writer = MarkdownTableWriter()
-writer.header_list = fieldnames
-writer.value_matrix = new_rows
-writer.align_list = [Align.AUTO, Align.AUTO, Align.RIGHT, Align.AUTO]
-writer.margin = 1
-writer.write_table()
-
+    writer = MarkdownTableWriter()
+    writer.header_list = fieldnames
+    writer.value_matrix = new_rows
+    writer.align_list = [Align.AUTO, Align.AUTO, Align.RIGHT, Align.AUTO]
+    writer.margin = 1
+    writer.write_table()
 
 # End of file
