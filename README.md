@@ -22,7 +22,7 @@ in a spreadsheet, and can generate a chart using Matplotlib.
 ## Examples
 
 Here the pip installs for all packages from the Python Package Index (PyPI),
-between January 2016 and July 2018:
+from January 2016 onwards:
 
 ![Chart showing pip installs for Python 3 increasing from under 10% to around 35%](data/pip-install-all.png)
 
