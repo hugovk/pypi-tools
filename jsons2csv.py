@@ -32,7 +32,7 @@ def inspec_to_name(inspec):
     data/X*.json -> X
     data/201*.json -> None
     """
-    name = inspec.lstrip("data/").rstrip("*")
+    name = os.path.basename(inspec).rstrip("*")
     if name.isdigit():
         return None
     return name
