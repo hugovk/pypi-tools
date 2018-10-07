@@ -1,6 +1,7 @@
 # pypi-tools
 
 [![Build Status](https://travis-ci.org/hugovk/pypi-tools.svg?branch=master)](https://travis-ci.org/hugovk/pypi-tools)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
 Command-line Python scripts to do things with the
 [Python Package Index (PyPI)](https://pypi.org/).
