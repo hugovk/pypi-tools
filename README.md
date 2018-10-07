@@ -34,6 +34,10 @@ For the [Pillow](https://github.com/python-pillow/Pillow) imaging library:
 
 !["Chart showing pip installs for Python 3 increasing from under 20% to around 55%"](data/pip-install-pillow.png)
 
+For the [Django](https://github.com/python-pillow/Pillow) web framework:
+
+!["Chart showing pip installs for Python 3 increasing from under 30% to around 65%"](data/pip-install-django.png)
+
 And for the [pylast](https://github.com/pylast/pylast) interface to Last.fm:
 
 !["Chart showing pip installs for Python 3 increasing from under 20% to over 50%"](data/pip-install-pylast.png)
