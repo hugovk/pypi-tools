@@ -15,16 +15,14 @@ matrix:
 
 install:
  - pip install flake8
- - if [[ $TRAVIS_PYTHON_VERSION == 3.6 ]]; then pip install black; fi
- - if [[ $TRAVIS_PYTHON_VERSION == 3.7 ]]; then pip install black; fi
+ - if [[ $TRAVIS_PYTHON_VERSION != 3.5 ]]; then pip install black; fi
  - pip install -r requirements.txt
 
 
 script:
  # Static analysis
  - flake8 .
- - if [[ $TRAVIS_PYTHON_VERSION == 3.6 ]]; then black --check --diff .; fi
- - if [[ $TRAVIS_PYTHON_VERSION == 3.7 ]]; then black --check --diff .; fi
+ - if [[ $TRAVIS_PYTHON_VERSION != 3.5 ]]; then black --check --diff .; fi
 
  # Test run
  - python pypi-trends.py --dry-run
