@@ -43,13 +43,13 @@ def month_year_iter(start_month, start_year, end_month, end_year, reverse=False)
 def default_start_date():
     """For the default start date"""
     last = now - relativedelta(years=1)
-    return "{}-{:02}".format(last.year, last.month)
+    return f"{last.year}-{last.month:02}"
 
 
 def default_end_date():
     """For the default end date"""
     last = now - relativedelta(months=1)
-    return "{}-{:02}".format(last.year, last.month)
+    return f"{last.year}-{last.month:02}"
 
 
 def yyyy_mm_to_ints(yyyy_mm):
@@ -108,10 +108,10 @@ if __name__ == "__main__":
             prefix = ""
         else:
             prefix = args.package + "-"
-        outfile = "{}{}-{:02d}.json".format(prefix, year, month)
+        outfile = f"{prefix}{year}-{month:02d}.json"
         outfile = os.path.join("data", outfile)
         if os.path.isfile(outfile):
-            print("  {} exists, skipping".format(outfile))
+            print(f"  {outfile} exists, skipping")
             continue
 
         new_args = (
@@ -121,7 +121,7 @@ if __name__ == "__main__":
         # --start-date 2018-03-01 --end-date 2018-03-31 --limit 100
         # --percent --json "" pyversion > 2018-03.json
 
-        cmd = "pypinfo {}".format(new_args)
+        cmd = f"pypinfo {new_args}"
         print(cmd)
         print()
         if args.dry_run:

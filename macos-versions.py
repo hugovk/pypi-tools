@@ -75,7 +75,7 @@ if __name__ == "__main__":
                     continue
 
                 x, y, *rest = distro_version.split(".")
-                xy = "'{}.{}'".format(x, y)
+                xy = f"'{x}.{y}'"
                 # print(distro_version)
                 # print(x, y)
                 # print(xy)

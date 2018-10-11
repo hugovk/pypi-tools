@@ -11,18 +11,17 @@ matrix:
       dist: xenial
       sudo: true
     - python: 3.6
-    - python: 3.5
 
 install:
- - pip install flake8
- - if [[ $TRAVIS_PYTHON_VERSION != 3.5 ]]; then pip install black; fi
- - pip install -r requirements.txt
+ - pip install -U pip
+ - pip install -U black flake8
+ - pip install -U -r requirements.txt
 
 
 script:
  # Static analysis
  - flake8 .
- - if [[ $TRAVIS_PYTHON_VERSION != 3.5 ]]; then black --check --diff .; fi
+ - black --check --diff .
 
  # Test run
  - python pypi-trends.py --dry-run

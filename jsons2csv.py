@@ -73,7 +73,7 @@ def make_chart(data, index, project_name, no_show):
     ax = plt.gca()
 
     # Convert Y axis from 0..1 to 0%..100%
-    ax.yaxis.set_major_formatter(FuncFormatter(lambda y, _: "{:.0%}".format(y)))
+    ax.yaxis.set_major_formatter(FuncFormatter(lambda y, _: f"{y:.0%}"))
 
     # Major ticks every 10% or 0.1
     major_ticks = np.arange(0, 1.2, 0.1)
@@ -116,7 +116,7 @@ def make_chart(data, index, project_name, no_show):
         project_name = "all"
     plt.title(title, y=1.05)
 
-    outfile = "data/pip-install-{}.png".format(project_name)
+    outfile = f"data/pip-install-{project_name}.png"
     print(outfile)
     plt.savefig(outfile, dpi=96 * 2.5)
     if not no_show:
