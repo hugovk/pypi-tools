@@ -135,7 +135,7 @@ if __name__ == "__main__":
                     os.remove(outfile)
                 if "FROM clause with table wildcards matches no table" in output:
                     continue
-                sys.exit(exitcode)
+                # sys.exit(exitcode)
 
 
 # End of file
