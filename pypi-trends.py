@@ -133,6 +133,8 @@ if __name__ == "__main__":
                 print(output)
                 if os.path.getsize(outfile) == 0:
                     os.remove(outfile)
+                if "FROM clause with table wildcards matches no table" in output:
+                    continue
                 sys.exit(exitcode)
 
 
