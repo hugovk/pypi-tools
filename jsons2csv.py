@@ -10,8 +10,10 @@ import csv
 import glob
 import hashlib
 import json
+import calendar
 import os
 import re
+import time
 from pprint import pprint
 
 all_data = []
@@ -50,6 +52,19 @@ def dopplr(name):
 # https://python-graph-gallery.com/255-percentage-stacked-area-chart/
 def make_chart(data, index, project_name, no_show):
 
+    # Convert date labels into Unix times for proportional X-axis layout
+    date_labels = index
+    print(index)
+    print(index[0])
+    from datetime import datetime
+
+    datetime_object = datetime.strptime(index[0], "%Y-%m")
+    index = [
+        int(calendar.timegm(datetime.strptime(i, "%Y-%m").timetuple())) for i in index
+    ]
+    print(datetime_object)
+    print(index)
+
     import matplotlib.pyplot as plt  # pip install matplotlib
     import numpy as np  # pip install numpy
     import pandas as pd  # pip install pandas
@@ -80,6 +95,26 @@ def make_chart(data, index, project_name, no_show):
     ax.set_yticks(major_ticks)
 
     plt.xticks(rotation=90)
+
+    min_x = index[0]
+    max_x = index[-1] + 30
+    print(min_x, max_x)
+    print(datetime.utcfromtimestamp(min_x).strftime("%Y-%m"))
+    print(datetime.utcfromtimestamp(max_x).strftime("%Y-%m"))
+
+    ax.set_xlim(min_x, max_x)
+
+    major_ticks = np.arange(min_x, max_x, int((max_x - min_x) / len(index)))
+    print(major_ticks)
+    print([datetime.utcfromtimestamp(x).strftime("%Y-%m-%d") for x in major_ticks])
+
+    ax.xaxis.set_ticks(major_ticks)
+    # ax.set_xticklabels(date_labels)
+
+    # Convert X axis labels from Unix time YYYY-MM
+    ax.xaxis.set_major_formatter(
+        FuncFormatter(lambda x, _: datetime.utcfromtimestamp(x).strftime("%Y-%m-%d"))
+    )
 
     # Pad margins so that markers don't get clipped by the axes
     # plt.margins(0.2)
