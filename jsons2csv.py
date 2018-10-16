@@ -79,6 +79,19 @@ def make_chart(data, index, project_name, no_show):
     major_ticks = np.arange(0, 1.2, 0.1)
     ax.set_yticks(major_ticks)
 
+    # Set X labels to 2016-01, 02, ... 12, 2017-01, 02, ...
+    x_labels = []
+    last_year = None
+    for year_month in index[:-1]:
+        year, month = year_month.split("-")
+        if year == last_year:
+            x_labels.append(month)
+        else:
+            x_labels.append(year_month)
+            last_year = year
+    x_labels.append(index[-1])  # No change for last one
+    ax.set_xticklabels(x_labels)
+
     plt.xticks(rotation=90)
 
     # Pad margins so that markers don't get clipped by the axes

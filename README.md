@@ -13,8 +13,8 @@ pypi-trends.py is a wrapper around [pypinfo](https://github.com/ofek/pypinfo)
 to fetch all monthly downloads from the PyPI database on Google BigQuery and
 save them as JSON files.
 
-For the examples below, data was downloaded over three or four days as getting
-all months uses up a lot of free BigQuery quota.
+For the examples below, data was downloaded over a few days as getting all
+months uses up a lot of free BigQuery quota.
 
 ## jsons2csv.py
 
