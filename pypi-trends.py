@@ -114,14 +114,13 @@ if __name__ == "__main__":
             print(f"  {outfile} exists, skipping")
             continue
 
-        new_args = (
-            "--start-date {} --end-date {} --percent --limit 100 "
-            "--json {} pyversion > {}"
-        ).format(first, last, args.package, outfile)
+        cmd = (
+            f"pypinfo --start-date {first} --end-date {last} --percent --limit 100 "
+            f"--json {args.package} pyversion > {outfile}"
+        )
         # --start-date 2018-03-01 --end-date 2018-03-31 --limit 100
         # --percent --json "" pyversion > 2018-03.json
 
-        cmd = f"pypinfo {new_args}"
         print(cmd)
         print()
         if args.dry_run:
