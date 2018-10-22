@@ -159,10 +159,20 @@ if __name__ == "__main__":
             d = json.load(json_data)
             # pprint(d)
             month_data = {"yyyy-mm": month_name}
-            for row in d["rows"]:
+            try:
+                # pypinfo
+                rows = d["rows"]
+                version_index = "python_version"
+                downloads_index = "download_count"
+            except KeyError:
+                # pypistats
+                rows = d["data"]
+                version_index = "category"
+                downloads_index = "downloads"
+            for row in rows:
                 # month_data[row["python_version"]] = float(row["percent"]) * 100
-                month_data[row["python_version"]] = row["download_count"]
-                all_versions.add(row["python_version"])
+                month_data[row[version_index]] = row[downloads_index]
+                all_versions.add(row[version_index])
         all_data.append(month_data)
 
     # pprint(all_data)
