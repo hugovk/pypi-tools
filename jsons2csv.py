@@ -172,6 +172,9 @@ if __name__ == "__main__":
             for row in rows:
                 # month_data[row["python_version"]] = float(row["percent"]) * 100
                 month_data[row[version_index]] = row[downloads_index]
+                if row[version_index] == "null":
+                    # Harmonise pypistats' "null" with pypinfo's "None"
+                    row[version_index] = "None"
                 all_versions.add(row[version_index])
         all_data.append(month_data)
 
