@@ -8,6 +8,10 @@ For a given project, or all projects:
 Requires pypinfo to be installed and configured
 * https://github.com/ofek/pypinfo
 
+Alternatively, requires pypistats to be installed
+(note: only has 6 months of stats and output JSON is a different format)
+* pip install -U pypistats
+
 Notes:
     "Data ingestion into the BigQuery data set was spotty prior to June 2016
     (but it shouldn't be biased, so these percentages are likely to be accurate),
@@ -80,7 +84,14 @@ if __name__ == "__main__":
         "-t", "--to", dest="to_date", default=default_end_date(), help="End YYYY-MM"
     )
     parser.add_argument(
-        "-n", "--dry-run", action="store_true", help="Don't execute pypinfo"
+        "-n", "--dry-run", action="store_true", help="Don't execute pypinfo/pypistats"
+    )
+    parser.add_argument(
+        "--pypistats",
+        action="store_true",
+        help="Use pypistats instead of pypinfo. Note: only has "
+        "6 months of stats, and output JSON is a different "
+        "format.",
     )
     args = parser.parse_args()
 
@@ -114,17 +125,22 @@ if __name__ == "__main__":
             print(f"  {outfile} exists, skipping")
             continue
 
-        cmd = (
-            f"pypinfo --start-date {first} --end-date {last} --percent --limit 100 "
-            f"--json {args.package} pyversion > {outfile}"
-        )
-        # --start-date 2018-03-01 --end-date 2018-03-31 --limit 100
-        # --percent --json "" pyversion > 2018-03.json
+        if args.pypistats:
+            cmd = (
+                f"pypistats python_minor {args.package} --json "
+                f"--start-date {first} --end-date {last} > {outfile}"
+            )
+        else:
+            cmd = (
+                f"pypinfo --start-date {first} --end-date {last} --percent --limit 100 "
+                f"--json {args.package} pyversion > {outfile}"
+            )
 
         print(cmd)
         print()
+        executable = "pypistats" if args.pypistats else "pypinfo"
         if args.dry_run:
-            print("  Dry run, not executing pypinfo")
+            print(f"  Dry run, not executing {executable}")
         else:
             # os.system(cmd)
             exitcode, output = subprocess.getstatusoutput(cmd)
