@@ -132,7 +132,7 @@ def make_chart(data, index, project_name, no_show):
         title = "pip installs from PyPI over time, by Python version"
         project_name = "all"
     plt.suptitle(title)
-    plt.title(f"Total downloads: {grand_total_downloads:,d}", fontsize=10)
+    plt.title(f"{grand_total_downloads:,d} total downloads", fontsize=10)
 
     outfile = f"data/pip-install-{project_name}.png"
     print(outfile)
