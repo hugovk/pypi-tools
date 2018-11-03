@@ -50,6 +50,10 @@ def dopplr(name):
 # https://python-graph-gallery.com/255-percentage-stacked-area-chart/
 def make_chart(data, index, project_name, no_show):
 
+    grand_total_downloads = 0
+    for version in data:
+        grand_total_downloads += sum(dls for dls in data[version])
+
     import matplotlib.pyplot as plt  # pip install matplotlib
     import numpy as np  # pip install numpy
     import pandas as pd  # pip install pandas
@@ -127,7 +131,8 @@ def make_chart(data, index, project_name, no_show):
     else:
         title = "pip installs from PyPI over time, by Python version"
         project_name = "all"
-    plt.title(title, y=1.05)
+    plt.suptitle(title)
+    plt.title(f"{grand_total_downloads:,d} total downloads", fontsize=10)
 
     outfile = f"data/pip-install-{project_name}.png"
     print(outfile)
