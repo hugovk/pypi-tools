@@ -145,7 +145,8 @@ if __name__ == "__main__":
             # os.system(cmd)
             exitcode, output = subprocess.getstatusoutput(cmd)
             if exitcode != 0:
-                print(output)
+                print(output.splitlines()[-1])
+                print()
                 if os.path.getsize(outfile) == 0:
                     os.remove(outfile)
 
