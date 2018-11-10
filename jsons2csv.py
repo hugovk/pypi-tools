@@ -3,8 +3,6 @@
 """
 Tabulate the output JSON files from pypi-trends.py into a CSV file, pypi-trends.csv
 """
-from __future__ import print_function, unicode_literals
-
 import argparse
 import csv
 import glob

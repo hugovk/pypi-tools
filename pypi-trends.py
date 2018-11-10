@@ -19,8 +19,6 @@ Notes:
     If these trends continue..."
 https://langui.sh/2016/12/09/data-driven-decisions/
 """
-from __future__ import print_function, unicode_literals
-
 import argparse
 import os
 import subprocess
