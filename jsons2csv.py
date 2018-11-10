@@ -136,7 +136,7 @@ def make_chart(data, index, project_name, no_show):
     plt.title(f"{grand_total_downloads:,d} total downloads", fontsize=10)
 
     outfile = f"data/pip-install-{project_name}.png"
-    print(outfile)
+    print(colored(outfile, "green"))
     plt.savefig(outfile, dpi=96 * 2.5)
     if not no_show:
         plt.show()
