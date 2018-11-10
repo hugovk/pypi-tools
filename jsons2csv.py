@@ -10,7 +10,10 @@ import hashlib
 import json
 import os
 import re
+import traceback
 from pprint import pprint
+
+from termcolor import colored  # pip install termcolor
 
 all_data = []
 all_versions = set()
@@ -159,7 +162,12 @@ if __name__ == "__main__":
         month_name = "".join(re.findall(r"\d{4}-\d{2}", f))
         print(f, month_name)
         with open(f) as json_data:
-            d = json.load(json_data)
+            try:
+                d = json.load(json_data)
+            except json.decoder.JSONDecodeError as e:
+                print(colored(traceback.format_exc(), "red"))
+                print(colored(f"Skipping {f}: {e}", "yellow"))
+                continue
             # pprint(d)
             month_data = {"yyyy-mm": month_name}
             try:
