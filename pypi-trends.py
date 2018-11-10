@@ -28,6 +28,7 @@ import sys
 from datetime import date, datetime
 
 from dateutil.relativedelta import relativedelta  # pip install python-dateutil
+from termcolor import colored  # pip install termcolor
 
 now = date.today()
 
@@ -113,7 +114,8 @@ if __name__ == "__main__":
         print(first, last)
 
         if last >= now:
-            sys.exit("  End date should be in the past")
+            print(colored("  End date should be in the past", "red"))
+            sys.exit(1)
 
         if args.package in ['""', "''"]:
             prefix = ""
@@ -122,7 +124,7 @@ if __name__ == "__main__":
         outfile = f"{prefix}{year}-{month:02d}.json"
         outfile = os.path.join("data", outfile)
         if os.path.isfile(outfile):
-            print(f"  {outfile} exists, skipping")
+            print(colored(f"  {outfile} exists, skipping", "yellow"))
             continue
 
         if args.pypistats:
@@ -145,7 +147,7 @@ if __name__ == "__main__":
             # os.system(cmd)
             exitcode, output = subprocess.getstatusoutput(cmd)
             if exitcode != 0:
-                print(output.splitlines()[-1])
+                print(colored(output.splitlines()[-1], "red"))
                 print()
                 if os.path.getsize(outfile) == 0:
                     os.remove(outfile)

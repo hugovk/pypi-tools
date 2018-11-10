@@ -4,3 +4,4 @@ pandas
 pypinfo
 pytablewriter
 python-dateutil
+termcolor
