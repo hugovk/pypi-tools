@@ -144,7 +144,9 @@ if __name__ == "__main__":
         else:
             # os.system(cmd)
             exitcode, output = subprocess.getstatusoutput(cmd)
-            if exitcode != 0:
+            if exitcode == 0:
+                print(colored(f"  {outfile}", "green"))
+            else:
                 print(colored(output.splitlines()[-1], "red"))
                 print()
                 if os.path.getsize(outfile) == 0:
