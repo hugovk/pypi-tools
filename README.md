@@ -32,10 +32,6 @@ For the [NumPy](https://github.com/numpy/numpy) scientific computing library:
 
 !["Chart showing pip installs for Python 3 increasing from under 20% to around 55%"](data/pip-install-numpy.png)
 
-For the [Matplotlib](https://github.com/matplotlib/matplotlib) 2D plotting library:
-
-![](data/pip-install-matplotlib.png)
-
 For the [Pillow](https://github.com/python-pillow/Pillow) imaging library:
 
 !["Chart showing pip installs for Python 3 increasing from under 20% to around 55%"](data/pip-install-pillow.png)
@@ -43,6 +39,10 @@ For the [Pillow](https://github.com/python-pillow/Pillow) imaging library:
 For the [Django](https://github.com/python-pillow/Pillow) web framework:
 
 !["Chart showing pip installs for Python 3 increasing from under 30% to around 65%"](data/pip-install-django.png)
+
+For the [Matplotlib](https://github.com/matplotlib/matplotlib) 2D plotting library:
+
+![](data/pip-install-matplotlib.png)
 
 And for the [pylast](https://github.com/pylast/pylast) interface to Last.fm:
 
