@@ -137,7 +137,6 @@ if __name__ == "__main__":
             )
 
         print(cmd)
-        print()
         executable = "pypistats" if args.pypistats else "pypinfo"
         if args.dry_run:
             print(f"  Dry run, not executing {executable}")
@@ -148,7 +147,6 @@ if __name__ == "__main__":
                 print(colored(f"  {outfile}", "green"))
             else:
                 print(colored(output.splitlines()[-1], "red"))
-                print()
                 if os.path.getsize(outfile) == 0:
                     os.remove(outfile)
 
