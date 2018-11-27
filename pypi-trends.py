@@ -43,12 +43,6 @@ def month_year_iter(start_month, start_year, end_month, end_year, reverse=False)
         yield y, m + 1
 
 
-def default_start_date():
-    """For the default start date"""
-    last = now - relativedelta(years=1)
-    return f"{last.year}-{last.month:02}"
-
-
 def default_end_date():
     """For the default end date"""
     last = now - relativedelta(months=1)
@@ -76,7 +70,7 @@ if __name__ == "__main__":
         "-f",
         "--from",
         dest="from_date",
-        default=default_start_date(),
+        default="2016-01",
         help="Start YYYY-MM",
     )
     parser.add_argument(
