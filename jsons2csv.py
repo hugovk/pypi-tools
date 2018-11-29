@@ -45,6 +45,10 @@ def dopplr(name):
     convert it to hex and take the
     first 6 characters as an RGB value.
     """
+    # Tweak "2.8" because it's too close in colour to "3.5"
+    if name == "2.8":
+        name = "python 2.8"
+
     return "#" + hashlib.sha224(name.encode()).hexdigest()[:6]
 
 
