@@ -32,13 +32,13 @@ For the [NumPy](https://github.com/numpy/numpy) scientific computing library:
 
 !["Chart showing pip installs for Python 3 increasing from under 20% to around 55%"](data/pip-install-numpy.png)
 
-For the [Pillow](https://github.com/python-pillow/Pillow) imaging library:
-
-!["Chart showing pip installs for Python 3 increasing from under 20% to around 55%"](data/pip-install-pillow.png)
-
 For the [pytest](https://github.com/pytest-dev/pytest) testing framework:
 
 ![](data/pip-install-pytest.png)
+
+For the [Pillow](https://github.com/python-pillow/Pillow) imaging library:
+
+!["Chart showing pip installs for Python 3 increasing from under 20% to around 55%"](data/pip-install-pillow.png)
 
 For the [Django](https://github.com/python-pillow/Pillow) web framework:
 
