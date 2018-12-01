@@ -105,3 +105,6 @@ venv.bak/
 
 data/pypi-trends.csv
 data/*.xlsx
+macos.csv
+macos.json
+
