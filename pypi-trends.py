@@ -67,11 +67,7 @@ if __name__ == "__main__":
         "-p", "--package", default="''", help="Show data for this package"
     )
     parser.add_argument(
-        "-f",
-        "--from",
-        dest="from_date",
-        default="2016-01",
-        help="Start YYYY-MM",
+        "-f", "--from", dest="from_date", default="2016-01", help="Start YYYY-MM"
     )
     parser.add_argument(
         "-t", "--to", dest="to_date", default=default_end_date(), help="End YYYY-MM"
