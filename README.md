@@ -18,7 +18,7 @@ months uses up a lot of free BigQuery quota.
 
 ## jsons2csv.py
 
-jsons2csv.py converts the JSON files into a single CSV file for chart-wrangling 
+jsons2csv.py converts the JSON files into a single CSV file for chart-wrangling
 in a spreadsheet, and can generate a chart using Matplotlib.
 
 ## Examples
@@ -47,6 +47,10 @@ For the [Django](https://github.com/python-pillow/Pillow) web framework:
 For the [Matplotlib](https://github.com/matplotlib/matplotlib) 2D plotting library:
 
 ![](data/pip-install-matplotlib.png)
+
+For the [Pylint](https://github.com/PyCQA/pylint/) linter:
+
+![](data/pip-install-pylint.png)
 
 And for the [pylast](https://github.com/pylast/pylast) interface to Last.fm:
 
