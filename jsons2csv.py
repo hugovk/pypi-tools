@@ -30,10 +30,11 @@ def month_year_iter(start_month, start_year, end_month, end_year):
 
 def inspec_to_name(inspec):
     """
+    data/X* -> X
     data/X*.json -> X
     data/201*.json -> None
     """
-    name = os.path.basename(inspec).rstrip("*")
+    name = os.path.basename(inspec).split("*")[0]
     if name.isdigit():
         return None
     return name
