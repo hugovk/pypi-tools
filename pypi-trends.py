@@ -31,6 +31,10 @@ from termcolor import colored  # pip install termcolor
 now = date.today()
 
 
+def print_color(text, color):
+    print(colored(text, color))
+
+
 # https://stackoverflow.com/a/5734564/724176
 def month_year_iter(start_month, start_year, end_month, end_year, reverse=False):
     ym_start = 12 * start_year + start_month - 1
@@ -41,6 +45,12 @@ def month_year_iter(start_month, start_year, end_month, end_year, reverse=False)
     for ym in ym_range:
         y, m = divmod(ym, 12)
         yield y, m + 1
+
+
+def six_months_ago():
+    """For --pypistats, the earliest start date is six months ago"""
+    first = now - relativedelta(months=6)
+    return f"{first.year}-{first.month:02}"
 
 
 def default_end_date():
@@ -84,6 +94,14 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
+    if args.pypistats:
+        earliest_start_date = six_months_ago()
+        if args.from_date < earliest_start_date:
+            args.from_date = earliest_start_date
+            print_color(
+                f"Set earliest start date for pypistats: {args.from_date}", "yellow"
+            )
+
     from_year, from_month = yyyy_mm_to_ints(args.from_date)
     to_year, to_month = yyyy_mm_to_ints(args.to_date)
 
@@ -102,7 +120,7 @@ if __name__ == "__main__":
         print(first, last)
 
         if last >= now:
-            print(colored("  End date should be in the past", "red"))
+            print_color("  End date should be in the past", "red")
             sys.exit(1)
 
         if args.package in ['""', "''"]:
@@ -112,7 +130,7 @@ if __name__ == "__main__":
         outfile = f"{prefix}{year}-{month:02d}.json"
         outfile = os.path.join("data", outfile)
         if os.path.isfile(outfile):
-            print(colored(f"  {outfile} exists, skipping", "yellow"))
+            print_color(f"  {outfile} exists, skipping", "yellow")
             continue
 
         if args.pypistats:
@@ -134,9 +152,9 @@ if __name__ == "__main__":
             # os.system(cmd)
             exitcode, output = subprocess.getstatusoutput(cmd)
             if exitcode == 0:
-                print(colored(f"  {outfile}", "green"))
+                print_color(f"  {outfile}", "green")
             else:
-                print(colored(output.splitlines()[-1], "red"))
+                print_color(output.splitlines()[-1], "red")
                 if os.path.getsize(outfile) == 0:
                     os.remove(outfile)
 
