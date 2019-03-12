@@ -28,37 +28,59 @@ from January 2016 onwards:
 
 ![Chart showing pip installs for Python 3 increasing from under 10% to around 35%](data/pip-install-all.png)
 
-### [NumPy](https://github.com/numpy/numpy) scientific computing library
+### [pip](https://github.com/pypa/pip)
+
+The package installer
+
+![](data/pip-install-pip.png)
+
+### [NumPy](https://github.com/numpy/numpy)
+
+Scientific computing library
 
 !["Chart showing pip installs for Python 3 increasing from under 20% to around 55%"](data/pip-install-numpy.png)
 
-### [pytest](https://github.com/pytest-dev/pytest) testing framework
+### [pytest](https://github.com/pytest-dev/pytest)
+
+Testing framework
 
 ![](data/pip-install-pytest.png)
 
-### [Pillow](https://github.com/python-pillow/Pillow) imaging library
+### [Coverage.py](https://github.com/nedbat/coveragepy)
+
+Code coverage testing
+
+![](data/pip-install-coverage.png)
+
+### [Pillow](https://github.com/python-pillow/Pillow)
+
+Imaging library
 
 !["Chart showing pip installs for Python 3 increasing from under 20% to around 55%"](data/pip-install-pillow.png)
 
-### [Django](https://github.com/python-pillow/Pillow) web framework
+### [Django](https://github.com/python-pillow/Pillow)
+
+Web framework
 
 !["Chart showing pip installs for Python 3 increasing from under 30% to around 65%"](data/pip-install-django.png)
 
-### [Matplotlib](https://github.com/matplotlib/matplotlib) 2D plotting library
+### [Matplotlib](https://github.com/matplotlib/matplotlib)
+
+2D plotting library
 
 ![](data/pip-install-matplotlib.png)
 
-### [Pylint](https://github.com/PyCQA/pylint/) linter
+### [Pylint](https://github.com/PyCQA/pylint/)
+
+Linter
 
 ![](data/pip-install-pylint.png)
 
-### [pylast](https://github.com/pylast/pylast) interface to Last.fm
+### [pylast](https://github.com/pylast/pylast)
+
+Interface to Last.fm
 
 !["Chart showing pip installs for Python 3 increasing from under 20% to over 50%"](data/pip-install-pylast.png)
-
-### [Coverage.py](https://github.com/nedbat/coveragepy) code coverage measurement
-
-![](data/pip-install-coverage.png)
 
 ## See also
 
