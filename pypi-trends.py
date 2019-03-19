@@ -69,7 +69,7 @@ def yyyy_mm_to_ints(yyyy_mm):
     return the_date.year, the_date.month
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
@@ -158,5 +158,8 @@ if __name__ == "__main__":
                 if os.path.getsize(outfile) == 0:
                     os.remove(outfile)
 
+
+if __name__ == "__main__":
+    main()
 
 # End of file

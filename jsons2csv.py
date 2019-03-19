@@ -15,9 +15,6 @@ from pprint import pprint
 
 from termcolor import colored  # pip install termcolor
 
-all_data = []
-all_versions = set()
-
 
 # https://stackoverflow.com/a/5734564/724176
 def month_year_iter(start_month, start_year, end_month, end_year):
@@ -147,7 +144,7 @@ def make_chart(data, index, project_name, no_show):
         plt.show()
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
@@ -156,8 +153,10 @@ if __name__ == "__main__":
     parser.add_argument(
         "-ns", "--no-show", action="store_true", help="Don't show the chart"
     )
-
     args = parser.parse_args()
+
+    all_data = []
+    all_versions = set()
 
     files = glob.glob(args.inspec)
     files = sorted(files)
@@ -226,5 +225,8 @@ if __name__ == "__main__":
 
         make_chart(data, index, inspec_to_name(args.inspec), args.no_show)
 
+
+if __name__ == "__main__":
+    main()
 
 # End of file
