@@ -16,12 +16,10 @@ import argparse
 import csv
 import glob
 import json
-import os
 from collections import OrderedDict
 from distutils.version import LooseVersion
 
-# pip install pytablewriter
-from pytablewriter import Align, MarkdownTableWriter
+from pytablewriter import Align, MarkdownTableWriter  # pip install pytablewriter
 
 # from pprint import pprint
 
@@ -42,9 +40,6 @@ def main():
     parser.add_argument("-i", "--inspec", default="macos.json", help="Input file spec")
     args = parser.parse_args()
 
-    all_data = []
-    all_versions = set()
-
     new_rows = []
     darwin_downloads = {}
 
@@ -52,12 +47,10 @@ def main():
     files = sorted(files)
 
     for f in files:
-        month_name = os.path.splitext(os.path.basename(f))[0]
         print(f)
         with open(f) as json_data:
             d = json.load(json_data)
             # pprint(d)
-            month_data = {"yyyy-mm": month_name}
             for row in d["rows"]:
                 # pprint(row)
                 # print(row["system_name"])
