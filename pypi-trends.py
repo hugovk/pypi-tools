@@ -47,6 +47,26 @@ def month_year_iter(start_month, start_year, end_month, end_year, reverse=False)
         yield y, m + 1
 
 
+def spread_order(years_months):
+    """
+    Sort so months are in this order:
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    =>
+    [1, 7, 4, 10, 3, 6, 9, 12, 2, 5, 8, 11]
+
+    :param years_months: list of (year, month) tuples
+    :return: re-sorted list of (year, month) tuples
+    """
+    order = [1, 7, 4, 10, 3, 6, 9, 12, 2, 5, 8, 11]
+    output = []
+    for o in order:
+        for year, month in years_months:
+            if month == o:
+                # print(year, month)
+                output.append((year, month))
+    return output
+
+
 def six_months_ago():
     """For --pypistats, the earliest start date is six months ago"""
     first = now - relativedelta(months=6)
@@ -83,6 +103,9 @@ def main():
         "-t", "--to", dest="to_date", default=default_end_date(), help="End YYYY-MM"
     )
     parser.add_argument(
+        "-s", "--spread", action="store_true", help="Fetch data in spread order"
+    )
+    parser.add_argument(
         "-n", "--dry-run", action="store_true", help="Don't execute pypinfo/pypistats"
     )
     parser.add_argument(
@@ -111,9 +134,13 @@ def main():
         )
     )
 
-    for year, month in month_year_iter(
-        from_month, from_year, to_month + 1, to_year, reverse=True
-    ):
+    years_months = list(
+        month_year_iter(from_month, from_year, to_month + 1, to_year, reverse=True)
+    )
+    if args.spread:
+        years_months = spread_order(years_months)
+
+    for year, month in years_months:
 
         first = date(year, month, 1)
         last = first + relativedelta(months=1) - relativedelta(days=1)
