@@ -34,6 +34,12 @@ The package installer
 
 ![](data/pip-install-pip.png)
 
+### [six](https://github.com/benjaminp/six)
+
+Python 2 and 3 compatibility library
+
+![](data/pip-install-six.png)
+
 ### [NumPy](https://github.com/numpy/numpy)
 
 Scientific computing library
