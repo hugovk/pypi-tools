@@ -76,6 +76,12 @@ Web framework
 
 ![](data/pip-install-matplotlib.png)
 
+### [Flake8](https://gitlab.com/pycqa/flake8)
+
+Linter
+
+![](data/pip-install-flake8.png)
+
 ### [Pylint](https://github.com/PyCQA/pylint/)
 
 Linter
