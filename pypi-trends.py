@@ -140,14 +140,16 @@ def main():
     if args.spread:
         years_months = spread_order(years_months)
 
-    for year, month in years_months:
+    greens, yellows, reds = 0, 0, 0
 
+    for year, month in years_months:
         first = date(year, month, 1)
         last = first + relativedelta(months=1) - relativedelta(days=1)
         print(first, last)
 
         if last >= now:
             print_color("  End date should be in the past", "red")
+            reds += 1
             sys.exit(1)
 
         if args.package in ['""', "''"]:
@@ -158,6 +160,7 @@ def main():
         outfile = os.path.join("data", outfile)
         if os.path.isfile(outfile):
             print_color(f"  {outfile} exists, skipping", "yellow")
+            yellows += 1
             continue
 
         if args.pypistats:
@@ -180,10 +183,18 @@ def main():
             exitcode, output = subprocess.getstatusoutput(cmd)
             if exitcode == 0:
                 print_color(f"  {outfile}", "green")
+                greens += 1
             else:
                 print_color(output.splitlines()[-1], "red")
+                reds += 1
                 if os.path.getsize(outfile) == 0:
                     os.remove(outfile)
+
+    print(
+        colored(f"{greens}", "green"),
+        colored(f"{yellows}", "yellow"),
+        colored(f"{reds}", "red"),
+    )
 
 
 if __name__ == "__main__":
