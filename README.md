@@ -88,6 +88,12 @@ Linter
 
 ![](data/pip-install-pylint.png)
 
+### [TensorFlow](https://github.com/tensorflow/tensorflow/)
+
+Machine learning library
+
+![](data/pip-install-tensorflow.png)
+
 ### [pylast](https://github.com/pylast/pylast)
 
 Interface to Last.fm
