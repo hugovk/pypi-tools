@@ -20,6 +20,7 @@ from collections import OrderedDict
 from distutils.version import LooseVersion
 
 from pytablewriter import Align, MarkdownTableWriter  # pip install pytablewriter
+from pytablewriter.style import Style
 
 # from pprint import pprint
 
@@ -103,6 +104,7 @@ def main():
     writer.header_list = fieldnames
     writer.value_matrix = new_rows
     writer.align_list = [Align.AUTO, Align.AUTO, Align.RIGHT, Align.AUTO]
+    writer.style_list = [None, None, None, Style(thousand_separator=",")]
     writer.margin = 1
     writer.write_table()
 
