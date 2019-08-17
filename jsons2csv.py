@@ -13,6 +13,7 @@ import re
 import traceback
 from pprint import pprint
 
+from natsort import natsorted  # pip install natsort
 from termcolor import colored  # pip install termcolor
 
 
@@ -195,7 +196,7 @@ def main():
 
     # pprint(all_data)
     pprint(all_versions)
-    all_versions = list(sorted(all_versions))
+    all_versions = natsorted(all_versions)
 
     f = csv.writer(open(os.path.join("data", "pypi-trends.csv"), "w+"))
     # f.writerow(["", "Python version"])
