@@ -1,4 +1,5 @@
 matplotlib
+natsort
 numpy
 pandas
 pypinfo
