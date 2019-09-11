@@ -13,13 +13,14 @@ matrix:
 
 install:
  - pip install -U pip
- - pip install -U black flake8
+ - pip install -U black flake8 pre-commit
  - pip install -U -r requirements.txt
 
 script:
  # Static analysis
  - flake8
  - black --check --diff .
+ - pre-commit run --all-files
 
  # Test run
  - python pypi-trends.py --dry-run

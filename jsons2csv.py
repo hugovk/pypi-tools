@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# encoding: utf-8
 """
 Tabulate the output JSON files from pypi-trends.py into a CSV file, pypi-trends.csv
 """

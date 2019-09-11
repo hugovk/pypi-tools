@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# encoding: utf-8
 """
 For a given project, or all projects:
 * Fetch pip installs for each Python in a given month of a year
