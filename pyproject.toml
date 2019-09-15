@@ -1,2 +1,5 @@
 [tool.black]
 py36 = true
+
+[tool.isort]
+known_third_party = ["dateutil", "natsort", "pytablewriter", "termcolor"]
