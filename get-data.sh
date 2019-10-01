@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-FROM="2019-08"
+FROM="2019-09"
 
 python3 pypi-trends.py -f $FROM
 python3 pypi-trends.py -f $FROM -p pillow
