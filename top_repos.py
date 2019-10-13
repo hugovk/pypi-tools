@@ -106,7 +106,8 @@ def main():
     packages_todo = new
     print(f"New repos: {len(new)}, no repo: {count}")
 
-    save_to_file(packages_done + packages_todo, "data/top_repos.json")
+    if len(new):
+        save_to_file(packages_done + packages_todo, "data/top_repos.json")
 
 
 if __name__ == "__main__":
