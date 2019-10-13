@@ -142,6 +142,9 @@ def main():
     greens, yellows, reds = 0, 0, 0
 
     for year, month in years_months:
+        if year == 2016 and month == 4:
+            print_color("  No data for 2016-04, skipping", "yellow")
+            continue
         first = date(year, month, 1)
         last = first + relativedelta(months=1) - relativedelta(days=1)
         print(first, last)
