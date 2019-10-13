@@ -78,33 +78,35 @@ def main():
 
     # Remove packages that are already done
     new = []
-    count = 0
+    count_exists = 0
     for package in packages_todo:
         todo = package["name"]
         # Already there?
         exists = any(d["name"] == todo for d in packages_done)
         if exists:
-            count += 1
+            count_exists += 1
         else:
             new.append(package)
-    print(f"Already done: {count}")
+    print(f"Already done: {count_exists}")
 
     packages_todo = new
 
     print("Find new repos...")
     new = []
-    count = 0
+    count_not_found = 0
     for i, package in enumerate(packages_todo):
         repo = source_finder.find_source_repo(package["name"])
         if repo:
             package["repo"] = repo
             new.append(package)
-            print(colored(f"{i} {package['name']}\t{repo}", "green"))
+            print(colored(f"{count_exists+i+1} {package['name']}\t{repo}", "green"))
         else:
-            print(colored(f"{i} {package['name']}", "red"))
-            count += 1
+            print(colored(f"{count_exists+i+1} {package['name']}", "red"))
+            count_not_found += 1
     packages_todo = new
-    print(f"New repos: {len(new)}, no repo: {count}")
+    print(f"Old repos: {count_exists}")
+    print(f"New repos: {len(new)}")
+    print(f"Not found: {count_not_found}")
 
     if len(new):
         save_to_file(packages_done + packages_todo, "data/top_repos.json")
