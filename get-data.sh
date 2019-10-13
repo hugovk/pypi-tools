@@ -15,6 +15,7 @@ python3 pypi-trends.py -f $FROM -p pylint
 python3 pypi-trends.py -f $FROM -p flake8
 python3 pypi-trends.py -f $FROM -p six
 python3 pypi-trends.py -f $FROM -p tensorflow
+python3 pypi-trends.py -f $FROM -p pandas
 
 # pep8
 # pycodestyle

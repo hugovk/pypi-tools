@@ -52,6 +52,12 @@ Testing framework
 
 ![](images/pip-install-pytest.png)
 
+### [pandas](https://github.com/pandas-dev/pandas)
+
+Data analysis toolkit
+
+![](images/pip-install-pandas.png)
+
 ### [Coverage.py](https://github.com/nedbat/coveragepy)
 
 Code coverage testing
