@@ -64,17 +64,17 @@ Imaging library
 
 !["Chart showing pip installs for Python 3 increasing from under 20% to around 55%"](images/pip-install-pillow.png)
 
-### [Django](https://github.com/python-pillow/Pillow)
-
-Web framework
-
-!["Chart showing pip installs for Python 3 increasing from under 30% to around 65%"](images/pip-install-django.png)
-
 ### [Matplotlib](https://github.com/matplotlib/matplotlib)
 
 2D plotting library
 
 ![](images/pip-install-matplotlib.png)
+
+### [Django](https://github.com/python-pillow/Pillow)
+
+Web framework
+
+!["Chart showing pip installs for Python 3 increasing from under 30% to around 65%"](images/pip-install-django.png)
 
 ### [Flake8](https://gitlab.com/pycqa/flake8)
 
