@@ -25,6 +25,7 @@ from termcolor import colored  # pip install termcolor
 
 BASE_URL = "https://pypi.org/pypi"
 CACHE_DIR = Path(user_cache_dir("source-finder"))
+USER_AGENT = "source_finder.py"
 VERBOSE = False
 PRINT = False
 
@@ -104,8 +105,7 @@ def pypi_json(package):
 
     if res == {}:
         # No cache, or couldn't load cache
-        # r = requests.get(url, headers={"User-Agent": USER_AGENT})
-        r = requests.get(url)
+        r = requests.get(url, headers={"User-Agent": USER_AGENT})
 
         # Raise if we made a bad request
         # (4XX client error or 5XX server error response)

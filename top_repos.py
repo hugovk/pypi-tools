@@ -93,7 +93,6 @@ def main():
 
     print("Find new repos...")
     new = []
-    # TODO multiprocessing
     count = 0
     for i, package in enumerate(packages_todo):
         repo = source_finder.find_source_repo(package["name"])
