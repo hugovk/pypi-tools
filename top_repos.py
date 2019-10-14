@@ -1,14 +1,14 @@
 """
 Read in packages from top-pypi-packages.json and create
-a corresponding list of repos in data/top_repos.json
+a corresponding list of repos in top_repos.json
 
 Start by:
 
 # Fetch fresh copy of top packages
 wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages-30-days.min.json -O \
-    top-pypi-packages.json
+    data/top-pypi-packages.json
 
-# Check the first 10 packages in top-pypi-packages.json
+# Check the first 10 packages in data/top-pypi-packages.json
 python3 top_repos.py --number 10
 
 # Repos are added to data/top_repos.json. Doesn't check or update existing repos.
@@ -25,7 +25,7 @@ import source_finder
 
 
 def get_top_packages():
-    packages = load_from_file("top-pypi-packages.json", "rows")
+    packages = load_from_file("data/top-pypi-packages.json", "rows")
 
     for package in packages:
         # Don't need download counts
