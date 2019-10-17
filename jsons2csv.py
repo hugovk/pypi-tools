@@ -144,6 +144,13 @@ def make_chart(data, index, project_name, no_show):
         plt.show()
 
 
+def remove_from_list(items, l):
+    for item in items:
+        if item in l:
+            l.remove(item)
+    return l
+
+
 def main():
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter
@@ -160,6 +167,10 @@ def main():
 
     files = glob.glob(args.inspec)
     files = sorted(files)
+    # Skip data for top_repos.py
+    files = remove_from_list(
+        ["data/top-pypi-packages.json", "data/top_repos.json"], files
+    )
 
     for f in files:
         # Get the yyyy-dd from the filename

@@ -1,3 +1,4 @@
+appdirs
 matplotlib
 natsort
 numpy
@@ -5,4 +6,7 @@ pandas
 pypinfo
 pytablewriter
 python-dateutil
+python-slugify
+pytz
+requests
 termcolor
