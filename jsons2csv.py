@@ -169,7 +169,7 @@ def main():
     files = sorted(files)
     # Skip data for top_repos.py
     files = remove_from_list(
-        ["data/top-pypi-packages.json", "data/top_repos.json"], files
+        ["data/top-pypi-packages.json", "data/top-repos.json"], files
     )
 
     for f in files:

@@ -137,7 +137,7 @@ https://github.com/boto/s3transfer
 
 ## top_repos.py
 
-This will look for the source repo for the top-5,000 most-downloaded packages, using a JSON file from [Top PyPI Packages](https://hugovk.github.io/top-pypi-packages/), and save them to `data/top_repos.json`.
+This will look for the source repo for the top-5,000 most-downloaded packages, using a JSON file from [Top PyPI Packages](https://hugovk.github.io/top-pypi-packages/), and save them to [`data/top-repos.json`](https://hugovk.github.io/pypi-tools/data/top-repos.json).
 
 First, fetch fresh copy of the top packages:
 
@@ -160,7 +160,7 @@ Check the first 10 packages:
 
 ```console
 $ python top_repos.py -n 10
-Load data/top_repos.json...
+Load data/top-repos.json...
 Load top-pypi-packages.json...
 Already done: 0
 Find new repos...
@@ -177,7 +177,7 @@ Find new repos...
 Old repos: 0
 New repos: 4
 Not found: 6
-Save data/top_repos.json...
+Save data/top-repos.json...
 ```
 
 When running again:

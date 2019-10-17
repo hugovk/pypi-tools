@@ -1,6 +1,6 @@
 """
 Read in packages from top-pypi-packages.json and create
-a corresponding list of repos in top_repos.json
+a corresponding list of repos in top-repos.json
 
 Start by:
 
@@ -11,7 +11,7 @@ wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages-30-days.min.js
 # Check the first 10 packages in data/top-pypi-packages.json
 python3 top_repos.py --number 10
 
-# Repos are added to data/top_repos.json. Doesn't check or update existing repos.
+# Repos are added to data/top-repos.json. Doesn't check or update existing repos.
 """
 import argparse
 import datetime
@@ -67,7 +67,7 @@ def main():
     args = parser.parse_args()
 
     try:
-        packages_done = load_from_file("data/top_repos.json", "data")
+        packages_done = load_from_file("data/top-repos.json", "data")
     except FileNotFoundError:
         packages_done = []
 
@@ -109,7 +109,7 @@ def main():
     print(f"Not found: {count_not_found}")
 
     if len(new):
-        save_to_file(packages_done + packages_todo, "data/top_repos.json")
+        save_to_file(packages_done + packages_todo, "data/top-repos.json")
 
 
 if __name__ == "__main__":
