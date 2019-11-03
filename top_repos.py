@@ -64,7 +64,14 @@ def main():
         description=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
     parser.add_argument("-n", "--number", type=int, help="Max number to fetch")
+    parser.add_argument(
+        "-v", "--verbose", action="store_true", help="Print debug messages to stderr"
+    )
     args = parser.parse_args()
+
+    if args.verbose:
+        source_finder.VERBOSE = True
+        source_finder.PRINT = True
 
     try:
         packages_done = load_from_file("data/top-repos.json", "data")
