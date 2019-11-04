@@ -63,7 +63,9 @@ def main():
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
-    parser.add_argument("-n", "--number", type=int, help="Max number to fetch")
+    parser.add_argument(
+        "-n", "--number", type=int, default=100, help="Max number to fetch"
+    )
     parser.add_argument(
         "-v", "--verbose", action="store_true", help="Print debug messages to stderr"
     )
