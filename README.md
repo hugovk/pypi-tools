@@ -10,8 +10,8 @@ Command-line Python scripts to do things with the
 ## pypi-trends.py
 
 pypi-trends.py is a wrapper around [pypinfo](https://github.com/ofek/pypinfo)
-to fetch all monthly downloads from the PyPI database on Google BigQuery and
-save them as JSON files.
+and [pypistats](https://github.com/hugovk/pypistats) to fetch all monthly downloads from
+the PyPI database on Google BigQuery and save them as JSON files.
 
 For the examples below, data was downloaded over a few days as getting all
 months uses up a lot of free BigQuery quota.
