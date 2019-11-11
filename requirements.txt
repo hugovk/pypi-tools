@@ -2,6 +2,7 @@ appdirs
 matplotlib
 natsort
 numpy
+packaging
 pandas
 pypinfo
 pytablewriter
