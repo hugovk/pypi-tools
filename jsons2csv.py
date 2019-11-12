@@ -10,9 +10,11 @@ import json
 import os
 import re
 import traceback
+from collections import defaultdict
 from pprint import pprint
 
 from natsort import natsorted  # pip install natsort
+from packaging.version import parse  # pip install packaging
 from termcolor import colored  # pip install termcolor
 
 
@@ -184,7 +186,8 @@ def main():
                 print(colored(f"Skipping {f}: {e}", "yellow"))
                 continue
             # pprint(d)
-            month_data = {"yyyy-mm": month_name}
+            month_data = defaultdict(int)
+            month_data["yyyy-mm"] = month_name
             try:
                 # pypinfo
                 rows = d["rows"]
@@ -196,12 +199,17 @@ def main():
                 version_index = "category"
                 downloads_index = "downloads"
             for row in rows:
-                # month_data[row["python_version"]] = float(row["percent"]) * 100
-                month_data[row[version_index]] = row[downloads_index]
-                if row[version_index] == "null":
+                version = row[version_index]
+                base_version = parse(version).base_version  # strips a4, b2, rc1
+
+                if version in ["null", "Sure.0"]:
                     # Harmonise pypistats' "null" with pypinfo's "None"
-                    row[version_index] = "None"
-                all_versions.add(row[version_index])
+                    # And include junk "Sure.0"
+                    base_version = "None"
+
+                # month_data[row["python_version"]] = float(row["percent"]) * 100
+                month_data[base_version] += row[downloads_index]
+                all_versions.add(base_version)
         all_data.append(month_data)
 
     # pprint(all_data)
