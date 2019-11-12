@@ -1,21 +1,22 @@
 #!/usr/bin/env bash
 
-FROM="2019-09"
+FROM="2019-10"
+TO=$FROM
 
-python3 pypi-trends.py -f $FROM
-python3 pypi-trends.py -f $FROM -p pillow
-python3 pypi-trends.py -f $FROM -p pytest
-python3 pypi-trends.py -f $FROM -p pip
-python3 pypi-trends.py -f $FROM -p pylast
-python3 pypi-trends.py -f $FROM -p coverage
-python3 pypi-trends.py -f $FROM -p numpy
-python3 pypi-trends.py -f $FROM -p django
-python3 pypi-trends.py -f $FROM -p matplotlib
-python3 pypi-trends.py -f $FROM -p pylint
-python3 pypi-trends.py -f $FROM -p flake8
-python3 pypi-trends.py -f $FROM -p six
-python3 pypi-trends.py -f $FROM -p tensorflow
-python3 pypi-trends.py -f $FROM -p pandas
+python3 pypi-trends.py -f $FROM -t $TO
+python3 pypi-trends.py -f $FROM -t $TO -p pillow
+python3 pypi-trends.py -f $FROM -t $TO -p pytest
+python3 pypi-trends.py -f $FROM -t $TO -p pip
+python3 pypi-trends.py -f $FROM -t $TO -p pylast
+python3 pypi-trends.py -f $FROM -t $TO -p coverage
+python3 pypi-trends.py -f $FROM -t $TO -p numpy
+python3 pypi-trends.py -f $FROM -t $TO -p django
+python3 pypi-trends.py -f $FROM -t $TO -p matplotlib
+python3 pypi-trends.py -f $FROM -t $TO -p pylint
+python3 pypi-trends.py -f $FROM -t $TO -p flake8
+python3 pypi-trends.py -f $FROM -t $TO -p six
+python3 pypi-trends.py -f $FROM -t $TO -p tensorflow
+python3 pypi-trends.py -f $FROM -t $TO -p pandas
 
 # pep8
 # pycodestyle
