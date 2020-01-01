@@ -99,7 +99,7 @@ def make_chart(data, index, project_name, no_show):
             x_labels.append(year_month)
             last_year = year
     x_labels.append(index[-1])  # No change for last one
-    ax.set_xticklabels(x_labels, fontsize=9)
+    ax.set_xticklabels(x_labels, fontsize=8)
 
     plt.xticks(rotation=90)
 
