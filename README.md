@@ -40,6 +40,12 @@ Python 2 and 3 compatibility library
 
 ![](images/pip-install-six.png)
 
+### [Requests](https://github.com/psf/requests)
+
+HTTP library
+
+![](images/pip-install-requests.png)
+
 ### [NumPy](https://github.com/numpy/numpy)
 
 Scientific computing library
