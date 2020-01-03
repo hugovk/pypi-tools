@@ -11,7 +11,7 @@ wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages-30-days.min.js
 # Check the first 10 packages in data/top-pypi-packages.json
 python3 top_repos.py --number 10
 
-# Repos are added to data/top-repos.json. Doesn't check or update existing repos.
+# Repos are added to data/top-repos.json. Doesn't (yet) check or update existing repos.
 """
 import argparse
 import datetime
