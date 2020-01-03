@@ -17,7 +17,9 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p flake8
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p six
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p tensorflow
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pandas
-python3 pypi-trends.py -p requests
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p requests
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p scipy
+python3 pypi-trends.py -p scipy
 
 # pep8
 # pycodestyle

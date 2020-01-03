@@ -15,4 +15,5 @@ python3 jsons2csv.py --chart --no-show -i "data/six*.json"
 python3 jsons2csv.py --chart --no-show -i "data/tensorflow*.json"
 python3 jsons2csv.py --chart --no-show -i "data/pandas*.json"
 python3 jsons2csv.py --chart --no-show -i "data/requests*.json"
+python3 jsons2csv.py --chart --no-show -i "data/scipy*.json"
 open images/pip-install-*.png
