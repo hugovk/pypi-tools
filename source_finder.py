@@ -17,6 +17,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 from pprint import pprint  # noqa: F401
+from urllib.parse import urlparse
 
 import requests  # pip install requests
 from appdirs import user_cache_dir  # pip install appdirs
@@ -128,6 +129,15 @@ def _has_scm_link(s):
     )
 
 
+def normalise_url(url):
+    """Strip out junk"""
+    u = urlparse(url)
+    path_parts = u.path.split("/")
+    keep_parts = path_parts[:3]
+    new_path = "/".join(keep_parts)
+    return url.replace(u.path, new_path)
+
+
 def find_source_repo(package):
 
     found_url = None
@@ -172,6 +182,7 @@ def find_source_repo(package):
             _print_verbose(info["description"])
 
     if found_url and PRINT:
+        found_url = normalise_url(found_url)
         print(colored(found_url, "green"))
     else:
         _print_stderr(colored(found_url, "red"))

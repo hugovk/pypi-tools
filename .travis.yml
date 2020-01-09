@@ -15,14 +15,17 @@ matrix:
 
 install:
  - pip install -U pip
- - pip install -U pre-commit
+ - pip install -U pre-commit pytest
  - pip install -U -r requirements.txt
 
 script:
- # Static analysis
- - pre-commit run --all-files
+  # Static analysis
+  - pre-commit run --all-files
 
- # Test run
- - python pypi-trends.py --dry-run
- - python jsons2csv.py
- - python macos-versions.py -i data/macos-2018-09-15.json
+  # Unit tests
+  - pytest
+
+  # Test run
+  - python pypi-trends.py --dry-run
+  - python jsons2csv.py
+  - python macos-versions.py -i data/macos-2018-09-15.json
