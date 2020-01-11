@@ -6,6 +6,7 @@ import source_finder
 @pytest.mark.parametrize(
     "test_input, expected",
     [
+        (None, None,),
         (
             "https://github.com/agronholm/pythonfutures",
             "https://github.com/agronholm/pythonfutures",
@@ -24,12 +25,12 @@ import source_finder
         ),
     ],
 )
-def test_normalise_url(test_input, expected):
+def test__normalise_url(test_input, expected):
     # Arrange
     url = test_input
 
     # Act
-    url = source_finder.normalise_url(url)
+    url = source_finder._normalise_url(url)
 
     # Assert
     assert url == expected

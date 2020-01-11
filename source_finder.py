@@ -129,8 +129,14 @@ def _has_scm_link(s):
     )
 
 
-def normalise_url(url):
+def _normalise_url(url):
     """Strip out junk"""
+    if not url:
+        return url
+
+    if not _has_scm_link(url):
+        return url
+
     u = urlparse(url)
     path_parts = u.path.split("/")
     keep_parts = path_parts[:3]
@@ -181,8 +187,9 @@ def find_source_repo(package):
             _print_verbose("TODO extract URL from description")
             _print_verbose(info["description"])
 
+    found_url = _normalise_url(found_url)
+
     if found_url and PRINT:
-        found_url = normalise_url(found_url)
         print(colored(found_url, "green"))
     else:
         _print_stderr(colored(found_url, "red"))
