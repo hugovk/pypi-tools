@@ -53,7 +53,8 @@ def save_to_file(packages, file_name):
     with open(file_name, "w") as f:
         f.write(
             json.dumps(
-                {"data": packages, "last_update": now.strftime("%A, %d %B %Y, %X %Z")}
+                {"data": packages, "last_update": now.strftime("%A, %d %B %Y, %X %Z")},
+                indent=0,
             )
         )
 
