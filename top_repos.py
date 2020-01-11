@@ -59,6 +59,22 @@ def save_to_file(packages, file_name):
         )
 
 
+def remove_done(packages_todo, packages_done):
+    """Remove packages that are already done"""
+    new = []
+    count_exists = 0
+    for package in packages_todo:
+        todo = package["name"]
+        # Already there?
+        exists = any(d["name"] == todo for d in packages_done)
+        if exists:
+            count_exists += 1
+        else:
+            new.append(package)
+    print(f"Already done: {count_exists}")
+    return new, count_exists
+
+
 def main():
 
     parser = argparse.ArgumentParser(
@@ -87,19 +103,7 @@ def main():
         packages_todo = packages_todo[: args.number]
 
     # Remove packages that are already done
-    new = []
-    count_exists = 0
-    for package in packages_todo:
-        todo = package["name"]
-        # Already there?
-        exists = any(d["name"] == todo for d in packages_done)
-        if exists:
-            count_exists += 1
-        else:
-            new.append(package)
-    print(f"Already done: {count_exists}")
-
-    packages_todo = new
+    packages_todo, count_exists = remove_done(packages_todo, packages_done)
 
     print("Find new repos...")
     new = []
