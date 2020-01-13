@@ -1,4 +1,5 @@
 appdirs
+httpx==0.11
 matplotlib
 natsort
 numpy
@@ -9,5 +10,4 @@ pytablewriter
 python-dateutil
 python-slugify
 pytz
-requests
 termcolor

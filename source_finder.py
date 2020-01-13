@@ -19,7 +19,7 @@ from pathlib import Path
 from pprint import pprint  # noqa: F401
 from urllib.parse import urlparse
 
-import requests  # pip install requests
+import httpx  # pip install httpx
 from appdirs import user_cache_dir  # pip install appdirs
 from slugify import slugify  # pip install python-slugify
 from termcolor import colored  # pip install termcolor
@@ -106,7 +106,7 @@ def pypi_json(package):
 
     if res == {}:
         # No cache, or couldn't load cache
-        r = requests.get(url, headers={"User-Agent": USER_AGENT})
+        r = httpx.get(url, headers={"User-Agent": USER_AGENT})
 
         # Raise if we made a bad request
         # (4XX client error or 5XX server error response)
