@@ -23,7 +23,7 @@ script:
   - pre-commit run --all-files
 
   # Unit tests
-  - pytest
+  - python -m pytest
 
   # Test run
   - python pypi-trends.py --dry-run
