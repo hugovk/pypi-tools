@@ -17,8 +17,9 @@ import sys
 from datetime import datetime
 from pathlib import Path
 from pprint import pprint  # noqa: F401
+from urllib.parse import urlparse
 
-import requests  # pip install requests
+import httpx  # pip install httpx
 from appdirs import user_cache_dir  # pip install appdirs
 from slugify import slugify  # pip install python-slugify
 from termcolor import colored  # pip install termcolor
@@ -105,7 +106,7 @@ def pypi_json(package):
 
     if res == {}:
         # No cache, or couldn't load cache
-        r = requests.get(url, headers={"User-Agent": USER_AGENT})
+        r = httpx.get(url, headers={"User-Agent": USER_AGENT})
 
         # Raise if we made a bad request
         # (4XX client error or 5XX server error response)
@@ -126,6 +127,21 @@ def _has_scm_link(s):
         or "bitbucket.org" in s
         or "bitbucket.com" in s
     )
+
+
+def _normalise_url(url):
+    """Strip out junk"""
+    if not url:
+        return url
+
+    if not _has_scm_link(url):
+        return url
+
+    u = urlparse(url)
+    path_parts = u.path.split("/")
+    keep_parts = path_parts[:3]
+    new_path = "/".join(keep_parts)
+    return url.replace(u.path, new_path)
 
 
 def find_source_repo(package):
@@ -170,6 +186,8 @@ def find_source_repo(package):
         if not found_url:
             _print_verbose("TODO extract URL from description")
             _print_verbose(info["description"])
+
+    found_url = _normalise_url(found_url)
 
     if found_url and PRINT:
         print(colored(found_url, "green"))
