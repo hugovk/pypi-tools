@@ -1,5 +1,5 @@
 [tool.black]
-py36 = true
+target_version = ["py36"]
 
 [tool.isort]
 force_grid_wrap = 0
