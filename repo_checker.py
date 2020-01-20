@@ -155,7 +155,7 @@ def main():
             do_cmd(cmd)
 
         # Skip scanning these
-        if name in args.repos:
+        if args.repos and name in args.repos:
             continue
 
         cmd = f"{args.command}"
