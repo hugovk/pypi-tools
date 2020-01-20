@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-TODO
+Tool to clone repos of popular projects, and run a test command for each.
 
 open list of top repos
 open list of repo source
@@ -35,7 +35,7 @@ from termcolor import colored  # pip install termcolor
 
 from top_repos import get_top_packages, load_from_file
 
-CLONE_ROOT = Path.home() / "repo_checker"
+CLONE_ROOT = Path.home() / "checked_repos"
 DEFAULT_CMD = f"flake8 --exclude six.py --extend-ignore C90 --select YTT1 CLONE_DIR"
 
 
@@ -82,7 +82,6 @@ def main():
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
-    # parser.add_argument("package", help="Package")
     parser.add_argument(
         "-n", "--number", type=int, default=10, help="Max number to check"
     )
