@@ -64,6 +64,12 @@ Data analysis toolkit
 
 ![](images/pip-install-pandas.png)
 
+### [SciPy](https://github.com/scipy/scipy)
+
+For mathematics, science, and engineering
+
+![](images/pip-install-scipy.png)
+
 ### [Coverage.py](https://github.com/nedbat/coveragepy)
 
 Code coverage testing
@@ -106,11 +112,13 @@ Machine learning library
 
 ![](images/pip-install-tensorflow.png)
 
+<!--
 ### [pylast](https://github.com/pylast/pylast)
 
 Interface to Last.fm
 
 !["Chart showing pip installs for Python 3 increasing from under 20% to over 50%"](images/pip-install-pylast.png)
+-->
 
 ### See also
 
