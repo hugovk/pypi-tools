@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-python3 jsons2csv.py --chart --no-show -i "data/201*.json"
+python3 jsons2csv.py --chart --no-show -i "data/20*.json"
 python3 jsons2csv.py --chart --no-show -i "data/coverage*.json"
 python3 jsons2csv.py --chart --no-show -i "data/django*.json"
 python3 jsons2csv.py --chart --no-show -i "data/flake8*.json"
