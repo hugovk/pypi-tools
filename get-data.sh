@@ -17,10 +17,11 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pylint
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pytest
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p requests
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p scipy
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p setuptools
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p six
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p tensorflow
 
-python3 pypi-trends.py -p scipy
+python3 pypi-trends.py -p setuptools
 
 # pep8
 # pycodestyle
