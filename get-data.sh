@@ -1,6 +1,6 @@
  #!/usr/bin/env bash
 
-FROM="2020-01"
+FROM="2020-02"
 TO=$FROM
 
 python3 pypi-trends.py -f $FROM -t $TO
