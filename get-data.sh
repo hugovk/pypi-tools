@@ -1,7 +1,9 @@
  #!/usr/bin/env bash
 
-FROM="2020-02"
+FROM="2020-03"
 TO=$FROM
+
+# application_limits=["5 per second", "30 per minute"]
 
 python3 pypi-trends.py -f $FROM -t $TO
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p coverage
@@ -21,7 +23,7 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p setuptools
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p six
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p tensorflow
 
-python3 pypi-trends.py -p setuptools
+#python3 pypi-trends.py -p setuptools
 
 # pep8
 # pycodestyle
