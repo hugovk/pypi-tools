@@ -202,10 +202,9 @@ def main():
                 version = row[version_index]
                 base_version = parse(version).base_version  # strips a4, b2, rc1
 
-                if version in ["null", "Sure.0"]:
-                    # Harmonise pypistats' "null" with pypinfo's "None"
-                    # And include junk "Sure.0"
-                    base_version = "None"
+                # Skip unknown versions
+                if version in ["None", "null", "Sure.0"]:
+                    continue
 
                 # month_data[row["python_version"]] = float(row["percent"]) * 100
                 month_data[base_version] += row[downloads_index]
