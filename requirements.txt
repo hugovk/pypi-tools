@@ -1,5 +1,5 @@
 appdirs
-httpx==0.11
+httpx==0.12
 matplotlib
 natsort
 numpy
