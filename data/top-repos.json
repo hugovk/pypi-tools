@@ -90,7 +90,7 @@
 },
 {
 "name": "google-api-core",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-api-core"
 },
 {
 "name": "click",
@@ -206,7 +206,7 @@
 },
 {
 "name": "google-cloud-storage",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-storage"
 },
 {
 "name": "websocket-client",
@@ -710,7 +710,7 @@
 },
 {
 "name": "google-cloud-pubsub",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-pubsub"
 },
 {
 "name": "keras",
@@ -734,7 +734,7 @@
 },
 {
 "name": "ujson",
-"repo": "http://github.com/esnme/ultrajson"
+"repo": "https://github.com/ultrajson/ultrajson"
 },
 {
 "name": "filelock",
@@ -762,7 +762,7 @@
 },
 {
 "name": "graphql-core",
-"repo": "https://github.com/graphql-python/graphql-core-next"
+"repo": "https://github.com/graphql-python/graphql-core"
 },
 {
 "name": "testpath",
@@ -898,7 +898,7 @@
 },
 {
 "name": "google-cloud-datastore",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-datastore"
 },
 {
 "name": "apipkg",
@@ -1010,7 +1010,7 @@
 },
 {
 "name": "google-cloud-logging",
-"repo": "https://github.com/googleapis/google-cloud-python"
+"repo": "https://github.com/googleapis/python-logging"
 },
 {
 "name": "texttable",
@@ -1054,7 +1054,7 @@
 },
 {
 "name": "inflection",
-"repo": "http://github.com/jpvanhal/inflection"
+"repo": "https://github.com/jpvanhal/inflection"
 },
 {
 "name": "docker-compose",
@@ -1374,11 +1374,11 @@
 },
 {
 "name": "codecov",
-"repo": "http://github.com/codecov/codecov-python"
+"repo": "https://github.com/codecov/codecov-python"
 },
 {
 "name": "google-cloud-monitoring",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-monitoring"
 },
 {
 "name": "tensorflow-metadata",
@@ -1418,7 +1418,7 @@
 },
 {
 "name": "google-cloud-spanner",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-spanner"
 },
 {
 "name": "aws-xray-sdk",
@@ -1938,7 +1938,7 @@
 },
 {
 "name": "google-cloud-firestore",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-firestore"
 },
 {
 "name": "azure-mgmt",
@@ -1950,7 +1950,7 @@
 },
 {
 "name": "itypes",
-"repo": "http://github.com/tomchristie/itypes"
+"repo": "http://github.com/PavanTatikonda/itypes"
 },
 {
 "name": "sqlalchemy-utils",
@@ -1970,7 +1970,7 @@
 },
 {
 "name": "humanize",
-"repo": "http://github.com/jmoiron/humanize"
+"repo": "https://github.com/jmoiron/humanize"
 },
 {
 "name": "opt-einsum",
@@ -2038,7 +2038,7 @@
 },
 {
 "name": "semver",
-"repo": "https://github.com/k-bx/python-semver"
+"repo": "https://github.com/python-semver/python-semver"
 },
 {
 "name": "uptime",
@@ -2046,7 +2046,7 @@
 },
 {
 "name": "google-cloud-vision",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-vision"
 },
 {
 "name": "poyo",
@@ -2258,7 +2258,7 @@
 },
 {
 "name": "google-cloud-translate",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-translate"
 },
 {
 "name": "python-memcached",
@@ -2326,7 +2326,7 @@
 },
 {
 "name": "google-cloud-speech",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-speech"
 },
 {
 "name": "zope-deferredimport",
@@ -2366,7 +2366,7 @@
 },
 {
 "name": "altgraph",
-"repo": "https://bitbucket.org/ronaldoussoren/altgraph?status=new&status=open"
+"repo": "https://github.com/ronaldoussoren/altgraph"
 },
 {
 "name": "flower",
@@ -2466,7 +2466,7 @@
 },
 {
 "name": "google-cloud-dns",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-dns"
 },
 {
 "name": "parse-type",
@@ -2474,7 +2474,7 @@
 },
 {
 "name": "google-cloud-resource-manager",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-resource-manager"
 },
 {
 "name": "deprecation",
@@ -2490,7 +2490,7 @@
 },
 {
 "name": "google-cloud-videointelligence",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-videointelligence"
 },
 {
 "name": "qds-sdk",
@@ -2514,7 +2514,7 @@
 },
 {
 "name": "google-cloud-kms",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-kms"
 },
 {
 "name": "setuptools-git",
@@ -2626,7 +2626,7 @@
 },
 {
 "name": "google-cloud-container",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-container"
 },
 {
 "name": "flask-restplus",
@@ -2814,7 +2814,7 @@
 },
 {
 "name": "google-cloud-bigquery-datatransfer",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-bigquery-datatransfer"
 },
 {
 "name": "gcloud",
@@ -2942,7 +2942,7 @@
 },
 {
 "name": "jsonfield",
-"repo": "https://github.com/dmkoch/django-jsonfield"
+"repo": "https://github.com/rpkilby/jsonfield"
 },
 {
 "name": "async-generator",
@@ -3138,7 +3138,7 @@
 },
 {
 "name": "google-cloud-automl",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-automl"
 },
 {
 "name": "flask-marshmallow",
@@ -3218,7 +3218,7 @@
 },
 {
 "name": "google-cloud-dataproc",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-dataproc"
 },
 {
 "name": "django-timezone-field",
@@ -3418,7 +3418,7 @@
 },
 {
 "name": "cassandra-driver",
-"repo": "http://github.com/datastax/python-driver"
+"repo": "https://github.com/datastax/python-driver"
 },
 {
 "name": "vsts",
@@ -3610,7 +3610,7 @@
 },
 {
 "name": "google-cloud-tasks",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-tasks"
 },
 {
 "name": "mrjob",
@@ -3654,7 +3654,7 @@
 },
 {
 "name": "dparse",
-"repo": "https://github.com/jayfk/dparse"
+"repo": "https://github.com/pyupio/dparse"
 },
 {
 "name": "django-import-export",
@@ -3858,7 +3858,7 @@
 },
 {
 "name": "google-cloud-bigquery-storage",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-bigquery-storage"
 },
 {
 "name": "autograd",
@@ -3890,7 +3890,7 @@
 },
 {
 "name": "google-cloud-dlp",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-dlp"
 },
 {
 "name": "luigi",
@@ -3974,7 +3974,7 @@
 },
 {
 "name": "google-cloud-texttospeech",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-texttospeech"
 },
 {
 "name": "dictdiffer",
@@ -4110,7 +4110,7 @@
 },
 {
 "name": "google-cloud-iam",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-iam"
 },
 {
 "name": "resampy",
@@ -4230,7 +4230,7 @@
 },
 {
 "name": "google-cloud-asset",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-asset"
 },
 {
 "name": "ggplot",
@@ -4238,7 +4238,7 @@
 },
 {
 "name": "google-cloud-redis",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-redis"
 },
 {
 "name": "alpha-vantage",
@@ -4286,7 +4286,7 @@
 },
 {
 "name": "google-cloud-securitycenter",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-securitycenter"
 },
 {
 "name": "compatibility-lib",
@@ -4306,27 +4306,27 @@
 },
 {
 "name": "google-cloud-iot",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-iot"
 },
 {
 "name": "google-cloud-datacatalog",
-"repo": "https://github.com/googleapis/google-cloud-python"
+"repo": "https://github.com/googleapis/python-datacatalog"
 },
 {
 "name": "google-cloud-talent",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-talent"
 },
 {
 "name": "google-cloud-datalabeling",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-datalabeling"
 },
 {
 "name": "google-cloud-webrisk",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-webrisk"
 },
 {
 "name": "google-cloud-websecurityscanner",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/python-websecurityscanner"
 },
 {
 "name": "google-cloud-os-login",
@@ -4462,7 +4462,7 @@
 },
 {
 "name": "tensorflow-datasets",
-"repo": "http://github.com/tensorflow/datasets"
+"repo": "https://github.com/tensorflow/datasets"
 },
 {
 "name": "pmdarima",
@@ -4822,7 +4822,7 @@
 },
 {
 "name": "flasgger",
-"repo": "https://github.com/nicobatty/flasgger"
+"repo": "https://github.com/flasgger/flasgger"
 },
 {
 "name": "typeguard",
@@ -5146,7 +5146,7 @@
 },
 {
 "name": "python-gilt",
-"repo": "https://github.com/metacloud/gilt"
+"repo": "https://github.com/retr0h/gilt"
 },
 {
 "name": "stups-zign",
@@ -5190,7 +5190,7 @@
 },
 {
 "name": "fancycompleter",
-"repo": "http://bitbucket.org/antocuni/fancycompleter"
+"repo": "https://github.com/pdbpp/fancycompleter"
 },
 {
 "name": "httpbin",
@@ -5342,7 +5342,7 @@
 },
 {
 "name": "molecule",
-"repo": "https://github.com/ansible/molecule"
+"repo": "https://github.com/ansible-community/molecule"
 },
 {
 "name": "autoflake",
@@ -5466,7 +5466,7 @@
 },
 {
 "name": "psycogreen",
-"repo": "https://bitbucket.org/dvarrazzo/psycogreen"
+"repo": "https://github.com/psycopg/psycogreen"
 },
 {
 "name": "xarray",
@@ -5814,7 +5814,7 @@
 },
 {
 "name": "django-constance",
-"repo": "http://github.com/jazzband/django-constance"
+"repo": "https://github.com/jazzband/django-constance"
 },
 {
 "name": "us",
@@ -5886,7 +5886,7 @@
 },
 {
 "name": "category-encoders",
-"repo": "https://github.com/wdm0006/categorical_encoding"
+"repo": "https://github.com/scikit-learn-contrib/category_encoders"
 },
 {
 "name": "m2r",
@@ -6074,7 +6074,7 @@
 },
 {
 "name": "py2-ipaddress",
-"repo": "https://bitbucket.org/kwi/py2-ipaddress"
+"repo": "https://github.com/kwi-dk/py2-ipaddress"
 },
 {
 "name": "pandas-datareader",
@@ -6774,7 +6774,7 @@
 },
 {
 "name": "homeassistant",
-"repo": "https://github.com/home-assistant/home-assistant"
+"repo": "https://github.com/home-assistant/core"
 },
 {
 "name": "dfply",
@@ -7390,7 +7390,7 @@
 },
 {
 "name": "ptpython",
-"repo": "https://github.com/jonathanslenders/ptpython"
+"repo": "https://github.com/prompt-toolkit/ptpython"
 },
 {
 "name": "block-disposable-email",
@@ -8394,7 +8394,7 @@
 },
 {
 "name": "pyobjc-core",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "visdom",
@@ -8422,7 +8422,7 @@
 },
 {
 "name": "django-memoize",
-"repo": "https://github.com/tvavrys/django-memoize"
+"repo": "https://github.com/unhaggle/django-memoize"
 },
 {
 "name": "aspy-refactor-imports",
@@ -8554,7 +8554,7 @@
 },
 {
 "name": "pyobjc-framework-cocoa",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "gabbi",
@@ -8578,7 +8578,7 @@
 },
 {
 "name": "spinners",
-"repo": "https://github.com/ManrajGrover/py-spinners"
+"repo": "https://github.com/manrajgrover/py-spinners"
 },
 {
 "name": "infi-clickhouse-orm",
@@ -8746,7 +8746,7 @@
 },
 {
 "name": "marshmallow-objects",
-"repo": "https://github.com/SVilgelm/marshmallow-objects"
+"repo": "https://github.com/sv-tools/marshmallow-objects"
 },
 {
 "name": "tika",
@@ -9242,7 +9242,7 @@
 },
 {
 "name": "pynvim",
-"repo": "http://github.com/neovim/python-client"
+"repo": "http://github.com/neovim/pynvim"
 },
 {
 "name": "aiocache",
@@ -9994,7 +9994,7 @@
 },
 {
 "name": "django-colorfield",
-"repo": "https://github.com/jaredly/django-colorfield"
+"repo": "https://github.com/fabiocaccamo/django-colorfield"
 },
 {
 "name": "traces",
@@ -10406,7 +10406,7 @@
 },
 {
 "name": "pyobjc-framework-cfnetwork",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "requests-aws",
@@ -11198,7 +11198,7 @@
 },
 {
 "name": "pyobjc-framework-quartz",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "fritzconnection",
@@ -11470,7 +11470,7 @@
 },
 {
 "name": "django-push-notifications",
-"repo": "https://github.com/django-push-notifications/django-push-notifications"
+"repo": "https://github.com/jazzband/django-push-notifications"
 },
 {
 "name": "sprockets-dynamodb",
@@ -11566,7 +11566,7 @@
 },
 {
 "name": "albumentations",
-"repo": "https://github.com/albu/albumentations"
+"repo": "https://github.com/albumentations-team/albumentations"
 },
 {
 "name": "python-firebase",
@@ -11806,7 +11806,7 @@
 },
 {
 "name": "gino",
-"repo": "https://github.com/fantix/gino"
+"repo": "https://github.com/python-gino/gino"
 },
 {
 "name": "gapic-google-cloud-spanner-admin-instance-v1",
@@ -11898,7 +11898,7 @@
 },
 {
 "name": "pyld",
-"repo": "http://github.com/digitalbazaar/pyld"
+"repo": "https://github.com/digitalbazaar/pyld"
 },
 {
 "name": "interruptingcow",
@@ -12086,7 +12086,7 @@
 },
 {
 "name": "pytorch-lightning",
-"repo": "https://github.com/williamFalcon/pytorch-lightning"
+"repo": "https://github.com/PyTorchLightning/pytorch-lightning"
 },
 {
 "name": "markdownify",
@@ -12430,7 +12430,7 @@
 },
 {
 "name": "domain2idna",
-"repo": "https://github.com/funilrys/domain2idna"
+"repo": "https://github.com/PyFunceble/domain2idna"
 },
 {
 "name": "glog",
@@ -12982,7 +12982,7 @@
 },
 {
 "name": "instagramapi",
-"repo": "https://github.com/LevPasha/Instagram-API-python/"
+"repo": "https://github.com/LevPasha/Instagram-API-python"
 },
 {
 "name": "pymmh3",
@@ -13622,7 +13622,7 @@
 },
 {
 "name": "markdown-include",
-"repo": "https://github.com/cmacmackin/markdown-include/"
+"repo": "https://github.com/cmacmackin/markdown-include"
 },
 {
 "name": "pyobjc-framework-networkextension",
@@ -14274,7 +14274,7 @@
 },
 {
 "name": "django-lockdown",
-"repo": "https://github.com/Dunedan/django-lockdown/"
+"repo": "https://github.com/Dunedan/django-lockdown"
 },
 {
 "name": "pyobjc-framework-medialibrary",
@@ -14318,7 +14318,7 @@
 },
 {
 "name": "sphinx-autoapi",
-"repo": "http://github.com/rtfd/sphinx-autoapi"
+"repo": "http://github.com/readthedocs/sphinx-autoapi"
 },
 {
 "name": "cypari",
@@ -14686,7 +14686,7 @@
 },
 {
 "name": "pdoc3",
-"repo": "https://github.com/pdoc3/pdoc/"
+"repo": "https://github.com/pdoc3/pdoc"
 },
 {
 "name": "libmagic",
@@ -14894,7 +14894,7 @@
 },
 {
 "name": "doc-warden",
-"repo": "https://github.com/Azure/azure-sdk-tools/"
+"repo": "https://github.com/Azure/azure-sdk-tools"
 },
 {
 "name": "airtable-python-wrapper",
@@ -15198,7 +15198,7 @@
 },
 {
 "name": "gxformat2",
-"repo": "https://github.com/jmchilton/gxformat2"
+"repo": "https://github.com/galaxyproject/gxformat2"
 },
 {
 "name": "version-utils",
@@ -15218,7 +15218,7 @@
 },
 {
 "name": "python-status",
-"repo": "https://github.com/avinassh/status/"
+"repo": "https://github.com/avinassh/status"
 },
 {
 "name": "keras-layer-normalization",
@@ -15682,7 +15682,7 @@
 },
 {
 "name": "janus",
-"repo": "https://github.com/aio-libs/janus/"
+"repo": "https://github.com/aio-libs/janus"
 },
 {
 "name": "django-admin-autocomplete-filter",
@@ -15742,7 +15742,7 @@
 },
 {
 "name": "django-organizations",
-"repo": "https://github.com/bennylope/django-organizations/"
+"repo": "https://github.com/bennylope/django-organizations"
 },
 {
 "name": "status",
@@ -15874,7 +15874,7 @@
 },
 {
 "name": "opencensus-ext-azure",
-"repo": "https://github.com/census-instrumentation/opencensus-python/tree/master/contrib/opencensus-ext-azure"
+"repo": "https://github.com/census-instrumentation/opencensus-python"
 },
 {
 "name": "postgres",
@@ -16170,7 +16170,7 @@
 },
 {
 "name": "hap-python",
-"repo": "https://github.com/ikalchev/HAP-python/tree/master"
+"repo": "https://github.com/ikalchev/HAP-python"
 },
 {
 "name": "pynetbox",
@@ -18121,5 +18121,5 @@
 "repo": "https://github.com/twisted/txaws"
 }
 ],
-"last_update": "Sunday, 03 May 2020, 12:45:37 UTC"
+"last_update": "Sunday, 03 May 2020, 13:06:43 UTC"
 }
