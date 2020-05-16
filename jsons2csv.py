@@ -95,6 +95,11 @@ def make_chart(data, index, project_name, no_show):
         year, month = year_month.split("-")
         if year == last_year:
             x_labels.append(month)
+            # if month in ["04", "07", "10"]:
+            # if month in ["03", "05", "07", "09", "11"]:
+            #     x_labels.append(month)
+            # else:
+            #     x_labels.append("")
         else:
             x_labels.append(year_month)
             last_year = year
@@ -146,11 +151,11 @@ def make_chart(data, index, project_name, no_show):
         plt.show()
 
 
-def remove_from_list(items, l):
+def remove_from_list(items, the_list):
     for item in items:
-        if item in l:
-            l.remove(item)
-    return l
+        if item in the_list:
+            the_list.remove(item)
+    return the_list
 
 
 def main():

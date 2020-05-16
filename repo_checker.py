@@ -36,7 +36,7 @@ from termcolor import colored  # pip install termcolor
 from top_repos import get_top_packages, load_from_file
 
 CLONE_ROOT = Path.home() / "checked_repos"
-DEFAULT_CMD = f"flake8 --exclude six.py --extend-ignore C90 --select YTT1 CLONE_DIR"
+DEFAULT_CMD = "flake8 --exclude six.py --extend-ignore C90 --select YTT1 CLONE_DIR"
 
 
 def create_dir(directory):

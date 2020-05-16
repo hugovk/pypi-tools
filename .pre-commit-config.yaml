@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/asottile/pyupgrade
-    rev: v2.1.0
+    rev: v2.4.1
     hooks:
       - id: pyupgrade
         args: ["--py36-plus"]
@@ -15,13 +15,13 @@ repos:
         types: []
 
   - repo: https://gitlab.com/pycqa/flake8
-    rev: 3.7.9
+    rev: 3.8.1
     hooks:
       - id: flake8
         additional_dependencies: [flake8-2020, flake8-implicit-str-concat]
 
   - repo: https://github.com/asottile/seed-isort-config
-    rev: v2.1.0
+    rev: v2.1.1
     hooks:
       - id: seed-isort-config
 
@@ -37,7 +37,7 @@ repos:
       - id: python-check-blanket-noqa
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.5.0
+    rev: v3.0.0
     hooks:
       - id: check-merge-conflict
       - id: check-json
