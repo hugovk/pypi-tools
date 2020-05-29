@@ -5,6 +5,7 @@ natsort
 numpy
 packaging
 pandas
+pypidb
 pypinfo
 pytablewriter
 python-dateutil
