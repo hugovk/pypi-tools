@@ -34,17 +34,17 @@ HTTP client
 
 ![](images/pip-install-urllib3.png)
 
-### [pip](https://github.com/pypa/pip)
-
-The package installer
-
-![](images/pip-install-pip.png)
-
 ### [six](https://github.com/benjaminp/six)
 
 Python 2 and 3 compatibility library
 
 ![](images/pip-install-six.png)
+
+### [pip](https://github.com/pypa/pip)
+
+The package installer
+
+![](images/pip-install-pip.png)
 
 ### [Requests](https://github.com/psf/requests)
 
@@ -56,19 +56,19 @@ HTTP library
 
 Scientific computing library
 
-!["Chart showing pip installs for Python 3 increasing from under 20% to around 55%"](images/pip-install-numpy.png)
-
-### [pytest](https://github.com/pytest-dev/pytest)
-
-Testing framework
-
-![](images/pip-install-pytest.png)
+![](images/pip-install-numpy.png)
 
 ### [pandas](https://github.com/pandas-dev/pandas)
 
 Data analysis toolkit
 
 ![](images/pip-install-pandas.png)
+
+### [pytest](https://github.com/pytest-dev/pytest)
+
+Testing framework
+
+![](images/pip-install-pytest.png)
 
 ### [SciPy](https://github.com/scipy/scipy)
 
@@ -94,29 +94,29 @@ Imaging library
 
 ![](images/pip-install-matplotlib.png)
 
-### [Django](https://github.com/python-pillow/Pillow)
-
-Web framework
-
-!["Chart showing pip installs for Python 3 increasing from under 30% to around 65%"](images/pip-install-django.png)
-
 ### [Flake8](https://gitlab.com/pycqa/flake8)
 
 Linter
 
 ![](images/pip-install-flake8.png)
 
-### [Pylint](https://github.com/PyCQA/pylint/)
+### [Django](https://github.com/python-pillow/Pillow)
 
-Linter
+Web framework
 
-![](images/pip-install-pylint.png)
+!["Chart showing pip installs for Python 3 increasing from under 30% to around 65%"](images/pip-install-django.png)
 
 ### [TensorFlow](https://github.com/tensorflow/tensorflow/)
 
 Machine learning library
 
 ![](images/pip-install-tensorflow.png)
+
+### [Pylint](https://github.com/PyCQA/pylint/)
+
+Linter
+
+![](images/pip-install-pylint.png)
 
 <!--
 ### [pylast](https://github.com/pylast/pylast)
