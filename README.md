@@ -26,7 +26,13 @@ in a spreadsheet, and can generate a chart using Matplotlib.
 Here the pip installs for all packages from the Python Package Index (PyPI),
 from January 2016 onwards:
 
-![Chart showing pip installs for Python 3 increasing from under 10% to around 35%](images/pip-install-all.png)
+![](images/pip-install-all.png)
+
+### [urllib3](https://github.com/urllib3/urllib3)
+
+HTTP client
+
+![](images/pip-install-urllib3.png)
 
 ### [pip](https://github.com/pypa/pip)
 
