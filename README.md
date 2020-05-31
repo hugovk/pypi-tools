@@ -52,6 +52,12 @@ HTTP library
 
 ![](images/pip-install-requests.png)
 
+### [setuptools](https://github.com/pypa/setuptools)
+
+Build system
+
+![](images/pip-install-setuptools.png)
+
 ### [NumPy](https://github.com/numpy/numpy)
 
 Scientific computing library
