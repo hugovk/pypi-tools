@@ -135,8 +135,9 @@ def make_chart(data, index, project_name, no_show):
     )
 
     if project_name:
-        title = "{}'s pip installs from PyPI over time, by Python version".format(
-            project_name
+        s = "" if project_name.endswith("s") else "s"
+        title = (
+            f"{project_name}’{s} pip installs from PyPI over time, by Python version"
         )
     else:
         title = "pip installs from PyPI over time, by Python version"
