@@ -100,6 +100,12 @@ Imaging library
 
 ![](images/pip-install-matplotlib.png)
 
+### [pycodestyle](https://github.com/PyCQA/pycodestyle)
+
+Style checker
+
+![](images/pip-install-pycodestyle.png)
+
 ### [Flake8](https://gitlab.com/pycqa/flake8)
 
 Linter
