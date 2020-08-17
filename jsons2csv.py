@@ -53,7 +53,7 @@ def dopplr(name):
 
 
 # https://python-graph-gallery.com/255-percentage-stacked-area-chart/
-def make_chart(data, index, project_name, no_show):
+def make_chart(data, index, project_name, no_show, quiet):
 
     grand_total_downloads = 0
     for version in data:
@@ -74,7 +74,8 @@ def make_chart(data, index, project_name, no_show):
     # Use a hash function to always use the same colour for each version number,
     # regardless of which versions are present in this data
     colors = [dopplr(s) for s in labels]
-    print(colors)
+    if not quiet:
+        print(colors)
 
     # Make the plot
     plt.stackplot(index, data_perc.T, labels=labels, colors=colors)
@@ -168,6 +169,7 @@ def main():
     parser.add_argument(
         "-ns", "--no-show", action="store_true", help="Don't show the chart"
     )
+    parser.add_argument("-q", "--quiet", action="store_true", help="Show less output")
     args = parser.parse_args()
 
     all_data = []
@@ -183,7 +185,8 @@ def main():
     for f in files:
         # Get the yyyy-dd from the filename
         month_name = "".join(re.findall(r"\d{4}-\d{2}", f))
-        print(f, month_name)
+        if not args.quiet:
+            print(f, month_name)
         with open(f) as json_data:
             try:
                 d = json.load(json_data)
@@ -218,7 +221,8 @@ def main():
         all_data.append(month_data)
 
     # pprint(all_data)
-    pprint(all_versions)
+    if not args.quiet:
+        pprint(all_versions)
     all_versions = natsorted(all_versions)
 
     f = csv.writer(open(os.path.join("data", "pypi-trends.csv"), "w+"))
@@ -247,7 +251,7 @@ def main():
                 downloads = month_data.get(version, 0)
                 data[version].append(downloads)
 
-        make_chart(data, index, inspec_to_name(args.inspec), args.no_show)
+        make_chart(data, index, inspec_to_name(args.inspec), args.no_show, args.quiet)
 
 
 if __name__ == "__main__":
