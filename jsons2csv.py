@@ -160,22 +160,11 @@ def remove_from_list(items, the_list):
     return the_list
 
 
-def main():
-    parser = argparse.ArgumentParser(
-        description=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter
-    )
-    parser.add_argument("-i", "--inspec", default="data/*.json", help="Input file spec")
-    parser.add_argument("-c", "--chart", action="store_true", help="Create a chart")
-    parser.add_argument(
-        "-ns", "--no-show", action="store_true", help="Don't show the chart"
-    )
-    parser.add_argument("-q", "--quiet", action="store_true", help="Show less output")
-    args = parser.parse_args()
-
+def load_data_from_json(inspec, quiet):
     all_data = []
     all_versions = set()
 
-    files = glob.glob(args.inspec)
+    files = glob.glob(inspec)
     files = sorted(files)
     # Skip data for top_repos.py
     files = remove_from_list(
@@ -185,7 +174,7 @@ def main():
     for f in files:
         # Get the yyyy-dd from the filename
         month_name = "".join(re.findall(r"\d{4}-\d{2}", f))
-        if not args.quiet:
+        if not quiet:
             print(f, month_name)
         with open(f) as json_data:
             try:
@@ -221,9 +210,26 @@ def main():
         all_data.append(month_data)
 
     # pprint(all_data)
-    if not args.quiet:
+    if not quiet:
         pprint(all_versions)
     all_versions = natsorted(all_versions)
+
+    return all_data, all_versions
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter
+    )
+    parser.add_argument("-i", "--inspec", default="data/*.json", help="Input file spec")
+    parser.add_argument("-c", "--chart", action="store_true", help="Create a chart")
+    parser.add_argument(
+        "-ns", "--no-show", action="store_true", help="Don't show the chart"
+    )
+    parser.add_argument("-q", "--quiet", action="store_true", help="Show less output")
+    args = parser.parse_args()
+
+    all_data, all_versions = load_data_from_json(args.inspec, args.quiet)
 
     f = csv.writer(open(os.path.join("data", "pypi-trends.csv"), "w+"))
     # f.writerow(["", "Python version"])
