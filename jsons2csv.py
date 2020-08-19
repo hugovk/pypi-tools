@@ -160,7 +160,7 @@ def remove_from_list(items, the_list):
     return the_list
 
 
-def load_data_from_json(inspec, quiet):
+def load_data_from_json(inspec, quiet=True):
     all_data = []
     all_versions = set()
 
@@ -209,7 +209,6 @@ def load_data_from_json(inspec, quiet):
                 all_versions.add(base_version)
         all_data.append(month_data)
 
-    # pprint(all_data)
     if not quiet:
         pprint(all_versions)
     all_versions = natsorted(all_versions)

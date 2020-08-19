@@ -28,17 +28,18 @@ from January 2016 onwards:
 
 ![](images/all.png)
 
-### [urllib3](https://github.com/urllib3/urllib3)
-
-HTTP client
-
-![](images/urllib3.png)
-
+[start_generated]: # (start_generated)
 ### [six](https://github.com/benjaminp/six)
 
 Python 2 and 3 compatibility library
 
 ![](images/six.png)
+
+### [urllib3](https://github.com/urllib3/urllib3)
+
+HTTP client
+
+![](images/urllib3.png)
 
 ### [pip](https://github.com/pypa/pip)
 
@@ -92,7 +93,7 @@ Code coverage testing
 
 Imaging library
 
-!["Chart showing pip installs for Python 3 increasing from under 20% to around 55%"](images/pillow.png)
+![](images/pillow.png)
 
 ### [Matplotlib](https://github.com/matplotlib/matplotlib)
 
@@ -112,17 +113,17 @@ Linter
 
 ![](images/flake8.png)
 
-### [Django](https://github.com/python-pillow/Pillow)
-
-Web framework
-
-!["Chart showing pip installs for Python 3 increasing from under 30% to around 65%"](images/django.png)
-
 ### [TensorFlow](https://github.com/tensorflow/tensorflow/)
 
 Machine learning library
 
 ![](images/tensorflow.png)
+
+### [Django](https://github.com/python-pillow/Pillow)
+
+Web framework
+
+![](images/django.png)
 
 ### [Pylint](https://github.com/PyCQA/pylint/)
 
@@ -130,13 +131,19 @@ Linter
 
 ![](images/pylint.png)
 
-<!--
+### [ujson](https://github.com/ultrajson/ultrajson/)
+
+JSON decoder and encoder
+
+![](images/ujson.png)
+
 ### [pylast](https://github.com/pylast/pylast)
 
 Interface to Last.fm
 
-!["Chart showing pip installs for Python 3 increasing from under 20% to over 50%"](images/pylast.png)
--->
+![](images/pylast.png)
+
+[end_generated]: # (end_generated)
 
 ### See also
 
