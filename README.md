@@ -26,116 +26,116 @@ in a spreadsheet, and can generate a chart using Matplotlib.
 Here the pip installs for all packages from the Python Package Index (PyPI),
 from January 2016 onwards:
 
-![](images/pip-install-all.png)
+![](images/all.png)
 
 ### [urllib3](https://github.com/urllib3/urllib3)
 
 HTTP client
 
-![](images/pip-install-urllib3.png)
+![](images/urllib3.png)
 
 ### [six](https://github.com/benjaminp/six)
 
 Python 2 and 3 compatibility library
 
-![](images/pip-install-six.png)
+![](images/six.png)
 
 ### [pip](https://github.com/pypa/pip)
 
 The package installer
 
-![](images/pip-install-pip.png)
+![](images/pip.png)
 
 ### [Requests](https://github.com/psf/requests)
 
 HTTP library
 
-![](images/pip-install-requests.png)
+![](images/requests.png)
 
 ### [setuptools](https://github.com/pypa/setuptools)
 
 Build system
 
-![](images/pip-install-setuptools.png)
+![](images/setuptools.png)
 
 ### [NumPy](https://github.com/numpy/numpy)
 
 Scientific computing library
 
-![](images/pip-install-numpy.png)
+![](images/numpy.png)
 
 ### [pandas](https://github.com/pandas-dev/pandas)
 
 Data analysis toolkit
 
-![](images/pip-install-pandas.png)
+![](images/pandas.png)
 
 ### [pytest](https://github.com/pytest-dev/pytest)
 
 Testing framework
 
-![](images/pip-install-pytest.png)
+![](images/pytest.png)
 
 ### [SciPy](https://github.com/scipy/scipy)
 
 For mathematics, science, and engineering
 
-![](images/pip-install-scipy.png)
+![](images/scipy.png)
 
 ### [Coverage.py](https://github.com/nedbat/coveragepy)
 
 Code coverage testing
 
-![](images/pip-install-coverage.png)
+![](images/coverage.png)
 
 ### [Pillow](https://github.com/python-pillow/Pillow)
 
 Imaging library
 
-!["Chart showing pip installs for Python 3 increasing from under 20% to around 55%"](images/pip-install-pillow.png)
+!["Chart showing pip installs for Python 3 increasing from under 20% to around 55%"](images/pillow.png)
 
 ### [Matplotlib](https://github.com/matplotlib/matplotlib)
 
 2D plotting library
 
-![](images/pip-install-matplotlib.png)
+![](images/matplotlib.png)
 
 ### [pycodestyle](https://github.com/PyCQA/pycodestyle)
 
 Style checker
 
-![](images/pip-install-pycodestyle.png)
+![](images/pycodestyle.png)
 
 ### [Flake8](https://gitlab.com/pycqa/flake8)
 
 Linter
 
-![](images/pip-install-flake8.png)
+![](images/flake8.png)
 
 ### [Django](https://github.com/python-pillow/Pillow)
 
 Web framework
 
-!["Chart showing pip installs for Python 3 increasing from under 30% to around 65%"](images/pip-install-django.png)
+!["Chart showing pip installs for Python 3 increasing from under 30% to around 65%"](images/django.png)
 
 ### [TensorFlow](https://github.com/tensorflow/tensorflow/)
 
 Machine learning library
 
-![](images/pip-install-tensorflow.png)
+![](images/tensorflow.png)
 
 ### [Pylint](https://github.com/PyCQA/pylint/)
 
 Linter
 
-![](images/pip-install-pylint.png)
+![](images/pylint.png)
 
 <!--
 ### [pylast](https://github.com/pylast/pylast)
 
 Interface to Last.fm
 
-!["Chart showing pip installs for Python 3 increasing from under 20% to over 50%"](images/pip-install-pylast.png)
+!["Chart showing pip installs for Python 3 increasing from under 20% to over 50%"](images/pylast.png)
 -->
 
 ### See also
