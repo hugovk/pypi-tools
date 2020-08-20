@@ -15,6 +15,7 @@ import argparse
 import csv
 import glob
 import json
+import sys
 from collections import OrderedDict
 from distutils.version import LooseVersion
 
@@ -45,6 +46,9 @@ def main():
 
     files = glob.glob(args.inspec)
     files = sorted(files)
+
+    if len(files) == 0:
+        sys.exit("No files matching " + args.inspec)
 
     for f in files:
         print(f)
