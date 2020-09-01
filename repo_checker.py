@@ -19,11 +19,12 @@ Start by:
 wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages-30-days.min.json -O \
     data/top-pypi-packages.json
 
-$ python3 repo_checker.py
-$ python3 repo_checker.py --number 10
-$ python3 repo_checker.py --number 10 --skip-existing
-$ python3 repo_checker.py --number 10 --command "git -C CLONE_DIR pull"
-$ python3 repo_checker.py --number 10 -c "flake8 --select XYZ CLONE_DIR" --repos "foo"
+python3 repo_checker.py
+python3 repo_checker.py --number 10
+python3 repo_checker.py --number 10 --skip-existing
+python3 repo_checker.py --number 10 --command "git -C CLONE_DIR pull"
+python3 repo_checker.py --number 10 -c "flake8 --select XYZ CLONE_DIR" --repos "foo"
+python3 repo_checker.py  -c "grep -r cElementTree CLONE_DIR" --flip-error --number 900 --start 830
 """
 import argparse
 import os
@@ -60,12 +61,22 @@ def recursive_find(inspec):
     return matches
 
 
-def do_cmd(cmd, check_return=True):
+def do_cmd(cmd, check_return=True, flip_error=False):
     print(cmd)
-    result = subprocess.run(cmd.split())
+    result = subprocess.run(cmd.split(), capture_output=True, text=True)
+    if flip_error:
+        result.returncode = 1 if result.returncode == 0 else 0
+
+    print(result.stdout)
     colour = "green" if result.returncode == 0 else "red"
+    print(colored(result.stderr, colour))
     print(colored(f"  return code: {result.returncode}", colour))
+
     if check_return:
+        if "Mercurial (hg) is required to use this repository." in result.stderr:
+            return "Hg"
+        elif "fatal: repository" in result.stderr and "not found" in result.stderr:
+            return "not found"
         result.check_returncode()
 
 
@@ -86,13 +97,19 @@ def main():
         "-n", "--number", type=int, default=10, help="Max number to check"
     )
     parser.add_argument(
+        "--start", type=int, default=1, help="Repo number to begin with"
+    )
+    parser.add_argument(
         "-c",
         "--command",
         default=DEFAULT_CMD,
         help='Command to run to test a repo. "CLONE_DIR" will be filled in.',
     )
     parser.add_argument(
-        "-r", "--repos", nargs="+", help="Skip these repos",
+        "-r",
+        "--repos",
+        nargs="+",
+        help="Skip these repos",
     )
     parser.add_argument(
         "-s",
@@ -104,6 +121,11 @@ def main():
         "--ignore-error",
         action="store_true",
         help="Continue to next repo, even if the command returned an error",
+    )
+    parser.add_argument(
+        "--flip-error",
+        action="store_true",
+        help="Invert error code from the command",
     )
     args = parser.parse_args()
 
@@ -122,6 +144,8 @@ def main():
     create_dir(CLONE_ROOT)
 
     for i, package in enumerate(packages_todo):
+        if args.start > i + 1:
+            continue
         name = package["name"]
         try:
             repo_url = repos[name]
@@ -133,17 +157,23 @@ def main():
         clone_dir = CLONE_ROOT / repo_url_dir_name(repo_url)
 
         # Skip cloning these
-        if name in [
-            "aenum",  # Hg
-            "backports-ssl-match-hostname",  # Hg
-            "enum34",  # Hg
-            "et-xmlfile",  # Hg
-            "iso8601",  # Hg
-            "openpyxl",  # Hg
-            "pbr",  # redirect not a repo
-            "ruamel-yaml",  # Hg
-            "ruamel-yaml-clib",  # Hg
-        ]:
+        if (
+            name
+            in [
+                "cffi",  # https://foss.heptapod.net/users/sign_in
+                "hyperopt",  # not found
+                "launcher",  # not found
+                "pbr",  # redirect not a repo
+                "pypdf2",  # not found
+                "ruamel-ordereddict",  # not found
+                "spotinst-agent",  # not found
+            ]
+            or name.startswith("moz")  # not found
+            or "code.google.com" in repo_url
+            or "launchpad.net" in repo_url
+            or "http://numba.github.com" == repo_url
+            or "sourceforge.net" in repo_url
+        ):
             print(colored("  Skipping Hg and uncloneable links", "yellow"))
             continue
         elif os.path.isdir(clone_dir):
@@ -152,15 +182,13 @@ def main():
                 continue
         else:
             cmd = f"git clone --depth 1 {repo_url} {clone_dir}"
-            do_cmd(cmd)
-
-        # Skip scanning these
-        if args.repos and name in args.repos:
-            continue
+            ret = do_cmd(cmd)
+            if ret in ["Hg", "not found"]:
+                continue
 
         cmd = f"{args.command}"
         cmd = cmd.replace("CLONE_DIR", str(clone_dir))
-        do_cmd(cmd, not args.ignore_error)
+        do_cmd(cmd, not args.ignore_error, args.flip_error)
 
 
 if __name__ == "__main__":
