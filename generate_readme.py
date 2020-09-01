@@ -6,6 +6,8 @@ import argparse
 import glob
 from pprint import pprint
 
+from termcolor import colored  # pip install termcolor
+
 from jsons2csv import load_data_from_json
 
 # Only need name if different from project
@@ -141,11 +143,6 @@ def main():
     parser.add_argument(
         "-i", "--inspec", default="images/*.png", help="Input file spec"
     )
-    parser.add_argument("-c", "--chart", action="store_true", help="Create a chart")
-    parser.add_argument(
-        "-ns", "--no-show", action="store_true", help="Don't show the chart"
-    )
-    parser.add_argument("-q", "--quiet", action="store_true", help="Show less output")
     args = parser.parse_args()
 
     images = glob.glob(args.inspec)
@@ -181,8 +178,14 @@ def main():
         try:
             name = DETAILS[project]["name"]
         except KeyError:
+            # No spelling/case difference for project name
             name = project
-        url = DETAILS[project]["url"]
+        try:
+            url = DETAILS[project]["url"]
+        except KeyError:
+            # New project not yet added to DETAILS
+            print(colored(f"{project} not found in DETAILS, skipping", "yellow"))
+            continue
         description = DETAILS[project]["description"]
 
         new = f"""

@@ -29,17 +29,17 @@ from January 2016 onwards:
 ![](images/all.png)
 
 [start_generated]: # (start_generated)
-### [six](https://github.com/benjaminp/six)
-
-Python 2 and 3 compatibility library
-
-![](images/six.png)
-
 ### [urllib3](https://github.com/urllib3/urllib3)
 
 HTTP client
 
 ![](images/urllib3.png)
+
+### [six](https://github.com/benjaminp/six)
+
+Python 2 and 3 compatibility library
+
+![](images/six.png)
 
 ### [pip](https://github.com/pypa/pip)
 
@@ -107,17 +107,17 @@ Style checker
 
 ![](images/pycodestyle.png)
 
-### [Flake8](https://gitlab.com/pycqa/flake8)
-
-Linter
-
-![](images/flake8.png)
-
 ### [TensorFlow](https://github.com/tensorflow/tensorflow/)
 
 Machine learning library
 
 ![](images/tensorflow.png)
+
+### [Flake8](https://gitlab.com/pycqa/flake8)
+
+Linter
+
+![](images/flake8.png)
 
 ### [Django](https://github.com/python-pillow/Pillow)
 
@@ -125,17 +125,17 @@ Web framework
 
 ![](images/django.png)
 
-### [Pylint](https://github.com/PyCQA/pylint/)
-
-Linter
-
-![](images/pylint.png)
-
 ### [ujson](https://github.com/ultrajson/ultrajson/)
 
 JSON decoder and encoder
 
 ![](images/ujson.png)
+
+### [Pylint](https://github.com/PyCQA/pylint/)
+
+Linter
+
+![](images/pylint.png)
 
 ### [pylast](https://github.com/pylast/pylast)
 
