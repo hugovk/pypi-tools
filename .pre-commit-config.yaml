@@ -6,7 +6,7 @@ repos:
         args: ["--py36-plus"]
 
   - repo: https://github.com/psf/black
-    rev: 19.10b0
+    rev: 20.8b1
     hooks:
       - id: black
         args: ["--target-version", "py36"]
@@ -20,10 +20,10 @@ repos:
       - id: flake8
         additional_dependencies: [flake8-2020, flake8-implicit-str-concat]
 
-  - repo: https://github.com/asottile/seed-isort-config
-    rev: v2.2.0
+  - repo: https://github.com/timothycrosley/isort
+    rev: 5.4.2
     hooks:
-      - id: seed-isort-config
+      - id: isort
 
   - repo: https://github.com/pre-commit/pygrep-hooks
     rev: v1.6.0

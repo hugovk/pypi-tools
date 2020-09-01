@@ -6,7 +6,10 @@ import source_finder
 @pytest.mark.parametrize(
     "test_input, expected",
     [
-        (None, None,),
+        (
+            None,
+            None,
+        ),
         (
             "https://github.com/agronholm/pythonfutures",
             "https://github.com/agronholm/pythonfutures",

@@ -24,7 +24,8 @@ python3 repo_checker.py --number 10
 python3 repo_checker.py --number 10 --skip-existing
 python3 repo_checker.py --number 10 --command "git -C CLONE_DIR pull"
 python3 repo_checker.py --number 10 -c "flake8 --select XYZ CLONE_DIR" --repos "foo"
-python3 repo_checker.py  -c "grep -r cElementTree CLONE_DIR" --flip-error --number 900 --start 830
+python3 repo_checker.py  -c "grep -r cElementTree CLONE_DIR" --flip-error --number 900 \
+    --start 830
 """
 import argparse
 import os

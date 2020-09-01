@@ -9,26 +9,26 @@ import top_repos
         # Example of repo found and updated
         (
             [
-                {"name": "name1", "repo": "https://github.com/repo/1",},
-                {"name": "name2", "repo": "https://github.com/repo/2",},
-                {"name": "name3", "repo": "https://github.com/repo/3",},
+                {"name": "name1", "repo": "https://github.com/repo/1"},
+                {"name": "name2", "repo": "https://github.com/repo/2"},
+                {"name": "name3", "repo": "https://github.com/repo/3"},
             ],
             [
-                {"name": "name1", "repo": "https://github.com/repo/1",},
-                {"name": "name2", "repo": "https://github.com/repo/new",},
-                {"name": "name3", "repo": "https://github.com/repo/3",},
+                {"name": "name1", "repo": "https://github.com/repo/1"},
+                {"name": "name2", "repo": "https://github.com/repo/new"},
+                {"name": "name3", "repo": "https://github.com/repo/3"},
             ],
             1,
         ),
         # Example of repo not found so not updated
         (
             [
-                {"name": "name1", "repo": "https://github.com/repo/1",},
-                {"name": "name3", "repo": "https://github.com/repo/3",},
+                {"name": "name1", "repo": "https://github.com/repo/1"},
+                {"name": "name3", "repo": "https://github.com/repo/3"},
             ],
             [
-                {"name": "name1", "repo": "https://github.com/repo/1",},
-                {"name": "name3", "repo": "https://github.com/repo/3",},
+                {"name": "name1", "repo": "https://github.com/repo/1"},
+                {"name": "name3", "repo": "https://github.com/repo/3"},
             ],
             0,
         ),
