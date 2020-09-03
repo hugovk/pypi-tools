@@ -187,7 +187,13 @@ def main():
                 print_color(f"  {outfile}", "green")
                 greens += 1
             else:
-                print_color(output.splitlines()[-1], "red")
+                error = output.splitlines()[-1]
+                for line in output.splitlines():
+                    if "google.api_core.exceptions" in line:
+                        error = line
+                        break
+                print_color(error, "red")
+
                 reds += 1
                 if os.path.getsize(outfile) == 0:
                     os.remove(outfile)
