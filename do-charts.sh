@@ -1,25 +1,33 @@
 #!/usr/bin/env bash
 
 python3 jsons2csv.py --chart --no-show -i "data/20*.json"
-python3 jsons2csv.py --chart --no-show -i "data/coverage*.json"
-python3 jsons2csv.py --chart --no-show -i "data/django*.json"
-python3 jsons2csv.py --chart --no-show -i "data/flake8*.json"
-python3 jsons2csv.py --chart --no-show -i "data/matplotlib*.json"
-python3 jsons2csv.py --chart --no-show -i "data/numpy*.json"
-python3 jsons2csv.py --chart --no-show -i "data/pandas*.json"
-python3 jsons2csv.py --chart --no-show -i "data/pillow*.json"
-python3 jsons2csv.py --chart --no-show -i "data/pip*.json"
-python3 jsons2csv.py --chart --no-show -i "data/pycodestyle*.json"
-python3 jsons2csv.py --chart --no-show -i "data/pylast*.json"
-python3 jsons2csv.py --chart --no-show -i "data/pylint*.json"
-python3 jsons2csv.py --chart --no-show -i "data/pytest*.json"
-python3 jsons2csv.py --chart --no-show -i "data/requests*.json"
-python3 jsons2csv.py --chart --no-show -i "data/scipy*.json"
-python3 jsons2csv.py --chart --no-show -i "data/setuptools*.json"
-python3 jsons2csv.py --chart --no-show -i "data/six*.json"
-python3 jsons2csv.py --chart --no-show -i "data/tensorflow*.json"
-python3 jsons2csv.py --chart --no-show -i "data/tqdm*.json"
-python3 jsons2csv.py --chart --no-show -i "data/ujson*.json"
-python3 jsons2csv.py --chart --no-show -i "data/urllib3*.json"
+python3 jsons2csv.py --chart --no-show -p coverage
+python3 jsons2csv.py --chart --no-show -p django
+python3 jsons2csv.py --chart --no-show -p flake8
+python3 jsons2csv.py --chart --no-show -p matplotlib
+python3 jsons2csv.py --chart --no-show -p numpy
+python3 jsons2csv.py --chart --no-show -p pandas
+python3 jsons2csv.py --chart --no-show -p pillow
+python3 jsons2csv.py --chart --no-show -p pip
+python3 jsons2csv.py --chart --no-show -p pycodestyle
+python3 jsons2csv.py --chart --no-show -p pylast
+python3 jsons2csv.py --chart --no-show -p pylint
+python3 jsons2csv.py --chart --no-show -p pytest
+python3 jsons2csv.py --chart --no-show -p requests
+python3 jsons2csv.py --chart --no-show -p scipy
+python3 jsons2csv.py --chart --no-show -p setuptools
+python3 jsons2csv.py --chart --no-show -p six
+python3 jsons2csv.py --chart --no-show -p tensorflow
+python3 jsons2csv.py --chart --no-show -p tqdm
+python3 jsons2csv.py --chart --no-show -p ujson
+python3 jsons2csv.py --chart --no-show -p urllib3
+
+python3 jsons2csv.py --chart --no-show -p attrs
+python3 jsons2csv.py --chart --no-show -p black
+python3 jsons2csv.py --chart --no-show -p humanize
+python3 jsons2csv.py --chart --no-show -p python-dateutil
+python3 jsons2csv.py --chart --no-show -p pytz
+python3 jsons2csv.py --chart --no-show -p scikit-learn
+python3 jsons2csv.py --chart --no-show -p wheel
 
 open images/*.png

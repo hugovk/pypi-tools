@@ -32,6 +32,7 @@ python3 pypi-trends.py -p tqdm
 python3 pypi-trends.py --pypistats -p attrs
 python3 pypi-trends.py --pypistats -p black
 python3 pypi-trends.py --pypistats -p humanize
+python3 pypi-trends.py --pypistats -p prettytable
 python3 pypi-trends.py --pypistats -p python-dateutil
 python3 pypi-trends.py --pypistats -p pytz
 python3 pypi-trends.py --pypistats -p scikit-learn

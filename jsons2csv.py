@@ -221,12 +221,18 @@ def main():
         description=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
     parser.add_argument("-i", "--inspec", default="data/*.json", help="Input file spec")
+    parser.add_argument(
+        "-p", "--project", help='Project; shortcut for -i "data/project*.json"'
+    )
     parser.add_argument("-c", "--chart", action="store_true", help="Create a chart")
     parser.add_argument(
         "-ns", "--no-show", action="store_true", help="Don't show the chart"
     )
     parser.add_argument("-q", "--quiet", action="store_true", help="Show less output")
     args = parser.parse_args()
+
+    if args.project:
+        args.inspec = f"data/{args.project}*.json"
 
     all_data, all_versions = load_data_from_json(args.inspec, args.quiet)
 
