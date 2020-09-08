@@ -6,7 +6,7 @@ import argparse
 import glob
 from pprint import pprint
 
-from termcolor import colored  # pip install termcolor
+from termcolor import cprint  # pip install termcolor
 
 from jsons2csv import load_data_from_json
 
@@ -184,7 +184,7 @@ def main():
             url = DETAILS[project]["url"]
         except KeyError:
             # New project not yet added to DETAILS
-            print(colored(f"{project} not found in DETAILS, skipping", "yellow"))
+            cprint(f"{project} not found in DETAILS, skipping", "yellow")
             continue
         description = DETAILS[project]["description"]
 

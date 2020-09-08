@@ -15,7 +15,7 @@ from pprint import pprint
 
 from natsort import natsorted  # pip install natsort
 from packaging.version import parse  # pip install packaging
-from termcolor import colored  # pip install termcolor
+from termcolor import cprint  # pip install termcolor
 
 
 # https://stackoverflow.com/a/5734564/724176
@@ -147,7 +147,7 @@ def make_chart(data, index, project_name, no_show, quiet):
     plt.title(f"{grand_total_downloads:,d} total downloads", fontsize=10)
 
     outfile = f"images/{project_name}.png"
-    print(colored(outfile, "green"))
+    cprint(outfile, "green")
     plt.savefig(outfile, dpi=96 * 2.5)
     if not no_show:
         plt.show()
@@ -180,8 +180,8 @@ def load_data_from_json(inspec, quiet=True):
             try:
                 d = json.load(json_data)
             except json.decoder.JSONDecodeError as e:
-                print(colored(traceback.format_exc(), "red"))
-                print(colored(f"Skipping {f}: {e}", "yellow"))
+                cprint(traceback.format_exc(), "red")
+                cprint(f"Skipping {f}: {e}", "yellow")
                 continue
             # pprint(d)
             month_data = defaultdict(int)

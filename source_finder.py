@@ -22,7 +22,7 @@ from urllib.parse import urlparse
 import httpx  # pip install httpx
 from appdirs import user_cache_dir  # pip install appdirs
 from slugify import slugify  # pip install python-slugify
-from termcolor import colored  # pip install termcolor
+from termcolor import colored, cprint  # pip install termcolor
 
 BASE_URL = "https://pypi.org/pypi"
 CACHE_DIR = Path(user_cache_dir("source-finder"))
@@ -190,7 +190,7 @@ def find_source_repo(package):
     found_url = _normalise_url(found_url)
 
     if found_url and PRINT:
-        print(colored(found_url, "green"))
+        cprint(found_url, "green")
     else:
         _print_stderr(colored(found_url, "red"))
 

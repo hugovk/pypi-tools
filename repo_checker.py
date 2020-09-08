@@ -33,7 +33,7 @@ import subprocess
 from pathlib import Path
 from pprint import pprint  # noqa: F401
 
-from termcolor import colored  # pip install termcolor
+from termcolor import colored, cprint  # pip install termcolor
 
 from top_repos import get_top_packages, load_from_file
 
@@ -70,8 +70,8 @@ def do_cmd(cmd, check_return=True, flip_error=False):
 
     print(result.stdout)
     colour = "green" if result.returncode == 0 else "red"
-    print(colored(result.stderr, colour))
-    print(colored(f"  return code: {result.returncode}", colour))
+    cprint(result.stderr, colour)
+    cprint(f"  return code: {result.returncode}", colour)
 
     if check_return:
         if "Mercurial (hg) is required to use this repository." in result.stderr:
@@ -175,11 +175,11 @@ def main():
             or "http://numba.github.com" == repo_url
             or "sourceforge.net" in repo_url
         ):
-            print(colored("  Skipping Hg and uncloneable links", "yellow"))
+            cprint("  Skipping Hg and uncloneable links", "yellow")
             continue
         elif os.path.isdir(clone_dir):
             if args.skip_existing:
-                print(colored("  Repo exists, skipping", "yellow"))
+                cprint("  Repo exists, skipping", "yellow")
                 continue
         else:
             cmd = f"git clone --depth 1 {repo_url} {clone_dir}"

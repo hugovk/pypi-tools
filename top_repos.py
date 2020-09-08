@@ -25,7 +25,7 @@ from pprint import pprint  # noqa: F401
 import pypidb  # pip install pypidb
 import pytz  # pip install pytz
 import requests
-from termcolor import colored  # pip install termcolor
+from termcolor import cprint  # pip install termcolor
 
 
 def get_top_packages():
@@ -134,7 +134,7 @@ def main():
             requests.exceptions.ConnectionError,
             requests.exceptions.HTTPError,
         ):
-            print(colored(traceback.format_exc(), "red"))
+            cprint(traceback.format_exc(), "red")
             repo = None
         if repo:
             package["repo"] = repo
@@ -147,9 +147,9 @@ def main():
                 new.append(package)
                 done = True
             if done:
-                print(colored(f"{count_exists+i+1} {package['name']}\t{repo}", "green"))
+                cprint(f"{count_exists+i+1} {package['name']}\t{repo}", "green")
         else:
-            print(colored(f"{count_exists+i+1} {package['name']}", "red"))
+            cprint(f"{count_exists+i+1} {package['name']}", "red")
             count_not_found += 1
     packages_todo = new
     print(f"Old repos: {count_exists}")

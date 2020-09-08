@@ -25,13 +25,9 @@ import sys
 from datetime import date, datetime
 
 from dateutil.relativedelta import relativedelta  # pip install python-dateutil
-from termcolor import colored  # pip install termcolor
+from termcolor import colored, cprint  # pip install termcolor
 
 now = date.today()
-
-
-def print_color(text, color):
-    print(colored(text, color))
 
 
 # https://stackoverflow.com/a/5734564/724176
@@ -120,9 +116,7 @@ def main():
         earliest_start_date = six_months_ago()
         if args.from_date < earliest_start_date:
             args.from_date = earliest_start_date
-            print_color(
-                f"Set earliest start date for pypistats: {args.from_date}", "yellow"
-            )
+            cprint(f"Set earliest start date for pypistats: {args.from_date}", "yellow")
 
     from_year, from_month = yyyy_mm_to_ints(args.from_date)
     to_year, to_month = yyyy_mm_to_ints(args.to_date)
@@ -143,14 +137,14 @@ def main():
 
     for year, month in years_months:
         if year == 2016 and month == 4:
-            print_color("  No data for 2016-04, skipping", "yellow")
+            cprint("  No data for 2016-04, skipping", "yellow")
             continue
         first = date(year, month, 1)
         last = first + relativedelta(months=1) - relativedelta(days=1)
         print(first, last)
 
         if last >= now:
-            print_color("  End date should be in the past", "red")
+            cprint("  End date should be in the past", "red")
             reds += 1
             sys.exit(1)
 
@@ -161,7 +155,7 @@ def main():
         outfile = f"{prefix}{year}-{month:02d}.json"
         outfile = os.path.join("data", outfile)
         if os.path.isfile(outfile):
-            print_color(f"  {outfile} exists, skipping", "yellow")
+            cprint(f"  {outfile} exists, skipping", "yellow")
             yellows += 1
             continue
 
@@ -184,7 +178,7 @@ def main():
             # os.system(cmd)
             exitcode, output = subprocess.getstatusoutput(cmd)
             if exitcode == 0:
-                print_color(f"  {outfile}", "green")
+                cprint(f"  {outfile}", "green")
                 greens += 1
             else:
                 error = output.splitlines()[-1]
@@ -192,7 +186,7 @@ def main():
                     if "google.api_core.exceptions" in line:
                         error = line
                         break
-                print_color(error, "red")
+                cprint(error, "red")
 
                 reds += 1
                 if os.path.getsize(outfile) == 0:
