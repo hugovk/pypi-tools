@@ -9,17 +9,18 @@ Command-line Python scripts to do things with the
 
 ## pypi-trends.py
 
-pypi-trends.py is a wrapper around [pypinfo](https://github.com/ofek/pypinfo)
+`pypi-trends.py` is a wrapper around [pypinfo](https://github.com/ofek/pypinfo)
 and [pypistats](https://github.com/hugovk/pypistats) to fetch all monthly downloads from
 the PyPI database on Google BigQuery and save them as JSON files.
 
-For the examples below, data was downloaded over a few days as getting all
-months uses up a lot of free BigQuery quota.
+For the examples below, data was downloaded over many days as getting all months uses up
+a lot of free BigQuery quota.
 
 ## jsons2csv.py
 
-jsons2csv.py converts the JSON files into a single CSV file for chart-wrangling
-in a spreadsheet, and can generate a chart using Matplotlib.
+`jsons2csv.py` converts the JSON files into a single CSV file for chart-wrangling
+in a spreadsheet, and can generate a chart using Matplotlib. Once an image exists, it
+can be re-generated with `make -j4`.
 
 ## Examples
 
@@ -160,7 +161,8 @@ $ python source_finder.py urllib3
 None
 ```
 
-It caches the JSON metadata downloaded from PyPI in a temporary directory, use the `--verbose` option to see where. The cache files will be deleted the next month.
+It caches the JSON metadata downloaded from PyPI in a temporary directory, use the
+`--verbose` option to see where. The cache files will be deleted the next month.
 
 ```console
 $ python source_finder.py s3transfer --verbose
@@ -176,7 +178,9 @@ https://github.com/boto/s3transfer
 
 ## top_repos.py
 
-This will look for the source repo for the top-5,000 most-downloaded packages, using a JSON file from [Top PyPI Packages](https://hugovk.github.io/top-pypi-packages/), and save them to [`data/top-repos.json`](https://hugovk.github.io/pypi-tools/data/top-repos.json).
+This will look for the source repo for the most-downloaded packages, using a JSON file
+from [Top PyPI Packages](https://hugovk.github.io/top-pypi-packages/), and save them to
+[`data/top-repos.json`](https://hugovk.github.io/pypi-tools/data/top-repos.json).
 
 First, fetch fresh copy of the top packages:
 
