@@ -132,8 +132,14 @@ def update_readme(output):
     before, delim1, _ = contents.partition("[start_generated]: # (start_generated)\n")
     _, delim2, after = contents.partition("[end_generated]: # (end_generated)\n")
 
-    with open("README.md", "w") as f:
-        f.write(before + delim1 + output + delim2 + after)
+    new_contents = before + delim1 + output + delim2 + after
+
+    if contents == new_contents:
+        cprint("No changes to README.md", "green")
+    else:
+        with open("README.md", "w") as f:
+            f.write(before + delim1 + output + delim2 + after)
+        cprint("README.md updated", "green")
 
 
 def main():
