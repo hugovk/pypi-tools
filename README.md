@@ -108,6 +108,12 @@ Style checker
 
 ![](images/pycodestyle.png)
 
+### [tqdm](https://github.com/tqdm/tqdm)
+
+Extensible progress bar
+
+![](images/tqdm.png)
+
 ### [TensorFlow](https://github.com/tensorflow/tensorflow/)
 
 Machine learning library
@@ -132,7 +138,7 @@ JSON decoder and encoder
 
 ![](images/ujson.png)
 
-### [Pylint](https://github.com/PyCQA/pylint/)
+### [Pylint](https://github.com/PyCQA/pylint)
 
 Linter
 

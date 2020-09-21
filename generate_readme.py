@@ -60,7 +60,7 @@ DETAILS = {
     },
     "pylint": {
         "name": "Pylint",
-        "url": "https://github.com/PyCQA/pylint/",
+        "url": "https://github.com/PyCQA/pylint",
         "description": "Linter",
     },
     "pytest": {
@@ -90,6 +90,10 @@ DETAILS = {
         "url": "https://github.com/tensorflow/tensorflow/",
         "description": "Machine learning library",
     },
+    "tqdm": {
+        "url": "https://github.com/tqdm/tqdm",
+        "description": "Extensible progress bar",
+    },
     "ujson": {
         "url": "https://github.com/ultrajson/ultrajson/",
         "description": "JSON decoder and encoder",
@@ -98,10 +102,10 @@ DETAILS = {
         "url": "https://github.com/urllib3/urllib3",
         "description": "HTTP client",
     },
-    "wheel": {
-        "url": "https://github.com/pypa/wheel",
-        "description": "Binary distribution format",
-    },
+    # "wheel": {
+    #     "url": "https://github.com/pypa/wheel",
+    #     "description": "Binary distribution format",
+    # },
 }
 
 
@@ -160,7 +164,15 @@ def main():
         project = remove_prefix(project, "images/")
         project = remove_suffix(project, ".png")
 
-        if project in ["all", "black", "scikit-learn", "tqdm", "wheel"]:
+        # Special case, already in README
+        if project == "all":
+            continue
+
+        # No need processing new project not yet added to DETAILS
+        try:
+            assert DETAILS[project]
+        except KeyError:
+            cprint(f"{project} not found in DETAILS, skipping", "yellow")
             continue
 
         json_spec = f"data/{project}*.json"
@@ -172,10 +184,10 @@ def main():
 
         project_downloads[project] = total_downloads
 
-    pprint(project_downloads)
+    # pprint(project_downloads)
     # Sort projects by most downloads
     projects = sorted(project_downloads, key=project_downloads.get, reverse=True)
-    pprint(projects)
+    # pprint(projects)
 
     # Output Markdown images, most downloaded first
 
