@@ -27,7 +27,7 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p tqdm
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p ujson
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p urllib3
 
-python3 pypi-trends.py -p tqdm
+python3 pypi-trends.py -p wheel
 
 python3 pypi-trends.py --pypistats -p attrs
 python3 pypi-trends.py --pypistats -p black
