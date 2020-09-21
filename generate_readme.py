@@ -11,7 +11,13 @@ from termcolor import cprint  # pip install termcolor
 from jsons2csv import load_data_from_json
 
 # Only need name if different from project
+# Only need url if different from https://github.com/{project}/{project}
 DETAILS = {
+    # "example": {
+    #     "name": "Example",
+    #     "url": "https://github.com/org/example",
+    #     "description": "Example library",
+    # },
     "coverage": {
         "name": "Coverage.py",
         "url": "https://github.com/nedbat/coveragepy",
@@ -29,12 +35,10 @@ DETAILS = {
     },
     "matplotlib": {
         "name": "Matplotlib",
-        "url": "https://github.com/matplotlib/matplotlib",
         "description": "2D plotting library",
     },
     "numpy": {
         "name": "NumPy",
-        "url": "https://github.com/numpy/numpy",
         "description": "Scientific computing library",
     },
     "pandas": {
@@ -55,7 +59,6 @@ DETAILS = {
         "description": "Style checker",
     },
     "pylast": {
-        "url": "https://github.com/pylast/pylast",
         "description": "Interface to Last.fm",
     },
     "pylint": {
@@ -74,7 +77,6 @@ DETAILS = {
     },
     "scipy": {
         "name": "SciPy",
-        "url": "https://github.com/scipy/scipy",
         "description": "For mathematics, science, and engineering",
     },
     "setuptools": {
@@ -87,19 +89,16 @@ DETAILS = {
     },
     "tensorflow": {
         "name": "TensorFlow",
-        "url": "https://github.com/tensorflow/tensorflow/",
         "description": "Machine learning library",
     },
     "tqdm": {
-        "url": "https://github.com/tqdm/tqdm",
         "description": "Extensible progress bar",
     },
     "ujson": {
-        "url": "https://github.com/ultrajson/ultrajson/",
+        "url": "https://github.com/ultrajson/ultrajson",
         "description": "JSON decoder and encoder",
     },
     "urllib3": {
-        "url": "https://github.com/urllib3/urllib3",
         "description": "HTTP client",
     },
     # "wheel": {
@@ -193,17 +192,8 @@ def main():
 
     output = ""
     for project in projects:
-        try:
-            name = DETAILS[project]["name"]
-        except KeyError:
-            # No spelling/case difference for project name
-            name = project
-        try:
-            url = DETAILS[project]["url"]
-        except KeyError:
-            # New project not yet added to DETAILS
-            cprint(f"{project} not found in DETAILS, skipping", "yellow")
-            continue
+        name = DETAILS[project].get("name", project)
+        url = DETAILS[project].get("url", f"https://github.com/{project}/{project}")
         description = DETAILS[project]["description"]
 
         new = f"""
