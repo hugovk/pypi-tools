@@ -114,7 +114,7 @@ Extensible progress bar
 
 ![](images/tqdm.png)
 
-### [TensorFlow](https://github.com/tensorflow/tensorflow/)
+### [TensorFlow](https://github.com/tensorflow/tensorflow)
 
 Machine learning library
 
@@ -132,7 +132,7 @@ Web framework
 
 ![](images/django.png)
 
-### [ujson](https://github.com/ultrajson/ultrajson/)
+### [ujson](https://github.com/ultrajson/ultrajson)
 
 JSON decoder and encoder
 
