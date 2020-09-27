@@ -12,3 +12,4 @@ python-dateutil
 python-slugify
 pytz
 termcolor
+tqdm

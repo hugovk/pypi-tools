@@ -26,9 +26,13 @@ script:
   # Unit tests
   - python -m pytest
 
+  # Fetch fresh copy of top packages
+  - wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages-30-days.min.json -O data/top-pypi-packages.json
+
   # Test run
   - python pypi-trends.py --dry-run
   - if [ "$TRAVIS_PYTHON_VERSION" != "3.9-dev" ]; then python jsons2csv.py ; fi
   - make -j4
   - python generate_readme.py
   - python macos-versions.py -i macos.json
+  - python project_urls.py -n 1
