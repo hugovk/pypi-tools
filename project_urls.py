@@ -51,6 +51,7 @@ def main():
     parser.add_argument(
         "-n", "--number", type=int, default=100, help="Max number to fetch"
     )
+    parser.add_argument("-k", "--key", help="Also show project_urls with this key")
     args = parser.parse_args()
 
     # Load from top-pypi-packages.json
@@ -61,12 +62,18 @@ def main():
     print("Find project_urls...")
 
     all_keys = []
+    selected_urls = []
     count = 0
     for package in tqdm(packages_todo, unit="project"):
         project_urls = get_project_urls(package["name"])
         if project_urls:
             all_keys.extend(project_urls.keys())
             count += 1
+            if args.key:
+                try:
+                    selected_urls.append(project_urls[args.key])
+                except KeyError:
+                    pass
 
     # Counter will sort by most common, but let's sort alphabetically
     # for those with the same count
@@ -74,6 +81,11 @@ def main():
     pprint(collections.Counter(all_keys))
     print()
     print(f"Number with project_urls: {count}/{args.number}")
+
+    if args.key:
+        print()
+        print(f'All project_url["{args.key}"] values:')
+        print("\n* " + "\n* ".join(selected_urls))
 
 
 if __name__ == "__main__":
