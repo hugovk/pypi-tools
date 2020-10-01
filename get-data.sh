@@ -1,6 +1,6 @@
  #!/usr/bin/env bash
 
-FROM="2020-08"
+FROM="2020-09"
 TO=$FROM
 
 # application_limits=["5 per second", "30 per minute"]

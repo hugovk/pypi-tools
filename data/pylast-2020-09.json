@@ -1,0 +1,1 @@
+{"data": [{"category": "2.7", "downloads": 1170}, {"category": "3.5", "downloads": 211}, {"category": "3.6", "downloads": 1386}, {"category": "3.7", "downloads": 1494}, {"category": "3.8", "downloads": 20408}, {"category": "3.9", "downloads": 214}, {"category": "null", "downloads": 389}], "package": "pylast", "type": "python_minor_downloads"}
