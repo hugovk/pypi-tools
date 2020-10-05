@@ -154,7 +154,7 @@ def main():
     )
     args = parser.parse_args()
 
-    images = glob.glob(args.inspec)
+    images = sorted(glob.glob(args.inspec))
     pprint(images)
     project_downloads = dict()
 
