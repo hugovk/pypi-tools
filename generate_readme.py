@@ -95,16 +95,17 @@ DETAILS = {
         "description": "Extensible progress bar",
     },
     "ujson": {
+        "name": "UltraJSON",
         "url": "https://github.com/ultrajson/ultrajson",
         "description": "JSON decoder and encoder",
     },
     "urllib3": {
         "description": "HTTP client",
     },
-    # "wheel": {
-    #     "url": "https://github.com/pypa/wheel",
-    #     "description": "Binary distribution format",
-    # },
+    "wheel": {
+        "url": "https://github.com/pypa/wheel",
+        "description": "Binary distribution format",
+    },
 }
 
 
@@ -141,7 +142,7 @@ def update_readme(output):
         cprint("No changes to README.md", "green")
     else:
         with open("README.md", "w") as f:
-            f.write(before + delim1 + output + delim2 + after)
+            f.write(new_contents)
         cprint("README.md updated", "green")
 
 

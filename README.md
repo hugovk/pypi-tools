@@ -60,6 +60,12 @@ Build system
 
 ![](images/setuptools.png)
 
+### [wheel](https://github.com/pypa/wheel)
+
+Binary distribution format
+
+![](images/wheel.png)
+
 ### [NumPy](https://github.com/numpy/numpy)
 
 Scientific computing library
@@ -132,7 +138,7 @@ Web framework
 
 ![](images/django.png)
 
-### [ujson](https://github.com/ultrajson/ultrajson)
+### [UltraJSON](https://github.com/ultrajson/ultrajson)
 
 JSON decoder and encoder
 
