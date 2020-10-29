@@ -4,15 +4,13 @@ cache:
   directories:
     - $HOME/.cache/pre-commit
 
-# Supported CPython versions:
-# https://en.wikipedia.org/wiki/CPython#Version_history
 matrix:
   fast_finish: true
   include:
-    - python: 3.9-dev
     - python: 3.6
     - python: 3.7
     - python: 3.8
+    - python: 3.9
 
 install:
  - pip install -U pip
@@ -31,7 +29,7 @@ script:
 
   # Test run
   - python pypi-trends.py --dry-run
-  - if [ "$TRAVIS_PYTHON_VERSION" != "3.9-dev" ]; then python jsons2csv.py ; fi
+  - python jsons2csv.py
   - make -j4
   - python generate_readme.py
   - python macos-versions.py -i macos.json
