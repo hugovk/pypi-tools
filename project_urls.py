@@ -29,6 +29,7 @@ import collections
 from pprint import pprint  # noqa: F401
 
 import httpx
+from prettytable import MARKDOWN, PrettyTable
 from tqdm import tqdm
 
 from source_finder import pypi_json
@@ -44,9 +45,16 @@ def get_project_urls(package):
         return None
 
 
+class CustomFormatter(
+    argparse.ArgumentDefaultsHelpFormatter,
+    argparse.RawDescriptionHelpFormatter,
+):
+    pass
+
+
 def main():
     parser = argparse.ArgumentParser(
-        description=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter
+        description=__doc__, formatter_class=CustomFormatter
     )
     parser.add_argument(
         "-n", "--number", type=int, default=100, help="Max number to fetch"
@@ -71,21 +79,38 @@ def main():
             count += 1
             if args.key:
                 try:
-                    selected_urls.append(project_urls[args.key])
+                    selected_urls.append((package["name"], project_urls[args.key]))
                 except KeyError:
                     pass
 
     # Counter will sort by most common, but let's sort alphabetically
     # for those with the same count
     all_keys = sorted(all_keys)
-    pprint(collections.Counter(all_keys))
+    most_common = collections.Counter(all_keys).most_common()
+
+    table = PrettyTable()
+    table.field_names = ["Project URL", "Count"]
+    table.align = "l"
+    table.align["Count"] = "r"
+    table.set_style(MARKDOWN)
+    for url_count in most_common:
+        table.add_row(url_count)
     print()
-    print(f"Number with project_urls: {count}/{args.number}")
+    print(table)
+
+    print()
+    print(f"Projects with project_urls: {count}/{args.number}")
 
     if args.key:
         print()
-        print(f'All project_url["{args.key}"] values:')
-        print("\n* " + "\n* ".join(selected_urls))
+        table = PrettyTable()
+        table.field_names = ["Project", f"{args.key} URL"]
+        table.align = "l"
+        table.set_style(MARKDOWN)
+        for name_url in selected_urls:
+            table.add_row(name_url)
+        print(table)
+        print()
 
 
 if __name__ == "__main__":
