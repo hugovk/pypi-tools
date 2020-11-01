@@ -21,13 +21,15 @@ python3 jsons2csv.py --chart --no-show -p tensorflow
 python3 jsons2csv.py --chart --no-show -p tqdm
 python3 jsons2csv.py --chart --no-show -p ujson
 python3 jsons2csv.py --chart --no-show -p urllib3
+python3 jsons2csv.py --chart --no-show -p wheel
 
 python3 jsons2csv.py --chart --no-show -p attrs
 python3 jsons2csv.py --chart --no-show -p black
 python3 jsons2csv.py --chart --no-show -p humanize
+python3 jsons2csv.py --chart --no-show -p prettytable
 python3 jsons2csv.py --chart --no-show -p python-dateutil
 python3 jsons2csv.py --chart --no-show -p pytz
 python3 jsons2csv.py --chart --no-show -p scikit-learn
-python3 jsons2csv.py --chart --no-show -p wheel
+python3 jsons2csv.py --chart --no-show -p tablib
 
 open images/*.png
