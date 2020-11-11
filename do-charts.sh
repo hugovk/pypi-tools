@@ -25,11 +25,16 @@ python3 jsons2csv.py --chart --no-show -p wheel
 
 python3 jsons2csv.py --chart --no-show -p attrs
 python3 jsons2csv.py --chart --no-show -p black
+python3 jsons2csv.py --chart --no-show -p colorama
+python3 jsons2csv.py --chart --no-show -p cryptography
 python3 jsons2csv.py --chart --no-show -p humanize
+python3 jsons2csv.py --chart --no-show -p paramiko
 python3 jsons2csv.py --chart --no-show -p prettytable
 python3 jsons2csv.py --chart --no-show -p python-dateutil
 python3 jsons2csv.py --chart --no-show -p pytz
 python3 jsons2csv.py --chart --no-show -p scikit-learn
 python3 jsons2csv.py --chart --no-show -p tablib
+python3 jsons2csv.py --chart --no-show -p tox
+python3 jsons2csv.py --chart --no-show -p virtualenv
 
 open images/*.png
