@@ -93,8 +93,7 @@ def main():
     table.align = "l"
     table.align["Count"] = "r"
     table.set_style(MARKDOWN)
-    for url_count in most_common:
-        table.add_row(url_count)
+    table.add_rows(most_common)
     print()
     print(table)
 
@@ -107,8 +106,7 @@ def main():
         table.field_names = ["Project", f"{args.key} URL"]
         table.align = "l"
         table.set_style(MARKDOWN)
-        for name_url in selected_urls:
-            table.add_row(name_url)
+        table.add_rows(selected_urls)
         print(table)
         print()
 

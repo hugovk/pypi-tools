@@ -5,7 +5,7 @@ natsort
 numpy
 packaging
 pandas
-prettytable >= 1
+prettytable >= 2
 pypidb
 pypinfo
 pytablewriter
