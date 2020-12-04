@@ -32,6 +32,7 @@ python3 jsons2csv.py --chart --no-show -p paramiko
 python3 jsons2csv.py --chart --no-show -p prettytable
 python3 jsons2csv.py --chart --no-show -p python-dateutil
 python3 jsons2csv.py --chart --no-show -p pytz
+python3 jsons2csv.py --chart --no-show -p pyflakes
 python3 jsons2csv.py --chart --no-show -p scikit-learn
 python3 jsons2csv.py --chart --no-show -p tablib
 python3 jsons2csv.py --chart --no-show -p tox
