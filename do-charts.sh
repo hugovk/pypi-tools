@@ -22,6 +22,7 @@ python3 jsons2csv.py --chart --no-show -p tqdm
 python3 jsons2csv.py --chart --no-show -p ujson
 python3 jsons2csv.py --chart --no-show -p urllib3
 python3 jsons2csv.py --chart --no-show -p wheel
+python3 jsons2csv.py --chart --no-show -p virtualenv
 
 python3 jsons2csv.py --chart --no-show -p attrs
 python3 jsons2csv.py --chart --no-show -p black
@@ -36,6 +37,5 @@ python3 jsons2csv.py --chart --no-show -p pyflakes
 python3 jsons2csv.py --chart --no-show -p scikit-learn
 python3 jsons2csv.py --chart --no-show -p tablib
 python3 jsons2csv.py --chart --no-show -p tox
-python3 jsons2csv.py --chart --no-show -p virtualenv
 
 open images/*.png
