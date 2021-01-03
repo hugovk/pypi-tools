@@ -28,6 +28,7 @@ python3 jsons2csv.py --chart --no-show -p attrs
 python3 jsons2csv.py --chart --no-show -p black
 python3 jsons2csv.py --chart --no-show -p colorama
 python3 jsons2csv.py --chart --no-show -p cryptography
+python3 jsons2csv.py --chart --no-show -p httpx
 python3 jsons2csv.py --chart --no-show -p humanize
 python3 jsons2csv.py --chart --no-show -p paramiko
 python3 jsons2csv.py --chart --no-show -p prettytable
