@@ -102,6 +102,10 @@ DETAILS = {
     "urllib3": {
         "description": "HTTP client",
     },
+    "virtualenv": {
+        "url": "https://github.com/pypa/virtualenv",
+        "description": "Virtual Python environment builder",
+    },
     "wheel": {
         "url": "https://github.com/pypa/wheel",
         "description": "Binary distribution format",

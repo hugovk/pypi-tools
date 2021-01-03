@@ -90,11 +90,11 @@ For mathematics, science, and engineering
 
 ![](images/scipy.png)
 
-### [Coverage.py](https://github.com/nedbat/coveragepy)
+### [virtualenv](https://github.com/pypa/virtualenv)
 
-Code coverage testing
+Virtual Python environment builder
 
-![](images/coverage.png)
+![](images/virtualenv.png)
 
 ### [Pillow](https://github.com/python-pillow/Pillow)
 
@@ -102,23 +102,29 @@ Imaging library
 
 ![](images/pillow.png)
 
+### [Coverage.py](https://github.com/nedbat/coveragepy)
+
+Code coverage testing
+
+![](images/coverage.png)
+
 ### [Matplotlib](https://github.com/matplotlib/matplotlib)
 
 2D plotting library
 
 ![](images/matplotlib.png)
 
-### [pycodestyle](https://github.com/PyCQA/pycodestyle)
-
-Style checker
-
-![](images/pycodestyle.png)
-
 ### [tqdm](https://github.com/tqdm/tqdm)
 
 Extensible progress bar
 
 ![](images/tqdm.png)
+
+### [pycodestyle](https://github.com/PyCQA/pycodestyle)
+
+Style checker
+
+![](images/pycodestyle.png)
 
 ### [TensorFlow](https://github.com/tensorflow/tensorflow)
 
