@@ -4,6 +4,7 @@ python3 jsons2csv.py --chart --no-show -i "data/20*.json"
 python3 jsons2csv.py --chart --no-show -p coverage
 python3 jsons2csv.py --chart --no-show -p django
 python3 jsons2csv.py --chart --no-show -p flake8
+python3 jsons2csv.py --chart --no-show -p humanize
 python3 jsons2csv.py --chart --no-show -p matplotlib
 python3 jsons2csv.py --chart --no-show -p numpy
 python3 jsons2csv.py --chart --no-show -p pandas
@@ -29,7 +30,6 @@ python3 jsons2csv.py --chart --no-show -p black
 python3 jsons2csv.py --chart --no-show -p colorama
 python3 jsons2csv.py --chart --no-show -p cryptography
 python3 jsons2csv.py --chart --no-show -p httpx
-python3 jsons2csv.py --chart --no-show -p humanize
 python3 jsons2csv.py --chart --no-show -p paramiko
 python3 jsons2csv.py --chart --no-show -p prettytable
 python3 jsons2csv.py --chart --no-show -p python-dateutil
