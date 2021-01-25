@@ -156,6 +156,12 @@ Linter
 
 ![](images/pylint.png)
 
+### [humanize](https://github.com/jmoiron/humanize)
+
+Humanization utilities
+
+![](images/humanize.png)
+
 ### [pylast](https://github.com/pylast/pylast)
 
 Interface to Last.fm

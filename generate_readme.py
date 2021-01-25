@@ -33,6 +33,10 @@ DETAILS = {
         "url": "https://gitlab.com/pycqa/flake8",
         "description": "Linter",
     },
+    "humanize": {
+        "url": "https://github.com/jmoiron/humanize",
+        "description": "Humanization utilities",
+    },
     "matplotlib": {
         "name": "Matplotlib",
         "description": "2D plotting library",
