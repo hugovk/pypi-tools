@@ -58,6 +58,11 @@ DETAILS = {
         "url": "https://github.com/pypa/pip",
         "description": "The package installer",
     },
+    "prettytable": {
+        "name": "PrettyTable",
+        "url": "https://github.com/jazzband/prettytable",
+        "description": "Display data in visually appealing ASCII table format",
+    },
     "pycodestyle": {
         "url": "https://github.com/PyCQA/pycodestyle",
         "description": "Style checker",

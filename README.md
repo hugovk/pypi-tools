@@ -156,6 +156,12 @@ Linter
 
 ![](images/pylint.png)
 
+### [PrettyTable](https://github.com/jazzband/prettytable)
+
+Display data in visually appealing ASCII table format
+
+![](images/prettytable.png)
+
 ### [humanize](https://github.com/jmoiron/humanize)
 
 Humanization utilities
