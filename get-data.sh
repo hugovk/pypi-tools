@@ -25,6 +25,7 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p requests
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p scipy
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p setuptools
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p six
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p tablib
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p tensorflow
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p tqdm
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p ujson
@@ -42,5 +43,4 @@ python3 pypi-trends.py --pypistats -p paramiko
 python3 pypi-trends.py --pypistats -p python-dateutil
 python3 pypi-trends.py --pypistats -p pytz
 python3 pypi-trends.py --pypistats -p scikit-learn
-python3 pypi-trends.py --pypistats -p tablib
 python3 pypi-trends.py --pypistats -p tox

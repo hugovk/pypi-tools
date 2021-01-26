@@ -174,6 +174,12 @@ Humanization utilities
 
 ![](images/humanize.png)
 
+### [Tablib](https://github.com/jazzband/tablib)
+
+Format-agnostic tabular dataset library
+
+![](images/tablib.png)
+
 ### [pylast](https://github.com/pylast/pylast)
 
 Interface to Last.fm

@@ -20,6 +20,7 @@ python3 jsons2csv.py --chart --no-show -p requests
 python3 jsons2csv.py --chart --no-show -p scipy
 python3 jsons2csv.py --chart --no-show -p setuptools
 python3 jsons2csv.py --chart --no-show -p six
+python3 jsons2csv.py --chart --no-show -p tablib
 python3 jsons2csv.py --chart --no-show -p tensorflow
 python3 jsons2csv.py --chart --no-show -p tqdm
 python3 jsons2csv.py --chart --no-show -p ujson
@@ -36,7 +37,6 @@ python3 jsons2csv.py --chart --no-show -p paramiko
 python3 jsons2csv.py --chart --no-show -p python-dateutil
 python3 jsons2csv.py --chart --no-show -p pytz
 python3 jsons2csv.py --chart --no-show -p scikit-learn
-python3 jsons2csv.py --chart --no-show -p tablib
 python3 jsons2csv.py --chart --no-show -p tox
 
 open images/*.png

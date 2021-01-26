@@ -101,6 +101,11 @@ DETAILS = {
         "url": "https://github.com/benjaminp/six",
         "description": "Python 2 and 3 compatibility library",
     },
+    "tablib": {
+        "name": "Tablib",
+        "url": "https://github.com/jazzband/tablib",
+        "description": "Format-agnostic tabular dataset library",
+    },
     "tensorflow": {
         "name": "TensorFlow",
         "description": "Machine learning library",
