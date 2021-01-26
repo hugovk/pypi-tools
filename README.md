@@ -132,6 +132,12 @@ Machine learning library
 
 ![](images/tensorflow.png)
 
+### [Pyflakes](https://github.com/PyCQA/pyflakes)
+
+Checks Python source files for errors
+
+![](images/pyflakes.png)
+
 ### [Flake8](https://gitlab.com/pycqa/flake8)
 
 Linter

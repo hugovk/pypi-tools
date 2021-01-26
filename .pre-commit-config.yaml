@@ -39,3 +39,12 @@ repos:
       - id: check-yaml
       - id: requirements-txt-fixer
       - id: trailing-whitespace
+
+  - repo: local
+    hooks:
+      - id: update-readme
+        name: Update README
+        entry: python3 generate_readme.py
+        language: system
+        pass_filenames: false
+        files: ^(generate_readme\.py)|(images\/.*png)$

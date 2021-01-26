@@ -67,6 +67,11 @@ DETAILS = {
         "url": "https://github.com/PyCQA/pycodestyle",
         "description": "Style checker",
     },
+    "pyflakes": {
+        "name": "Pyflakes",
+        "url": "https://github.com/PyCQA/pyflakes",
+        "description": "Checks Python source files for errors",
+    },
     "pylast": {
         "description": "Interface to Last.fm",
     },
