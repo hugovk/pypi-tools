@@ -90,17 +90,17 @@ For mathematics, science, and engineering
 
 ![](images/scipy.png)
 
-### [virtualenv](https://github.com/pypa/virtualenv)
-
-Virtual Python environment builder
-
-![](images/virtualenv.png)
-
 ### [Pillow](https://github.com/python-pillow/Pillow)
 
 Imaging library
 
 ![](images/pillow.png)
+
+### [virtualenv](https://github.com/pypa/virtualenv)
+
+Virtual Python environment builder
+
+![](images/virtualenv.png)
 
 ### [Coverage.py](https://github.com/nedbat/coveragepy)
 
