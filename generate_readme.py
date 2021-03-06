@@ -13,7 +13,7 @@ from jsons2csv import load_data_from_json
 # Only need name if different from project
 # Only need url if different from https://github.com/{project}/{project}
 DETAILS = {
-    # "example": {
+    # "project": {
     #     "name": "Example",
     #     "url": "https://github.com/org/example",
     #     "description": "Example library",
@@ -112,6 +112,11 @@ DETAILS = {
     },
     "tqdm": {
         "description": "Extensible progress bar",
+    },
+    "twitter": {
+        "name": "Python Twitter Tools",
+        "url": "https://github.com/python-twitter-tools/twitter",
+        "description": "Python Twitter API",
     },
     "ujson": {
         "name": "UltraJSON",

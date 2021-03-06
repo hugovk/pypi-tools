@@ -23,6 +23,7 @@ python3 jsons2csv.py --chart --no-show -p six
 python3 jsons2csv.py --chart --no-show -p tablib
 python3 jsons2csv.py --chart --no-show -p tensorflow
 python3 jsons2csv.py --chart --no-show -p tqdm
+python3 jsons2csv.py --chart --no-show -p twitter
 python3 jsons2csv.py --chart --no-show -p ujson
 python3 jsons2csv.py --chart --no-show -p urllib3
 python3 jsons2csv.py --chart --no-show -p virtualenv

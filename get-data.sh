@@ -28,6 +28,7 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p six
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p tablib
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p tensorflow
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p tqdm
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p twitter
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p ujson
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p urllib3
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p wheel

@@ -180,6 +180,12 @@ Format-agnostic tabular dataset library
 
 ![](images/tablib.png)
 
+### [Python Twitter Tools](https://github.com/python-twitter-tools/twitter)
+
+Python Twitter API
+
+![](images/twitter.png)
+
 ### [pylast](https://github.com/pylast/pylast)
 
 Interface to Last.fm
