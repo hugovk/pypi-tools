@@ -7,7 +7,7 @@ packaging
 pandas
 prettytable >= 2
 pypidb
-pypinfo
+pypinfo >= 19
 pytablewriter
 python-dateutil
 python-slugify
