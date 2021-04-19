@@ -144,17 +144,17 @@ Linter
 
 ![](images/flake8.png)
 
-### [Django](https://github.com/python-pillow/Pillow)
-
-Web framework
-
-![](images/django.png)
-
 ### [UltraJSON](https://github.com/ultrajson/ultrajson)
 
 JSON decoder and encoder
 
 ![](images/ujson.png)
+
+### [Django](https://github.com/python-pillow/Pillow)
+
+Web framework
+
+![](images/django.png)
 
 ### [Pylint](https://github.com/PyCQA/pylint)
 
