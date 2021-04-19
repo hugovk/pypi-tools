@@ -2,8 +2,6 @@
 
 FROM="2021-03"
 TO=$FROM
-FROM="2021-01"
-TO="2021-03"
 
 # application_limits=["5 per second", "30 per minute"]
 
