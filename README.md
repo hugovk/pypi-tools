@@ -72,6 +72,12 @@ Scientific computing library
 
 ![](images/numpy.png)
 
+### [attrs](https://github.com/python-attrs/attrs)
+
+Python classes without boilerplate
+
+![](images/attrs.png)
+
 ### [pandas](https://github.com/pandas-dev/pandas)
 
 Data analysis toolkit

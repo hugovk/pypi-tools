@@ -18,6 +18,11 @@ DETAILS = {
     #     "url": "https://github.com/org/example",
     #     "description": "Example library",
     # },
+    "attrs": {
+        "name": "attrs",
+        "url": "https://github.com/python-attrs/attrs",
+        "description": "Python classes without boilerplate",
+    },
     "black": {
         "name": "Black",
         "url": "https://github.com/psf/black",
