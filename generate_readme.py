@@ -19,7 +19,6 @@ DETAILS = {
     #     "description": "Example library",
     # },
     "attrs": {
-        "name": "attrs",
         "url": "https://github.com/python-attrs/attrs",
         "description": "Python classes without boilerplate",
     },
@@ -124,6 +123,10 @@ DETAILS = {
     "tensorflow": {
         "name": "TensorFlow",
         "description": "Machine learning library",
+    },
+    "tox": {
+        "url": "https://github.com/tox-dev/tox",
+        "description": "Generic virtualenv management and test command line tool",
     },
     "tqdm": {
         "description": "Extensible progress bar",

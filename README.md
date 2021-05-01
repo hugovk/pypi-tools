@@ -174,6 +174,12 @@ Linter
 
 ![](images/pylint.png)
 
+### [tox](https://github.com/tox-dev/tox)
+
+Generic virtualenv management and test command line tool
+
+![](images/tox.png)
+
 ### [PrettyTable](https://github.com/jazzband/prettytable)
 
 Display data in visually appealing ASCII table format
