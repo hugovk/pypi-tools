@@ -168,6 +168,12 @@ Display data in visually appealing ASCII table format
 
 ![](images/prettytable.png)
 
+### [Black](https://github.com/psf/black)
+
+The uncompromising Python code formatter
+
+![](images/black.png)
+
 ### [humanize](https://github.com/jmoiron/humanize)
 
 Humanization utilities

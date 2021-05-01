@@ -18,6 +18,11 @@ DETAILS = {
     #     "url": "https://github.com/org/example",
     #     "description": "Example library",
     # },
+    "black": {
+        "name": "Black",
+        "url": "https://github.com/psf/black",
+        "description": "The uncompromising Python code formatter",
+    },
     "coverage": {
         "name": "Coverage.py",
         "url": "https://github.com/nedbat/coveragepy",
