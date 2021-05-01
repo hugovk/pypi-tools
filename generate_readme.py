@@ -28,6 +28,11 @@ DETAILS = {
         "url": "https://github.com/psf/black",
         "description": "The uncompromising Python code formatter",
     },
+    "colorama": {
+        "name": "Colorama",
+        "url": "https://github.com/tartley/colorama",
+        "description": "Simple cross-platform colored terminal text in Python",
+    },
     "coverage": {
         "name": "Coverage.py",
         "url": "https://github.com/nedbat/coveragepy",

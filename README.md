@@ -66,6 +66,12 @@ Binary distribution format
 
 ![](images/wheel.png)
 
+### [Colorama](https://github.com/tartley/colorama)
+
+Simple cross-platform colored terminal text in Python
+
+![](images/colorama.png)
+
 ### [NumPy](https://github.com/numpy/numpy)
 
 Scientific computing library
