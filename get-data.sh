@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
-FROM="2021-03"
+FROM="2021-04"
 TO=$FROM
 
 # application_limits=["5 per second", "30 per minute"]
 
 python3 pypi-trends.py -f $FROM -t $TO
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p black
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p coverage
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p django
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p flake8
@@ -36,7 +37,6 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p virtualenv
 
 # Just the "free" data for these for now
 python3 pypi-trends.py --pypistats -p attrs
-python3 pypi-trends.py --pypistats -p black
 python3 pypi-trends.py --pypistats -p colorama
 python3 pypi-trends.py --pypistats -p cryptography
 python3 pypi-trends.py --pypistats -p httpx
