@@ -91,7 +91,7 @@ def main():
             "system_name": "Darwin",
             "distro_version": version,
             "download_count": darwin_downloads[version],
-            "percent": "{:.2f}%".format(round(percent, 2)),
+            "percent": f"{round(percent, 2):.2f}%",
         }
         new_rows.append(row)
 
