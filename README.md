@@ -78,6 +78,12 @@ Scientific computing library
 
 ![](images/numpy.png)
 
+### [cryptography](https://github.com/pyca/cryptography)
+
+cryptographic recipes and primitives to Python developers.
+
+![](images/cryptography.png)
+
 ### [attrs](https://github.com/python-attrs/attrs)
 
 Python classes without boilerplate

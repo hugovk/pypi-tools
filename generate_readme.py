@@ -37,6 +37,10 @@ DETAILS = {
         "url": "https://github.com/nedbat/coveragepy",
         "description": "Code coverage testing",
     },
+    "cryptography": {
+        "url": "https://github.com/pyca/cryptography",
+        "description": "cryptographic recipes and primitives to Python developers.",
+    },
     "django": {
         "name": "Django",
         "url": "https://github.com/python-pillow/Pillow",

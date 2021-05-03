@@ -109,7 +109,6 @@ data/*.xlsx
 macos.csv
 
 # Incomplete charts
-images/cryptography.png
 images/httpx.png
 images/paramiko.png
 images/python-dateutil.png

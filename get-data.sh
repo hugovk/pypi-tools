@@ -10,6 +10,7 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p attrs
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p black
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p colorama
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p coverage
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p cryptography
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p django
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p flake8
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p humanize
@@ -39,7 +40,6 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p wheel
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p virtualenv
 
 # Just the "free" data for these for now
-python3 pypi-trends.py --pypistats -p cryptography
 python3 pypi-trends.py --pypistats -p httpx
 python3 pypi-trends.py --pypistats -p paramiko
 python3 pypi-trends.py --pypistats -p python-dateutil
