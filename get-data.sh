@@ -25,6 +25,7 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pyflakes
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pylast
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pylint
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pytest
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p python-dateutil
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p requests
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p scipy
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p setuptools
@@ -42,6 +43,5 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p virtualenv
 # Just the "free" data for these for now
 python3 pypi-trends.py --pypistats -p httpx
 python3 pypi-trends.py --pypistats -p paramiko
-python3 pypi-trends.py --pypistats -p python-dateutil
 python3 pypi-trends.py --pypistats -p pytz
 python3 pypi-trends.py --pypistats -p scikit-learn

@@ -102,6 +102,11 @@ DETAILS = {
         "url": "https://github.com/pytest-dev/pytest",
         "description": "Testing framework",
     },
+    "python-dateutil": {
+        "name": "dateutil",
+        "url": "https://github.com/dateutil/dateutil",
+        "description": "Useful extensions to the standard Python datetime features",
+    },
     "requests": {
         "name": "Requests",
         "url": "https://github.com/psf/requests",

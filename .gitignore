@@ -111,6 +111,5 @@ macos.csv
 # Incomplete charts
 images/httpx.png
 images/paramiko.png
-images/python-dateutil.png
 images/pytz.png
 images/scikit-learn.png

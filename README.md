@@ -48,6 +48,12 @@ The package installer
 
 ![](images/pip.png)
 
+### [dateutil](https://github.com/dateutil/dateutil)
+
+Useful extensions to the standard Python datetime features
+
+![](images/python-dateutil.png)
+
 ### [Requests](https://github.com/psf/requests)
 
 HTTP library
