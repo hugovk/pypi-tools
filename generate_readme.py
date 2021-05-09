@@ -51,6 +51,11 @@ DETAILS = {
         "url": "https://gitlab.com/pycqa/flake8",
         "description": "Linter",
     },
+    "httpx": {
+        "name": "HTTPX",
+        "url": "https://github.com/encode/httpx",
+        "description": "A next generation HTTP client for Python",
+    },
     "humanize": {
         "url": "https://github.com/jmoiron/humanize",
         "description": "Humanization utilities",
@@ -66,6 +71,10 @@ DETAILS = {
     "pandas": {
         "url": "https://github.com/pandas-dev/pandas",
         "description": "Data analysis toolkit",
+    },
+    "paramiko": {
+        "name": "Paramiko",
+        "description": "The leading native Python SSHv2 protocol library",
     },
     "pillow": {
         "name": "Pillow",
@@ -107,10 +116,17 @@ DETAILS = {
         "url": "https://github.com/dateutil/dateutil",
         "description": "Useful extensions to the standard Python datetime features",
     },
+    "pytz": {
+        "url": "https://github.com/stub42/pytz",
+        "description": "historical timezone library and database",
+    },
     "requests": {
         "name": "Requests",
         "url": "https://github.com/psf/requests",
         "description": "HTTP library",
+    },
+    "scikit-learn": {
+        "description": "machine learning in Python",
     },
     "scipy": {
         "name": "SciPy",

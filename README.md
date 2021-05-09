@@ -78,6 +78,12 @@ Simple cross-platform colored terminal text in Python
 
 ![](images/colorama.png)
 
+### [pytz](https://github.com/stub42/pytz)
+
+historical timezone library and database
+
+![](images/pytz.png)
+
 ### [NumPy](https://github.com/numpy/numpy)
 
 Scientific computing library
@@ -132,11 +138,23 @@ Code coverage testing
 
 ![](images/coverage.png)
 
+### [scikit-learn](https://github.com/scikit-learn/scikit-learn)
+
+machine learning in Python
+
+![](images/scikit-learn.png)
+
 ### [Matplotlib](https://github.com/matplotlib/matplotlib)
 
 2D plotting library
 
 ![](images/matplotlib.png)
+
+### [Paramiko](https://github.com/paramiko/paramiko)
+
+The leading native Python SSHv2 protocol library
+
+![](images/paramiko.png)
 
 ### [tqdm](https://github.com/tqdm/tqdm)
 
@@ -185,6 +203,12 @@ Web framework
 Linter
 
 ![](images/pylint.png)
+
+### [HTTPX](https://github.com/encode/httpx)
+
+A next generation HTTP client for Python
+
+![](images/httpx.png)
 
 ### [tox](https://github.com/tox-dev/tox)
 

@@ -107,9 +107,3 @@ data/pypi-trends.csv
 data/top-pypi-packages.json
 data/*.xlsx
 macos.csv
-
-# Incomplete charts
-images/httpx.png
-images/paramiko.png
-images/pytz.png
-images/scikit-learn.png
