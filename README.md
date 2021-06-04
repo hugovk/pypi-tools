@@ -42,6 +42,12 @@ Python 2 and 3 compatibility library
 
 ![](images/six.png)
 
+### [Requests](https://github.com/psf/requests)
+
+HTTP library
+
+![](images/requests.png)
+
 ### [pip](https://github.com/pypa/pip)
 
 The package installer
@@ -53,12 +59,6 @@ The package installer
 Useful extensions to the standard Python datetime features
 
 ![](images/python-dateutil.png)
-
-### [Requests](https://github.com/psf/requests)
-
-HTTP library
-
-![](images/requests.png)
 
 ### [setuptools](https://github.com/pypa/setuptools)
 
@@ -150,17 +150,17 @@ machine learning in Python
 
 ![](images/matplotlib.png)
 
-### [Paramiko](https://github.com/paramiko/paramiko)
-
-The leading native Python SSHv2 protocol library
-
-![](images/paramiko.png)
-
 ### [tqdm](https://github.com/tqdm/tqdm)
 
 Extensible progress bar
 
 ![](images/tqdm.png)
+
+### [Paramiko](https://github.com/paramiko/paramiko)
+
+The leading native Python SSHv2 protocol library
+
+![](images/paramiko.png)
 
 ### [pycodestyle](https://github.com/PyCQA/pycodestyle)
 
@@ -168,17 +168,17 @@ Style checker
 
 ![](images/pycodestyle.png)
 
-### [TensorFlow](https://github.com/tensorflow/tensorflow)
-
-Machine learning library
-
-![](images/tensorflow.png)
-
 ### [Pyflakes](https://github.com/PyCQA/pyflakes)
 
 Checks Python source files for errors
 
 ![](images/pyflakes.png)
+
+### [TensorFlow](https://github.com/tensorflow/tensorflow)
+
+Machine learning library
+
+![](images/tensorflow.png)
 
 ### [Flake8](https://gitlab.com/pycqa/flake8)
 
@@ -204,17 +204,17 @@ Linter
 
 ![](images/pylint.png)
 
-### [HTTPX](https://github.com/encode/httpx)
-
-A next generation HTTP client for Python
-
-![](images/httpx.png)
-
 ### [tox](https://github.com/tox-dev/tox)
 
 Generic virtualenv management and test command line tool
 
 ![](images/tox.png)
+
+### [HTTPX](https://github.com/encode/httpx)
+
+A next generation HTTP client for Python
+
+![](images/httpx.png)
 
 ### [PrettyTable](https://github.com/jazzband/prettytable)
 
