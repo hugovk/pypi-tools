@@ -95,12 +95,10 @@ def make_chart(data, index, project_name, no_show, quiet):
     for year_month in index[:-1]:
         year, month = year_month.split("-")
         if year == last_year:
-            x_labels.append(month)
-            # if month in ["04", "07", "10"]:
-            # if month in ["03", "05", "07", "09", "11"]:
-            #     x_labels.append(month)
-            # else:
-            #     x_labels.append("")
+            if month in ["03", "05", "07", "09", "11"]:
+                x_labels.append(month)
+            else:
+                x_labels.append("")
         else:
             x_labels.append(year_month)
             last_year = year
