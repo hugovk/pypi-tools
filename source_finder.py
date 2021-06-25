@@ -24,6 +24,8 @@ from appdirs import user_cache_dir  # pip install appdirs
 from slugify import slugify  # pip install python-slugify
 from termcolor import colored, cprint  # pip install termcolor
 
+import source_finder
+
 BASE_URL = "https://pypi.org/pypi"
 CACHE_DIR = Path(user_cache_dir("source-finder"))
 USER_AGENT = "source_finder.py"
@@ -202,6 +204,7 @@ def main():
     global PRINT
     # Only print when run via __main__
     PRINT = True
+    source_finder.PRINT = True
 
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter
@@ -213,6 +216,8 @@ def main():
     args = parser.parse_args()
 
     VERBOSE = args.verbose
+    source_finder.VERBOSE = args.verbose
+
     find_source_repo(args.package)
 
 
