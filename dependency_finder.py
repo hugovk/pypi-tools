@@ -19,11 +19,11 @@ wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages-30-days.min.js
 
 Example usage:
 
-# Print all
+# Print only those found in the top 4,000
 python3 dependency_finder.py sklearn
 
-# Print only those found in the top 4,000
-python3 dependency_finder.py sklearn --top
+# Print all
+python3 dependency_finder.py sklearn --all
 """
 import argparse
 import json
@@ -124,11 +124,12 @@ def do_wheel(target_package: str, data: dict) -> dict:
     return found
 
 
-def find_dependant_packages(target_package: str, top: bool):
+def find_dependant_packages(target_package: str, all: bool):
     _print_verbose(target_package)
     found = defaultdict(set)
 
     json_files = DB_DIR.glob("**/*.json")
+    # json_files = [Path("/private/tmp/pypi-deps-db-master/sdist/4a.json")]
     for json_file in tqdm(list(json_files), unit="file"):
         # _print_verbose(json_file)
         if "sdist-errors" in str(json_file):
@@ -147,7 +148,7 @@ def find_dependant_packages(target_package: str, top: bool):
             new = do_wheel(target_package, data)
             found = found | new
 
-    if not top:
+    if all:
         pprint(found)
         return
 
@@ -169,7 +170,7 @@ def main():
     )
     parser.add_argument("package", help="Package")
     parser.add_argument(
-        "-t", "--top", action="store_true", help="Only show packages from top 4000"
+        "-a", "--all", action="store_true", help="Show all matching packages"
     )
     parser.add_argument(
         "-v", "--verbose", action="store_true", help="Print debug messages to stderr"
@@ -179,7 +180,7 @@ def main():
     VERBOSE = args.verbose
     source_finder.VERBOSE = args.verbose
 
-    find_dependant_packages(args.package, args.top)
+    find_dependant_packages(args.package, args.all)
 
 
 if __name__ == "__main__":
