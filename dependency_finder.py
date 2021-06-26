@@ -58,10 +58,10 @@ def do_sdist(target_package: str, data: dict) -> dict:
 
     for package in data:  # e.g. "a10-neutron-lbaas"
         _print_verbose(package)
+        last_package = None
+        last_version = None
         for version in data[package]:  # e.g. "1.0.1"
             _print_verbose(" " + version)
-            last_package = package
-            last_version = version
 
             if not isinstance(data[package][version], dict):
                 continue
@@ -76,7 +76,11 @@ def do_sdist(target_package: str, data: dict) -> dict:
                     if result:
                         _print_verbose("    " + result.group(0))
                         if result.group(0) == target_package:
-                            found[last_package].add(last_version)
+                            last_package = package
+                            last_version = version
+
+        if last_package:
+            found[last_package].add(last_version)
 
     return found
 
