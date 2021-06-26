@@ -33,7 +33,7 @@ from pathlib import Path
 from pprint import pprint  # noqa: F401
 
 from termcolor import cprint  # pip install termcolor
-from tqdm import tqdm
+from tqdm import tqdm  # pip install tqdm
 
 import source_finder
 from source_finder import _print_verbose
