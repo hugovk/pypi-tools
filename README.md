@@ -48,17 +48,17 @@ HTTP library
 
 ![](images/requests.png)
 
-### [pip](https://github.com/pypa/pip)
-
-The package installer
-
-![](images/pip.png)
-
 ### [dateutil](https://github.com/dateutil/dateutil)
 
 Useful extensions to the standard Python datetime features
 
 ![](images/python-dateutil.png)
+
+### [pip](https://github.com/pypa/pip)
+
+The package installer
+
+![](images/pip.png)
 
 ### [setuptools](https://github.com/pypa/setuptools)
 
@@ -216,17 +216,17 @@ A next generation HTTP client for Python
 
 ![](images/httpx.png)
 
-### [PrettyTable](https://github.com/jazzband/prettytable)
-
-Display data in visually appealing ASCII table format
-
-![](images/prettytable.png)
-
 ### [Black](https://github.com/psf/black)
 
 The uncompromising Python code formatter
 
 ![](images/black.png)
+
+### [PrettyTable](https://github.com/jazzband/prettytable)
+
+Display data in visually appealing ASCII table format
+
+![](images/prettytable.png)
 
 ### [humanize](https://github.com/jmoiron/humanize)
 
