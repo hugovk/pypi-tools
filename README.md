@@ -180,7 +180,7 @@ Machine learning library
 
 ![](images/tensorflow.png)
 
-### [Flake8](https://gitlab.com/pycqa/flake8)
+### [Flake8](https://github.com/PyCQA/flake8)
 
 Linter
 

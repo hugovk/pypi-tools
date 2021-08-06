@@ -48,7 +48,7 @@ DETAILS = {
     },
     "flake8": {
         "name": "Flake8",
-        "url": "https://gitlab.com/pycqa/flake8",
+        "url": "https://github.com/PyCQA/flake8",
         "description": "Linter",
     },
     "httpx": {
