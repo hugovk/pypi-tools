@@ -204,6 +204,12 @@ Linter
 
 ![](images/pylint.png)
 
+### [html5lib](https://github.com/html5lib/html5lib-python)
+
+HTML parser based on the WHATWG HTML specification
+
+![](images/html5lib.png)
+
 ### [tox](https://github.com/tox-dev/tox)
 
 Generic virtualenv management and test command line tool

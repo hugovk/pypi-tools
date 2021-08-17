@@ -51,6 +51,10 @@ DETAILS = {
         "url": "https://github.com/PyCQA/flake8",
         "description": "Linter",
     },
+    "html5lib": {
+        "url": "https://github.com/html5lib/html5lib-python",
+        "description": "HTML parser based on the WHATWG HTML specification",
+    },
     "httpx": {
         "name": "HTTPX",
         "url": "https://github.com/encode/httpx",
