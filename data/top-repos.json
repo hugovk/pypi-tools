@@ -634,7 +634,7 @@
 },
 {
 "name": "alembic",
-"repo": "https://github.com/sqlalchemy/alembic"
+"repo": "https://sourceforge.net/projects/docutils"
 },
 {
 "name": "cloudpickle",
@@ -794,7 +794,7 @@
 },
 {
 "name": "send2trash",
-"repo": "https://github.com/hsoft/send2trash"
+"repo": "https://github.com/arsenetar/send2trash"
 },
 {
 "name": "djangorestframework",
@@ -810,7 +810,7 @@
 },
 {
 "name": "mysqlclient",
-"repo": "https://github.com/PyMySQL/mysqlclient-python"
+"repo": "https://github.com/PyMySQL/mysqlclient"
 },
 {
 "name": "backports-weakref",
@@ -890,7 +890,7 @@
 },
 {
 "name": "ecdsa",
-"repo": "https://github.com/warner/python-ecdsa"
+"repo": "https://github.com/tlsfuzzer/python-ecdsa"
 },
 {
 "name": "pyserial",
@@ -934,7 +934,7 @@
 },
 {
 "name": "et-xmlfile",
-"repo": "https://bitbucket.org/openpyxl/et_xmlfile"
+"repo": "https://foss.heptapod.net/openpyxl/et_xmlfile"
 },
 {
 "name": "pytest-xdist",
@@ -1010,7 +1010,7 @@
 },
 {
 "name": "google-cloud-logging",
-"repo": "https://github.com/GoogleCloudPlatform/google-auth-library-python"
+"repo": "https://github.com/googleapis/python-logging"
 },
 {
 "name": "texttable",
@@ -1142,7 +1142,7 @@
 },
 {
 "name": "distro",
-"repo": "https://github.com/nir0s/distro"
+"repo": "https://github.com/python-distro/distro"
 },
 {
 "name": "polyaxon-cli",
@@ -1546,7 +1546,7 @@
 },
 {
 "name": "sphinx-rtd-theme",
-"repo": "https://github.com/rtfd/sphinx_rtd_theme"
+"repo": "https://github.com/readthedocs/sphinx_rtd_theme"
 },
 {
 "name": "azure-mgmt-batchai",
@@ -1622,7 +1622,7 @@
 },
 {
 "name": "flask-wtf",
-"repo": "https://github.com/lepture/flask-wtf"
+"repo": "https://github.com/wtforms/flask-wtf"
 },
 {
 "name": "azure-mgmt-relay",
@@ -1642,7 +1642,7 @@
 },
 {
 "name": "aenum",
-"repo": "https://bitbucket.org/stoneleaf/aenum"
+"repo": "https://github.com/ethanfurman/aenum"
 },
 {
 "name": "jira",
@@ -1762,7 +1762,7 @@
 },
 {
 "name": "plac",
-"repo": "https://github.com/micheles/plac"
+"repo": "https://github.com/ialbert/plac"
 },
 {
 "name": "azure-mgmt-maps",
@@ -1834,7 +1834,7 @@
 },
 {
 "name": "identify",
-"repo": "https://github.com/chriskuehl/identify"
+"repo": "https://github.com/pre-commit/identify"
 },
 {
 "name": "numexpr",
@@ -2158,7 +2158,7 @@
 },
 {
 "name": "inflect",
-"repo": "https://github.com/jazzband/inflect"
+"repo": "https://github.com/jaraco/inflect"
 },
 {
 "name": "django-redis",
@@ -2242,7 +2242,7 @@
 },
 {
 "name": "google-cloud-language",
-"repo": "https://github.com/GoogleCloudPlatform/google-cloud-python"
+"repo": "https://github.com/googleapis/google-cloud-python"
 },
 {
 "name": "ruamel-ordereddict",
@@ -2258,7 +2258,7 @@
 },
 {
 "name": "google-cloud-translate",
-"repo": "https://github.com/googleapis/google-cloud-python"
+"repo": "https://github.com/googleapis/python-translate"
 },
 {
 "name": "python-memcached",
@@ -2554,7 +2554,7 @@
 },
 {
 "name": "google-cloud-trace",
-"repo": "https://github.com/googleapis/google-cloud-python"
+"repo": "https://github.com/pypa/virtualenv"
 },
 {
 "name": "collectd-nvidianvml",
@@ -2566,7 +2566,7 @@
 },
 {
 "name": "cssutils",
-"repo": "https://bitbucket.org/cthedot/cssutils"
+"repo": "https://github.com/jaraco/cssutils"
 },
 {
 "name": "accumulation-tree",
@@ -2626,7 +2626,7 @@
 },
 {
 "name": "google-cloud-container",
-"repo": "https://github.com/googleapis/google-cloud-python"
+"repo": "https://github.com/pypa/virtualenv"
 },
 {
 "name": "flask-restplus",
@@ -2714,7 +2714,7 @@
 },
 {
 "name": "coveralls",
-"repo": "https://github.com/coveralls-clients/coveralls-python"
+"repo": "https://github.com/TheKevJames/coveralls-python"
 },
 {
 "name": "django-model-utils",
@@ -2846,7 +2846,7 @@
 },
 {
 "name": "clickclick",
-"repo": "https://github.com/zalando/python-clickclick"
+"repo": "https://github.com/hjacobs/python-clickclick"
 },
 {
 "name": "dogpile-cache",
@@ -3018,7 +3018,7 @@
 },
 {
 "name": "toposort",
-"repo": "https://bitbucket.org/ericvsmith/toposort"
+"repo": "https://gitlab.com/ericvsmith/toposort"
 },
 {
 "name": "djangorestframework-jwt",
@@ -3134,7 +3134,7 @@
 },
 {
 "name": "timezonefinder",
-"repo": "https://github.com/MrMinimal64/timezonefinder"
+"repo": "https://github.com/jannikmi/timezonefinder"
 },
 {
 "name": "google-cloud-automl",
@@ -3282,7 +3282,7 @@
 },
 {
 "name": "ansible-lint",
-"repo": "https://github.com/ansible/ansible-lint"
+"repo": "https://github.com/ansible-community/ansible-lint"
 },
 {
 "name": "emoji",
@@ -3290,7 +3290,7 @@
 },
 {
 "name": "genson",
-"repo": "https://github.com/wolverdude/GenSON"
+"repo": "https://github.com/wolverdude/genson"
 },
 {
 "name": "flask-httpauth",
@@ -3562,7 +3562,7 @@
 },
 {
 "name": "frozendict",
-"repo": "https://github.com/slezica/python-frozendict"
+"repo": "https://github.com/Marco-Sulla/python-frozendict"
 },
 {
 "name": "django-js-asset",
@@ -3702,7 +3702,7 @@
 },
 {
 "name": "ftfy",
-"repo": "https://github.com/LuminosoInsight/python-ftfy"
+"repo": "https://github.com/rspeer/python-ftfy"
 },
 {
 "name": "azure-mgmt-apimanagement",
@@ -3778,7 +3778,7 @@
 },
 {
 "name": "django-webpack-loader",
-"repo": "https://github.com/owais/django-webpack-loader"
+"repo": "https://github.com/django-webpack/django-webpack-loader"
 },
 {
 "name": "jwcrypto",
@@ -3874,7 +3874,7 @@
 },
 {
 "name": "mpi4py",
-"repo": "https://bitbucket.org/mpi4py/mpi4py"
+"repo": "https://github.com/mpi4py/mpi4py"
 },
 {
 "name": "facebook-business",
@@ -3938,7 +3938,7 @@
 },
 {
 "name": "workalendar",
-"repo": "https://github.com/peopledoc/workalendar"
+"repo": "https://github.com/workalendar/workalendar"
 },
 {
 "name": "pygam",
@@ -3974,7 +3974,7 @@
 },
 {
 "name": "google-cloud-texttospeech",
-"repo": "https://github.com/googleapis/python-texttospeech"
+"repo": "https://github.com/pypa/virtualenv"
 },
 {
 "name": "dictdiffer",
@@ -4158,7 +4158,7 @@
 },
 {
 "name": "polib",
-"repo": "https://bitbucket.org/izi/polib"
+"repo": "https://github.com/izimobil/polib"
 },
 {
 "name": "post",
@@ -4194,7 +4194,7 @@
 },
 {
 "name": "google-cloud-scheduler",
-"repo": "https://github.com/googleapis/google-cloud-python"
+"repo": "https://github.com/pypa/virtualenv"
 },
 {
 "name": "python-engineio",
@@ -4254,7 +4254,7 @@
 },
 {
 "name": "eli5",
-"repo": "https://github.com/TeamHG-Memex/eli5"
+"repo": "https://github.com/eli5-org/eli5"
 },
 {
 "name": "pysaml2",
@@ -4310,7 +4310,7 @@
 },
 {
 "name": "google-cloud-datacatalog",
-"repo": "https://github.com/googleapis/google-cloud-python"
+"repo": "https://github.com/pypa/virtualenv"
 },
 {
 "name": "google-cloud-talent",
@@ -4606,7 +4606,7 @@
 },
 {
 "name": "lark-parser",
-"repo": "https://github.com/erezsh/lark"
+"repo": "https://github.com/lark-parser/lark"
 },
 {
 "name": "python-statsd",
@@ -4674,7 +4674,7 @@
 },
 {
 "name": "sphinx-autobuild",
-"repo": "https://github.com/GaretJax/sphinx_autobuild"
+"repo": "https://github.com/executablebooks/sphinx-autobuild"
 },
 {
 "name": "pyaes",
@@ -4878,7 +4878,7 @@
 },
 {
 "name": "robotframework-requests",
-"repo": "https://github.com/bulkan/robotframework-requests"
+"repo": "https://github.com/MarketSquare/robotframework-requests"
 },
 {
 "name": "onnxmltools",
@@ -4934,7 +4934,7 @@
 },
 {
 "name": "djangorestframework-simplejwt",
-"repo": "https://github.com/davesque/django-rest-framework-simplejwt"
+"repo": "https://github.com/jazzband/djangorestframework-simplejwt"
 },
 {
 "name": "pdf2image",
@@ -5070,7 +5070,7 @@
 },
 {
 "name": "flask-socketio",
-"repo": "https://github.com/miguelgrinberg/Flask-SocketIO"
+"repo": "https://github.com/miguelgrinberg/flask-socketio"
 },
 {
 "name": "cov-core",
@@ -5170,7 +5170,7 @@
 },
 {
 "name": "wmctrl",
-"repo": "https://bitbucket.org/antocuni/wmctrl"
+"repo": "https://github.com/antocuni/wmctrl"
 },
 {
 "name": "ngram",
@@ -5210,7 +5210,7 @@
 },
 {
 "name": "wincertstore",
-"repo": "https://bitbucket.org/tiran/wincertstore"
+"repo": "https://github.com/tiran/wincertstore"
 },
 {
 "name": "ec2-metadata",
@@ -5222,7 +5222,7 @@
 },
 {
 "name": "py-moneyed",
-"repo": "https://github.com/limist/py-moneyed"
+"repo": "https://github.com/py-moneyed/py-moneyed"
 },
 {
 "name": "flake8-isort",
@@ -5518,7 +5518,7 @@
 },
 {
 "name": "pyicu",
-"repo": "https://github.com/ovalhub/pyicu"
+"repo": "https://github.com/unicode-org/icu-docs"
 },
 {
 "name": "drf-extensions",
@@ -5534,7 +5534,7 @@
 },
 {
 "name": "sanic",
-"repo": "https://github.com/huge-success/sanic"
+"repo": "https://github.com/sanic-org/sanic"
 },
 {
 "name": "imgaug",
@@ -5602,7 +5602,7 @@
 },
 {
 "name": "junitparser",
-"repo": "https://github.com/gastlygem/junitparser"
+"repo": "https://github.com/weiwei/junitparser"
 },
 {
 "name": "rpqueue",
@@ -5626,7 +5626,7 @@
 },
 {
 "name": "httpie",
-"repo": "https://github.com/jakubroztocil/httpie"
+"repo": "https://github.com/httpie/httpie"
 },
 {
 "name": "comtypes",
@@ -5686,7 +5686,7 @@
 },
 {
 "name": "edgegrid-python",
-"repo": "https://github.com/akamai-open/AkamaiOPEN-edgegrid-python"
+"repo": "https://github.com/akamai/AkamaiOPEN-edgegrid-python"
 },
 {
 "name": "pyscreeze",
@@ -5926,7 +5926,7 @@
 },
 {
 "name": "lml",
-"repo": "https://github.com/chfw/lml"
+"repo": "https://github.com/python-lml/lml"
 },
 {
 "name": "synolopy",
@@ -6298,7 +6298,7 @@
 },
 {
 "name": "zappa",
-"repo": "https://github.com/Miserlou/Zappa"
+"repo": "https://github.com/zappa/Zappa"
 },
 {
 "name": "shadowsocks",
@@ -6362,7 +6362,7 @@
 },
 {
 "name": "ansi2html",
-"repo": "https://github.com/ralphbean/ansi2html"
+"repo": "https://github.com/pycontribs/ansi2html"
 },
 {
 "name": "pytest-base-url",
@@ -6402,7 +6402,7 @@
 },
 {
 "name": "pytest-profiling",
-"repo": "https://github.com/manahl/pytest-plugins"
+"repo": "https://gitlab.com/graphviz/graphviz"
 },
 {
 "name": "sphinx-autodoc-typehints",
@@ -6602,7 +6602,7 @@
 },
 {
 "name": "cloudml-hypertune",
-"repo": "http://github.com/GoogleCloudPlatform/cloudml-hypertune"
+"repo": "https://github.com/GoogleCloudPlatform/cloudml-hypertune"
 },
 {
 "name": "sshuttle",
@@ -6674,7 +6674,7 @@
 },
 {
 "name": "django-tinymce",
-"repo": "https://github.com/aljosa/django-tinymce"
+"repo": "https://github.com/jazzband/django-tinymce"
 },
 {
 "name": "missingno",
@@ -6738,7 +6738,7 @@
 },
 {
 "name": "eth-utils",
-"repo": "https://github.com/ethereum/eth_utils"
+"repo": "https://github.com/ethereum/eth-utils"
 },
 {
 "name": "confuse",
@@ -7138,7 +7138,7 @@
 },
 {
 "name": "uproot",
-"repo": "https://github.com/scikit-hep/uproot"
+"repo": "https://github.com/scikit-hep/uproot4"
 },
 {
 "name": "chart-studio",
@@ -7174,7 +7174,7 @@
 },
 {
 "name": "param",
-"repo": "https://github.com/ioam/param"
+"repo": "https://github.com/holoviz/param"
 },
 {
 "name": "graphyte",
@@ -7438,7 +7438,7 @@
 },
 {
 "name": "wandb",
-"repo": "https://github.com/wandb/client-ng"
+"repo": "https://github.com/wandb/client"
 },
 {
 "name": "python-social-auth",
@@ -7890,7 +7890,7 @@
 },
 {
 "name": "aws-kinesis-agg",
-"repo": "http://github.com/awslabs/kinesis-aggregation"
+"repo": "https://github.com/awsdocs/aws-lambda-developer-guide"
 },
 {
 "name": "pafy",
@@ -7954,7 +7954,7 @@
 },
 {
 "name": "flask-talisman",
-"repo": "https://github.com/GoogleCloudPlatform/flask-talisman"
+"repo": "https://github.com/wntrblm/flask-talisman"
 },
 {
 "name": "crc32c",
@@ -7974,7 +7974,7 @@
 },
 {
 "name": "flask-silk",
-"repo": "http://github.com/sublee/flask-silk"
+"repo": "https://github.com/sublee/flask-silk"
 },
 {
 "name": "json2html",
@@ -8026,7 +8026,7 @@
 },
 {
 "name": "sparqlwrapper",
-"repo": "https://github.com/RDFLib/sparqlwrapper"
+"repo": "https://github.com/rdflib/sparqlwrapper"
 },
 {
 "name": "devpi-common",
@@ -8034,7 +8034,7 @@
 },
 {
 "name": "xmlschema",
-"repo": "https://github.com/brunato/xmlschema"
+"repo": "https://github.com/sissaschool/xmlschema"
 },
 {
 "name": "django-jenkins",
@@ -8206,7 +8206,7 @@
 },
 {
 "name": "pyquaternion",
-"repo": "https://github.com/kieranwynn/pyquaternion"
+"repo": "https://github.com/KieranWynn/pyquaternion"
 },
 {
 "name": "pretrainedmodels",
@@ -8222,11 +8222,11 @@
 },
 {
 "name": "rstr",
-"repo": "https://bitbucket.org/leapfrogdevelopment/rstr"
+"repo": "https://github.com/leapfrogonline/rstr"
 },
 {
 "name": "sure",
-"repo": "http://github.com/gabrielfalcao/sure"
+"repo": "https://github.com/gabrielfalcao/sure"
 },
 {
 "name": "yara-python",
@@ -8358,7 +8358,7 @@
 },
 {
 "name": "ibm-cos-sdk-s3transfer",
-"repo": "https://github.com/ibm/ibm-cos-sdk-python-s3transfer"
+"repo": "https://github.com/IBM/ibm-cos-sdk-python-s3transfer"
 },
 {
 "name": "protobuf-to-dict",
@@ -8382,7 +8382,7 @@
 },
 {
 "name": "pyxlsb",
-"repo": "https://github.com/wwwiiilll/pyxlsb"
+"repo": "https://github.com/willtrnr/pyxlsb"
 },
 {
 "name": "azure-cli-profile",
@@ -8410,7 +8410,7 @@
 },
 {
 "name": "django-ordered-model",
-"repo": "https://github.com/bfirsh/django-ordered-model"
+"repo": "https://github.com/django-ordered-model/django-ordered-model"
 },
 {
 "name": "logging-tree",
@@ -8902,7 +8902,7 @@
 },
 {
 "name": "asgi-redis",
-"repo": "http://github.com/django/asgi_redis"
+"repo": "https://github.com/django/asgi_redis"
 },
 {
 "name": "flake8-pep3101",
@@ -9046,7 +9046,7 @@
 },
 {
 "name": "blosc",
-"repo": "http://github.com/blosc/python-blosc"
+"repo": "https://github.com/blosc/python-blosc"
 },
 {
 "name": "flake8-tuple",
@@ -9146,7 +9146,7 @@
 },
 {
 "name": "prance",
-"repo": "https://github.com/jfinkhaeuser/prance"
+"repo": "https://github.com/RonnyPfannschmidt/prance"
 },
 {
 "name": "dask-kubernetes",
@@ -9306,7 +9306,7 @@
 },
 {
 "name": "serial",
-"repo": "https://bitbucket.com/davebelais/serial.git"
+"repo": "https://bitbucket.org/davebelais/serial"
 },
 {
 "name": "win-inet-pton",
@@ -9322,7 +9322,7 @@
 },
 {
 "name": "tensor2tensor",
-"repo": "http://github.com/tensorflow/tensor2tensor"
+"repo": "https://github.com/tensorflow/tensor2tensor"
 },
 {
 "name": "testlink-api-python-client",
@@ -9530,7 +9530,7 @@
 },
 {
 "name": "django-notifications-hq",
-"repo": "http://github.com/django-notifications/django-notifications"
+"repo": "https://github.com/django-notifications/django-notifications"
 },
 {
 "name": "loggly-python-handler",
@@ -9554,7 +9554,7 @@
 },
 {
 "name": "pytest-flakes",
-"repo": "https://github.com/fschulze/pytest-flakes"
+"repo": "https://github.com/asmeurer/pytest-flakes"
 },
 {
 "name": "pymsteams",
@@ -9562,7 +9562,7 @@
 },
 {
 "name": "asciitree",
-"repo": "http://github.com/mbr/asciitree"
+"repo": "https://github.com/mbr/asciitree"
 },
 {
 "name": "exifread",
@@ -9790,7 +9790,7 @@
 },
 {
 "name": "pymap3d",
-"repo": "https://github.com/scivision/pymap3d"
+"repo": "https://github.com/geospace-code/pymap3d"
 },
 {
 "name": "maya",
@@ -9906,7 +9906,7 @@
 },
 {
 "name": "pyqt5-tools",
-"repo": "https://github.com/altendky/pyqt5-tools"
+"repo": "https://github.com/altendky/pyqt-tools"
 },
 {
 "name": "pyvcloud",
@@ -9966,7 +9966,7 @@
 },
 {
 "name": "pyghmi",
-"repo": "http://github.com/openstack/pyghmi"
+"repo": "https://github.com/openstack/pyghmi"
 },
 {
 "name": "ics",
@@ -10210,7 +10210,7 @@
 },
 {
 "name": "pyes",
-"repo": "http://github.com/aparo/pyes"
+"repo": "https://github.com/aparo/pyes"
 },
 {
 "name": "python-geoip-geolite2",
@@ -10274,7 +10274,7 @@
 },
 {
 "name": "flake8-eradicate",
-"repo": "https://github.com/sobolevn/flake8-eradicate"
+"repo": "https://github.com/wemake-services/flake8-eradicate"
 },
 {
 "name": "django-mailgun",
@@ -10414,7 +10414,7 @@
 },
 {
 "name": "modernize",
-"repo": "https://github.com/python-modernize/python-modernize"
+"repo": "https://github.com/PyCQA/modernize"
 },
 {
 "name": "schema-salad",
@@ -10426,7 +10426,7 @@
 },
 {
 "name": "lolcat",
-"repo": "https://github.com/tehmaze/lolcat/"
+"repo": "https://github.com/tehmaze/lolcat"
 },
 {
 "name": "binpacking",
@@ -10526,7 +10526,7 @@
 },
 {
 "name": "towncrier",
-"repo": "https://github.com/hawkowl/towncrier"
+"repo": "https://github.com/twisted/towncrier"
 },
 {
 "name": "s4cmd",
@@ -10558,7 +10558,7 @@
 },
 {
 "name": "cfscrape",
-"repo": "https://github.com/Anorov/cloudflare-scrape"
+"repo": "https://github.com/requests/requests"
 },
 {
 "name": "pyobjc-framework-coreservices",
@@ -10574,7 +10574,7 @@
 },
 {
 "name": "python-lzf",
-"repo": "http://github.com/teepark/python-lzf"
+"repo": "https://github.com/teepark/python-lzf"
 },
 {
 "name": "jupyterthemes",
@@ -10662,7 +10662,7 @@
 },
 {
 "name": "colorhash",
-"repo": "https://bitbucket.org/fk/python-color-hash"
+"repo": "https://github.com/dimostenis/color-hash-python"
 },
 {
 "name": "petl",
@@ -10702,7 +10702,7 @@
 },
 {
 "name": "hdijupyterutils",
-"repo": "https://github.com/jupyter-incubator/sparkmagic/hdijupyterutils"
+"repo": "https://github.com/jupyter-incubator/sparkmagic"
 },
 {
 "name": "eliot",
@@ -10794,7 +10794,7 @@
 },
 {
 "name": "autovizwidget",
-"repo": "https://github.com/jupyter-incubator/sparkmagic/autovizwidget"
+"repo": "https://github.com/jupyter-incubator/sparkmagic"
 },
 {
 "name": "template-remover",
@@ -10890,7 +10890,7 @@
 },
 {
 "name": "manifest-tool",
-"repo": "https://github.com/ARMmbed/manifest-tool"
+"repo": "https://github.com/PelionIoT/manifest-tool"
 },
 {
 "name": "azure-cli-redis",
@@ -11002,7 +11002,7 @@
 },
 {
 "name": "cmarkgfm",
-"repo": "https://github.com/jonparrott/cmarkgfm"
+"repo": "https://github.com/theacodes/cmarkgfm"
 },
 {
 "name": "jxmlease",
@@ -11378,7 +11378,7 @@
 },
 {
 "name": "tensorflow-gan",
-"repo": "http://github.com/tensorflow/gan"
+"repo": "https://github.com/tensorflow/gan"
 },
 {
 "name": "servicemanager",
@@ -11398,7 +11398,7 @@
 },
 {
 "name": "zarr",
-"repo": "https://github.com/zarr-developers/zarr"
+"repo": "https://github.com/zarr-developers/zarr-python"
 },
 {
 "name": "marshmallow-dataclass",
@@ -11406,7 +11406,7 @@
 },
 {
 "name": "pymavlink",
-"repo": "https://github.com/ArduPilot/pymavlink/"
+"repo": "https://github.com/ArduPilot/pymavlink"
 },
 {
 "name": "jaraco-logging",
@@ -11426,7 +11426,7 @@
 },
 {
 "name": "numcodecs",
-"repo": "https://github.com/alimanfoo/numcodecs"
+"repo": "https://github.com/zarr-developers/numcodecs"
 },
 {
 "name": "pytest-flask-sqlalchemy",
@@ -11478,7 +11478,7 @@
 },
 {
 "name": "kfac",
-"repo": "http://github.com/tensorflow/kfac"
+"repo": "https://github.com/tensorflow/kfac"
 },
 {
 "name": "requests-credssp",
@@ -11542,7 +11542,7 @@
 },
 {
 "name": "ta-lib",
-"repo": "http://github.com/mrjbq7/ta-lib"
+"repo": "https://github.com/mrjbq7/ta-lib"
 },
 {
 "name": "restinstance",
@@ -11866,7 +11866,7 @@
 },
 {
 "name": "django-summernote",
-"repo": "http://github.com/summernote/django-summernote"
+"repo": "https://github.com/summernote/django-summernote"
 },
 {
 "name": "vk-api",
@@ -11990,7 +11990,7 @@
 },
 {
 "name": "weberror",
-"repo": "https://bitbucket.org/bbangert/weberror"
+"repo": "https://github.com/Pylons/weberror"
 },
 {
 "name": "django-filters",
@@ -11998,7 +11998,7 @@
 },
 {
 "name": "huey",
-"repo": "http://github.com/coleifer/huey"
+"repo": "https://github.com/coleifer/huey"
 },
 {
 "name": "nested-lookup",
@@ -12090,7 +12090,7 @@
 },
 {
 "name": "markdownify",
-"repo": "http://github.com/matthewwithanm/python-markdownify"
+"repo": "https://github.com/matthewwithanm/python-markdownify"
 },
 {
 "name": "psycopg2cffi",
@@ -12102,7 +12102,7 @@
 },
 {
 "name": "robotframework-jsonlibrary",
-"repo": "https://github.com/nottyo/robotframework-jsonlibrary.git"
+"repo": "https://github.com/nottyo/robotframework-jsonlibrary"
 },
 {
 "name": "python-mozaggregator",
@@ -12150,7 +12150,7 @@
 },
 {
 "name": "casttube",
-"repo": "http://github.com/ur1katz/casttube"
+"repo": "https://github.com/ur1katz/casttube"
 },
 {
 "name": "edx-drf-extensions",
@@ -12178,7 +12178,7 @@
 },
 {
 "name": "pipx",
-"repo": "https://github.com/pipxproject/pipx"
+"repo": "https://github.com/pypa/pipx"
 },
 {
 "name": "django-debug-toolbar-line-profiler",
@@ -12298,7 +12298,7 @@
 },
 {
 "name": "colorcet",
-"repo": "https://github.com/pyviz/colorcet"
+"repo": "https://github.com/holoviz/colorcet"
 },
 {
 "name": "vcrpy-unittest",
@@ -12394,7 +12394,7 @@
 },
 {
 "name": "pyhdb",
-"repo": "https://github.com/SAP/PyHDB"
+"repo": "https://github.com/SAP/pyhdb"
 },
 {
 "name": "scikit-build",
@@ -12438,7 +12438,7 @@
 },
 {
 "name": "schwifty",
-"repo": "http://github.com/figo-connect/schwifty"
+"repo": "https://github.com/mdomke/schwifty"
 },
 {
 "name": "packbits",
@@ -12446,7 +12446,7 @@
 },
 {
 "name": "pytube",
-"repo": "https://github.com/nficano/pytube"
+"repo": "https://github.com/pytube/pytube"
 },
 {
 "name": "aiodocker",
@@ -12590,7 +12590,7 @@
 },
 {
 "name": "django-cache-url",
-"repo": "http://github.com/ghickman/django-cache-url"
+"repo": "https://github.com/epicserve/django-cache-url"
 },
 {
 "name": "publicsuffixlist",
@@ -12826,7 +12826,7 @@
 },
 {
 "name": "django-request-logging",
-"repo": "https://github.com/Rhumbix/django-request-logging.git"
+"repo": "https://github.com/Rhumbix/django-request-logging"
 },
 {
 "name": "colormath",
@@ -12842,7 +12842,7 @@
 },
 {
 "name": "robotframework-lint",
-"repo": "https://github.com/boakley/robotframework-lint/"
+"repo": "https://github.com/boakley/robotframework-lint"
 },
 {
 "name": "zodbpickle",
@@ -12878,7 +12878,7 @@
 },
 {
 "name": "pyobjc-framework-coredata",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "wsgiproxy2",
@@ -12942,7 +12942,7 @@
 },
 {
 "name": "pyobjc-framework-coretext",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "lcov-cobertura",
@@ -12994,7 +12994,7 @@
 },
 {
 "name": "pyobjc-framework-addressbook",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "django-markdownx",
@@ -13014,7 +13014,7 @@
 },
 {
 "name": "pyobjc-framework-syncservices",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pysoa",
@@ -13022,7 +13022,7 @@
 },
 {
 "name": "pyobjc-framework-screensaver",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "zope-i18nmessageid",
@@ -13030,7 +13030,7 @@
 },
 {
 "name": "pyobjc-framework-scriptingbridge",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "flask-oidc",
@@ -13038,11 +13038,11 @@
 },
 {
 "name": "pyobjc-framework-corelocation",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-inputmethodkit",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "aws-cdk-core",
@@ -13050,7 +13050,7 @@
 },
 {
 "name": "versioneer",
-"repo": "https://github.com/warner/python-versioneer"
+"repo": "https://github.com/python-versioneer/python-versioneer"
 },
 {
 "name": "pyobjc-framework-qtkit",
@@ -13094,7 +13094,7 @@
 },
 {
 "name": "skein",
-"repo": "http://github.com/jcrist/skein/"
+"repo": "https://github.com/jcrist/skein"
 },
 {
 "name": "django-rest-framework-social-oauth2",
@@ -13134,7 +13134,7 @@
 },
 {
 "name": "nmslib",
-"repo": "https://github.com/searchivarius/nmslib"
+"repo": "https://github.com/nmslib/nmslib"
 },
 {
 "name": "docker-compose-wait",
@@ -13154,7 +13154,7 @@
 },
 {
 "name": "pyobjc",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "warcio",
@@ -13350,39 +13350,39 @@
 },
 {
 "name": "pyobjc-framework-imagecapturecore",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-corewlan",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-storekit",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-corebluetooth",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-avkit",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-imserviceplugin",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-scenekit",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-avfoundation",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-mapkit",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "tabledata",
@@ -13398,11 +13398,11 @@
 },
 {
 "name": "pyobjc-framework-notificationcenter",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-spritekit",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "django-devserver",
@@ -13410,15 +13410,15 @@
 },
 {
 "name": "pyobjc-framework-gamecenter",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-multipeerconnectivity",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-cryptotokenkit",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "sphinx-tabs",
@@ -13430,7 +13430,7 @@
 },
 {
 "name": "pysnow",
-"repo": "https://github.com/rbw0/pysnow"
+"repo": "https://github.com/rbw/pysnow"
 },
 {
 "name": "flask-restful-swagger-2",
@@ -13450,7 +13450,7 @@
 },
 {
 "name": "oletools",
-"repo": "https://github.com/decalage2/oletools/releases"
+"repo": "https://github.com/decalage2/oletools"
 },
 {
 "name": "imgix",
@@ -13470,7 +13470,7 @@
 },
 {
 "name": "pytest-isort",
-"repo": "http://github.com/moccu/pytest-isort"
+"repo": "https://github.com/moccu/pytest-isort"
 },
 {
 "name": "methodtools",
@@ -13482,7 +13482,7 @@
 },
 {
 "name": "django-nine",
-"repo": "https://github.com/barseghyanartur/django-nine/"
+"repo": "https://github.com/barseghyanartur/django-nine"
 },
 {
 "name": "publication",
@@ -13590,23 +13590,23 @@
 },
 {
 "name": "pyobjc-framework-modelio",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-photosui",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-contacts",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-contactsui",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-safariservices",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pylons",
@@ -13618,7 +13618,7 @@
 },
 {
 "name": "pyobjc-framework-photos",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "markdown-include",
@@ -13626,7 +13626,7 @@
 },
 {
 "name": "pyobjc-framework-networkextension",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "carto",
@@ -13682,7 +13682,7 @@
 },
 {
 "name": "pyobjc-framework-securityinterface",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "libclang-py3",
@@ -13690,7 +13690,7 @@
 },
 {
 "name": "pyobjc-framework-security",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pylint-protobuf",
@@ -13722,15 +13722,15 @@
 },
 {
 "name": "pyobjc-framework-intents",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-gamekit",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-libdispatch",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "python-prctl",
@@ -13750,7 +13750,7 @@
 },
 {
 "name": "pyobjc-framework-coreaudiokit",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pytest-arraydiff",
@@ -13766,7 +13766,7 @@
 },
 {
 "name": "pyobjc-framework-applescriptkit",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "flair",
@@ -13774,11 +13774,11 @@
 },
 {
 "name": "pyobjc-framework-coreaudio",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-automator",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "anticaptcha",
@@ -13786,11 +13786,11 @@
 },
 {
 "name": "pyobjc-framework-discrecording",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-installerplugins",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pims",
@@ -13814,7 +13814,7 @@
 },
 {
 "name": "pyobjc-framework-preferencepanes",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "hiyapyco",
@@ -13822,7 +13822,7 @@
 },
 {
 "name": "pyobjc-framework-latentsemanticmapping",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "stashy",
@@ -13830,7 +13830,7 @@
 },
 {
 "name": "pyobjc-framework-gameplaykit",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "citeproc-py",
@@ -13838,23 +13838,23 @@
 },
 {
 "name": "pyobjc-framework-searchkit",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-applescriptobjc",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-accounts",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-collaboration",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-dictionaryservices",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "mxnet-mkl",
@@ -13862,7 +13862,7 @@
 },
 {
 "name": "pyobjc-framework-instantmessage",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "smtpd-tls",
@@ -13870,7 +13870,7 @@
 },
 {
 "name": "pyobjc-framework-servicemanagement",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "simple-ado",
@@ -13878,7 +13878,7 @@
 },
 {
 "name": "pyobjc-framework-coremedia",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "dotstrings",
@@ -13894,7 +13894,7 @@
 },
 {
 "name": "pyobjc-framework-mediatoolbox",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "protool",
@@ -13902,7 +13902,7 @@
 },
 {
 "name": "pyobjc-framework-coremediaio",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "xstatic-term-js",
@@ -13910,7 +13910,7 @@
 },
 {
 "name": "pyobjc-framework-videotoolbox",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "parquet2hive",
@@ -13934,7 +13934,7 @@
 },
 {
 "name": "pyobjc-framework-eventkit",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "mbed-os-tools",
@@ -13942,11 +13942,11 @@
 },
 {
 "name": "gpy",
-"repo": "http://sheffieldml.github.com/GPy/"
+"repo": "https://github.com/sheffieldml/GPy"
 },
 {
 "name": "pyobjc-framework-social",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "orator",
@@ -13958,7 +13958,7 @@
 },
 {
 "name": "mne",
-"repo": "http://github.com/mne-tools/mne-python"
+"repo": "https://github.com/mne-tools/mne-python"
 },
 {
 "name": "pybloomfiltermmap",
@@ -13970,7 +13970,7 @@
 },
 {
 "name": "pyobjc-framework-opendirectory",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "aws-cdk-region-info",
@@ -14026,7 +14026,7 @@
 },
 {
 "name": "pyuca",
-"repo": "http://github.com/jtauber/pyuca"
+"repo": "https://github.com/jtauber/pyuca"
 },
 {
 "name": "paramz",
@@ -14126,7 +14126,7 @@
 },
 {
 "name": "pyobjc-framework-applicationservices",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "django-pdb",
@@ -14218,7 +14218,7 @@
 },
 {
 "name": "pyobjc-framework-calendarstore",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "taxjar",
@@ -14258,7 +14258,7 @@
 },
 {
 "name": "pyobjc-framework-netfs",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "optimizely-sdk",
@@ -14270,7 +14270,7 @@
 },
 {
 "name": "pyobjc-framework-iosurface",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "django-lockdown",
@@ -14278,27 +14278,27 @@
 },
 {
 "name": "pyobjc-framework-medialibrary",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-cloudkit",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-gamecontroller",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-mediaaccessibility",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-findersync",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-localauthentication",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "aws-cdk-aws-cloudwatch",
@@ -14318,7 +14318,7 @@
 },
 {
 "name": "sphinx-autoapi",
-"repo": "https://github.com/readthedocs/sphinx-autoapi"
+"repo": "https://github.com/rtfd/sphinx-autoapi"
 },
 {
 "name": "cypari",
@@ -14334,7 +14334,7 @@
 },
 {
 "name": "workdays",
-"repo": "http://github.com/ogt/workdays"
+"repo": "https://github.com/ogt/workdays"
 },
 {
 "name": "django-gravatar2",
@@ -14486,7 +14486,7 @@
 },
 {
 "name": "aws-cdk-aws-events",
-"repo": "https://github.com/awsdocs/amazon-eventbridge-user-guide"
+"repo": "https://github.com/aws/aws-cdk"
 },
 {
 "name": "python-iptables",
@@ -14494,7 +14494,7 @@
 },
 {
 "name": "grimp",
-"repo": "https://github.com/seddonym/grimp/"
+"repo": "https://github.com/seddonym/grimp"
 },
 {
 "name": "scaleapi",
@@ -14514,11 +14514,11 @@
 },
 {
 "name": "pyobjc-framework-securityfoundation",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "ipynb",
-"repo": "http://github.com/yuvipanda/ipynb"
+"repo": "https://github.com/ipython/ipynb"
 },
 {
 "name": "djangocms-googlemap",
@@ -14538,11 +14538,11 @@
 },
 {
 "name": "import-linter",
-"repo": "https://github.com/seddonym/import-linter/"
+"repo": "https://github.com/seddonym/import-linter"
 },
 {
 "name": "pyobjc-framework-mediaplayer",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyroaring",
@@ -14554,7 +14554,7 @@
 },
 {
 "name": "pyobjc-framework-ituneslibrary",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "itchat",
@@ -14582,7 +14582,7 @@
 },
 {
 "name": "pyobjc-framework-discrecordingui",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "aiohttp-apispec",
@@ -14622,7 +14622,7 @@
 },
 {
 "name": "pyobjc-framework-dvdplayback",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "urltools",
@@ -14638,7 +14638,7 @@
 },
 {
 "name": "pyobjc-framework-osakit",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "bx-python",
@@ -14650,7 +14650,7 @@
 },
 {
 "name": "apache-bookkeeper-client",
-"repo": "https://github.com/apache/bookkeeper/tree/master/stream/clients/python"
+"repo": "https://github.com/apache/bookkeeper"
 },
 {
 "name": "flask-sqlalchemy-session",
@@ -14782,15 +14782,15 @@
 },
 {
 "name": "pyobjc-framework-coreml",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-corespotlight",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "pyobjc-framework-vision",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "osmnx",
@@ -14802,7 +14802,7 @@
 },
 {
 "name": "pyobjc-framework-externalaccessory",
-"repo": "https://bitbucket.org/ronaldoussoren/pyobjc"
+"repo": "https://github.com/ronaldoussoren/pyobjc"
 },
 {
 "name": "tls-parser",
@@ -14954,7 +14954,7 @@
 },
 {
 "name": "bqplot",
-"repo": "https://github.com/bloomberg/bqplot"
+"repo": "https://github.com/bqplot/bqplot"
 },
 {
 "name": "vk",
@@ -14982,7 +14982,7 @@
 },
 {
 "name": "interpret",
-"repo": "https://github.com/microsoft/interpret"
+"repo": "https://github.com/interpretml/interpret"
 },
 {
 "name": "bjoern",
@@ -15094,7 +15094,7 @@
 },
 {
 "name": "mdv",
-"repo": "http://github.com/axiros/terminal_markdown_viewer"
+"repo": "https://github.com/axiros/terminal_markdown_viewer"
 },
 {
 "name": "fudge",
@@ -15386,7 +15386,7 @@
 },
 {
 "name": "pymorphy2-dicts-ru",
-"repo": "https://github.com/kmike/pymorphy2-dicts/"
+"repo": "https://github.com/kmike/pymorphy2-dicts"
 },
 {
 "name": "validator-collection",
@@ -15562,7 +15562,7 @@
 },
 {
 "name": "hidapi",
-"repo": "https://github.com/trezor/cython-hidapi"
+"repo": "https://github.com/libusb/hidapi"
 },
 {
 "name": "aws-shell",
@@ -15626,7 +15626,7 @@
 },
 {
 "name": "textile",
-"repo": "http://github.com/textile/python-textile"
+"repo": "https://github.com/textile/python-textile"
 },
 {
 "name": "zope-contentprovider",
@@ -15654,7 +15654,7 @@
 },
 {
 "name": "pure-sasl",
-"repo": "http://github.com/thobbs/pure-sasl"
+"repo": "https://github.com/thobbs/pure-sasl"
 },
 {
 "name": "pyobjc-framework-colorsync",
@@ -15666,7 +15666,7 @@
 },
 {
 "name": "overpunch",
-"repo": "http://github.com/truveris/overpunch"
+"repo": "https://github.com/truveris/overpunch"
 },
 {
 "name": "django-spurl",
@@ -15758,7 +15758,7 @@
 },
 {
 "name": "dagster-graphql",
-"repo": "https://github.com/dagster-io/dagster/tree/master/python_modules/dagster-graphql"
+"repo": "https://github.com/dagster-io/dagster"
 },
 {
 "name": "gbdt",
@@ -15846,7 +15846,7 @@
 },
 {
 "name": "unicodedata2",
-"repo": "http://github.com/mikekap/unicodedata2"
+"repo": "https://github.com/mikekap/unicodedata2"
 },
 {
 "name": "surveymonty",
@@ -15946,7 +15946,7 @@
 },
 {
 "name": "arabic-reshaper",
-"repo": "https://github.com/mpcabd/python-arabic-reshaper/tarball/master"
+"repo": "https://github.com/mpcabd/python-arabic-reshaper"
 },
 {
 "name": "asserts",
@@ -16114,7 +16114,7 @@
 },
 {
 "name": "ssdeep",
-"repo": "http://github.com/DinoTools/python-ssdeep"
+"repo": "https://github.com/DinoTools/python-ssdeep"
 },
 {
 "name": "mkl-fft",
@@ -16210,7 +16210,7 @@
 },
 {
 "name": "sphinxcontrib-openapi",
-"repo": "https://github.com/ikalnytskyi/sphinxcontrib-openapi"
+"repo": "https://github.com/sphinx-contrib/openapi"
 },
 {
 "name": "pycups",
@@ -16218,11 +16218,11 @@
 },
 {
 "name": "ghp-import",
-"repo": "http://github.com/davisp/ghp-import"
+"repo": "https://github.com/c-w/ghp-import"
 },
 {
 "name": "aws-cdk-aws-elasticloadbalancingv2",
-"repo": "https://github.com/awsdocs/elb-network-load-balancers-user-guide"
+"repo": "https://github.com/aws/aws-cdk"
 },
 {
 "name": "sphinxcontrib-asyncio",
@@ -16794,7 +16794,7 @@
 },
 {
 "name": "aws-cdk-aws-autoscaling-hooktargets",
-"repo": "https://github.com/awsdocs/amazon-ec2-auto-scaling-user-guide"
+"repo": "https://github.com/aws/aws-cdk"
 },
 {
 "name": "drf-compound-fields",
@@ -16926,7 +16926,7 @@
 },
 {
 "name": "h2",
-"repo": "https://github.com/python-hyper/hyper-h2"
+"repo": "https://github.com/python-hyper/h2"
 },
 {
 "name": "tablib",
@@ -17002,7 +17002,7 @@
 },
 {
 "name": "google-cloud-secret-manager",
-"repo": "https://github.com/googleapis/python-secret-manager"
+"repo": "https://github.com/pypa/virtualenv"
 },
 {
 "name": "itopy",
@@ -17834,7 +17834,7 @@
 },
 {
 "name": "sphinx-copybutton",
-"repo": "https://github.com/ExecutableBookProject/sphinx-copybutton"
+"repo": "https://github.com/executablebooks/sphinx-copybutton"
 },
 {
 "name": "seed-isort-config",
@@ -17850,7 +17850,7 @@
 },
 {
 "name": "boto3-stubs",
-"repo": "https://github.com/vemel/mypy_boto3_builder"
+"repo": "https://github.com/vemel/boto3_stubs_docs"
 },
 {
 "name": "pwlf",
@@ -18094,7 +18094,7 @@
 },
 {
 "name": "pybigquery",
-"repo": "https://github.com/mxmzdlv/pybigquery"
+"repo": "https://github.com/googleapis/python-bigquery-sqlalchemy"
 },
 {
 "name": "nose-allure-plugin",
@@ -18146,7 +18146,7 @@
 },
 {
 "name": "importlib-metadata",
-"repo": "https://gitlab.com/python-devs/importlib_metadata"
+"repo": "https://github.com/python/importlib_metadata"
 },
 {
 "name": "future",
@@ -18242,7 +18242,7 @@
 },
 {
 "name": "importlib-resources",
-"repo": "https://gitlab.com/python-devs/importlib_resources"
+"repo": "https://github.com/python/importlib_resources"
 },
 {
 "name": "contextlib2",
@@ -18314,7 +18314,7 @@
 },
 {
 "name": "singledispatch",
-"repo": "https://bitbucket.org/ambv/singledispatch"
+"repo": "https://github.com/jaraco/singledispatch"
 },
 {
 "name": "py4j",
@@ -18438,7 +18438,7 @@
 },
 {
 "name": "prettytable",
-"repo": "https://code.google.com/p/prettytable"
+"repo": "https://github.com/jazzband/prettytable"
 },
 {
 "name": "service-identity",
@@ -18554,7 +18554,7 @@
 },
 {
 "name": "pygithub",
-"repo": "https://github.com/PyGithub/PyGithub"
+"repo": "https://github.com/pygithub/pygithub"
 },
 {
 "name": "sphinxcontrib-websupport",
@@ -18594,7 +18594,7 @@
 },
 {
 "name": "msgpack-python",
-"repo": "https://github.com/msgpack/msgpack-python"
+"repo": "https://github.com/msgpack/website"
 },
 {
 "name": "distributed",
@@ -18970,7 +18970,7 @@
 },
 {
 "name": "httpretty",
-"repo": "https://github.com/gabrielfalcao/HTTPretty"
+"repo": "https://github.com/gabrielfalcao/httpretty"
 },
 {
 "name": "cement",
@@ -19022,7 +19022,7 @@
 },
 {
 "name": "wasmer",
-"repo": "https://github.com/wasmerio/wasmer"
+"repo": "https://github.com/wasmerio/wasmer-python"
 },
 {
 "name": "venusian",
@@ -19118,7 +19118,7 @@
 },
 {
 "name": "marionette-driver",
-"repo": "https://wiki.mozilla.org/Auto-tools/Projects/Marionette"
+"repo": "https://github.com/menduo/readthedocs"
 },
 {
 "name": "python-openstackclient",
@@ -19178,7 +19178,7 @@
 },
 {
 "name": "tbb",
-"repo": "https://github.com/iurisegtovich/PyTherm-applied-thermodynamics"
+"repo": "https://github.com/oneapi-src/oneTBB"
 },
 {
 "name": "numpydoc",
@@ -19354,7 +19354,7 @@
 },
 {
 "name": "neotime",
-"repo": "https://github.com/neo4j-drivers/neotime"
+"repo": "https://github.com/technige/neotime"
 },
 {
 "name": "pygresql",
@@ -19390,7 +19390,7 @@
 },
 {
 "name": "onnxruntime",
-"repo": "https://github.com/Microsoft/onnxruntime"
+"repo": "https://github.com/microsoft/onnxruntime"
 },
 {
 "name": "deepmerge",
@@ -19458,7 +19458,7 @@
 },
 {
 "name": "maturin",
-"repo": "https://github.com/PyO3/maturin"
+"repo": "https://github.com/pyo3/maturin"
 },
 {
 "name": "plaster",
@@ -19606,11 +19606,11 @@
 },
 {
 "name": "intelhex",
-"repo": "https://github.com/bialix/intelhex"
+"repo": "https://github.com/python-intelhex/intelhex"
 },
 {
 "name": "python-designateclient",
-"repo": "https://opendev.org/openstack/python-designateclient"
+"repo": "https://launchpad.net/python-designateclient"
 },
 {
 "name": "ipfshttpclient",
@@ -19702,7 +19702,7 @@
 },
 {
 "name": "spark-nlp",
-"repo": "https://github.com/johnsnowlabs/spark-nlp"
+"repo": "https://github.com/JohnSnowLabs/spark-nlp"
 },
 {
 "name": "ropgadget",
@@ -19822,7 +19822,7 @@
 },
 {
 "name": "twitter",
-"repo": "https://github.com/sixohsix/twitter"
+"repo": "https://github.com/python-twitter-tools/twitter"
 },
 {
 "name": "ovs",
@@ -19842,7 +19842,7 @@
 },
 {
 "name": "priority",
-"repo": "https://github.com/h2o/h2o"
+"repo": "https://github.com/python-hyper/priority"
 },
 {
 "name": "atpublic",
@@ -20018,7 +20018,7 @@
 },
 {
 "name": "yoyo-migrations",
-"repo": "https://hg.sr.ht/~olly/yoyo"
+"repo": "https://bitbucket.org/ollyc/yoyo"
 },
 {
 "name": "openstackdocstheme",
@@ -20186,7 +20186,7 @@
 },
 {
 "name": "python-nmap",
-"repo": "https://code.google.com/p/python-nmap"
+"repo": "https://bitbucket.org/xael/python-nmap"
 },
 {
 "name": "taskflow",
@@ -20246,7 +20246,7 @@
 },
 {
 "name": "featuretools",
-"repo": "https://github.com/FeatureLabs/featuretools"
+"repo": "https://github.com/alteryx/featuretools"
 },
 {
 "name": "dpkt",
@@ -20826,12 +20826,12 @@
 },
 {
 "name": "google-crc32c",
-"repo": "https://github.com/googleapis/python-crc32c"
+"repo": "https://github.com/google/crc32c"
 },
 {
 "name": "threadpoolctl",
 "repo": "https://github.com/joblib/threadpoolctl"
 }
 ],
-"last_update": "Sunday, 27 September 2020, 18:54:50 UTC"
+"last_update": "Tuesday, 17 August 2021, 14:42:08 UTC"
 }
