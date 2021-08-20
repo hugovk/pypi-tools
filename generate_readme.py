@@ -53,12 +53,12 @@ DETAILS = {
     },
     "html5lib": {
         "url": "https://github.com/html5lib/html5lib-python",
-        "description": "HTML parser based on the WHATWG HTML specification",
+        "description": "HTML parser",
     },
     "httpx": {
         "name": "HTTPX",
         "url": "https://github.com/encode/httpx",
-        "description": "A next generation HTTP client for Python",
+        "description": "HTTP client",
     },
     "humanize": {
         "url": "https://github.com/jmoiron/humanize",
@@ -67,6 +67,11 @@ DETAILS = {
     "matplotlib": {
         "name": "Matplotlib",
         "description": "2D plotting library",
+    },
+    "nose2": {
+        "name": "NumPy",
+        "url": "https://github.com/nose-devs/nose2",
+        "description": "Testing framework",
     },
     "numpy": {
         "name": "NumPy",
@@ -78,7 +83,7 @@ DETAILS = {
     },
     "paramiko": {
         "name": "Paramiko",
-        "description": "The leading native Python SSHv2 protocol library",
+        "description": "SSHv2 protocol library",
     },
     "pillow": {
         "name": "Pillow",

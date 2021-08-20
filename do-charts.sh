@@ -12,6 +12,7 @@ python3 jsons2csv.py --chart --no-show -p html5lib
 python3 jsons2csv.py --chart --no-show -p httpx
 python3 jsons2csv.py --chart --no-show -p humanize
 python3 jsons2csv.py --chart --no-show -p matplotlib
+python3 jsons2csv.py --chart --no-show -p nose2
 python3 jsons2csv.py --chart --no-show -p numpy
 python3 jsons2csv.py --chart --no-show -p pandas
 python3 jsons2csv.py --chart --no-show -p paramiko

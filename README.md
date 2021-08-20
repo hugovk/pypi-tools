@@ -158,7 +158,7 @@ Extensible progress bar
 
 ### [Paramiko](https://github.com/paramiko/paramiko)
 
-The leading native Python SSHv2 protocol library
+SSHv2 protocol library
 
 ![](images/paramiko.png)
 
@@ -206,7 +206,7 @@ Linter
 
 ### [html5lib](https://github.com/html5lib/html5lib-python)
 
-HTML parser based on the WHATWG HTML specification
+HTML parser
 
 ![](images/html5lib.png)
 
@@ -218,7 +218,7 @@ Generic virtualenv management and test command line tool
 
 ### [HTTPX](https://github.com/encode/httpx)
 
-A next generation HTTP client for Python
+HTTP client
 
 ![](images/httpx.png)
 
@@ -245,6 +245,12 @@ Humanization utilities
 Format-agnostic tabular dataset library
 
 ![](images/tablib.png)
+
+### [NumPy](https://github.com/nose-devs/nose2)
+
+Testing framework
+
+![](images/nose2.png)
 
 ### [Python Twitter Tools](https://github.com/python-twitter-tools/twitter)
 
