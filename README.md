@@ -132,17 +132,17 @@ Virtual Python environment builder
 
 ![](images/virtualenv.png)
 
-### [Coverage.py](https://github.com/nedbat/coveragepy)
-
-Code coverage testing
-
-![](images/coverage.png)
-
 ### [scikit-learn](https://github.com/scikit-learn/scikit-learn)
 
 machine learning in Python
 
 ![](images/scikit-learn.png)
+
+### [Coverage.py](https://github.com/nedbat/coveragepy)
+
+Code coverage testing
+
+![](images/coverage.png)
 
 ### [Matplotlib](https://github.com/matplotlib/matplotlib)
 
@@ -192,17 +192,17 @@ JSON decoder and encoder
 
 ![](images/ujson.png)
 
-### [Django](https://github.com/python-pillow/Pillow)
-
-Web framework
-
-![](images/django.png)
-
 ### [Pylint](https://github.com/PyCQA/pylint)
 
 Linter
 
 ![](images/pylint.png)
+
+### [Django](https://github.com/python-pillow/Pillow)
+
+Web framework
+
+![](images/django.png)
 
 ### [html5lib](https://github.com/html5lib/html5lib-python)
 
