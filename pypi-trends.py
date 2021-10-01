@@ -148,11 +148,9 @@ def main():
             reds += 1
             sys.exit(1)
 
-        if args.package in ["__all__", '""', "''"]:
-            print(1)
+        if args.package in ['""', "''"]:
             prefix = ""
         else:
-            print(2)
             prefix = args.package + "-"
         outfile = f"{prefix}{year}-{month:02d}.json"
         outfile = os.path.join("data", outfile)
