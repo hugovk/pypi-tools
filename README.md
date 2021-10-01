@@ -78,17 +78,17 @@ Simple cross-platform colored terminal text in Python
 
 ![](images/colorama.png)
 
-### [pytz](https://github.com/stub42/pytz)
-
-historical timezone library and database
-
-![](images/pytz.png)
-
 ### [NumPy](https://github.com/numpy/numpy)
 
 Scientific computing library
 
 ![](images/numpy.png)
+
+### [pytz](https://github.com/stub42/pytz)
+
+historical timezone library and database
+
+![](images/pytz.png)
 
 ### [cryptography](https://github.com/pyca/cryptography)
 
@@ -210,6 +210,12 @@ HTML parser
 
 ![](images/html5lib.png)
 
+### [Black](https://github.com/psf/black)
+
+The uncompromising Python code formatter
+
+![](images/black.png)
+
 ### [tox](https://github.com/tox-dev/tox)
 
 Generic virtualenv management and test command line tool
@@ -221,12 +227,6 @@ Generic virtualenv management and test command line tool
 HTTP client
 
 ![](images/httpx.png)
-
-### [Black](https://github.com/psf/black)
-
-The uncompromising Python code formatter
-
-![](images/black.png)
 
 ### [PrettyTable](https://github.com/jazzband/prettytable)
 
