@@ -24,6 +24,7 @@ python3 jsons2csv.py --chart --no-show -p pyflakes
 python3 jsons2csv.py --chart --no-show -p pylast
 python3 jsons2csv.py --chart --no-show -p pylint
 python3 jsons2csv.py --chart --no-show -p pytest
+python3 jsons2csv.py --chart --no-show -p pytest-cov
 python3 jsons2csv.py --chart --no-show -p python-dateutil
 python3 jsons2csv.py --chart --no-show -p pytz
 python3 jsons2csv.py --chart --no-show -p requests

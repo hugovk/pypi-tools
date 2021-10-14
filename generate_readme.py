@@ -120,6 +120,10 @@ DETAILS = {
         "url": "https://github.com/pytest-dev/pytest",
         "description": "Testing framework",
     },
+    "pytest-cov": {
+        "url": "https://github.com/pytest-dev/pytest-cov",
+        "description": "Coverage plugin for pytest",
+    },
     "python-dateutil": {
         "name": "dateutil",
         "url": "https://github.com/dateutil/dateutil",

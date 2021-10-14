@@ -192,6 +192,12 @@ JSON decoder and encoder
 
 ![](images/ujson.png)
 
+### [pytest-cov](https://github.com/pytest-dev/pytest-cov)
+
+Coverage plugin for pytest
+
+![](images/pytest-cov.png)
+
 ### [Pylint](https://github.com/PyCQA/pylint)
 
 Linter

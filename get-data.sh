@@ -29,6 +29,7 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pyflakes
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pylast
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pylint
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pytest
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pytest-cov
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p python-dateutil
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pytz
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p requests
