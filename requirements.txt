@@ -1,10 +1,10 @@
-appdirs
 httpx
 matplotlib
 natsort
 numpy
 packaging
 pandas
+platformdirs
 prettytable >= 2
 pypidb
 pypinfo >= 19

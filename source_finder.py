@@ -20,7 +20,7 @@ from pprint import pprint  # noqa: F401
 from urllib.parse import urlparse
 
 import httpx  # pip install httpx
-from appdirs import user_cache_dir  # pip install appdirs
+from platformdirs import user_cache_dir  # pip install platformdirs
 from slugify import slugify  # pip install python-slugify
 from termcolor import colored, cprint  # pip install termcolor
 
