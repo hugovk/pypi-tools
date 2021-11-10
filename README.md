@@ -2,7 +2,7 @@
 
 ![Test](https://github.com/hugovk/pypi-tools/workflows/Test/badge.svg)
 [![Python: 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 Command-line Python scripts to do things with the
 [Python Package Index (PyPI)](https://pypi.org/).
