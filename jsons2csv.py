@@ -31,9 +31,10 @@ def inspec_to_name(inspec):
     """
     data/X* -> X
     data/X*.json -> X
+    data/X-20*.json -> X
     data/201*.json -> None
     """
-    name = os.path.basename(inspec).split("*")[0]
+    name = os.path.basename(inspec).split("*")[0].removesuffix("-20")
     if name.isdigit():
         return None
     return name
@@ -231,7 +232,7 @@ def main():
     args = parser.parse_args()
 
     if args.project:
-        args.inspec = f"data/{args.project}*.json"
+        args.inspec = f"data/{args.project}-20*.json"
 
     all_data, all_versions = load_data_from_json(args.inspec, args.quiet)
 
