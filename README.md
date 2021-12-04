@@ -42,29 +42,29 @@ Python 2 and 3 compatibility library
 
 ![](images/six.png)
 
-### [Requests](https://github.com/psf/requests)
-
-HTTP library
-
-![](images/requests.png)
-
 ### [dateutil](https://github.com/dateutil/dateutil)
 
 Useful extensions to the standard Python datetime features
 
 ![](images/python-dateutil.png)
 
-### [pip](https://github.com/pypa/pip)
+### [Requests](https://github.com/psf/requests)
 
-The package installer
+HTTP library
 
-![](images/pip.png)
+![](images/requests.png)
 
 ### [setuptools](https://github.com/pypa/setuptools)
 
 Build system
 
 ![](images/setuptools.png)
+
+### [pip](https://github.com/pypa/pip)
+
+The package installer
+
+![](images/pip.png)
 
 ### [wheel](https://github.com/pypa/wheel)
 
@@ -126,17 +126,17 @@ Imaging library
 
 ![](images/pillow.png)
 
-### [virtualenv](https://github.com/pypa/virtualenv)
-
-Virtual Python environment builder
-
-![](images/virtualenv.png)
-
 ### [scikit-learn](https://github.com/scikit-learn/scikit-learn)
 
 machine learning in Python
 
 ![](images/scikit-learn.png)
+
+### [virtualenv](https://github.com/pypa/virtualenv)
+
+Virtual Python environment builder
+
+![](images/virtualenv.png)
 
 ### [Coverage.py](https://github.com/nedbat/coveragepy)
 
@@ -180,17 +180,17 @@ Machine learning library
 
 ![](images/tensorflow.png)
 
-### [Flake8](https://github.com/PyCQA/flake8)
-
-Linter
-
-![](images/flake8.png)
-
 ### [UltraJSON](https://github.com/ultrajson/ultrajson)
 
 JSON decoder and encoder
 
 ![](images/ujson.png)
+
+### [Flake8](https://github.com/PyCQA/flake8)
+
+Linter
+
+![](images/flake8.png)
 
 ### [pytest-cov](https://github.com/pytest-dev/pytest-cov)
 
