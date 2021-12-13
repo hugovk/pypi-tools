@@ -69,7 +69,7 @@ DETAILS = {
         "description": "2D plotting library",
     },
     "nose2": {
-        "name": "NumPy",
+        "name": "nose2",
         "url": "https://github.com/nose-devs/nose2",
         "description": "Testing framework",
     },

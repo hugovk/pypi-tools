@@ -252,7 +252,7 @@ Format-agnostic tabular dataset library
 
 ![](images/tablib.png)
 
-### [NumPy](https://github.com/nose-devs/nose2)
+### [nose2](https://github.com/nose-devs/nose2)
 
 Testing framework
 
