@@ -62,9 +62,9 @@ def spread_order(years_months):
     return output
 
 
-def six_months_ago():
-    """For --pypistats, the earliest start date is six months ago"""
-    first = now - relativedelta(months=6)
+def five_months_ago():
+    """For --pypistats, the earliest start date is five whole months ago"""
+    first = now - relativedelta(months=5)
     return f"{first.year}-{first.month:02}"
 
 
@@ -113,7 +113,7 @@ def main():
     args = parser.parse_args()
 
     if args.pypistats:
-        earliest_start_date = six_months_ago()
+        earliest_start_date = five_months_ago()
         if args.from_date < earliest_start_date:
             args.from_date = earliest_start_date
             cprint(f"Set earliest start date for pypistats: {args.from_date}", "yellow")
