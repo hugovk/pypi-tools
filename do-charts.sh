@@ -3,6 +3,7 @@
 python3 jsons2csv.py --chart --no-show -i "data/20*.json"
 python3 jsons2csv.py --chart --no-show -p attrs
 python3 jsons2csv.py --chart --no-show -p black
+python3 jsons2csv.py --chart --no-show -p cibuildwheel
 python3 jsons2csv.py --chart --no-show -p colorama
 python3 jsons2csv.py --chart --no-show -p coverage
 python3 jsons2csv.py --chart --no-show -p cryptography

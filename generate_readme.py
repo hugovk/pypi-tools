@@ -27,6 +27,10 @@ DETAILS = {
         "url": "https://github.com/psf/black",
         "description": "The uncompromising Python code formatter",
     },
+    "cibuildwheel": {
+        "url": "https://github.com/pypa/cibuildwheel",
+        "description": "Build Python wheels on CI with minimal configuration",
+    },
     "colorama": {
         "name": "Colorama",
         "url": "https://github.com/tartley/colorama",

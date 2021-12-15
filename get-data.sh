@@ -9,6 +9,7 @@ TO=$FROM
 python3 pypi-trends.py -f $FROM -t $TO
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p attrs
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p black
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p cibuildwheel
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p colorama
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p coverage
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p cryptography

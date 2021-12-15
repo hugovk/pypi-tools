@@ -270,6 +270,12 @@ Interface to Last.fm
 
 ![](images/pylast.png)
 
+### [cibuildwheel](https://github.com/pypa/cibuildwheel)
+
+Build Python wheels on CI with minimal configuration
+
+![](images/cibuildwheel.png)
+
 [end_generated]: # (end_generated)
 
 ### See also
