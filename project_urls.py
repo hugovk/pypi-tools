@@ -36,10 +36,10 @@ from source_finder import pypi_json
 from top_repos import get_top_packages
 
 
-def get_project_urls(package):
+def get_field(field: str, package: str):
     try:
         res = pypi_json(package)
-        return res["info"]["project_urls"]
+        return res["info"][field]
     except httpx.HTTPStatusError:
         # e.g. https://pypi.org/project/pprint/ has been removed
         return None
@@ -59,7 +59,8 @@ def main():
     parser.add_argument(
         "-n", "--number", type=int, default=100, help="Max number to fetch"
     )
-    parser.add_argument("-k", "--key", help="Also show project_urls with this key")
+    parser.add_argument("-f", "--field", default="project_urls", help="Show this field")
+    parser.add_argument("-k", "--key", help="Also show fields with this key")
     args = parser.parse_args()
 
     # Load from top-pypi-packages.json
@@ -67,19 +68,19 @@ def main():
     if args.number:
         packages_todo = packages_todo[: args.number]
 
-    print("Find project_urls...")
+    print(f"Find {args.field}...")
 
     all_keys = []
     selected_urls = []
     count = 0
     for package in tqdm(packages_todo, unit="project"):
-        project_urls = get_project_urls(package["name"])
-        if project_urls:
-            all_keys.extend(project_urls.keys())
+        field = get_field(args.field, package["name"])
+        if field:
+            all_keys.extend(field.keys())
             count += 1
             if args.key:
                 try:
-                    selected_urls.append((package["name"], project_urls[args.key]))
+                    selected_urls.append((package["name"], field[args.key]))
                 except KeyError:
                     pass
 
@@ -98,7 +99,7 @@ def main():
     print(table)
 
     print()
-    print(f"Projects with project_urls: {count}/{args.number}")
+    print(f"Projects with {args.field}: {count}/{args.number}")
 
     if args.key:
         print()
