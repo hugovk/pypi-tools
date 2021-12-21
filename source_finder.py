@@ -108,7 +108,7 @@ def pypi_json(package):
 
     if res == {}:
         # No cache, or couldn't load cache
-        r = httpx.get(url, headers={"User-Agent": USER_AGENT})
+        r = httpx.get(url, follow_redirects=True, headers={"User-Agent": USER_AGENT})
 
         # Raise if we made a bad request
         # (4XX client error or 5XX server error response)
