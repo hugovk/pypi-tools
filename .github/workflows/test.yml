@@ -48,4 +48,7 @@ jobs:
           make -j4
           python generate_readme.py
           python macos-versions.py -i macos.json
-          python project_urls.py -n 1
+          python pypi_fields.py --number 1 --format list --field requires_python
+          python pypi_fields.py --number 1 --format table --field requires_python
+          python pypi_fields.py --number 1 --format list --key Source
+          python pypi_fields.py --number 1 --format table --key Source

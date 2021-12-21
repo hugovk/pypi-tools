@@ -12,7 +12,7 @@ wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages-30-days.min.js
     data/top-pypi-packages.json
 
 # Show requires_python for the first 10 packages in data/top-pypi-packages.json
-python3 project_urls.py --number 10 --field requires_python
+python3 pypi_fields.py --number 10 --field requires_python
 Load data/top-pypi-packages.json...
 Find requires_python...
 100%|█████████████████████████████████████████████| 10/10 [00:00<00:00, 104.96project/s]
@@ -30,7 +30,7 @@ Find requires_python...
 Projects with requires_python: 10/10
 
 # Show project_urls for the first 10 packages and also the Source URLs
-python3 project_urls.py --number 10 --key Source
+python3 pypi_fields.py --number 10 --key Source
 Load data/top-pypi-packages.json...
 Find project_urls...
 100%|█████████████████████████████████████████████| 10/10 [00:00<00:00, 154.35project/s]
