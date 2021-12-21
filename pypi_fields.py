@@ -95,6 +95,9 @@ def main():
     parser.add_argument(
         "-k", "--key", help="For dict fields, also show the values for this key"
     )
+    parser.add_argument(
+        "--format", default="table", choices=("table", "list"), help="Output format"
+    )
     args = parser.parse_args()
 
     # Load from top-pypi-packages.json
@@ -121,40 +124,47 @@ def main():
                     except KeyError:
                         pass
 
-    # For strings, print table of most common
     if isinstance(fields[0], str):
         fields = sorted(fields)
-        most_common = collections.Counter(fields).most_common()
-        count = len(fields)
 
-    # For dicts, print table of most common keys
-    elif isinstance(fields[0], dict):
-        # Counter will sort by most common, but let's sort alphabetically
-        # for those with the same count
-        all_keys = sorted(all_keys)
-        most_common = collections.Counter(all_keys).most_common()
+    if args.format == "list":
+        for field in fields:
+            print(field)
 
-    table = PrettyTable()
-    table.field_names = [args.field, "Count"]
-    table.align = "l"
-    table.align["Count"] = "r"
-    table.set_style(MARKDOWN)
-    table.add_rows(most_common)
-    print()
-    print(table)
+    if args.format == "table":
+        # For strings, print table of most common
+        if isinstance(fields[0], str):
+            most_common = collections.Counter(fields).most_common()
+            count = len(fields)
 
-    print()
-    print(f"Projects with {args.field}: {count}/{args.number}")
+        # For dicts, print table of most common keys
+        elif isinstance(fields[0], dict):
+            # Counter will sort by most common, but let's sort alphabetically
+            # for those with the same count
+            all_keys = sorted(all_keys)
+            most_common = collections.Counter(all_keys).most_common()
 
-    if args.key:
-        print()
         table = PrettyTable()
-        table.field_names = ["Project", f"{args.key} URL"]
+        table.field_names = [args.field, "Count"]
         table.align = "l"
+        table.align["Count"] = "r"
         table.set_style(MARKDOWN)
-        table.add_rows(selected_urls)
-        print(table)
+        table.add_rows(most_common)
         print()
+        print(table)
+
+        print()
+        print(f"Projects with {args.field}: {count}/{args.number}")
+
+        if args.key:
+            print()
+            table = PrettyTable()
+            table.field_names = ["Project", f"{args.key} URL"]
+            table.align = "l"
+            table.set_style(MARKDOWN)
+            table.add_rows(selected_urls)
+            print(table)
+            print()
 
 
 if __name__ == "__main__":
