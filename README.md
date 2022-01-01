@@ -168,17 +168,17 @@ Style checker
 
 ![](images/pycodestyle.png)
 
-### [Pyflakes](https://github.com/PyCQA/pyflakes)
-
-Checks Python source files for errors
-
-![](images/pyflakes.png)
-
 ### [TensorFlow](https://github.com/tensorflow/tensorflow)
 
 Machine learning library
 
 ![](images/tensorflow.png)
+
+### [Pyflakes](https://github.com/PyCQA/pyflakes)
+
+Checks Python source files for errors
+
+![](images/pyflakes.png)
 
 ### [UltraJSON](https://github.com/ultrajson/ultrajson)
 
