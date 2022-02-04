@@ -138,17 +138,17 @@ Virtual Python environment builder
 
 ![](images/virtualenv.png)
 
-### [Coverage.py](https://github.com/nedbat/coveragepy)
-
-Code coverage testing
-
-![](images/coverage.png)
-
 ### [Matplotlib](https://github.com/matplotlib/matplotlib)
 
 2D plotting library
 
 ![](images/matplotlib.png)
+
+### [Coverage.py](https://github.com/nedbat/coveragepy)
+
+Code coverage testing
+
+![](images/coverage.png)
 
 ### [tqdm](https://github.com/tqdm/tqdm)
 

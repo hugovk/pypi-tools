@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-LAST_MONTH=$(date -v-1m +'%m')
-FROM="2021-$LAST_MONTH"
+LAST_MONTH=$(date -v-1m +'%Y-%m') # yyyy-mm
+FROM="$LAST_MONTH"
 TO=$FROM
 
 # application_limits=["5 per second", "30 per minute"]
