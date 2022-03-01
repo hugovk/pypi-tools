@@ -48,17 +48,17 @@ Useful extensions to the standard Python datetime features
 
 ![](images/python-dateutil.png)
 
-### [Requests](https://github.com/psf/requests)
-
-HTTP library
-
-![](images/requests.png)
-
 ### [setuptools](https://github.com/pypa/setuptools)
 
 Build system
 
 ![](images/setuptools.png)
+
+### [Requests](https://github.com/psf/requests)
+
+HTTP library
+
+![](images/requests.png)
 
 ### [pip](https://github.com/pypa/pip)
 
