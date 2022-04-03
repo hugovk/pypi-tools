@@ -96,17 +96,17 @@ cryptographic recipes and primitives to Python developers.
 
 ![](images/cryptography.png)
 
-### [attrs](https://github.com/python-attrs/attrs)
-
-Python classes without boilerplate
-
-![](images/attrs.png)
-
 ### [pandas](https://github.com/pandas-dev/pandas)
 
 Data analysis toolkit
 
 ![](images/pandas.png)
+
+### [attrs](https://github.com/python-attrs/attrs)
+
+Python classes without boilerplate
+
+![](images/attrs.png)
 
 ### [pytest](https://github.com/pytest-dev/pytest)
 
@@ -138,6 +138,12 @@ Virtual Python environment builder
 
 ![](images/virtualenv.png)
 
+### [tqdm](https://github.com/tqdm/tqdm)
+
+Extensible progress bar
+
+![](images/tqdm.png)
+
 ### [Matplotlib](https://github.com/matplotlib/matplotlib)
 
 2D plotting library
@@ -149,12 +155,6 @@ Virtual Python environment builder
 Code coverage testing
 
 ![](images/coverage.png)
-
-### [tqdm](https://github.com/tqdm/tqdm)
-
-Extensible progress bar
-
-![](images/tqdm.png)
 
 ### [Paramiko](https://github.com/paramiko/paramiko)
 
@@ -180,17 +180,17 @@ Checks Python source files for errors
 
 ![](images/pyflakes.png)
 
-### [UltraJSON](https://github.com/ultrajson/ultrajson)
-
-JSON decoder and encoder
-
-![](images/ujson.png)
-
 ### [Flake8](https://github.com/PyCQA/flake8)
 
 Linter
 
 ![](images/flake8.png)
+
+### [UltraJSON](https://github.com/ultrajson/ultrajson)
+
+JSON decoder and encoder
+
+![](images/ujson.png)
 
 ### [pytest-cov](https://github.com/pytest-dev/pytest-cov)
 
@@ -222,17 +222,17 @@ The uncompromising Python code formatter
 
 ![](images/black.png)
 
-### [tox](https://github.com/tox-dev/tox)
-
-Generic virtualenv management and test command line tool
-
-![](images/tox.png)
-
 ### [HTTPX](https://github.com/encode/httpx)
 
 HTTP client
 
 ![](images/httpx.png)
+
+### [tox](https://github.com/tox-dev/tox)
+
+Generic virtualenv management and test command line tool
+
+![](images/tox.png)
 
 ### [PrettyTable](https://github.com/jazzband/prettytable)
 
