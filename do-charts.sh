@@ -29,6 +29,7 @@ python3 jsons2csv.py --chart --no-show -p pytest-cov
 python3 jsons2csv.py --chart --no-show -p python-dateutil
 python3 jsons2csv.py --chart --no-show -p pytz
 python3 jsons2csv.py --chart --no-show -p requests
+python3 jsons2csv.py --chart --no-show -p rich
 python3 jsons2csv.py --chart --no-show -p scikit-learn
 python3 jsons2csv.py --chart --no-show -p scipy
 python3 jsons2csv.py --chart --no-show -p setuptools

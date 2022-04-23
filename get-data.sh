@@ -35,6 +35,7 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pytest-cov
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p python-dateutil
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pytz
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p requests
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p rich
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p scikit-learn
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p scipy
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p setuptools

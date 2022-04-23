@@ -44,7 +44,7 @@ Python 2 and 3 compatibility library
 
 ### [dateutil](https://github.com/dateutil/dateutil)
 
-Useful extensions to the standard Python datetime features
+Useful extensions to the standard datetime features
 
 ![](images/python-dateutil.png)
 
@@ -92,7 +92,7 @@ historical timezone library and database
 
 ### [cryptography](https://github.com/pyca/cryptography)
 
-cryptographic recipes and primitives to Python developers.
+Cryptographic recipes and primitives for developers
 
 ![](images/cryptography.png)
 
@@ -128,7 +128,7 @@ Imaging library
 
 ### [scikit-learn](https://github.com/scikit-learn/scikit-learn)
 
-machine learning in Python
+Machine learning
 
 ![](images/scikit-learn.png)
 
@@ -176,7 +176,7 @@ Machine learning library
 
 ### [Pyflakes](https://github.com/PyCQA/pyflakes)
 
-Checks Python source files for errors
+Checks source files for errors
 
 ![](images/pyflakes.png)
 
@@ -245,6 +245,12 @@ Display data in visually appealing ASCII table format
 Humanization utilities
 
 ![](images/humanize.png)
+
+### [Rich](https://github.com/Textualize/rich)
+
+Library for rich text and beautiful formatting in the terminal
+
+![](images/rich.png)
 
 ### [Tablib](https://github.com/jazzband/tablib)
 

@@ -43,7 +43,7 @@ DETAILS = {
     },
     "cryptography": {
         "url": "https://github.com/pyca/cryptography",
-        "description": "cryptographic recipes and primitives to Python developers.",
+        "description": "Cryptographic recipes and primitives for developers",
     },
     "django": {
         "name": "Django",
@@ -110,7 +110,7 @@ DETAILS = {
     "pyflakes": {
         "name": "Pyflakes",
         "url": "https://github.com/PyCQA/pyflakes",
-        "description": "Checks Python source files for errors",
+        "description": "Checks source files for errors",
     },
     "pylast": {
         "description": "Interface to Last.fm",
@@ -131,7 +131,7 @@ DETAILS = {
     "python-dateutil": {
         "name": "dateutil",
         "url": "https://github.com/dateutil/dateutil",
-        "description": "Useful extensions to the standard Python datetime features",
+        "description": "Useful extensions to the standard datetime features",
     },
     "pytz": {
         "url": "https://github.com/stub42/pytz",
@@ -142,8 +142,13 @@ DETAILS = {
         "url": "https://github.com/psf/requests",
         "description": "HTTP library",
     },
+    "rich": {
+        "name": "Rich",
+        "url": "https://github.com/Textualize/rich",
+        "description": "Library for rich text and beautiful formatting in the terminal",
+    },
     "scikit-learn": {
-        "description": "machine learning in Python",
+        "description": "Machine learning",
     },
     "scipy": {
         "name": "SciPy",
