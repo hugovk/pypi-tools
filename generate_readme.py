@@ -2,6 +2,8 @@
 """
 Generate Markdown with charts, showing with most downloads first
 """
+from __future__ import annotations
+
 import argparse
 import glob
 from pprint import pprint
@@ -222,9 +224,12 @@ def remove_suffix(text, suffix):
         return text
 
 
-def get_output(projects: list[str]) -> str:
+def get_output(projects: list[str], number: int | None = 0) -> str:
     output = ""
-    for project in projects:
+    if not number:
+        number = len(projects)
+
+    for project in projects[:number]:
         name = DETAILS[project].get("name", project)
         url = DETAILS[project].get("url", f"https://github.com/{project}/{project}")
         description = DETAILS[project]["description"]
@@ -242,8 +247,8 @@ def get_output(projects: list[str]) -> str:
     return output
 
 
-def update_file(projects: list[str], filename: str) -> None:
-    output = get_output(projects)
+def update_file(projects: list[str], filename: str, number: int | None = None) -> None:
+    output = get_output(projects, number)
     with open(filename) as f:
         contents = f.read()
 
@@ -304,7 +309,8 @@ def main():
     # pprint(projects)
 
     # Output Markdown images, most downloaded first
-    update_file(projects, "README.md")
+    update_file(projects, "README.md", 3)
+    update_file(projects, "charts.md")
 
 
 if __name__ == "__main__":
