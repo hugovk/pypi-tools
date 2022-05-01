@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Generate README with charts shown with most downloads first
+Generate Markdown with charts, showing with most downloads first
 """
 import argparse
 import glob
@@ -222,8 +222,29 @@ def remove_suffix(text, suffix):
         return text
 
 
-def update_readme(output):
-    with open("README.md") as f:
+def get_output(projects: list[str]) -> str:
+    output = ""
+    for project in projects:
+        name = DETAILS[project].get("name", project)
+        url = DETAILS[project].get("url", f"https://github.com/{project}/{project}")
+        description = DETAILS[project]["description"]
+
+        new = f"""
+### [{name}]({url})
+
+{description}
+
+![](images/{project}.png)
+        """.strip()
+
+        output += new + "\n\n"
+
+    return output
+
+
+def update_file(projects: list[str], filename: str) -> None:
+    output = get_output(projects)
+    with open(filename) as f:
         contents = f.read()
 
     before, delim1, _ = contents.partition("[start_generated]: # (start_generated)\n")
@@ -232,11 +253,11 @@ def update_readme(output):
     new_contents = before + delim1 + output + delim2 + after
 
     if contents == new_contents:
-        cprint("No changes to README.md", "green")
+        cprint(f"No changes to {filename}", "green")
     else:
-        with open("README.md", "w") as f:
+        with open(filename, "w") as f:
             f.write(new_contents)
-        cprint("README.md updated", "green")
+        cprint(f"{filename} updated", "green")
 
 
 def main():
@@ -257,7 +278,7 @@ def main():
         project = remove_prefix(project, "images/")
         project = remove_suffix(project, ".png")
 
-        # Special case, already in README
+        # Special case, already in the file
         if project == "all":
             continue
 
@@ -283,24 +304,7 @@ def main():
     # pprint(projects)
 
     # Output Markdown images, most downloaded first
-
-    output = ""
-    for project in projects:
-        name = DETAILS[project].get("name", project)
-        url = DETAILS[project].get("url", f"https://github.com/{project}/{project}")
-        description = DETAILS[project]["description"]
-
-        new = f"""
-### [{name}]({url})
-
-{description}
-
-![](images/{project}.png)
-        """.strip()
-
-        output += new + "\n\n"
-
-    update_readme(output)
+    update_file(projects, "README.md")
 
 
 if __name__ == "__main__":
