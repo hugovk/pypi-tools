@@ -18,12 +18,6 @@ Python 2 and 3 compatibility library
 
 ![](images/six.png)
 
-### [dateutil](https://github.com/dateutil/dateutil)
-
-Useful extensions to the standard datetime features
-
-![](images/python-dateutil.png)
-
 ### [setuptools](https://github.com/pypa/setuptools)
 
 Build system
@@ -35,6 +29,12 @@ Build system
 HTTP library
 
 ![](images/requests.png)
+
+### [dateutil](https://github.com/dateutil/dateutil)
+
+Useful extensions to the standard datetime features
+
+![](images/python-dateutil.png)
 
 ### [pip](https://github.com/pypa/pip)
 
@@ -108,17 +108,17 @@ Machine learning
 
 ![](images/scikit-learn.png)
 
-### [virtualenv](https://github.com/pypa/virtualenv)
-
-Virtual Python environment builder
-
-![](images/virtualenv.png)
-
 ### [tqdm](https://github.com/tqdm/tqdm)
 
 Extensible progress bar
 
 ![](images/tqdm.png)
+
+### [virtualenv](https://github.com/pypa/virtualenv)
+
+Virtual Python environment builder
+
+![](images/virtualenv.png)
 
 ### [Matplotlib](https://github.com/matplotlib/matplotlib)
 

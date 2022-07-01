@@ -42,11 +42,11 @@ Python 2 and 3 compatibility library
 
 ![](images/six.png)
 
-### [dateutil](https://github.com/dateutil/dateutil)
+### [setuptools](https://github.com/pypa/setuptools)
 
-Useful extensions to the standard datetime features
+Build system
 
-![](images/python-dateutil.png)
+![](images/setuptools.png)
 
 [end_generated]: # (end_generated)
 
