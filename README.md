@@ -42,12 +42,6 @@ Python 2 and 3 compatibility library
 
 ![](images/six.png)
 
-### [setuptools](https://github.com/pypa/setuptools)
-
-Build system
-
-![](images/setuptools.png)
-
 [end_generated]: # (end_generated)
 
 **[See more charts here.](charts.md)**

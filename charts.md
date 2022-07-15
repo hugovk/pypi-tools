@@ -36,6 +36,12 @@ Useful extensions to the standard datetime features
 
 ![](images/python-dateutil.png)
 
+### [Certifi](https://github.com/certifi/python-certifi)
+
+Provides Mozilla's CA Bundle
+
+![](images/certifi.png)
+
 ### [pip](https://github.com/pypa/pip)
 
 The package installer

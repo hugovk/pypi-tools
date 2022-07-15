@@ -29,6 +29,11 @@ DETAILS = {
         "url": "https://github.com/psf/black",
         "description": "The uncompromising Python code formatter",
     },
+    "certifi": {
+        "name": "Certifi",
+        "url": "https://github.com/certifi/python-certifi",
+        "description": "Provides Mozilla's CA Bundle",
+    },
     "cibuildwheel": {
         "url": "https://github.com/pypa/cibuildwheel",
         "description": "Build Python wheels on CI with minimal configuration",
@@ -309,7 +314,7 @@ def main():
     # pprint(projects)
 
     # Output Markdown images, most downloaded first
-    update_file(projects, "README.md", 3)
+    update_file(projects, "README.md", 2)
     update_file(projects, "charts.md")
 
 
