@@ -62,7 +62,7 @@ from pprint import pprint  # noqa: F401
 
 import httpx
 from prettytable import MARKDOWN, PrettyTable
-from tqdm import tqdm
+from rich.progress import track
 
 from source_finder import pypi_json
 from top_repos import get_top_packages
@@ -111,7 +111,7 @@ def main():
     all_keys = []
     selected_urls = []
     count = 0
-    for package in tqdm(packages_todo, unit="project"):
+    for package in track(packages_todo):
         field = get_field(args.field, package["name"])
         if field:
             fields.append(field)
