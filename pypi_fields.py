@@ -143,7 +143,7 @@ def main():
             count = len(fields)
 
         # For dicts, print table of most common keys
-        elif isinstance(fields[0], dict):
+        else:  # isinstance(fields[0], dict):
             # Counter will sort by most common, but let's sort alphabetically
             # for those with the same count
             all_keys = sorted(all_keys)

@@ -15,4 +15,3 @@ python-slugify
 pytz
 rich
 termcolor
-tqdm

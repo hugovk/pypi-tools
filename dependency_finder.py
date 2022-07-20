@@ -19,7 +19,7 @@ wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages-30-days.min.js
 
 Example usage:
 
-# Print only those found in the top 4,000
+# Print only those found in the top 5,000
 python3 dependency_finder.py sklearn
 
 # Print all
@@ -32,8 +32,8 @@ from collections import defaultdict
 from pathlib import Path
 from pprint import pprint  # noqa: F401
 
+from rich.progress import track  # pip install rich
 from termcolor import cprint  # pip install termcolor
-from tqdm import tqdm  # pip install tqdm
 
 import source_finder
 from source_finder import _print_verbose
@@ -130,7 +130,7 @@ def find_dependant_packages(target_package: str, all: bool):
 
     json_files = DB_DIR.glob("**/*.json")
     # json_files = [Path("/private/tmp/pypi-deps-db-master/sdist/4a.json")]
-    for json_file in tqdm(list(json_files), unit="file"):
+    for json_file in track(list(json_files)):
         # _print_verbose(json_file)
         if "sdist-errors" in str(json_file):
             continue
