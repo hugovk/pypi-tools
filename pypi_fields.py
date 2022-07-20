@@ -61,7 +61,7 @@ import collections
 from pprint import pprint  # noqa: F401
 
 import httpx
-from prettytable import MARKDOWN, PrettyTable
+from prettytable import MARKDOWN, SINGLE_BORDER, PrettyTable
 from rich.progress import track
 
 from source_finder import pypi_json
@@ -96,7 +96,10 @@ def main():
         "-k", "--key", help="For dict fields, also show the values for this key"
     )
     parser.add_argument(
-        "--format", default="table", choices=("table", "list"), help="Output format"
+        "--format",
+        default="table",
+        choices=("table", "markdown", "list"),
+        help="Output format",
     )
     args = parser.parse_args()
 
@@ -131,7 +134,9 @@ def main():
         for field in fields:
             print(field)
 
-    if args.format == "table":
+    if args.format in ("table", "markdown"):
+        table_style = MARKDOWN if args.format == "markdown" else SINGLE_BORDER
+
         # For strings, print table of most common
         if isinstance(fields[0], str):
             most_common = collections.Counter(fields).most_common()
@@ -148,7 +153,7 @@ def main():
         table.field_names = [args.field, "Count"]
         table.align = "l"
         table.align["Count"] = "r"
-        table.set_style(MARKDOWN)
+        table.set_style(table_style)
         table.add_rows(most_common)
         print()
         print(table)
@@ -161,7 +166,7 @@ def main():
             table = PrettyTable()
             table.field_names = ["Project", f"{args.key} URL"]
             table.align = "l"
-            table.set_style(MARKDOWN)
+            table.set_style(table_style)
             table.add_rows(selected_urls)
             print(table)
             print()
