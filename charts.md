@@ -222,17 +222,17 @@ Display data in visually appealing ASCII table format
 
 ![](images/prettytable.png)
 
-### [humanize](https://github.com/jmoiron/humanize)
-
-Humanization utilities
-
-![](images/humanize.png)
-
 ### [Rich](https://github.com/Textualize/rich)
 
 Library for rich text and beautiful formatting in the terminal
 
 ![](images/rich.png)
+
+### [humanize](https://github.com/jmoiron/humanize)
+
+Humanization utilities
+
+![](images/humanize.png)
 
 ### [Tablib](https://github.com/jazzband/tablib)
 
