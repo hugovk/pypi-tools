@@ -12,6 +12,5 @@ pypinfo >= 19
 pytablewriter
 python-dateutil
 python-slugify
-pytz
 rich
 termcolor

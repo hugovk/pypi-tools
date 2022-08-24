@@ -21,9 +21,9 @@ import datetime
 import json
 import traceback
 from pprint import pprint  # noqa: F401
+from zoneinfo import ZoneInfo  # Python 3.9+
 
 import pypidb  # pip install pypidb
-import pytz  # pip install pytz
 import requests
 from termcolor import cprint  # pip install termcolor
 
@@ -53,7 +53,7 @@ def load_from_file(file_name, index):
 
 def save_to_file(packages, file_name):
     print(f"Save {file_name}...")
-    now = datetime.datetime.utcnow().replace(tzinfo=pytz.utc)
+    now = datetime.datetime.utcnow().replace(tzinfo=ZoneInfo("UTC"))
     with open(file_name, "w") as f:
         f.write(
             json.dumps(
