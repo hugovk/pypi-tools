@@ -54,17 +54,17 @@ Binary distribution format
 
 ![](images/wheel.png)
 
-### [Colorama](https://github.com/tartley/colorama)
-
-Simple cross-platform colored terminal text in Python
-
-![](images/colorama.png)
-
 ### [NumPy](https://github.com/numpy/numpy)
 
 Scientific computing library
 
 ![](images/numpy.png)
+
+### [Colorama](https://github.com/tartley/colorama)
+
+Simple cross-platform colored terminal text in Python
+
+![](images/colorama.png)
 
 ### [pytz](https://github.com/stub42/pytz)
 
@@ -108,17 +108,17 @@ Imaging library
 
 ![](images/pillow.png)
 
-### [scikit-learn](https://github.com/scikit-learn/scikit-learn)
-
-Machine learning
-
-![](images/scikit-learn.png)
-
 ### [tqdm](https://github.com/tqdm/tqdm)
 
 Extensible progress bar
 
 ![](images/tqdm.png)
+
+### [scikit-learn](https://github.com/scikit-learn/scikit-learn)
+
+Machine learning
+
+![](images/scikit-learn.png)
 
 ### [virtualenv](https://github.com/pypa/virtualenv)
 
