@@ -52,6 +52,10 @@ DETAILS = {
         "url": "https://github.com/pyca/cryptography",
         "description": "Cryptographic recipes and primitives for developers",
     },
+    "cython": {
+        "name": "Cython",
+        "description": "Python to C compiler",
+    },
     "django": {
         "name": "Django",
         "url": "https://github.com/python-pillow/Pillow",
