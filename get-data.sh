@@ -44,6 +44,7 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p setuptools
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p six
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p tablib
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p tensorflow
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p termcolor
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p tox
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p tqdm
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p twitter

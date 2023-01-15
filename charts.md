@@ -156,6 +156,12 @@ Python to C compiler
 
 ![](images/cython.png)
 
+### [termcolor](https://github.com/termcolor/termcolor)
+
+ANSI color formatting for output in terminal
+
+![](images/termcolor.png)
+
 ### [TensorFlow](https://github.com/tensorflow/tensorflow)
 
 Machine learning library

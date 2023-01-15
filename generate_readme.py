@@ -12,12 +12,10 @@ from termcolor import cprint  # pip install termcolor
 
 from jsons2csv import load_data_from_json
 
-# Only need name if different from project
-# Only need url if different from https://github.com/{project}/{project}
 DETAILS = {
     # "project": {
-    #     "name": "Example",
-    #     "url": "https://github.com/org/example",
+    #     "name": "Example",  # Only needed if different from project
+    #     "url": "https://github.com/org/example", # If different from https://github.com/{project}/{project}  # noqa: E501
     #     "description": "Example library",
     # },
     "attrs": {
@@ -181,6 +179,9 @@ DETAILS = {
     "tensorflow": {
         "name": "TensorFlow",
         "description": "Machine learning library",
+    },
+    "termcolor": {
+        "description": "ANSI color formatting for output in terminal",
     },
     "tox": {
         "url": "https://github.com/tox-dev/tox",

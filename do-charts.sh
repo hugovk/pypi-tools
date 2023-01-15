@@ -38,6 +38,7 @@ python3 jsons2csv.py --chart --no-show -p setuptools
 python3 jsons2csv.py --chart --no-show -p six
 python3 jsons2csv.py --chart --no-show -p tablib
 python3 jsons2csv.py --chart --no-show -p tensorflow
+python3 jsons2csv.py --chart --no-show -p termcolor
 python3 jsons2csv.py --chart --no-show -p tox
 python3 jsons2csv.py --chart --no-show -p tqdm
 python3 jsons2csv.py --chart --no-show -p twitter
