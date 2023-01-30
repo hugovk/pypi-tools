@@ -44,7 +44,7 @@ jobs:
         shell: bash
         run: |
           python pypi-trends.py --dry-run
-          python jsons2csv.py
+          python jsons2img.py
           make -j4
           python generate_readme.py
           python macos-versions.py -i macos.json
