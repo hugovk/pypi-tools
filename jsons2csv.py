@@ -2,6 +2,8 @@
 """
 Tabulate the output JSON files from pypi-trends.py into a CSV file, pypi-trends.csv
 """
+from __future__ import annotations
+
 import argparse
 import csv
 import glob
@@ -18,16 +20,7 @@ from packaging.version import parse  # pip install packaging
 from termcolor import cprint  # pip install termcolor
 
 
-# https://stackoverflow.com/a/5734564/724176
-def month_year_iter(start_month, start_year, end_month, end_year):
-    ym_start = 12 * start_year + start_month - 1
-    ym_end = 12 * end_year + end_month - 1
-    for ym in range(ym_start, ym_end):
-        y, m = divmod(ym, 12)
-        yield y, m + 1
-
-
-def inspec_to_name(inspec):
+def inspec_to_name(inspec: str) -> str | None:
     """
     data/X* -> X
     data/X*.json -> X
@@ -57,7 +50,9 @@ def dopplr(name: str) -> str:
 
 
 # https://python-graph-gallery.com/255-percentage-stacked-area-chart/
-def make_chart(data, index, project_name, no_show, quiet):
+def make_chart(
+    data: dict, index: list[str], project_name: str, no_show: bool, quiet: bool
+):
 
     grand_total_downloads = 0
     for version in data:
@@ -156,14 +151,14 @@ def make_chart(data, index, project_name, no_show, quiet):
         plt.show()
 
 
-def remove_from_list(items, the_list):
+def remove_from_list(items: list[str], the_list: list[str]) -> list[str]:
     for item in items:
         if item in the_list:
             the_list.remove(item)
     return the_list
 
 
-def load_data_from_json(inspec, quiet=True):
+def load_data_from_json(inspec: str, quiet: bool = True):
     all_data = []
     all_versions = set()
 
@@ -219,7 +214,7 @@ def load_data_from_json(inspec, quiet=True):
     return all_data, all_versions
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
