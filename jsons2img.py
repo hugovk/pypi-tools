@@ -51,7 +51,7 @@ def dopplr(name: str) -> str:
 
 # https://python-graph-gallery.com/255-percentage-stacked-area-chart/
 def make_chart(
-    data: dict, index: list[str], project_name: str, no_show: bool, quiet: bool
+    data: dict, index: list[str], project_name: str, show: bool, quiet: bool
 ):
 
     grand_total_downloads = 0
@@ -147,7 +147,7 @@ def make_chart(
     outfile = f"images/{project_name}.png"
     cprint(outfile, "green")
     plt.savefig(outfile, dpi=96 * 2.5)
-    if not no_show:
+    if show:
         plt.show()
 
 
@@ -223,9 +223,7 @@ def main() -> None:
         "-p", "--project", help='Project; shortcut for -i "data/project*.json"'
     )
     parser.add_argument("-c", "--chart", action="store_true", help="Create a chart")
-    parser.add_argument(
-        "-ns", "--no-show", action="store_true", help="Don't show the chart"
-    )
+    parser.add_argument("-s", "--show", action="store_true", help="Show the chart")
     parser.add_argument("-q", "--quiet", action="store_true", help="Show less output")
     args = parser.parse_args()
 
@@ -260,7 +258,7 @@ def main() -> None:
                 downloads = month_data.get(version, 0)
                 data[version].append(downloads)
 
-        make_chart(data, index, inspec_to_name(args.inspec), args.no_show, args.quiet)
+        make_chart(data, index, inspec_to_name(args.inspec), args.show, args.quiet)
 
 
 if __name__ == "__main__":
