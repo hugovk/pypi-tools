@@ -40,7 +40,7 @@ def inspec_to_name(inspec):
     return name
 
 
-def dopplr(name):
+def dopplr(name: str) -> str:
     """
     Take the MD5 digest of a name,
     convert it to hex and take the
@@ -49,6 +49,9 @@ def dopplr(name):
     # Tweak "2.8" because it's too close in colour to "3.5"
     if name == "2.8":
         name = "python 2.8"
+    # Tweak "3.11" because it's too close in colour to "3.10"
+    if name == "3.11":
+        name = "Python3.11"
 
     return "#" + hashlib.sha224(name.encode()).hexdigest()[:6]
 
