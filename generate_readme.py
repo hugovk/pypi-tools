@@ -10,7 +10,7 @@ from pprint import pprint
 
 from termcolor import cprint  # pip install termcolor
 
-from jsons2csv import load_data_from_json
+from jsons2img import load_data_from_json
 
 DETAILS = {
     # "project": {

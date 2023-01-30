@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Tabulate the output JSON files from pypi-trends.py into a CSV file, pypi-trends.csv
+Create a chart image and CSV using JSON files from pypi-trends.py
 """
 from __future__ import annotations
 

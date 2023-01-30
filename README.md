@@ -16,9 +16,9 @@ the PyPI database on Google BigQuery and save them as JSON files.
 For the examples below, data was downloaded over many days as getting all months uses up
 a lot of free BigQuery quota.
 
-## jsons2csv.py
+## jsons2img.py
 
-`jsons2csv.py` converts the JSON files into a single CSV file for chart-wrangling
+`jsons2img.py` converts the JSON files into a single CSV file for chart-wrangling
 in a spreadsheet, and can generate a chart using Matplotlib. Once an image exists, it
 can be re-generated with `make -j4`.
 
