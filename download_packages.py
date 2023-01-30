@@ -11,13 +11,14 @@ wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages-30-days.min.js
 # Download and extract 5 sdists:
 python3 download_packages.py --number 5 --extract
 """
+from __future__ import annotations
+
 import argparse
 import atexit
 import os
 import shutil
 from pathlib import Path
 from pprint import pprint  # noqa: F401
-from typing import Optional
 from urllib.parse import urlparse
 
 import httpx  # pip install httpx
@@ -49,7 +50,7 @@ def find_sdist_url(package):
     return None
 
 
-def download_package(client, package) -> Optional[Path]:
+def download_package(client, package) -> Path | None:
     name = package["name"]
     _print_verbose("Package name:", name)
     url = find_sdist_url(name)

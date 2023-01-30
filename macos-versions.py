@@ -11,6 +11,8 @@ $ python3 macos-versions.py
 This then takes the JSON output file of that, and sums up the downloads for
 each macOS major.minor version, ignoring the patch number: x.y.z -> x.y
 """
+from __future__ import annotations
+
 import argparse
 import csv
 import glob

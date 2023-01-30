@@ -10,6 +10,8 @@ https://github.com/benjaminp/six
 $ python3 source_finder.py urllib3
 None
 """
+from __future__ import annotations
+
 import argparse
 import atexit
 import json

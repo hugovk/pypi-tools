@@ -27,6 +27,8 @@ python3 repo_checker.py --number 10 -c "flake8 --select XYZ CLONE_DIR" --repos "
 python3 repo_checker.py  -c "grep -r cElementTree CLONE_DIR" --flip-error --number 900 \
     --start 830
 """
+from __future__ import annotations
+
 import argparse
 import os
 import subprocess

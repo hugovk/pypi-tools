@@ -16,6 +16,8 @@ python3 top_repos.py --number 10
 # Check the first 10 packages and update URLs if they've changed
 python3 top_repos.py --number 10 --update
 """
+from __future__ import annotations
+
 import argparse
 import datetime
 import json
