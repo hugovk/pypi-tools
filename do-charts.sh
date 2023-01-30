@@ -11,6 +11,7 @@ python3 jsons2csv.py --chart --no-show -p cryptography
 python3 jsons2csv.py --chart --no-show -p cython
 python3 jsons2csv.py --chart --no-show -p django
 python3 jsons2csv.py --chart --no-show -p flake8
+python3 jsons2csv.py --chart --no-show -p flask
 python3 jsons2csv.py --chart --no-show -p html5lib
 python3 jsons2csv.py --chart --no-show -p httpx
 python3 jsons2csv.py --chart --no-show -p humanize

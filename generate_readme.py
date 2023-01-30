@@ -64,6 +64,11 @@ DETAILS = {
         "url": "https://github.com/PyCQA/flake8",
         "description": "Linter",
     },
+    "project": {
+        "name": "Flask",
+        "url": "https://github.com/pallets/flask",
+        "description": "Micro framework for building web apps",
+    },
     "html5lib": {
         "url": "https://github.com/html5lib/html5lib-python",
         "description": "HTML parser",
