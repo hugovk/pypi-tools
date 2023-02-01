@@ -18,17 +18,17 @@ Python 2 and 3 compatibility library
 
 ![](images/six.png)
 
-### [setuptools](https://github.com/pypa/setuptools)
-
-Build system
-
-![](images/setuptools.png)
-
 ### [Requests](https://github.com/psf/requests)
 
 HTTP library
 
 ![](images/requests.png)
+
+### [setuptools](https://github.com/pypa/setuptools)
+
+Build system
+
+![](images/setuptools.png)
 
 ### [dateutil](https://github.com/dateutil/dateutil)
 
@@ -126,17 +126,17 @@ Virtual Python environment builder
 
 ![](images/virtualenv.png)
 
-### [Matplotlib](https://github.com/matplotlib/matplotlib)
-
-2D plotting library
-
-![](images/matplotlib.png)
-
 ### [Coverage.py](https://github.com/nedbat/coveragepy)
 
 Code coverage testing
 
 ![](images/coverage.png)
+
+### [Matplotlib](https://github.com/matplotlib/matplotlib)
+
+2D plotting library
+
+![](images/matplotlib.png)
 
 ### [Paramiko](https://github.com/paramiko/paramiko)
 
@@ -222,17 +222,17 @@ HTTP client
 
 ![](images/httpx.png)
 
-### [PrettyTable](https://github.com/jazzband/prettytable)
-
-Display data in visually appealing ASCII table format
-
-![](images/prettytable.png)
-
 ### [tox](https://github.com/tox-dev/tox)
 
 Generic virtualenv management and test command line tool
 
 ![](images/tox.png)
+
+### [PrettyTable](https://github.com/jazzband/prettytable)
+
+Display data in visually appealing ASCII table format
+
+![](images/prettytable.png)
 
 ### [Rich](https://github.com/Textualize/rich)
 
