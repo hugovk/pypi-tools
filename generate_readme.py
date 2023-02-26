@@ -149,7 +149,7 @@ DETAILS = {
     },
     "pytz": {
         "url": "https://github.com/stub42/pytz",
-        "description": "historical timezone library and database",
+        "description": "Historical timezone library and database",
     },
     "requests": {
         "name": "Requests",
@@ -160,6 +160,11 @@ DETAILS = {
         "name": "Rich",
         "url": "https://github.com/Textualize/rich",
         "description": "Library for rich text and beautiful formatting in the terminal",
+    },
+    "ruff": {
+        "name": "Ruff",
+        "url": "https://github.com/charliermarsh/ruff",
+        "description": "Linter",
     },
     "scikit-learn": {
         "description": "Machine learning",

@@ -33,6 +33,7 @@ python3 jsons2img.py --chart -p python-dateutil
 python3 jsons2img.py --chart -p pytz
 python3 jsons2img.py --chart -p requests
 python3 jsons2img.py --chart -p rich
+python3 jsons2img.py --chart -p ruff
 python3 jsons2img.py --chart -p scikit-learn
 python3 jsons2img.py --chart -p scipy
 python3 jsons2img.py --chart -p setuptools

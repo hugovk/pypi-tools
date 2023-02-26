@@ -1,0 +1,1 @@
+{"data": [{"category": "2.7", "downloads": 1}, {"category": "3.10", "downloads": 2056}, {"category": "3.11", "downloads": 314}, {"category": "3.6", "downloads": 21}, {"category": "3.7", "downloads": 363}, {"category": "3.8", "downloads": 971}, {"category": "3.9", "downloads": 1969}, {"category": "null", "downloads": 21050}], "package": "ruff", "type": "python_minor_downloads"}

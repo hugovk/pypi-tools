@@ -68,7 +68,7 @@ Simple cross-platform colored terminal text in Python
 
 ### [pytz](https://github.com/stub42/pytz)
 
-historical timezone library and database
+Historical timezone library and database
 
 ![](images/pytz.png)
 
@@ -275,6 +275,12 @@ Interface to Last.fm
 Build Python wheels on CI with minimal configuration
 
 ![](images/cibuildwheel.png)
+
+### [Ruff](https://github.com/charliermarsh/ruff)
+
+Linter
+
+![](images/ruff.png)
 
 [end_generated]: # (end_generated)
 
