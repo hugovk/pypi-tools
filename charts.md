@@ -144,17 +144,17 @@ SSHv2 protocol library
 
 ![](images/paramiko.png)
 
-### [pycodestyle](https://github.com/PyCQA/pycodestyle)
-
-Style checker
-
-![](images/pycodestyle.png)
-
 ### [Cython](https://github.com/cython/cython)
 
 Python to C compiler
 
 ![](images/cython.png)
+
+### [pycodestyle](https://github.com/PyCQA/pycodestyle)
+
+Style checker
+
+![](images/pycodestyle.png)
 
 ### [termcolor](https://github.com/termcolor/termcolor)
 
@@ -264,17 +264,17 @@ Python Twitter API
 
 ![](images/twitter.png)
 
-### [pylast](https://github.com/pylast/pylast)
-
-Interface to Last.fm
-
-![](images/pylast.png)
-
 ### [cibuildwheel](https://github.com/pypa/cibuildwheel)
 
 Build Python wheels on CI with minimal configuration
 
 ![](images/cibuildwheel.png)
+
+### [pylast](https://github.com/pylast/pylast)
+
+Interface to Last.fm
+
+![](images/pylast.png)
 
 ### [Ruff](https://github.com/charliermarsh/ruff)
 
