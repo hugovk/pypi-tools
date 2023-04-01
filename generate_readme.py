@@ -64,7 +64,7 @@ DETAILS = {
         "url": "https://github.com/PyCQA/flake8",
         "description": "Linter",
     },
-    "project": {
+    "flask": {
         "name": "Flask",
         "url": "https://github.com/pallets/flask",
         "description": "Micro framework for building web apps",

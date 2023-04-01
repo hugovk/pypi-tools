@@ -36,11 +36,11 @@ HTTP client
 
 ![](images/urllib3.png)
 
-### [six](https://github.com/benjaminp/six)
+### [Requests](https://github.com/psf/requests)
 
-Python 2 and 3 compatibility library
+HTTP library
 
-![](images/six.png)
+![](images/requests.png)
 
 [end_generated]: # (end_generated)
 

@@ -12,17 +12,17 @@ HTTP client
 
 ![](images/urllib3.png)
 
-### [six](https://github.com/benjaminp/six)
-
-Python 2 and 3 compatibility library
-
-![](images/six.png)
-
 ### [Requests](https://github.com/psf/requests)
 
 HTTP library
 
 ![](images/requests.png)
+
+### [six](https://github.com/benjaminp/six)
+
+Python 2 and 3 compatibility library
+
+![](images/six.png)
 
 ### [setuptools](https://github.com/pypa/setuptools)
 
@@ -108,23 +108,29 @@ Imaging library
 
 ![](images/pillow.png)
 
+### [Flask](https://github.com/pallets/flask)
+
+Micro framework for building web apps
+
+![](images/flask.png)
+
 ### [tqdm](https://github.com/tqdm/tqdm)
 
 Extensible progress bar
 
 ![](images/tqdm.png)
 
-### [scikit-learn](https://github.com/scikit-learn/scikit-learn)
-
-Machine learning
-
-![](images/scikit-learn.png)
-
 ### [virtualenv](https://github.com/pypa/virtualenv)
 
 Virtual Python environment builder
 
 ![](images/virtualenv.png)
+
+### [scikit-learn](https://github.com/scikit-learn/scikit-learn)
+
+Machine learning
+
+![](images/scikit-learn.png)
 
 ### [Coverage.py](https://github.com/nedbat/coveragepy)
 
@@ -180,17 +186,17 @@ Linter
 
 ![](images/flake8.png)
 
-### [UltraJSON](https://github.com/ultrajson/ultrajson)
-
-JSON decoder and encoder
-
-![](images/ujson.png)
-
 ### [pytest-cov](https://github.com/pytest-dev/pytest-cov)
 
 Coverage plugin for pytest
 
 ![](images/pytest-cov.png)
+
+### [UltraJSON](https://github.com/ultrajson/ultrajson)
+
+JSON decoder and encoder
+
+![](images/ujson.png)
 
 ### [Pylint](https://github.com/PyCQA/pylint)
 
@@ -198,17 +204,17 @@ Linter
 
 ![](images/pylint.png)
 
-### [Django](https://github.com/python-pillow/Pillow)
-
-Web framework
-
-![](images/django.png)
-
 ### [html5lib](https://github.com/html5lib/html5lib-python)
 
 HTML parser
 
 ![](images/html5lib.png)
+
+### [Django](https://github.com/python-pillow/Pillow)
+
+Web framework
+
+![](images/django.png)
 
 ### [Black](https://github.com/psf/black)
 
@@ -228,17 +234,17 @@ Generic virtualenv management and test command line tool
 
 ![](images/tox.png)
 
-### [PrettyTable](https://github.com/jazzband/prettytable)
-
-Display data in visually appealing ASCII table format
-
-![](images/prettytable.png)
-
 ### [Rich](https://github.com/Textualize/rich)
 
 Library for rich text and beautiful formatting in the terminal
 
 ![](images/rich.png)
+
+### [PrettyTable](https://github.com/jazzband/prettytable)
+
+Display data in visually appealing ASCII table format
+
+![](images/prettytable.png)
 
 ### [humanize](https://github.com/jmoiron/humanize)
 
