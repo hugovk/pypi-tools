@@ -66,17 +66,17 @@ Simple cross-platform colored terminal text in Python
 
 ![](images/colorama.png)
 
-### [pytz](https://github.com/stub42/pytz)
-
-Historical timezone library and database
-
-![](images/pytz.png)
-
 ### [cryptography](https://github.com/pyca/cryptography)
 
 Cryptographic recipes and primitives for developers
 
 ![](images/cryptography.png)
+
+### [pytz](https://github.com/stub42/pytz)
+
+Historical timezone library and database
+
+![](images/pytz.png)
 
 ### [pandas](https://github.com/pandas-dev/pandas)
 
@@ -174,17 +174,17 @@ Machine learning library
 
 ![](images/tensorflow.png)
 
-### [Pyflakes](https://github.com/PyCQA/pyflakes)
-
-Checks source files for errors
-
-![](images/pyflakes.png)
-
 ### [Flake8](https://github.com/PyCQA/flake8)
 
 Linter
 
 ![](images/flake8.png)
+
+### [Pyflakes](https://github.com/PyCQA/pyflakes)
+
+Checks source files for errors
+
+![](images/pyflakes.png)
 
 ### [pytest-cov](https://github.com/pytest-dev/pytest-cov)
 
@@ -270,6 +270,12 @@ Python Twitter API
 
 ![](images/twitter.png)
 
+### [Ruff](https://github.com/charliermarsh/ruff)
+
+Linter
+
+![](images/ruff.png)
+
 ### [cibuildwheel](https://github.com/pypa/cibuildwheel)
 
 Build Python wheels on CI with minimal configuration
@@ -281,12 +287,6 @@ Build Python wheels on CI with minimal configuration
 Interface to Last.fm
 
 ![](images/pylast.png)
-
-### [Ruff](https://github.com/charliermarsh/ruff)
-
-Linter
-
-![](images/ruff.png)
 
 [end_generated]: # (end_generated)
 
