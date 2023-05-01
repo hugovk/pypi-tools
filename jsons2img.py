@@ -198,7 +198,7 @@ def load_data_from_json(inspec: str, quiet: bool = True):
                 version = row[version_index]
 
                 # Skip unknown versions
-                if version in ("None", "null", "Sure.0"):
+                if version in ("None", "null", "Sure.0", "3.11BYHW"):
                     continue
 
                 base_version = parse(version).base_version  # strips a4, b2, rc1
