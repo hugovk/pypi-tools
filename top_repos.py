@@ -19,11 +19,10 @@ python3 top_repos.py --number 10 --update
 from __future__ import annotations
 
 import argparse
-import datetime
+import datetime as dt
 import json
 import traceback
 from pprint import pprint  # noqa: F401
-from zoneinfo import ZoneInfo  # Python 3.9+
 
 import pypidb  # pip install pypidb
 import requests
@@ -55,7 +54,8 @@ def load_from_file(file_name, index):
 
 def save_to_file(packages, file_name):
     print(f"Save {file_name}...")
-    now = datetime.datetime.utcnow().replace(tzinfo=ZoneInfo("UTC"))
+    now = dt.datetime.now(dt.timezone.utc)
+
     with open(file_name, "w") as f:
         f.write(
             json.dumps(
