@@ -20,7 +20,7 @@ data:
 ## compress   to compress images
 .PHONY: compress
 compress:
-	time ls images/*.png | parallel optipng -o7 -zm1-9 {}
+	time ls images/*.png | parallel --bar optipng -o7 -zm1-9 {}
 
 .PHONY: help
 help : Makefile
