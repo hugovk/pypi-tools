@@ -70,13 +70,13 @@ def five_months_ago():
     return f"{first.year}-{first.month:02}"
 
 
-def default_end_date():
+def default_end_date() -> str:
     """For the default end date"""
     last = now - relativedelta(months=1)
     return f"{last.year}-{last.month:02}"
 
 
-def yyyy_mm_to_ints(yyyy_mm):
+def yyyy_mm_to_ints(yyyy_mm: str) -> tuple[int, int]:
     """Return yyyy-mm as two integers"""
     try:
         the_date = datetime.strptime(yyyy_mm, "%Y-%m")
