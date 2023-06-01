@@ -53,7 +53,6 @@ def dopplr(name: str) -> str:
 def make_chart(
     data: dict, index: list[str], project_name: str, show: bool, quiet: bool
 ):
-
     grand_total_downloads = 0
     for version in data:
         grand_total_downloads += sum(dls for dls in data[version])

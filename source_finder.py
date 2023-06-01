@@ -149,7 +149,6 @@ def _normalise_url(url):
 
 
 def find_source_repo(package):
-
     found_url = None
 
     res = pypi_json(package)
