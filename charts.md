@@ -18,17 +18,17 @@ HTTP library
 
 ![](images/requests.png)
 
-### [six](https://github.com/benjaminp/six)
-
-Python 2 and 3 compatibility library
-
-![](images/six.png)
-
 ### [setuptools](https://github.com/pypa/setuptools)
 
 Build system
 
 ![](images/setuptools.png)
+
+### [six](https://github.com/benjaminp/six)
+
+Python 2 and 3 compatibility library
+
+![](images/six.png)
 
 ### [dateutil](https://github.com/dateutil/dateutil)
 
@@ -210,17 +210,17 @@ HTML parser
 
 ![](images/html5lib.png)
 
-### [Django](https://github.com/python-pillow/Pillow)
-
-Web framework
-
-![](images/django.png)
-
 ### [Black](https://github.com/psf/black)
 
 The uncompromising Python code formatter
 
 ![](images/black.png)
+
+### [Django](https://github.com/python-pillow/Pillow)
+
+Web framework
+
+![](images/django.png)
 
 ### [HTTPX](https://github.com/encode/httpx)
 
@@ -228,17 +228,17 @@ HTTP client
 
 ![](images/httpx.png)
 
-### [tox](https://github.com/tox-dev/tox)
-
-Generic virtualenv management and test command line tool
-
-![](images/tox.png)
-
 ### [Rich](https://github.com/Textualize/rich)
 
 Library for rich text and beautiful formatting in the terminal
 
 ![](images/rich.png)
+
+### [tox](https://github.com/tox-dev/tox)
+
+Generic virtualenv management and test command line tool
+
+![](images/tox.png)
 
 ### [PrettyTable](https://github.com/jazzband/prettytable)
 
@@ -264,17 +264,17 @@ Testing framework
 
 ![](images/nose2.png)
 
-### [Python Twitter Tools](https://github.com/python-twitter-tools/twitter)
-
-Python Twitter API
-
-![](images/twitter.png)
-
 ### [Ruff](https://github.com/charliermarsh/ruff)
 
 Linter
 
 ![](images/ruff.png)
+
+### [Python Twitter Tools](https://github.com/python-twitter-tools/twitter)
+
+Python Twitter API
+
+![](images/twitter.png)
 
 ### [cibuildwheel](https://github.com/pypa/cibuildwheel)
 
