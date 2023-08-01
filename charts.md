@@ -102,17 +102,17 @@ For mathematics, science, and engineering
 
 ![](images/scipy.png)
 
-### [Pillow](https://github.com/python-pillow/Pillow)
-
-Imaging library
-
-![](images/pillow.png)
-
 ### [Flask](https://github.com/pallets/flask)
 
 Micro framework for building web apps
 
 ![](images/flask.png)
+
+### [Pillow](https://github.com/python-pillow/Pillow)
+
+Imaging library
+
+![](images/pillow.png)
 
 ### [tqdm](https://github.com/tqdm/tqdm)
 
@@ -126,17 +126,17 @@ Virtual Python environment builder
 
 ![](images/virtualenv.png)
 
-### [scikit-learn](https://github.com/scikit-learn/scikit-learn)
-
-Machine learning
-
-![](images/scikit-learn.png)
-
 ### [Coverage.py](https://github.com/nedbat/coveragepy)
 
 Code coverage testing
 
 ![](images/coverage.png)
+
+### [scikit-learn](https://github.com/scikit-learn/scikit-learn)
+
+Machine learning
+
+![](images/scikit-learn.png)
 
 ### [Matplotlib](https://github.com/matplotlib/matplotlib)
 
@@ -168,17 +168,17 @@ ANSI color formatting for output in terminal
 
 ![](images/termcolor.png)
 
-### [TensorFlow](https://github.com/tensorflow/tensorflow)
-
-Machine learning library
-
-![](images/tensorflow.png)
-
 ### [Flake8](https://github.com/PyCQA/flake8)
 
 Linter
 
 ![](images/flake8.png)
+
+### [TensorFlow](https://github.com/tensorflow/tensorflow)
+
+Machine learning library
+
+![](images/tensorflow.png)
 
 ### [Pyflakes](https://github.com/PyCQA/pyflakes)
 
