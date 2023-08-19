@@ -110,6 +110,11 @@ def main():
         dict_writer.writeheader()
         dict_writer.writerows(new_rows)
 
+    summed_percent = 0
+    for row in new_rows[::-1]:
+        summed_percent += float(row["percent"].rstrip("%"))
+        row["summed_percent"] = f"{round(summed_percent, 2):.2f}%"
+
     t = PrettyTable()
     t.set_style(MARKDOWN)
     t.field_names = new_rows[0].keys()
@@ -118,6 +123,7 @@ def main():
     t.align["distro_version"] = "r"
     t.align["download_count"] = "r"
     t.align["percent"] = "r"
+    t.align["summed_percent"] = "r"
     t.custom_format["download_count"] = lambda _, v: f"{v:,}"
     print(t)
 
