@@ -19,12 +19,12 @@ import glob
 import json
 import sys
 from collections import OrderedDict
-from distutils.version import LooseVersion
 
-from pytablewriter import Align, MarkdownTableWriter  # pip install pytablewriter
-from pytablewriter.style import Style
+from natsort import natsorted  # pip install natsort
+from prettytable import MARKDOWN, PrettyTable  # pip install prettytable
 
 # from pprint import pprint
+# from rich import print  # pip install rich
 
 
 # https://stackoverflow.com/a/5734564/724176
@@ -53,7 +53,7 @@ def main():
         sys.exit("No files matching " + args.inspec)
 
     for f in files:
-        print(f)
+        # print(f)
         with open(f) as json_data:
             d = json.load(json_data)
             # pprint(d)
@@ -70,7 +70,12 @@ def main():
                     continue
 
                 x, y, *rest = distro_version.split(".")
-                xy = f"'{x}.{y}'"
+                if int(x) >= 11:
+                    xy = f"{x}"
+                else:
+                    xy = f"{x}.{y}"
+                if xy == "10.16":
+                    xy = "11"
                 # print(distro_version)
                 # print(x, y)
                 # print(xy)
@@ -81,8 +86,8 @@ def main():
                 # pprint(darwin_downloads)
 
     # Sort by version number
-    orderedKeys = sorted(darwin_downloads, key=LooseVersion)
-    darwin_downloads = OrderedDict((key, darwin_downloads[key]) for key in orderedKeys)
+    ordered_keys = natsorted(darwin_downloads)
+    darwin_downloads = OrderedDict((key, darwin_downloads[key]) for key in ordered_keys)
 
     darwin_total = sum(darwin_downloads.values())
     # print(darwin_total)
@@ -105,15 +110,17 @@ def main():
         dict_writer.writeheader()
         dict_writer.writerows(new_rows)
 
-    writer = MarkdownTableWriter()
-    writer.header_list = fieldnames
-    writer.value_matrix = new_rows
-    writer.align_list = [Align.AUTO, Align.AUTO, Align.RIGHT, Align.AUTO]
-    writer.style_list = [None, None, None, Style(thousand_separator=",")]
-    writer.margin = 1
-    writer.write_table()
+    t = PrettyTable()
+    t.set_style(MARKDOWN)
+    t.field_names = new_rows[0].keys()
+    for row in new_rows:
+        t.add_row(row.values())
+    t.align["distro_version"] = "r"
+    t.align["download_count"] = "r"
+    t.align["percent"] = "r"
+    t.custom_format["download_count"] = lambda _, v: f"{v:,}"
+    print(t)
 
 
 if __name__ == "__main__":
     main()
-# End of file

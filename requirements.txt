@@ -9,7 +9,6 @@ prettytable >= 2
 pybraries
 pypidb
 pypinfo >= 19
-pytablewriter
 python-dateutil
 python-slugify
 rich
