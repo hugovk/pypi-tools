@@ -60,17 +60,17 @@ Scientific computing library
 
 ![](images/numpy.png)
 
-### [Colorama](https://github.com/tartley/colorama)
-
-Simple cross-platform colored terminal text in Python
-
-![](images/colorama.png)
-
 ### [cryptography](https://github.com/pyca/cryptography)
 
 Cryptographic recipes and primitives for developers
 
 ![](images/cryptography.png)
+
+### [Colorama](https://github.com/tartley/colorama)
+
+Simple cross-platform colored terminal text in Python
+
+![](images/colorama.png)
 
 ### [pytz](https://github.com/stub42/pytz)
 
@@ -174,17 +174,17 @@ Linter
 
 ![](images/flake8.png)
 
-### [TensorFlow](https://github.com/tensorflow/tensorflow)
-
-Machine learning library
-
-![](images/tensorflow.png)
-
 ### [Pyflakes](https://github.com/PyCQA/pyflakes)
 
 Checks source files for errors
 
 ![](images/pyflakes.png)
+
+### [TensorFlow](https://github.com/tensorflow/tensorflow)
+
+Machine learning library
+
+![](images/tensorflow.png)
 
 ### [pytest-cov](https://github.com/pytest-dev/pytest-cov)
 
@@ -222,17 +222,17 @@ Web framework
 
 ![](images/django.png)
 
-### [HTTPX](https://github.com/encode/httpx)
-
-HTTP client
-
-![](images/httpx.png)
-
 ### [Rich](https://github.com/Textualize/rich)
 
 Library for rich text and beautiful formatting in the terminal
 
 ![](images/rich.png)
+
+### [HTTPX](https://github.com/encode/httpx)
+
+HTTP client
+
+![](images/httpx.png)
 
 ### [tox](https://github.com/tox-dev/tox)
 
