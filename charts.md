@@ -96,17 +96,17 @@ Testing framework
 
 ![](images/pytest.png)
 
-### [SciPy](https://github.com/scipy/scipy)
-
-For mathematics, science, and engineering
-
-![](images/scipy.png)
-
 ### [Flask](https://github.com/pallets/flask)
 
 Micro framework for building web apps
 
 ![](images/flask.png)
+
+### [SciPy](https://github.com/scipy/scipy)
+
+For mathematics, science, and engineering
+
+![](images/scipy.png)
 
 ### [Pillow](https://github.com/python-pillow/Pillow)
 
