@@ -114,17 +114,17 @@ Imaging library
 
 ![](images/pillow.png)
 
-### [tqdm](https://github.com/tqdm/tqdm)
-
-Extensible progress bar
-
-![](images/tqdm.png)
-
 ### [virtualenv](https://github.com/pypa/virtualenv)
 
 Virtual Python environment builder
 
 ![](images/virtualenv.png)
+
+### [tqdm](https://github.com/tqdm/tqdm)
+
+Extensible progress bar
+
+![](images/tqdm.png)
 
 ### [Coverage.py](https://github.com/nedbat/coveragepy)
 
@@ -192,29 +192,29 @@ Coverage plugin for pytest
 
 ![](images/pytest-cov.png)
 
-### [UltraJSON](https://github.com/ultrajson/ultrajson)
-
-JSON decoder and encoder
-
-![](images/ujson.png)
-
 ### [Pylint](https://github.com/PyCQA/pylint)
 
 Linter
 
 ![](images/pylint.png)
 
-### [html5lib](https://github.com/html5lib/html5lib-python)
+### [UltraJSON](https://github.com/ultrajson/ultrajson)
 
-HTML parser
+JSON decoder and encoder
 
-![](images/html5lib.png)
+![](images/ujson.png)
 
 ### [Black](https://github.com/psf/black)
 
 The uncompromising Python code formatter
 
 ![](images/black.png)
+
+### [html5lib](https://github.com/html5lib/html5lib-python)
+
+HTML parser
+
+![](images/html5lib.png)
 
 ### [Django](https://github.com/python-pillow/Pillow)
 
