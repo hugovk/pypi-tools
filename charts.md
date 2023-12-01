@@ -30,17 +30,17 @@ Python 2 and 3 compatibility library
 
 ![](images/six.png)
 
-### [dateutil](https://github.com/dateutil/dateutil)
-
-Useful extensions to the standard datetime features
-
-![](images/python-dateutil.png)
-
 ### [Certifi](https://github.com/certifi/python-certifi)
 
 Provides Mozilla's CA Bundle
 
 ![](images/certifi.png)
+
+### [dateutil](https://github.com/dateutil/dateutil)
+
+Useful extensions to the standard datetime features
+
+![](images/python-dateutil.png)
 
 ### [pip](https://github.com/pypa/pip)
 
@@ -258,17 +258,17 @@ Format-agnostic tabular dataset library
 
 ![](images/tablib.png)
 
-### [nose2](https://github.com/nose-devs/nose2)
-
-Testing framework
-
-![](images/nose2.png)
-
 ### [Ruff](https://github.com/charliermarsh/ruff)
 
 Linter
 
 ![](images/ruff.png)
+
+### [nose2](https://github.com/nose-devs/nose2)
+
+Testing framework
+
+![](images/nose2.png)
 
 ### [Python Twitter Tools](https://github.com/python-twitter-tools/twitter)
 
