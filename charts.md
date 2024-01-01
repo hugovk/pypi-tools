@@ -168,17 +168,17 @@ ANSI color formatting for output in terminal
 
 ![](images/termcolor.png)
 
-### [Flake8](https://github.com/PyCQA/flake8)
-
-Linter
-
-![](images/flake8.png)
-
 ### [Pyflakes](https://github.com/PyCQA/pyflakes)
 
 Checks source files for errors
 
 ![](images/pyflakes.png)
+
+### [Flake8](https://github.com/PyCQA/flake8)
+
+Linter
+
+![](images/flake8.png)
 
 ### [TensorFlow](https://github.com/tensorflow/tensorflow)
 
@@ -216,17 +216,17 @@ HTML parser
 
 ![](images/html5lib.png)
 
-### [Django](https://github.com/python-pillow/Pillow)
-
-Web framework
-
-![](images/django.png)
-
 ### [Rich](https://github.com/Textualize/rich)
 
 Library for rich text and beautiful formatting in the terminal
 
 ![](images/rich.png)
+
+### [Django](https://github.com/python-pillow/Pillow)
+
+Web framework
+
+![](images/django.png)
 
 ### [HTTPX](https://github.com/encode/httpx)
 
@@ -270,17 +270,17 @@ Testing framework
 
 ![](images/nose2.png)
 
-### [Python Twitter Tools](https://github.com/python-twitter-tools/twitter)
-
-Python Twitter API
-
-![](images/twitter.png)
-
 ### [cibuildwheel](https://github.com/pypa/cibuildwheel)
 
 Build Python wheels on CI with minimal configuration
 
 ![](images/cibuildwheel.png)
+
+### [Python Twitter Tools](https://github.com/python-twitter-tools/twitter)
+
+Python Twitter API
+
+![](images/twitter.png)
 
 ### [pylast](https://github.com/pylast/pylast)
 
