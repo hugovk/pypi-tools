@@ -56,6 +56,7 @@ Projects with project_urls: 10/10
 | python-dateutil | https://github.com/dateutil/dateutil |
 | requests        | https://github.com/psf/requests      |
 """
+
 from __future__ import annotations
 
 import argparse

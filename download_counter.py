@@ -12,6 +12,7 @@ wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages-30-days.min.js
 python3 download_counter.py Pillow pylast pypistats pypinfo norwegianblue pepotron \
     termcolor humanize PrettyTable Tablib UltraJSON OSMViz tinytext em-keyboard
 """
+
 from __future__ import annotations
 
 import argparse
