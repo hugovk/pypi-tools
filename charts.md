@@ -180,17 +180,17 @@ Linter
 
 ![](images/flake8.png)
 
-### [TensorFlow](https://github.com/tensorflow/tensorflow)
-
-Machine learning library
-
-![](images/tensorflow.png)
-
 ### [pytest-cov](https://github.com/pytest-dev/pytest-cov)
 
 Coverage plugin for pytest
 
 ![](images/pytest-cov.png)
+
+### [TensorFlow](https://github.com/tensorflow/tensorflow)
+
+Machine learning library
+
+![](images/tensorflow.png)
 
 ### [Pylint](https://github.com/PyCQA/pylint)
 
@@ -198,23 +198,17 @@ Linter
 
 ![](images/pylint.png)
 
-### [UltraJSON](https://github.com/ultrajson/ultrajson)
-
-JSON decoder and encoder
-
-![](images/ujson.png)
-
 ### [Black](https://github.com/psf/black)
 
 The uncompromising Python code formatter
 
 ![](images/black.png)
 
-### [html5lib](https://github.com/html5lib/html5lib-python)
+### [UltraJSON](https://github.com/ultrajson/ultrajson)
 
-HTML parser
+JSON decoder and encoder
 
-![](images/html5lib.png)
+![](images/ujson.png)
 
 ### [Rich](https://github.com/Textualize/rich)
 
@@ -222,17 +216,23 @@ Library for rich text and beautiful formatting in the terminal
 
 ![](images/rich.png)
 
-### [Django](https://github.com/python-pillow/Pillow)
+### [html5lib](https://github.com/html5lib/html5lib-python)
 
-Web framework
+HTML parser
 
-![](images/django.png)
+![](images/html5lib.png)
 
 ### [HTTPX](https://github.com/encode/httpx)
 
 HTTP client
 
 ![](images/httpx.png)
+
+### [Django](https://github.com/python-pillow/Pillow)
+
+Web framework
+
+![](images/django.png)
 
 ### [tox](https://github.com/tox-dev/tox)
 
