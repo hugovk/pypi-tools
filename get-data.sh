@@ -44,6 +44,7 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p scikit-learn
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p scipy
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p setuptools
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p six
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p sphinx-lint
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p tablib
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p tensorflow
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p termcolor

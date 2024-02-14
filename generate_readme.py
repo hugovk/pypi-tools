@@ -181,6 +181,11 @@ DETAILS = {
         "url": "https://github.com/benjaminp/six",
         "description": "Python 2 and 3 compatibility library",
     },
+    "sphinx-lint": {
+        "name": "Sphinx Lint",
+        "url": "https://github.com/sphinx-contrib/sphinx-lint",
+        "description": "Sphinx and reST linter",
+    },
     "tablib": {
         "name": "Tablib",
         "url": "https://github.com/jazzband/tablib",

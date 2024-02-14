@@ -38,6 +38,7 @@ python3 jsons2img.py --chart -p scikit-learn
 python3 jsons2img.py --chart -p scipy
 python3 jsons2img.py --chart -p setuptools
 python3 jsons2img.py --chart -p six
+python3 jsons2img.py --chart -p sphinx-lint
 python3 jsons2img.py --chart -p tablib
 python3 jsons2img.py --chart -p tensorflow
 python3 jsons2img.py --chart -p termcolor

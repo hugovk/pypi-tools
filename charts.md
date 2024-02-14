@@ -288,6 +288,12 @@ Interface to Last.fm
 
 ![](images/pylast.png)
 
+### [Sphinx Lint](https://github.com/sphinx-contrib/sphinx-lint)
+
+Sphinx and reST linter
+
+![](images/sphinx-lint.png)
+
 [end_generated]: # (end_generated)
 
 ### See also
