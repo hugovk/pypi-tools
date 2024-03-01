@@ -47,6 +47,7 @@ python3 jsons2img.py --chart -p tqdm
 python3 jsons2img.py --chart -p twitter
 python3 jsons2img.py --chart -p ujson
 python3 jsons2img.py --chart -p urllib3
+python3 jsons2img.py --chart -p uv
 python3 jsons2img.py --chart -p virtualenv
 python3 jsons2img.py --chart -p wheel
 

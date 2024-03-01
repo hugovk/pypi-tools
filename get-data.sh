@@ -53,5 +53,6 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p tqdm
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p twitter
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p ujson
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p urllib3
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p uv
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p virtualenv
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p wheel
