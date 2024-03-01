@@ -24,17 +24,17 @@ Build system
 
 ![](images/setuptools.png)
 
-### [six](https://github.com/benjaminp/six)
-
-Python 2 and 3 compatibility library
-
-![](images/six.png)
-
 ### [Certifi](https://github.com/certifi/python-certifi)
 
 Provides Mozilla's CA Bundle
 
 ![](images/certifi.png)
+
+### [six](https://github.com/benjaminp/six)
+
+Python 2 and 3 compatibility library
+
+![](images/six.png)
 
 ### [dateutil](https://github.com/dateutil/dateutil)
 
@@ -204,29 +204,29 @@ The uncompromising Python code formatter
 
 ![](images/black.png)
 
-### [UltraJSON](https://github.com/ultrajson/ultrajson)
-
-JSON decoder and encoder
-
-![](images/ujson.png)
-
 ### [Rich](https://github.com/Textualize/rich)
 
 Library for rich text and beautiful formatting in the terminal
 
 ![](images/rich.png)
 
-### [html5lib](https://github.com/html5lib/html5lib-python)
+### [UltraJSON](https://github.com/ultrajson/ultrajson)
 
-HTML parser
+JSON decoder and encoder
 
-![](images/html5lib.png)
+![](images/ujson.png)
 
 ### [HTTPX](https://github.com/encode/httpx)
 
 HTTP client
 
 ![](images/httpx.png)
+
+### [html5lib](https://github.com/html5lib/html5lib-python)
+
+HTML parser
+
+![](images/html5lib.png)
 
 ### [Django](https://github.com/python-pillow/Pillow)
 
