@@ -49,6 +49,14 @@ def dopplr(name: str) -> str:
     return "#" + hashlib.sha224(name.encode()).hexdigest()[:6]
 
 
+def human_format(num: int) -> str:
+    magnitude = 0
+    while abs(num) >= 1000:
+        magnitude += 1
+        num /= 1000.0
+    return f'{int(num)}{["", "K", "M", "B"][magnitude]}'
+
+
 # https://python-graph-gallery.com/255-percentage-stacked-area-chart/
 def make_chart(
     data: dict, index: list[int], project_name: str, show: bool, quiet: bool
@@ -109,16 +117,18 @@ def make_chart(
     # Pad margins so that markers don't get clipped by the axes
     # plt.margins(0.2)
 
-    # Tweak spacing to prevent clipping of tick-labels
-    plt.subplots_adjust(bottom=0.2)
+    # Tweak left spacing to reduce gap from edge to axis
+    # Tweak bottom spacing to prevent clipping of tick-labels
+    plt.subplots_adjust(left=0.1, bottom=0.2)
 
     plt.grid()
 
     plt.margins(0, 0)
 
-    # Shrink current axis by 20% so legend is outside chart
+    # Shrink current axis so legend is outside chart
     box = ax.get_position()
-    ax.set_position([box.x0, box.y0, box.width * 0.9, box.height])
+    shrink = 0.87
+    ax.set_position([box.x0, box.y0, box.width * shrink, box.height])
 
     # To reverse the legend order
     handles, labels = ax.get_legend_handles_labels()
@@ -128,9 +138,32 @@ def make_chart(
         handles[::-1],
         labels[::-1],
         loc="center left",
-        bbox_to_anchor=(1, 0.5),
+        bbox_to_anchor=(1.1, 0.5),
         fontsize=8,
     )
+
+    # Calculate total downloads for each month
+    total_downloads = data.sum(axis=1)
+
+    # Create a secondary y-axis for total downloads
+    ax2 = plt.gca().twinx()
+
+    # Add a line plot for total downloads
+    ax2.plot(index, total_downloads, color="black", linewidth=2)
+    ax2.plot(index, total_downloads, color="white", linewidth=1)
+
+    # Shrink it
+    ax2.set_position([box.x0, box.y0, box.width * shrink, box.height])
+
+    # Set the fontsize of the secondary y-axis labels to 8
+    ax2.tick_params(axis="y", labelsize=8)
+
+    # Set the y-axis to start from 0
+    ax.set_ylim(bottom=0)
+    ax2.set_ylim(bottom=0)
+
+    # Format the secondary y-axis labels to display in millions (m)
+    ax2.yaxis.set_major_formatter(FuncFormatter(lambda y, _: human_format(y)))
 
     if project_name:
         s = "" if project_name.endswith("s") else "s"
