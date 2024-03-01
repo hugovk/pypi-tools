@@ -51,7 +51,7 @@ def dopplr(name: str) -> str:
 
 # https://python-graph-gallery.com/255-percentage-stacked-area-chart/
 def make_chart(
-    data: dict, index: list[str], project_name: str, show: bool, quiet: bool
+    data: dict, index: list[int], project_name: str, show: bool, quiet: bool
 ):
     grand_total_downloads = 0
     for version in data:
@@ -243,19 +243,16 @@ def main() -> None:
         rows.append(row)
 
     if args.chart:
-        data = {}
+        data = defaultdict(list)
         index = []
 
-        # Initialise dict
-        for version in all_versions:
-            # print(version)
-            data[version] = []
-
         for month_data in all_data:
-            index.append(month_data["yyyy-mm"])
-            for version in all_versions:
-                downloads = month_data.get(version, 0)
-                data[version].append(downloads)
+            # Only include months with non-zero downloads
+            if any(month_data[version] for version in all_versions):
+                index.append(month_data["yyyy-mm"])
+                for version in all_versions:
+                    downloads = month_data.get(version, 0)
+                    data[version].append(downloads)
 
         make_chart(data, index, inspec_to_name(args.inspec), args.show, args.quiet)
 
