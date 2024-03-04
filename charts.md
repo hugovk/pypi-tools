@@ -168,6 +168,12 @@ ANSI color formatting for output in terminal
 
 ![](images/termcolor.png)
 
+### [isort](https://github.com/PyCQA/isort)
+
+Import sorter
+
+![](images/isort.png)
+
 ### [Pyflakes](https://github.com/PyCQA/pyflakes)
 
 Checks source files for errors
@@ -234,6 +240,12 @@ Web framework
 
 ![](images/django.png)
 
+### [mypy](https://github.com/python/mypy)
+
+Optional static typing
+
+![](images/mypy.png)
+
 ### [tox](https://github.com/tox-dev/tox)
 
 Generic virtualenv management and test command line tool
@@ -269,6 +281,12 @@ Linter
 Testing framework
 
 ![](images/nose2.png)
+
+### [pyupgrade](https://github.com/asottile/pyupgrade)
+
+Automatic syntax upgrader
+
+![](images/pyupgrade.png)
 
 ### [cibuildwheel](https://github.com/pypa/cibuildwheel)
 

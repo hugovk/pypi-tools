@@ -15,7 +15,9 @@ python3 jsons2img.py --chart -p flask
 python3 jsons2img.py --chart -p html5lib
 python3 jsons2img.py --chart -p httpx
 python3 jsons2img.py --chart -p humanize
+python3 jsons2img.py --chart -p isort
 python3 jsons2img.py --chart -p matplotlib
+python3 jsons2img.py --chart -p mypy
 python3 jsons2img.py --chart -p nose2
 python3 jsons2img.py --chart -p numpy
 python3 jsons2img.py --chart -p pandas
@@ -31,6 +33,7 @@ python3 jsons2img.py --chart -p pytest
 python3 jsons2img.py --chart -p pytest-cov
 python3 jsons2img.py --chart -p python-dateutil
 python3 jsons2img.py --chart -p pytz
+python3 jsons2img.py --chart -p pyupgrade
 python3 jsons2img.py --chart -p requests
 python3 jsons2img.py --chart -p rich
 python3 jsons2img.py --chart -p ruff

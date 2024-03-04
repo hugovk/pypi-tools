@@ -82,9 +82,17 @@ DETAILS = {
         "url": "https://github.com/jmoiron/humanize",
         "description": "Humanization utilities",
     },
+    "isort": {
+        "url": "https://github.com/PyCQA/isort",
+        "description": "Import sorter",
+    },
     "matplotlib": {
         "name": "Matplotlib",
         "description": "2D plotting library",
+    },
+    "mypy": {
+        "url": "https://github.com/python/mypy",
+        "description": "Optional static typing",
     },
     "nose2": {
         "name": "nose2",
@@ -150,6 +158,10 @@ DETAILS = {
     "pytz": {
         "url": "https://github.com/stub42/pytz",
         "description": "Historical timezone library and database",
+    },
+    "pyupgrade": {
+        "url": "https://github.com/asottile/pyupgrade",
+        "description": "Automatic syntax upgrader",
     },
     "requests": {
         "name": "Requests",

@@ -21,7 +21,9 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p flask
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p html5lib
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p httpx
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p humanize
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p isort
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p matplotlib
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p mypy
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p nose2
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p numpy
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pandas
@@ -37,6 +39,7 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pytest
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pytest-cov
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p python-dateutil
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pytz
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pyupgrade
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p requests
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p rich
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p ruff
