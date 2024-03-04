@@ -1,0 +1,1 @@
+{"last_update":"2024-03-04 13:17:17","query":{"bytes_billed":470810624,"bytes_processed":470308717,"cached":false,"estimated_cost":"0.01"},"rows":[{"download_count":103,"percent":"0.4","python_version":"2.7"},{"download_count":89,"percent":"0.34","python_version":"3.5"},{"download_count":66,"percent":"0.26","python_version":"3.4"}]}
