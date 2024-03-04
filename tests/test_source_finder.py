@@ -21,7 +21,7 @@ import source_finder
             "https://github.com/protocolbuffers/protobuf",
         ),
         (
-            "https://github.com/uqfoundation/dill/releases/download/dill-0.3.1.1/dill-0.3.1.1.tar.gz",  # noqa: E501
+            "https://github.com/uqfoundation/dill/releases/download/dill-0.3.1.1/dill-0.3.1.1.tar.gz",
             "https://github.com/uqfoundation/dill",
         ),
         (

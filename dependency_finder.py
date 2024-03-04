@@ -32,7 +32,7 @@ import json
 import re
 from collections import defaultdict
 from pathlib import Path
-from pprint import pprint  # noqa: F401
+from pprint import pp
 
 from rich.progress import track  # pip install rich
 from termcolor import cprint  # pip install termcolor
@@ -151,7 +151,7 @@ def find_dependant_packages(target_package: str, all: bool):
             found = found | new
 
     if all:
-        pprint(found)
+        pp(found)
         return
 
     top_packages = [package["name"] for package in get_top_packages()]

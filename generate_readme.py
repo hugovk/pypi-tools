@@ -313,7 +313,7 @@ def main():
 
     images = sorted(glob.glob(args.inspec))
     pprint(images)
-    project_downloads = dict()
+    project_downloads = {}
 
     for image in images:
         project = image

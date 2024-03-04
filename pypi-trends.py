@@ -81,7 +81,8 @@ def yyyy_mm_to_ints(yyyy_mm: str) -> tuple[int, int]:
     try:
         the_date = datetime.strptime(yyyy_mm, "%Y-%m")
     except ValueError:
-        raise ValueError("Dates must be YYYY-MM")
+        msg = "Dates must be YYYY-MM"
+        raise ValueError(msg)
 
     return the_date.year, the_date.month
 
@@ -123,11 +124,7 @@ def main():
     from_year, from_month = yyyy_mm_to_ints(args.from_date)
     to_year, to_month = yyyy_mm_to_ints(args.to_date)
 
-    print(
-        "Getting data from {} {} to {} {}\n".format(
-            from_month, from_year, to_month, to_year
-        )
-    )
+    print(f"Getting data from {from_month} {from_year} to {to_month} {to_year}\n")
 
     years_months = list(
         month_year_iter(from_month, from_year, to_month + 1, to_year, reverse=True)
