@@ -174,6 +174,12 @@ Import sorter
 
 ![](images/isort.png)
 
+### [pytest-cov](https://github.com/pytest-dev/pytest-cov)
+
+Coverage plugin for pytest
+
+![](images/pytest-cov.png)
+
 ### [Pyflakes](https://github.com/PyCQA/pyflakes)
 
 Checks source files for errors
@@ -185,12 +191,6 @@ Checks source files for errors
 Linter
 
 ![](images/flake8.png)
-
-### [pytest-cov](https://github.com/pytest-dev/pytest-cov)
-
-Coverage plugin for pytest
-
-![](images/pytest-cov.png)
 
 ### [TensorFlow](https://github.com/tensorflow/tensorflow)
 
@@ -204,29 +204,29 @@ Linter
 
 ![](images/pylint.png)
 
-### [Black](https://github.com/psf/black)
-
-The uncompromising Python code formatter
-
-![](images/black.png)
-
 ### [Rich](https://github.com/Textualize/rich)
 
 Library for rich text and beautiful formatting in the terminal
 
 ![](images/rich.png)
 
-### [UltraJSON](https://github.com/ultrajson/ultrajson)
+### [Black](https://github.com/psf/black)
 
-JSON decoder and encoder
+The uncompromising Python code formatter
 
-![](images/ujson.png)
+![](images/black.png)
 
 ### [HTTPX](https://github.com/encode/httpx)
 
 HTTP client
 
 ![](images/httpx.png)
+
+### [UltraJSON](https://github.com/ultrajson/ultrajson)
+
+JSON decoder and encoder
+
+![](images/ujson.png)
 
 ### [html5lib](https://github.com/html5lib/html5lib-python)
 
