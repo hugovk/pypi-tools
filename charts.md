@@ -198,12 +198,6 @@ Machine learning library
 
 ![](images/tensorflow.png)
 
-### [Pylint](https://github.com/PyCQA/pylint)
-
-Linter
-
-![](images/pylint.png)
-
 ### [Rich](https://github.com/Textualize/rich)
 
 Library for rich text and beautiful formatting in the terminal
@@ -221,6 +215,12 @@ The uncompromising Python code formatter
 HTTP client
 
 ![](images/httpx.png)
+
+### [Pylint](https://github.com/PyCQA/pylint)
+
+Linter
+
+![](images/pylint.png)
 
 ### [UltraJSON](https://github.com/ultrajson/ultrajson)
 
@@ -264,17 +264,17 @@ Humanization utilities
 
 ![](images/humanize.png)
 
-### [Tablib](https://github.com/jazzband/tablib)
-
-Format-agnostic tabular dataset library
-
-![](images/tablib.png)
-
 ### [Ruff](https://github.com/charliermarsh/ruff)
 
 Linter
 
 ![](images/ruff.png)
+
+### [Tablib](https://github.com/jazzband/tablib)
+
+Format-agnostic tabular dataset library
+
+![](images/tablib.png)
 
 ### [nose2](https://github.com/nose-devs/nose2)
 
