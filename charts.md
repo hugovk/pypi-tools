@@ -108,17 +108,17 @@ For mathematics, science, and engineering
 
 ![](images/scipy.png)
 
-### [Pillow](https://github.com/python-pillow/Pillow)
-
-Imaging library
-
-![](images/pillow.png)
-
 ### [virtualenv](https://github.com/pypa/virtualenv)
 
 Virtual Python environment builder
 
 ![](images/virtualenv.png)
+
+### [Pillow](https://github.com/python-pillow/Pillow)
+
+Imaging library
+
+![](images/pillow.png)
 
 ### [tqdm](https://github.com/tqdm/tqdm)
 
@@ -204,17 +204,17 @@ Library for rich text and beautiful formatting in the terminal
 
 ![](images/rich.png)
 
-### [Black](https://github.com/psf/black)
-
-The uncompromising Python code formatter
-
-![](images/black.png)
-
 ### [HTTPX](https://github.com/encode/httpx)
 
 HTTP client
 
 ![](images/httpx.png)
+
+### [Black](https://github.com/psf/black)
+
+The uncompromising Python code formatter
+
+![](images/black.png)
 
 ### [Pylint](https://github.com/PyCQA/pylint)
 
