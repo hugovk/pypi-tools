@@ -66,17 +66,17 @@ Cryptographic recipes and primitives for developers
 
 ![](images/cryptography.png)
 
-### [Colorama](https://github.com/tartley/colorama)
-
-Simple cross-platform colored terminal text in Python
-
-![](images/colorama.png)
-
 ### [pytz](https://github.com/stub42/pytz)
 
 Historical timezone library and database
 
 ![](images/pytz.png)
+
+### [Colorama](https://github.com/tartley/colorama)
+
+Simple cross-platform colored terminal text in Python
+
+![](images/colorama.png)
 
 ### [pandas](https://github.com/pandas-dev/pandas)
 
@@ -102,17 +102,17 @@ Micro framework for building web apps
 
 ![](images/flask.png)
 
-### [SciPy](https://github.com/scipy/scipy)
-
-For mathematics, science, and engineering
-
-![](images/scipy.png)
-
 ### [virtualenv](https://github.com/pypa/virtualenv)
 
 Virtual Python environment builder
 
 ![](images/virtualenv.png)
+
+### [SciPy](https://github.com/scipy/scipy)
+
+For mathematics, science, and engineering
+
+![](images/scipy.png)
 
 ### [Pillow](https://github.com/python-pillow/Pillow)
 
@@ -192,17 +192,17 @@ Linter
 
 ![](images/flake8.png)
 
-### [TensorFlow](https://github.com/tensorflow/tensorflow)
-
-Machine learning library
-
-![](images/tensorflow.png)
-
 ### [Rich](https://github.com/Textualize/rich)
 
 Library for rich text and beautiful formatting in the terminal
 
 ![](images/rich.png)
+
+### [TensorFlow](https://github.com/tensorflow/tensorflow)
+
+Machine learning library
+
+![](images/tensorflow.png)
 
 ### [HTTPX](https://github.com/encode/httpx)
 
