@@ -197,9 +197,10 @@ def load_data_from_json(inspec: str, quiet: bool = True):
                 version = row[version_index]
 
                 # Skip unknown versions
-                if version in ("None", "null", "Sure.0", "3.11BYHW"):
+                if version in ("None", "null", "Sure.0", "3.11BYHW", "Topsec.python"):
                     continue
 
+                print(version)
                 base_version = parse(version).base_version  # strips a4, b2, rc1
                 # month_data[row["python_version"]] = float(row["percent"]) * 100
                 month_data[base_version] += row[downloads_index]
