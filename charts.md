@@ -30,17 +30,17 @@ Provides Mozilla's CA Bundle
 
 ![](images/certifi.png)
 
-### [six](https://github.com/benjaminp/six)
-
-Python 2 and 3 compatibility library
-
-![](images/six.png)
-
 ### [dateutil](https://github.com/dateutil/dateutil)
 
 Useful extensions to the standard datetime features
 
 ![](images/python-dateutil.png)
+
+### [six](https://github.com/benjaminp/six)
+
+Python 2 and 3 compatibility library
+
+![](images/six.png)
 
 ### [pip](https://github.com/pypa/pip)
 
@@ -96,12 +96,6 @@ Testing framework
 
 ![](images/pytest.png)
 
-### [Flask](https://github.com/pallets/flask)
-
-Micro framework for building web apps
-
-![](images/flask.png)
-
 ### [virtualenv](https://github.com/pypa/virtualenv)
 
 Virtual Python environment builder
@@ -113,6 +107,12 @@ Virtual Python environment builder
 For mathematics, science, and engineering
 
 ![](images/scipy.png)
+
+### [Flask](https://github.com/pallets/flask)
+
+Micro framework for building web apps
+
+![](images/flask.png)
 
 ### [Pillow](https://github.com/python-pillow/Pillow)
 
@@ -180,6 +180,12 @@ Coverage plugin for pytest
 
 ![](images/pytest-cov.png)
 
+### [Rich](https://github.com/Textualize/rich)
+
+Library for rich text and beautiful formatting in the terminal
+
+![](images/rich.png)
+
 ### [Pyflakes](https://github.com/PyCQA/pyflakes)
 
 Checks source files for errors
@@ -192,23 +198,17 @@ Linter
 
 ![](images/flake8.png)
 
-### [Rich](https://github.com/Textualize/rich)
+### [HTTPX](https://github.com/encode/httpx)
 
-Library for rich text and beautiful formatting in the terminal
+HTTP client
 
-![](images/rich.png)
+![](images/httpx.png)
 
 ### [TensorFlow](https://github.com/tensorflow/tensorflow)
 
 Machine learning library
 
 ![](images/tensorflow.png)
-
-### [HTTPX](https://github.com/encode/httpx)
-
-HTTP client
-
-![](images/httpx.png)
 
 ### [Black](https://github.com/psf/black)
 
@@ -234,17 +234,17 @@ HTML parser
 
 ![](images/html5lib.png)
 
-### [Django](https://github.com/python-pillow/Pillow)
-
-Web framework
-
-![](images/django.png)
-
 ### [mypy](https://github.com/python/mypy)
 
 Optional static typing
 
 ![](images/mypy.png)
+
+### [Django](https://github.com/python-pillow/Pillow)
+
+Web framework
+
+![](images/django.png)
 
 ### [tox](https://github.com/tox-dev/tox)
 
