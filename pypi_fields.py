@@ -61,6 +61,7 @@ from __future__ import annotations
 
 import argparse
 import collections
+import string
 from pprint import pprint  # noqa: F401
 
 import httpx
@@ -80,6 +81,13 @@ def get_field(field: str, package: str):
         return None
 
 
+# https://peps.python.org/pep-0753/#label-canonicalization
+def canonicalize_label(label: str) -> str:
+    chars_to_remove = string.punctuation + string.whitespace
+    removal_map = str.maketrans("", "", chars_to_remove)
+    return label.translate(removal_map).lower()
+
+
 class CustomFormatter(
     argparse.ArgumentDefaultsHelpFormatter,
     argparse.RawDescriptionHelpFormatter,
@@ -87,7 +95,7 @@ class CustomFormatter(
     pass
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=CustomFormatter
     )
@@ -97,6 +105,9 @@ def main():
     parser.add_argument("-f", "--field", default="project_urls", help="Show this field")
     parser.add_argument(
         "-k", "--key", help="For dict fields, also show the values for this key"
+    )
+    parser.add_argument(
+        "-c", "--canonical", action="store_true", help="Output PEP 753 canonical fields"
     )
     parser.add_argument(
         "--format",
@@ -119,10 +130,16 @@ def main():
     count = 0
     for package in track(packages_todo):
         field = get_field(args.field, package["name"])
+        # field = canonicalize_label(field)
         if field:
             fields.append(field)
             if isinstance(field, dict):
-                all_keys.extend(field.keys())
+                if args.canonical:
+                    keys = {canonicalize_label(k): k for k in field.keys()}
+                else:
+                    keys = field.keys()
+
+                all_keys.extend(keys)
                 count += 1
                 if args.key:
                     try:
