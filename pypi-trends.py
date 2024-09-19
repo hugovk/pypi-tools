@@ -21,15 +21,15 @@ https://langui.sh/2016/12/09/data-driven-decisions/
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import os
 import subprocess
 import sys
-from datetime import date, datetime
 
 from dateutil.relativedelta import relativedelta  # pip install python-dateutil
 from termcolor import colored, cprint  # pip install termcolor
 
-now = date.today()
+now = dt.date.today()
 
 
 # https://stackoverflow.com/a/5734564/724176
@@ -79,7 +79,7 @@ def default_end_date() -> str:
 def yyyy_mm_to_ints(yyyy_mm: str) -> tuple[int, int]:
     """Return yyyy-mm as two integers"""
     try:
-        the_date = datetime.strptime(yyyy_mm, "%Y-%m")
+        the_date = dt.datetime.strptime(yyyy_mm, "%Y-%m")
     except ValueError:
         msg = "Dates must be YYYY-MM"
         raise ValueError(msg)
@@ -138,7 +138,7 @@ def main():
         if year == 2016 and month == 4:
             cprint("  No data for 2016-04, skipping", "yellow")
             continue
-        first = date(year, month, 1)
+        first = dt.date(year, month, 1)
         last = first + relativedelta(months=1) - relativedelta(days=1)
         print(first, last)
 
