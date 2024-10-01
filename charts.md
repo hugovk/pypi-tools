@@ -168,6 +168,12 @@ ANSI color formatting for output in terminal
 
 ![](images/termcolor.png)
 
+### [Rich](https://github.com/Textualize/rich)
+
+Library for rich text and beautiful formatting in the terminal
+
+![](images/rich.png)
+
 ### [isort](https://github.com/PyCQA/isort)
 
 Import sorter
@@ -180,11 +186,11 @@ Coverage plugin for pytest
 
 ![](images/pytest-cov.png)
 
-### [Rich](https://github.com/Textualize/rich)
+### [HTTPX](https://github.com/encode/httpx)
 
-Library for rich text and beautiful formatting in the terminal
+HTTP client
 
-![](images/rich.png)
+![](images/httpx.png)
 
 ### [Pyflakes](https://github.com/PyCQA/pyflakes)
 
@@ -197,12 +203,6 @@ Checks source files for errors
 Linter
 
 ![](images/flake8.png)
-
-### [HTTPX](https://github.com/encode/httpx)
-
-HTTP client
-
-![](images/httpx.png)
 
 ### [TensorFlow](https://github.com/tensorflow/tensorflow)
 
