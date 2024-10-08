@@ -81,6 +81,7 @@ def main():
         # repos = search.project_dependent_repositories("pypi", args.library)
         page = 0
         total = 0
+        seen = set()
         while True:
             page += 1
             repos = search_api(
@@ -93,7 +94,11 @@ def main():
             if not repos:
                 break
             for repo in repos:
+                if repo["full_name"] in seen:
+                    continue
+
                 print(repo["full_name"], "\t", repo["homepage"])
+                seen.add(repo["full_name"])
             total += len(repos)
             print(len(repos), total)
 
