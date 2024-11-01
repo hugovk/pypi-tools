@@ -104,6 +104,7 @@ venv.bak/
 .mypy_cache/
 
 data/pypi-trends.csv
+data/pypi.db.gz
 data/top-pypi-packages.json
 data/*.xlsx
 macos.csv
