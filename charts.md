@@ -156,6 +156,12 @@ Python to C compiler
 
 ![](images/cython.png)
 
+### [Rich](https://github.com/Textualize/rich)
+
+Library for rich text and beautiful formatting in the terminal
+
+![](images/rich.png)
+
 ### [pycodestyle](https://github.com/PyCQA/pycodestyle)
 
 Style checker
@@ -167,12 +173,6 @@ Style checker
 ANSI color formatting for output in terminal
 
 ![](images/termcolor.png)
-
-### [Rich](https://github.com/Textualize/rich)
-
-Library for rich text and beautiful formatting in the terminal
-
-![](images/rich.png)
 
 ### [isort](https://github.com/PyCQA/isort)
 
