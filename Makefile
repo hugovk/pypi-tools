@@ -22,6 +22,14 @@ data:
 compress:
 	time ls images/*.png | parallel --bar optipng -o7 -zm1-9 {}
 
+## monthly    to do a monthly update
+.PHONY: monthly
+monthly:
+	$(MAKE) data
+	$(MAKE) -j 10
+	$(MAKE) compress
+	pre-commit run --all-files
+
 .PHONY: help
 help : Makefile
 	@echo "Please use \`make <target>' where <target> is one of"
