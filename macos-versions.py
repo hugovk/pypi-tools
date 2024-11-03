@@ -21,7 +21,7 @@ import sys
 from collections import OrderedDict
 
 from natsort import natsorted  # pip install natsort
-from prettytable import MARKDOWN, PrettyTable  # pip install prettytable
+from prettytable import PrettyTable, TableStyle  # pip install prettytable
 
 # from pprint import pprint
 # from rich import print  # pip install rich
@@ -116,7 +116,7 @@ def main():
         row["summed_percent"] = f"{round(summed_percent, 2):.2f}%"
 
     t = PrettyTable()
-    t.set_style(MARKDOWN)
+    t.set_style(TableStyle.MARKDOWN)
     t.field_names = new_rows[0].keys()
     for row in new_rows:
         t.add_row(row.values())

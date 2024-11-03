@@ -5,7 +5,7 @@ numpy
 packaging
 pandas
 platformdirs
-prettytable >= 2
+prettytable >= 3.12
 pybraries
 pypidb
 pypinfo >= 19

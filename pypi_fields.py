@@ -65,7 +65,7 @@ import string
 from pprint import pprint  # noqa: F401
 
 import httpx
-from prettytable import MARKDOWN, SINGLE_BORDER, PrettyTable
+from prettytable import PrettyTable, TableStyle
 from rich.progress import track
 
 from source_finder import pypi_json
@@ -155,7 +155,11 @@ def main() -> None:
             print(field)
 
     if args.format in ("table", "markdown"):
-        table_style = MARKDOWN if args.format == "markdown" else SINGLE_BORDER
+        table_style = (
+            TableStyle.MARKDOWN
+            if args.format == "markdown"
+            else TableStyle.SINGLE_BORDER
+        )
 
         # For strings, print table of most common
         if isinstance(fields[0], str):
