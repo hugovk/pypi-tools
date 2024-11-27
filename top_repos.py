@@ -22,12 +22,11 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
-import traceback
 from pprint import pprint  # noqa: F401
 
-import pypidb  # pip install pypidb
-import requests
 from termcolor import cprint  # pip install termcolor
+
+import source_finder
 
 
 def get_top_packages():
@@ -93,8 +92,6 @@ def update_existing(packages, name, new_repo):
 
 
 def main():
-    db = pypidb.Database()
-
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
@@ -104,7 +101,14 @@ def main():
     parser.add_argument(
         "-u", "--update", action="store_true", help="Update existing URLs if changed"
     )
+    parser.add_argument(
+        "-v", "--verbose", action="store_true", help="Print debug messages to stderr"
+    )
     args = parser.parse_args()
+
+    if args.verbose:
+        source_finder.VERBOSE = True
+        source_finder.PRINT = True
 
     try:
         packages_done = load_from_file("data/top-repos.json", "data")
@@ -127,18 +131,7 @@ def main():
     count_not_found = 0
     for i, package in enumerate(packages_todo):
         done = False
-        try:
-            repo = db.find_project_scm_url(package["name"])
-        except (
-            pypidb._exceptions.IncompletePackageMetadata,
-            pypidb._exceptions.InvalidPackage,
-            pypidb._exceptions.InvalidPackageVersion,
-            pypidb._exceptions.PackageWithoutUrls,
-            requests.exceptions.ConnectionError,
-            requests.exceptions.HTTPError,
-        ):
-            cprint(traceback.format_exc(), "red")
-            repo = None
+        repo = source_finder.find_source_repo(package["name"])
         if repo:
             package["repo"] = repo
             if args.update:

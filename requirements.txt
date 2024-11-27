@@ -1,4 +1,3 @@
-git+https://github.com/hugovk/pypidb.git@fix-brotli
 httpx
 matplotlib
 natsort
