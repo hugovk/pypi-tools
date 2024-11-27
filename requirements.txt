@@ -1,3 +1,4 @@
+git+https://github.com/hugovk/pypidb.git@fix-brotli
 httpx
 matplotlib
 natsort
@@ -7,7 +8,6 @@ pandas
 platformdirs
 prettytable >= 3.12
 pybraries
-pypidb
 pypinfo >= 19
 python-dateutil
 python-slugify
