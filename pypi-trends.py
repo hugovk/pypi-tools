@@ -166,7 +166,7 @@ def main():
         else:
             cmd = (
                 f"pypinfo --start-date {first} --end-date {last} --percent --limit 100 "
-                f"--json {args.package} pyversion > {outfile}"
+                f"--all --json {args.package} pyversion > {outfile}"
             )
 
         print(cmd)
