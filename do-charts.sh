@@ -10,6 +10,7 @@ python3 jsons2img.py --chart -p coverage
 python3 jsons2img.py --chart -p cryptography
 python3 jsons2img.py --chart -p cython
 python3 jsons2img.py --chart -p django
+python3 jsons2img.py --chart -p django-simple-history
 python3 jsons2img.py --chart -p flake8
 python3 jsons2img.py --chart -p flask
 python3 jsons2img.py --chart -p html5lib

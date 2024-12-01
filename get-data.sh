@@ -16,6 +16,7 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p coverage
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p cryptography
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p cython
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p django
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p django-simple-history
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p flake8
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p flask
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p html5lib
