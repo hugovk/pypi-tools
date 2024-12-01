@@ -37,8 +37,9 @@ repos:
     hooks:
       - id: update-readme
         name: Update README
-        entry: uv run generate_readme.py
-        language: system
+        additional_dependencies: [packaging, natsort, termcolor]
+        entry: python3 generate_readme.py
+        language: python
         pass_filenames: false
         files: ^(generate_readme\.py)|(images\/.*png)$
 
