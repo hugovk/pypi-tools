@@ -150,17 +150,17 @@ SSHv2 protocol library
 
 ![](images/paramiko.png)
 
-### [Cython](https://github.com/cython/cython)
-
-Python to C compiler
-
-![](images/cython.png)
-
 ### [Rich](https://github.com/Textualize/rich)
 
 Library for rich text and beautiful formatting in the terminal
 
 ![](images/rich.png)
+
+### [Cython](https://github.com/cython/cython)
+
+Python to C compiler
+
+![](images/cython.png)
 
 ### [pycodestyle](https://github.com/PyCQA/pycodestyle)
 
@@ -228,12 +228,6 @@ JSON decoder and encoder
 
 ![](images/ujson.png)
 
-### [html5lib](https://github.com/html5lib/html5lib-python)
-
-HTML parser
-
-![](images/html5lib.png)
-
 ### [mypy](https://github.com/python/mypy)
 
 Optional static typing
@@ -245,6 +239,12 @@ Optional static typing
 Web framework
 
 ![](images/django.png)
+
+### [html5lib](https://github.com/html5lib/html5lib-python)
+
+HTML parser
+
+![](images/html5lib.png)
 
 ### [tox](https://github.com/tox-dev/tox)
 
