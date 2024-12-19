@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
 """
 Sum totals for macOS major.minor versions.
 
@@ -8,9 +8,18 @@ $ pypinfo --limit 1000 --json --markdown pillow system distro-version > macos.js
 Then:
 $ python3 macos-versions.py
 
+Or:
+$ uv run macos-versions.py
+
 This then takes the JSON output file of that, and sums up the downloads for
 each macOS major.minor version, ignoring the patch number: x.y.z -> x.y
 """
+# /// script
+# dependencies = [
+#     "natsort",
+#     "prettytable",
+# ]
+# ///
 from __future__ import annotations
 
 import argparse
