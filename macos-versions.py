@@ -69,16 +69,17 @@ def main():
                     darwin_downloads[distro_version] = download_count
                     continue
 
-                x, y, *rest = distro_version.split(".")
+                if isinstance(distro_version, int):
+                    x, y = distro_version, 0
+                else:
+                    x, y, *rest = str(distro_version).split(".")
                 if int(x) >= 11:
                     xy = f"{x}"
                 else:
                     xy = f"{x}.{y}"
                 if xy == "10.16":
                     xy = "11"
-                # print(distro_version)
-                # print(x, y)
-                # print(xy)
+                # print(f"{distro_version}\t{x} {y}\t{xy}")
                 try:
                     darwin_downloads[xy] += download_count
                 except KeyError:
