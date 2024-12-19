@@ -80,6 +80,12 @@ def main():
                 if xy == "10.16":
                     xy = "11"
                 # print(f"{distro_version}\t{x} {y}\t{xy}")
+
+                # December 2024: macOS 16 isn't out yet, let's skip less useful data:
+                # 16.6.1, 20.04 etc. They account for ~0.11% of the total.
+                if int(x) >= 16:
+                    continue
+
                 try:
                     darwin_downloads[xy] += download_count
                 except KeyError:
