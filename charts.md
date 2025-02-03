@@ -72,17 +72,17 @@ Historical timezone library and database
 
 ![](images/pytz.png)
 
-### [Colorama](https://github.com/tartley/colorama)
-
-Simple cross-platform colored terminal text in Python
-
-![](images/colorama.png)
-
 ### [pandas](https://github.com/pandas-dev/pandas)
 
 Data analysis toolkit
 
 ![](images/pandas.png)
+
+### [Colorama](https://github.com/tartley/colorama)
+
+Simple cross-platform colored terminal text in Python
+
+![](images/colorama.png)
 
 ### [attrs](https://github.com/python-attrs/attrs)
 
@@ -108,17 +108,17 @@ For mathematics, science, and engineering
 
 ![](images/scipy.png)
 
-### [Flask](https://github.com/pallets/flask)
-
-Micro framework for building web apps
-
-![](images/flask.png)
-
 ### [Pillow](https://github.com/python-pillow/Pillow)
 
 Imaging library
 
 ![](images/pillow.png)
+
+### [Flask](https://github.com/pallets/flask)
+
+Micro framework for building web apps
+
+![](images/flask.png)
 
 ### [tqdm](https://github.com/tqdm/tqdm)
 
@@ -144,17 +144,17 @@ Machine learning
 
 ![](images/matplotlib.png)
 
-### [Paramiko](https://github.com/paramiko/paramiko)
-
-SSHv2 protocol library
-
-![](images/paramiko.png)
-
 ### [Rich](https://github.com/Textualize/rich)
 
 Library for rich text and beautiful formatting in the terminal
 
 ![](images/rich.png)
+
+### [Paramiko](https://github.com/paramiko/paramiko)
+
+SSHv2 protocol library
+
+![](images/paramiko.png)
 
 ### [Cython](https://github.com/cython/cython)
 
@@ -174,6 +174,12 @@ ANSI color formatting for output in terminal
 
 ![](images/termcolor.png)
 
+### [HTTPX](https://github.com/encode/httpx)
+
+HTTP client
+
+![](images/httpx.png)
+
 ### [isort](https://github.com/PyCQA/isort)
 
 Import sorter
@@ -185,12 +191,6 @@ Import sorter
 Coverage plugin for pytest
 
 ![](images/pytest-cov.png)
-
-### [HTTPX](https://github.com/encode/httpx)
-
-HTTP client
-
-![](images/httpx.png)
 
 ### [Pyflakes](https://github.com/PyCQA/pyflakes)
 
@@ -204,17 +204,17 @@ Linter
 
 ![](images/flake8.png)
 
-### [TensorFlow](https://github.com/tensorflow/tensorflow)
-
-Machine learning library
-
-![](images/tensorflow.png)
-
 ### [Black](https://github.com/psf/black)
 
 The uncompromising Python code formatter
 
 ![](images/black.png)
+
+### [TensorFlow](https://github.com/tensorflow/tensorflow)
+
+Machine learning library
+
+![](images/tensorflow.png)
 
 ### [Pylint](https://github.com/PyCQA/pylint)
 
@@ -222,17 +222,17 @@ Linter
 
 ![](images/pylint.png)
 
-### [UltraJSON](https://github.com/ultrajson/ultrajson)
-
-JSON decoder and encoder
-
-![](images/ujson.png)
-
 ### [mypy](https://github.com/python/mypy)
 
 Optional static typing
 
 ![](images/mypy.png)
+
+### [UltraJSON](https://github.com/ultrajson/ultrajson)
+
+JSON decoder and encoder
+
+![](images/ujson.png)
 
 ### [Django](https://github.com/python-pillow/Pillow)
 
