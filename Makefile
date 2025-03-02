@@ -20,7 +20,7 @@ data:
 ## compress   to compress images
 .PHONY: compress
 compress:
-	time ls images/*.png | parallel --bar optipng -o7 -zm1-9 {}
+	time oxipng -o max --strip all images/*.png
 
 ## monthly    to do a monthly update
 .PHONY: monthly
