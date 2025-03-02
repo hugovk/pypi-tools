@@ -5,7 +5,7 @@ Download sdists of top packages on PyPI
 Start by:
 
 # Fetch fresh copy of top packages
-wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages-30-days.min.json -O \
+wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages.min.json -O \
     data/top-pypi-packages.json
 
 # Download and extract 5 sdists:

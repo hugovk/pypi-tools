@@ -85,9 +85,9 @@ from [Top PyPI Packages](https://hugovk.github.io/top-pypi-packages/), and save 
 First, fetch fresh copy of the top packages:
 
 ```console
-$ wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages-30-days.min.json -O  data/top-pypi-packages.json
+$ wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages.min.json -O  data/top-pypi-packages.json
 
---2019-10-14 18:12:45--  https://hugovk.github.io/top-pypi-packages/top-pypi-packages-30-days.min.json
+--2019-10-14 18:12:45--  https://hugovk.github.io/top-pypi-packages/top-pypi-packages.min.json
 Resolving hugovk.github.io (hugovk.github.io)... 185.199.110.153, 185.199.108.153, 185.199.111.153, ...
 Connecting to hugovk.github.io (hugovk.github.io)|185.199.110.153|:443... connected.
 HTTP request sent, awaiting response... 200 OK

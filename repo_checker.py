@@ -16,7 +16,7 @@ Example usage:
 Start by:
 
 # Fetch fresh copy of top packages
-wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages-30-days.min.json -O \
+wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages.min.json -O \
     data/top-pypi-packages.json
 
 python3 repo_checker.py

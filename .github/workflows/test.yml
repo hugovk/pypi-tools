@@ -39,7 +39,7 @@ jobs:
       - name: Fetch fresh copy of top packages
         shell: bash
         run: |
-          wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages-30-days.min.json -O data/top-pypi-packages.json
+          wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages.min.json -O data/top-pypi-packages.json
 
       - name: Test run
         shell: bash
