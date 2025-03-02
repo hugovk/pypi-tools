@@ -66,17 +66,17 @@ Cryptographic recipes and primitives for developers
 
 ![](images/cryptography.png)
 
-### [pytz](https://github.com/stub42/pytz)
-
-Historical timezone library and database
-
-![](images/pytz.png)
-
 ### [pandas](https://github.com/pandas-dev/pandas)
 
 Data analysis toolkit
 
 ![](images/pandas.png)
+
+### [pytz](https://github.com/stub42/pytz)
+
+Historical timezone library and database
+
+![](images/pytz.png)
 
 ### [Colorama](https://github.com/tartley/colorama)
 
@@ -138,17 +138,17 @@ Machine learning
 
 ![](images/scikit-learn.png)
 
-### [Matplotlib](https://github.com/matplotlib/matplotlib)
-
-2D plotting library
-
-![](images/matplotlib.png)
-
 ### [Rich](https://github.com/Textualize/rich)
 
 Library for rich text and beautiful formatting in the terminal
 
 ![](images/rich.png)
+
+### [Matplotlib](https://github.com/matplotlib/matplotlib)
+
+2D plotting library
+
+![](images/matplotlib.png)
 
 ### [Paramiko](https://github.com/paramiko/paramiko)
 
@@ -168,17 +168,17 @@ Style checker
 
 ![](images/pycodestyle.png)
 
-### [termcolor](https://github.com/termcolor/termcolor)
-
-ANSI color formatting for output in terminal
-
-![](images/termcolor.png)
-
 ### [HTTPX](https://github.com/encode/httpx)
 
 HTTP client
 
 ![](images/httpx.png)
+
+### [termcolor](https://github.com/termcolor/termcolor)
+
+ANSI color formatting for output in terminal
+
+![](images/termcolor.png)
 
 ### [isort](https://github.com/PyCQA/isort)
 
@@ -228,17 +228,17 @@ Optional static typing
 
 ![](images/mypy.png)
 
-### [UltraJSON](https://github.com/ultrajson/ultrajson)
-
-JSON decoder and encoder
-
-![](images/ujson.png)
-
 ### [Django](https://github.com/python-pillow/Pillow)
 
 Web framework
 
 ![](images/django.png)
+
+### [UltraJSON](https://github.com/ultrajson/ultrajson)
+
+JSON decoder and encoder
+
+![](images/ujson.png)
 
 ### [html5lib](https://github.com/html5lib/html5lib-python)
 
@@ -258,17 +258,17 @@ Display data in visually appealing ASCII table format
 
 ![](images/prettytable.png)
 
-### [humanize](https://github.com/jmoiron/humanize)
-
-Humanization utilities
-
-![](images/humanize.png)
-
 ### [Ruff](https://github.com/charliermarsh/ruff)
 
 Linter
 
 ![](images/ruff.png)
+
+### [humanize](https://github.com/jmoiron/humanize)
+
+Humanization utilities
+
+![](images/humanize.png)
 
 ### [Tablib](https://github.com/jazzband/tablib)
 
