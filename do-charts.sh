@@ -1,57 +1,57 @@
 #!/usr/bin/env bash
 
-python3 jsons2img.py --chart -i "data/20*.json"
-python3 jsons2img.py --chart -p attrs
-python3 jsons2img.py --chart -p black
-python3 jsons2img.py --chart -p certifi
-python3 jsons2img.py --chart -p cibuildwheel
-python3 jsons2img.py --chart -p colorama
-python3 jsons2img.py --chart -p coverage
-python3 jsons2img.py --chart -p cryptography
-python3 jsons2img.py --chart -p cython
-python3 jsons2img.py --chart -p django
-python3 jsons2img.py --chart -p django-simple-history
-python3 jsons2img.py --chart -p flake8
-python3 jsons2img.py --chart -p flask
-python3 jsons2img.py --chart -p html5lib
-python3 jsons2img.py --chart -p httpx
-python3 jsons2img.py --chart -p humanize
-python3 jsons2img.py --chart -p isort
-python3 jsons2img.py --chart -p matplotlib
-python3 jsons2img.py --chart -p mypy
-python3 jsons2img.py --chart -p nose2
-python3 jsons2img.py --chart -p numpy
-python3 jsons2img.py --chart -p pandas
-python3 jsons2img.py --chart -p paramiko
-python3 jsons2img.py --chart -p pillow
-python3 jsons2img.py --chart -p pip
-python3 jsons2img.py --chart -p prettytable
-python3 jsons2img.py --chart -p pycodestyle
-python3 jsons2img.py --chart -p pyflakes
-python3 jsons2img.py --chart -p pylast
-python3 jsons2img.py --chart -p pylint
-python3 jsons2img.py --chart -p pytest
-python3 jsons2img.py --chart -p pytest-cov
-python3 jsons2img.py --chart -p python-dateutil
-python3 jsons2img.py --chart -p pytz
-python3 jsons2img.py --chart -p pyupgrade
-python3 jsons2img.py --chart -p requests
-python3 jsons2img.py --chart -p rich
-python3 jsons2img.py --chart -p ruff
-python3 jsons2img.py --chart -p scikit-learn
-python3 jsons2img.py --chart -p scipy
-python3 jsons2img.py --chart -p setuptools
-python3 jsons2img.py --chart -p six
-python3 jsons2img.py --chart -p sphinx-lint
-python3 jsons2img.py --chart -p tablib
-python3 jsons2img.py --chart -p tensorflow
-python3 jsons2img.py --chart -p termcolor
-python3 jsons2img.py --chart -p tox
-python3 jsons2img.py --chart -p tqdm
-python3 jsons2img.py --chart -p twitter
-python3 jsons2img.py --chart -p ujson
-python3 jsons2img.py --chart -p urllib3
-python3 jsons2img.py --chart -p virtualenv
-python3 jsons2img.py --chart -p wheel
+python3 jsons2img.py --chart --quiet -i "data/20*.json"
+python3 jsons2img.py --chart --quiet -p attrs
+python3 jsons2img.py --chart --quiet -p black
+python3 jsons2img.py --chart --quiet -p certifi
+python3 jsons2img.py --chart --quiet -p cibuildwheel
+python3 jsons2img.py --chart --quiet -p colorama
+python3 jsons2img.py --chart --quiet -p coverage
+python3 jsons2img.py --chart --quiet -p cryptography
+python3 jsons2img.py --chart --quiet -p cython
+python3 jsons2img.py --chart --quiet -p django
+python3 jsons2img.py --chart --quiet -p django-simple-history
+python3 jsons2img.py --chart --quiet -p flake8
+python3 jsons2img.py --chart --quiet -p flask
+python3 jsons2img.py --chart --quiet -p html5lib
+python3 jsons2img.py --chart --quiet -p httpx
+python3 jsons2img.py --chart --quiet -p humanize
+python3 jsons2img.py --chart --quiet -p isort
+python3 jsons2img.py --chart --quiet -p matplotlib
+python3 jsons2img.py --chart --quiet -p mypy
+python3 jsons2img.py --chart --quiet -p nose2
+python3 jsons2img.py --chart --quiet -p numpy
+python3 jsons2img.py --chart --quiet -p pandas
+python3 jsons2img.py --chart --quiet -p paramiko
+python3 jsons2img.py --chart --quiet -p pillow
+python3 jsons2img.py --chart --quiet -p pip
+python3 jsons2img.py --chart --quiet -p prettytable
+python3 jsons2img.py --chart --quiet -p pycodestyle
+python3 jsons2img.py --chart --quiet -p pyflakes
+python3 jsons2img.py --chart --quiet -p pylast
+python3 jsons2img.py --chart --quiet -p pylint
+python3 jsons2img.py --chart --quiet -p pytest
+python3 jsons2img.py --chart --quiet -p pytest-cov
+python3 jsons2img.py --chart --quiet -p python-dateutil
+python3 jsons2img.py --chart --quiet -p pytz
+python3 jsons2img.py --chart --quiet -p pyupgrade
+python3 jsons2img.py --chart --quiet -p requests
+python3 jsons2img.py --chart --quiet -p rich
+python3 jsons2img.py --chart --quiet -p ruff
+python3 jsons2img.py --chart --quiet -p scikit-learn
+python3 jsons2img.py --chart --quiet -p scipy
+python3 jsons2img.py --chart --quiet -p setuptools
+python3 jsons2img.py --chart --quiet -p six
+python3 jsons2img.py --chart --quiet -p sphinx-lint
+python3 jsons2img.py --chart --quiet -p tablib
+python3 jsons2img.py --chart --quiet -p tensorflow
+python3 jsons2img.py --chart --quiet -p termcolor
+python3 jsons2img.py --chart --quiet -p tox
+python3 jsons2img.py --chart --quiet -p tqdm
+python3 jsons2img.py --chart --quiet -p twitter
+python3 jsons2img.py --chart --quiet -p ujson
+python3 jsons2img.py --chart --quiet -p urllib3
+python3 jsons2img.py --chart --quiet -p virtualenv
+python3 jsons2img.py --chart --quiet -p wheel
 
 open images/*.png
