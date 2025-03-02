@@ -93,7 +93,7 @@ def make_chart(
     for year_month in index[:-1]:
         year, month = year_month.split("-")
         if year == last_year:
-            if month in ["03", "05", "07", "09", "11"]:
+            if month in ["04", "07", "10"] or year_month == "2016-05":
                 x_labels.append(month)
             else:
                 x_labels.append("")
@@ -200,7 +200,7 @@ def load_data_from_json(inspec: str, quiet: bool = True):
                 if version in ("None", "null", "Sure.0", "3.11BYHW", "Topsec.python"):
                     continue
 
-                print(version)
+                # print(version)
                 base_version = parse(version).base_version  # strips a4, b2, rc1
                 # month_data[row["python_version"]] = float(row["percent"]) * 100
                 month_data[base_version] += row[downloads_index]
