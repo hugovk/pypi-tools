@@ -156,6 +156,12 @@ SSHv2 protocol library
 
 ![](images/paramiko.png)
 
+### [HTTPX](https://github.com/encode/httpx)
+
+HTTP client
+
+![](images/httpx.png)
+
 ### [Cython](https://github.com/cython/cython)
 
 Python to C compiler
@@ -167,12 +173,6 @@ Python to C compiler
 Style checker
 
 ![](images/pycodestyle.png)
-
-### [HTTPX](https://github.com/encode/httpx)
-
-HTTP client
-
-![](images/httpx.png)
 
 ### [termcolor](https://github.com/termcolor/termcolor)
 
