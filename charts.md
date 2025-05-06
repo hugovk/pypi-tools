@@ -132,17 +132,17 @@ Code coverage testing
 
 ![](images/coverage.png)
 
-### [scikit-learn](https://github.com/scikit-learn/scikit-learn)
-
-Machine learning
-
-![](images/scikit-learn.png)
-
 ### [Rich](https://github.com/Textualize/rich)
 
 Library for rich text and beautiful formatting in the terminal
 
 ![](images/rich.png)
+
+### [scikit-learn](https://github.com/scikit-learn/scikit-learn)
+
+Machine learning
+
+![](images/scikit-learn.png)
 
 ### [Matplotlib](https://github.com/matplotlib/matplotlib)
 
@@ -234,17 +234,17 @@ Web framework
 
 ![](images/django.png)
 
-### [UltraJSON](https://github.com/ultrajson/ultrajson)
-
-JSON decoder and encoder
-
-![](images/ujson.png)
-
 ### [html5lib](https://github.com/html5lib/html5lib-python)
 
 HTML parser
 
 ![](images/html5lib.png)
+
+### [UltraJSON](https://github.com/ultrajson/ultrajson)
+
+JSON decoder and encoder
+
+![](images/ujson.png)
 
 ### [tox](https://github.com/tox-dev/tox)
 
