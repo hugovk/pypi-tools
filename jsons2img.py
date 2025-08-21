@@ -129,7 +129,7 @@ def make_chart(
         labels[::-1],
         loc="center left",
         bbox_to_anchor=(1, 0.5),
-        fontsize=8,
+        fontsize=7.5,
     )
 
     if project_name:
