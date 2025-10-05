@@ -9,6 +9,7 @@ all: ${PNGS}
 images/all.png: data/20??-??.json
 	python3 jsons2img.py --chart --quiet -i "data/20*.json"
 
+## images     to regenerate images
 images/%.png: data/%-????-??.json
 	python3 jsons2img.py --chart --quiet -p $*
 

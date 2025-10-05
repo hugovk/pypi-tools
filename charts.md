@@ -48,17 +48,17 @@ The package installer
 
 ![](images/pip.png)
 
-### [wheel](https://github.com/pypa/wheel)
-
-Binary distribution format
-
-![](images/wheel.png)
-
 ### [NumPy](https://github.com/numpy/numpy)
 
 Scientific computing library
 
 ![](images/numpy.png)
+
+### [wheel](https://github.com/pypa/wheel)
+
+Binary distribution format
+
+![](images/wheel.png)
 
 ### [cryptography](https://github.com/pyca/cryptography)
 
@@ -78,17 +78,17 @@ Historical timezone library and database
 
 ![](images/pytz.png)
 
-### [Colorama](https://github.com/tartley/colorama)
-
-Simple cross-platform colored terminal text in Python
-
-![](images/colorama.png)
-
 ### [attrs](https://github.com/python-attrs/attrs)
 
 Python classes without boilerplate
 
 ![](images/attrs.png)
+
+### [Colorama](https://github.com/tartley/colorama)
+
+Simple cross-platform colored terminal text in Python
+
+![](images/colorama.png)
 
 ### [pytest](https://github.com/pytest-dev/pytest)
 
@@ -114,17 +114,17 @@ Imaging library
 
 ![](images/pillow.png)
 
-### [Flask](https://github.com/pallets/flask)
-
-Micro framework for building web apps
-
-![](images/flask.png)
-
 ### [tqdm](https://github.com/tqdm/tqdm)
 
 Extensible progress bar
 
 ![](images/tqdm.png)
+
+### [Flask](https://github.com/pallets/flask)
+
+Micro framework for building web apps
+
+![](images/flask.png)
 
 ### [Coverage.py](https://github.com/nedbat/coveragepy)
 
@@ -144,6 +144,12 @@ Machine learning
 
 ![](images/scikit-learn.png)
 
+### [HTTPX](https://github.com/encode/httpx)
+
+HTTP client
+
+![](images/httpx.png)
+
 ### [Matplotlib](https://github.com/matplotlib/matplotlib)
 
 2D plotting library
@@ -155,12 +161,6 @@ Machine learning
 SSHv2 protocol library
 
 ![](images/paramiko.png)
-
-### [HTTPX](https://github.com/encode/httpx)
-
-HTTP client
-
-![](images/httpx.png)
 
 ### [Cython](https://github.com/cython/cython)
 
@@ -180,17 +180,23 @@ ANSI color formatting for output in terminal
 
 ![](images/termcolor.png)
 
+### [pytest-cov](https://github.com/pytest-dev/pytest-cov)
+
+Coverage plugin for pytest
+
+![](images/pytest-cov.png)
+
 ### [isort](https://github.com/PyCQA/isort)
 
 Import sorter
 
 ![](images/isort.png)
 
-### [pytest-cov](https://github.com/pytest-dev/pytest-cov)
+### [Black](https://github.com/psf/black)
 
-Coverage plugin for pytest
+The uncompromising Python code formatter
 
-![](images/pytest-cov.png)
+![](images/black.png)
 
 ### [Pyflakes](https://github.com/PyCQA/pyflakes)
 
@@ -204,29 +210,23 @@ Linter
 
 ![](images/flake8.png)
 
-### [Black](https://github.com/psf/black)
-
-The uncompromising Python code formatter
-
-![](images/black.png)
-
 ### [TensorFlow](https://github.com/tensorflow/tensorflow)
 
 Machine learning library
 
 ![](images/tensorflow.png)
 
-### [Pylint](https://github.com/PyCQA/pylint)
-
-Linter
-
-![](images/pylint.png)
-
 ### [mypy](https://github.com/python/mypy)
 
 Optional static typing
 
 ![](images/mypy.png)
+
+### [Pylint](https://github.com/PyCQA/pylint)
+
+Linter
+
+![](images/pylint.png)
 
 ### [Django](https://github.com/python-pillow/Pillow)
 
@@ -252,17 +252,17 @@ Generic virtualenv management and test command line tool
 
 ![](images/tox.png)
 
-### [PrettyTable](https://github.com/jazzband/prettytable)
-
-Display data in visually appealing ASCII table format
-
-![](images/prettytable.png)
-
 ### [Ruff](https://github.com/charliermarsh/ruff)
 
 Linter
 
 ![](images/ruff.png)
+
+### [PrettyTable](https://github.com/jazzband/prettytable)
+
+Display data in visually appealing ASCII table format
+
+![](images/prettytable.png)
 
 ### [humanize](https://github.com/jmoiron/humanize)
 
