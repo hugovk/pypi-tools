@@ -72,17 +72,17 @@ Data analysis toolkit
 
 ![](images/pandas.png)
 
-### [pytz](https://github.com/stub42/pytz)
-
-Historical timezone library and database
-
-![](images/pytz.png)
-
 ### [attrs](https://github.com/python-attrs/attrs)
 
 Python classes without boilerplate
 
 ![](images/attrs.png)
+
+### [pytz](https://github.com/stub42/pytz)
+
+Historical timezone library and database
+
+![](images/pytz.png)
 
 ### [Colorama](https://github.com/tartley/colorama)
 
@@ -126,29 +126,29 @@ Micro framework for building web apps
 
 ![](images/flask.png)
 
-### [Coverage.py](https://github.com/nedbat/coveragepy)
-
-Code coverage testing
-
-![](images/coverage.png)
-
 ### [Rich](https://github.com/Textualize/rich)
 
 Library for rich text and beautiful formatting in the terminal
 
 ![](images/rich.png)
 
-### [scikit-learn](https://github.com/scikit-learn/scikit-learn)
+### [Coverage.py](https://github.com/nedbat/coveragepy)
 
-Machine learning
+Code coverage testing
 
-![](images/scikit-learn.png)
+![](images/coverage.png)
 
 ### [HTTPX](https://github.com/encode/httpx)
 
 HTTP client
 
 ![](images/httpx.png)
+
+### [scikit-learn](https://github.com/scikit-learn/scikit-learn)
+
+Machine learning
+
+![](images/scikit-learn.png)
 
 ### [Matplotlib](https://github.com/matplotlib/matplotlib)
 
@@ -210,17 +210,17 @@ Linter
 
 ![](images/flake8.png)
 
-### [TensorFlow](https://github.com/tensorflow/tensorflow)
-
-Machine learning library
-
-![](images/tensorflow.png)
-
 ### [mypy](https://github.com/python/mypy)
 
 Optional static typing
 
 ![](images/mypy.png)
+
+### [TensorFlow](https://github.com/tensorflow/tensorflow)
+
+Machine learning library
+
+![](images/tensorflow.png)
 
 ### [Pylint](https://github.com/PyCQA/pylint)
 
@@ -246,17 +246,17 @@ JSON decoder and encoder
 
 ![](images/ujson.png)
 
-### [tox](https://github.com/tox-dev/tox)
-
-Generic virtualenv management and test command line tool
-
-![](images/tox.png)
-
 ### [Ruff](https://github.com/charliermarsh/ruff)
 
 Linter
 
 ![](images/ruff.png)
+
+### [tox](https://github.com/tox-dev/tox)
+
+Generic virtualenv management and test command line tool
+
+![](images/tox.png)
 
 ### [PrettyTable](https://github.com/jazzband/prettytable)
 
