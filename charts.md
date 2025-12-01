@@ -174,17 +174,17 @@ Style checker
 
 ![](images/pycodestyle.png)
 
-### [termcolor](https://github.com/termcolor/termcolor)
-
-ANSI color formatting for output in terminal
-
-![](images/termcolor.png)
-
 ### [pytest-cov](https://github.com/pytest-dev/pytest-cov)
 
 Coverage plugin for pytest
 
 ![](images/pytest-cov.png)
+
+### [termcolor](https://github.com/termcolor/termcolor)
+
+ANSI color formatting for output in terminal
+
+![](images/termcolor.png)
 
 ### [isort](https://github.com/PyCQA/isort)
 
@@ -300,17 +300,17 @@ Python Twitter API
 
 ![](images/twitter.png)
 
-### [pylast](https://github.com/pylast/pylast)
-
-Interface to Last.fm
-
-![](images/pylast.png)
-
 ### [Sphinx Lint](https://github.com/sphinx-contrib/sphinx-lint)
 
 Sphinx and reST linter
 
 ![](images/sphinx-lint.png)
+
+### [pylast](https://github.com/pylast/pylast)
+
+Interface to Last.fm
+
+![](images/pylast.png)
 
 [end_generated]: # (end_generated)
 
