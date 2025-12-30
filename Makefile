@@ -29,7 +29,7 @@ monthly:
 	$(MAKE) data
 	$(MAKE) -j 10
 	$(MAKE) compress
-	pre-commit run --all-files
+	prek run --all-files
 
 .PHONY: help
 help : Makefile
