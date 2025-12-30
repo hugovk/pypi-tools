@@ -252,6 +252,12 @@ Linter
 
 ![](images/ruff.png)
 
+### [pre-commit](https://github.com/pre-commit/pre-commit)
+
+A framework for managing pre-commit hooks
+
+![](images/pre-commit.png)
+
 ### [tox](https://github.com/tox-dev/tox)
 
 Generic virtualenv management and test command line tool
@@ -281,6 +287,12 @@ Format-agnostic tabular dataset library
 Testing framework
 
 ![](images/nose2.png)
+
+### [prek](https://github.com/j178/prek)
+
+Better pre-commit, re-engineered in Rust
+
+![](images/prek.png)
 
 ### [pyupgrade](https://github.com/asottile/pyupgrade)
 

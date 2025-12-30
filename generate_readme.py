@@ -129,6 +129,13 @@ DETAILS = {
         "url": "https://github.com/pypa/pip",
         "description": "The package installer",
     },
+    "pre-commit": {
+        "description": "A framework for managing pre-commit hooks",
+    },
+    "prek": {
+        "url": "https://github.com/j178/prek",
+        "description": "Better pre-commit, re-engineered in Rust",
+    },
     "prettytable": {
         "name": "PrettyTable",
         "url": "https://github.com/jazzband/prettytable",

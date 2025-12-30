@@ -31,6 +31,8 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pandas
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p paramiko
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pillow
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pip
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pre-commit
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p prek
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p prettytable
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pycodestyle
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p pyflakes

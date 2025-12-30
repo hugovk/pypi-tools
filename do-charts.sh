@@ -25,6 +25,8 @@ python3 jsons2img.py --chart --quiet -p pandas
 python3 jsons2img.py --chart --quiet -p paramiko
 python3 jsons2img.py --chart --quiet -p pillow
 python3 jsons2img.py --chart --quiet -p pip
+python3 jsons2img.py --chart --quiet -p pre-commit
+python3 jsons2img.py --chart --quiet -p prek
 python3 jsons2img.py --chart --quiet -p prettytable
 python3 jsons2img.py --chart --quiet -p pycodestyle
 python3 jsons2img.py --chart --quiet -p pyflakes
