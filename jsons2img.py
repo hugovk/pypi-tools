@@ -87,21 +87,27 @@ def make_chart(
     major_ticks = np.arange(0, 1.2, 0.1)
     ax.set_yticks(major_ticks)
 
-    # Set X labels to 2016-01, 02, ... 12, 2017-01, 02, ...
+    # Set X labels to 2016-01, 07, 2017-01, 07, ...
+    # Only create ticks for labeled positions to reduce gridline density
     x_labels = []
+    x_tick_positions = []
     last_year = None
-    for year_month in index[:-1]:
+    for i, year_month in enumerate(index):
         year, month = year_month.split("-")
-        if year == last_year:
-            if month in ["04", "07", "10"] or year_month == "2016-05":
-                x_labels.append(month)
-            else:
-                x_labels.append("")
-        else:
+        if year != last_year:
+            # First month of a new year: show full year-month
             x_labels.append(year_month)
+            x_tick_positions.append(i)
             last_year = year
-    x_labels.append(index[-1])  # No change for last one
-    ax.set_xticks(range(len(x_labels)))
+        elif month == "07":
+            # Mid-year: show just the month
+            x_labels.append(month)
+            x_tick_positions.append(i)
+    # Always show the final tick
+    if x_tick_positions[-1] != len(index) - 1:
+        x_labels.append(index[-1])
+        x_tick_positions.append(len(index) - 1)
+    ax.set_xticks(x_tick_positions)
     ax.set_xticklabels(x_labels, fontsize=7)
 
     plt.xticks(rotation=90)
