@@ -54,17 +54,17 @@ Scientific computing library
 
 ![](images/numpy.png)
 
-### [wheel](https://github.com/pypa/wheel)
-
-Binary distribution format
-
-![](images/wheel.png)
-
 ### [cryptography](https://github.com/pyca/cryptography)
 
 Cryptographic recipes and primitives for developers
 
 ![](images/cryptography.png)
+
+### [wheel](https://github.com/pypa/wheel)
+
+Binary distribution format
+
+![](images/wheel.png)
 
 ### [pandas](https://github.com/pandas-dev/pandas)
 
@@ -132,17 +132,17 @@ Library for rich text and beautiful formatting in the terminal
 
 ![](images/rich.png)
 
-### [Coverage.py](https://github.com/nedbat/coveragepy)
-
-Code coverage testing
-
-![](images/coverage.png)
-
 ### [HTTPX](https://github.com/encode/httpx)
 
 HTTP client
 
 ![](images/httpx.png)
+
+### [Coverage.py](https://github.com/nedbat/coveragepy)
+
+Code coverage testing
+
+![](images/coverage.png)
 
 ### [scikit-learn](https://github.com/scikit-learn/scikit-learn)
 
@@ -234,29 +234,29 @@ Web framework
 
 ![](images/django.png)
 
-### [html5lib](https://github.com/html5lib/html5lib-python)
-
-HTML parser
-
-![](images/html5lib.png)
-
-### [UltraJSON](https://github.com/ultrajson/ultrajson)
-
-JSON decoder and encoder
-
-![](images/ujson.png)
-
 ### [Ruff](https://github.com/charliermarsh/ruff)
 
 Linter
 
 ![](images/ruff.png)
 
+### [html5lib](https://github.com/html5lib/html5lib-python)
+
+HTML parser
+
+![](images/html5lib.png)
+
 ### [pre-commit](https://github.com/pre-commit/pre-commit)
 
 A framework for managing pre-commit hooks
 
 ![](images/pre-commit.png)
+
+### [UltraJSON](https://github.com/ultrajson/ultrajson)
+
+JSON decoder and encoder
+
+![](images/ujson.png)
 
 ### [tox](https://github.com/tox-dev/tox)
 
@@ -282,17 +282,17 @@ Format-agnostic tabular dataset library
 
 ![](images/tablib.png)
 
-### [nose2](https://github.com/nose-devs/nose2)
-
-Testing framework
-
-![](images/nose2.png)
-
 ### [prek](https://github.com/j178/prek)
 
 Better pre-commit, re-engineered in Rust
 
 ![](images/prek.png)
+
+### [nose2](https://github.com/nose-devs/nose2)
+
+Testing framework
+
+![](images/nose2.png)
 
 ### [pyupgrade](https://github.com/asottile/pyupgrade)
 
