@@ -42,17 +42,17 @@ Python 2 and 3 compatibility library
 
 ![](images/six.png)
 
-### [pip](https://github.com/pypa/pip)
-
-The package installer
-
-![](images/pip.png)
-
 ### [NumPy](https://github.com/numpy/numpy)
 
 Scientific computing library
 
 ![](images/numpy.png)
+
+### [pip](https://github.com/pypa/pip)
+
+The package installer
+
+![](images/pip.png)
 
 ### [cryptography](https://github.com/pyca/cryptography)
 
@@ -108,17 +108,17 @@ For mathematics, science, and engineering
 
 ![](images/scipy.png)
 
-### [Pillow](https://github.com/python-pillow/Pillow)
-
-Imaging library
-
-![](images/pillow.png)
-
 ### [tqdm](https://github.com/tqdm/tqdm)
 
 Extensible progress bar
 
 ![](images/tqdm.png)
+
+### [Pillow](https://github.com/python-pillow/Pillow)
+
+Imaging library
+
+![](images/pillow.png)
 
 ### [Flask](https://github.com/pallets/flask)
 
@@ -168,17 +168,17 @@ Python to C compiler
 
 ![](images/cython.png)
 
-### [pycodestyle](https://github.com/PyCQA/pycodestyle)
-
-Style checker
-
-![](images/pycodestyle.png)
-
 ### [pytest-cov](https://github.com/pytest-dev/pytest-cov)
 
 Coverage plugin for pytest
 
 ![](images/pytest-cov.png)
+
+### [pycodestyle](https://github.com/PyCQA/pycodestyle)
+
+Style checker
+
+![](images/pycodestyle.png)
 
 ### [termcolor](https://github.com/termcolor/termcolor)
 
@@ -228,29 +228,29 @@ Linter
 
 ![](images/pylint.png)
 
-### [Django](https://github.com/python-pillow/Pillow)
-
-Web framework
-
-![](images/django.png)
-
 ### [Ruff](https://github.com/charliermarsh/ruff)
 
 Linter
 
 ![](images/ruff.png)
 
-### [html5lib](https://github.com/html5lib/html5lib-python)
-
-HTML parser
-
-![](images/html5lib.png)
-
 ### [pre-commit](https://github.com/pre-commit/pre-commit)
 
 A framework for managing pre-commit hooks
 
 ![](images/pre-commit.png)
+
+### [Django](https://github.com/python-pillow/Pillow)
+
+Web framework
+
+![](images/django.png)
+
+### [html5lib](https://github.com/html5lib/html5lib-python)
+
+HTML parser
+
+![](images/html5lib.png)
 
 ### [UltraJSON](https://github.com/ultrajson/ultrajson)
 
@@ -306,17 +306,17 @@ Build Python wheels on CI with minimal configuration
 
 ![](images/cibuildwheel.png)
 
-### [Python Twitter Tools](https://github.com/python-twitter-tools/twitter)
-
-Python Twitter API
-
-![](images/twitter.png)
-
 ### [Sphinx Lint](https://github.com/sphinx-contrib/sphinx-lint)
 
 Sphinx and reST linter
 
 ![](images/sphinx-lint.png)
+
+### [Python Twitter Tools](https://github.com/python-twitter-tools/twitter)
+
+Python Twitter API
+
+![](images/twitter.png)
 
 ### [pylast](https://github.com/pylast/pylast)
 
