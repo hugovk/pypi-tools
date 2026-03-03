@@ -12,7 +12,7 @@ Options:
           Set the optimization level preset. The default level 2 is quite fast and provides good
           compression. Lower levels are faster, higher levels provide better compression, though
           with increasingly diminishing returns.
-          
+
               0   => --zc 5  --fast              (filter chosen heuristically)
               1   => --zc 10 --fast              (filter chosen heuristically)
               2   => --zc 11 -f 0,1,6,7 --fast
@@ -21,10 +21,10 @@ Options:
               5   => --zc 12 -f 0,1,2,5,6,7,8,9 --brute-level 4 --brute-lines 4
               6   => --zc 12 -f 0-9             --brute-level 5 --brute-lines 8
               max => (stable alias for the maximum level)
-          
+
           Manually specifying a compression option (zc, f, etc.) will override the optimization
           preset, regardless of the order you write the arguments.
-          
+
           [default: 2]
 
   -r, --recursive
@@ -53,27 +53,27 @@ Options:
 
       --strip <mode>
           Strip metadata chunks, where <mode> is one of:
-          
+
               safe    =>  Strip all non-critical chunks, except for the following:
                               cICP, iCCP, sRGB, pHYs, acTL, fcTL, fdAT
               all     =>  Strip all non-critical chunks
               <list>  =>  Strip chunks in the comma-separated list, e.g. 'bKGD,cHRM'
-          
+
           CAUTION: 'all' will convert APNGs to standard PNGs.
-          
+
           Please note that regardless of any options set, some chunks will necessarily be stripped
           when invalidated by the optimization:
               bKGD, sBIT, hIST: Stripped if the color type or bit depth changes.
               iDOT: Always stripped.
               caBX: Stripped if it contains C2PA metadata. If explicitly retained by `--keep`,
               optimization will be aborted.
-          
+
           The default when --strip is not passed is to keep all chunks that remain valid.
 
       --keep <list>
           Strip all metadata chunks except those in the comma-separated list. The special value
           'display' includes chunks that affect the image appearance, equivalent to '--strip safe'.
-          
+
           E.g. '--keep eXIf,display' will strip chunks, keeping only eXIf and those that affect the
           image appearance.
 
@@ -85,14 +85,14 @@ Options:
 
   -i, --interlace <mode>
           Set the PNG interlacing mode, where <mode> is one of:
-          
+
               off   =>  Remove interlacing from all images that are processed
               on    =>  Apply Adam7 interlacing on all images that are processed
               keep  =>  Keep the existing interlacing mode of each image
-          
+
           Note that interlacing can add 25-50% to the size of an optimized image. Only use it if you
           believe the benefits outweigh the costs for your use case.
-          
+
           [default: off]
 
       --scale16
@@ -100,7 +100,7 @@ Options:
           operation but can provide significant savings when you have no need for higher depth.
           Reduction is performed by scaling the values such that, e.g. 0x00FF is reduced to 0x01
           rather than 0x00.
-          
+
           Without this flag, 16-bit images will only be reduced in depth if it can be done
           losslessly.
 
@@ -116,21 +116,21 @@ Options:
   -f, --filters <list>
           Perform compression trials with each of the given filter types. You can specify a
           comma-separated list, or a range of values. E.g. '-f 0-3' is the same as '-f 0,1,2,3'.
-          
+
           PNG delta filters (apply the same filter to every line)
               0  =>  None      (recommended to always include this filter)
               1  =>  Sub
               2  =>  Up
               3  =>  Average
               4  =>  Paeth
-          
+
           Heuristic strategies (try to find the best delta filter for each line)
               5  =>  MinSum    Minimum sum of absolute differences
               6  =>  Entropy   Smallest Shannon entropy
               7  =>  Bigrams   Lowest count of distinct bigrams
               8  =>  BigEnt    Smallest Shannon entropy of bigrams
               9  =>  Brute     Smallest compressed size (slow)
-          
+
           The default value depends on the optimization level preset.
 
       --fast
@@ -141,7 +141,7 @@ Options:
       --zc <level>
           Deflate compression level (0-12) for main compression trials. The levels here are defined
           by the libdeflate compression library.
-          
+
           The default value depends on the optimization level preset.
 
       --nb
@@ -178,7 +178,7 @@ Options:
       --zi <iterations>
           Set the number of iterations to use for Zopfli compression. Using fewer iterations may
           speed up compression for large files. This option requires '--zopfli' to be set.
-          
+
           [default: 15]
 
       --ziwi <iterations>
@@ -205,7 +205,7 @@ Options:
           file size) of the image exceeds this size, it will be skipped. This is useful for limiting
           memory usage or avoiding long processing times on large images. The value may be specified
           with a unit suffix such as k, KB, m, MB, etc.
-          
+
           The decompressed size of an image is roughly equal to width * height * bit-depth / 8. E.g.
           a 1920x1080 image with 24-bit color depth would be roughly 6MB.
 
@@ -213,7 +213,7 @@ Options:
           Set the maximum number of threads to use. Oxipng uses multithreading to evaluate multiple
           optimizations on the same file in parallel as well as process multiple files in parallel.
           You can set this to a lower value if you need to limit memory or CPU usage.
-          
+
           [default: num logical CPUs]
 
       --sequential
