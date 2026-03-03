@@ -27,6 +27,7 @@ python3 repo_checker.py --number 10 -c "flake8 --select XYZ CLONE_DIR" --repos "
 python3 repo_checker.py  -c "grep -r cElementTree CLONE_DIR" --flip-error --number 900 \
     --start 830
 """
+
 from __future__ import annotations
 
 import argparse
@@ -58,8 +59,9 @@ def recursive_find(inspec):
         head = "."
 
     for root, dirnames, filenames in os.walk(head):
-        for filename in fnmatch.filter(filenames, tail):
-            matches.append(os.path.join(root, filename))
+        matches.extend(
+            os.path.join(root, filename) for filename in fnmatch.filter(filenames, tail)
+        )
 
     return matches
 

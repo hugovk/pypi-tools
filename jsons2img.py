@@ -2,6 +2,7 @@
 """
 Create a chart image and CSV using JSON files from pypi-trends.py
 """
+
 from __future__ import annotations
 
 import argparse
@@ -244,8 +245,7 @@ def main() -> None:
     rows = []
     for x in all_data:
         row = [x["yyyy-mm"]]
-        for version in all_versions:
-            row.append(x.get(version, 0))
+        row.extend(x.get(version, 0) for version in all_versions)
         f.writerow(row)
         rows.append(row)
 

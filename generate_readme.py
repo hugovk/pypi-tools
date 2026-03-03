@@ -2,6 +2,7 @@
 """
 Generate Markdown with charts, showing with most downloads first
 """
+
 from __future__ import annotations
 
 import argparse

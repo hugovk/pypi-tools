@@ -14,6 +14,7 @@ $ uv run macos-versions.py
 This then takes the JSON output file of that, and sums up the downloads for
 each macOS major.minor version, ignoring the patch number: x.y.z -> x.y
 """
+
 # /// script
 # dependencies = [
 #     "natsort",
