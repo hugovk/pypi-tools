@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-LAST_MONTH=$(date -v-1m +'%Y-%m') # yyyy-mm
+LAST_MONTH=$(date -v-1m +'%Y-%m' 2>/dev/null || date -d 'last month' +'%Y-%m') # yyyy-mm
 FROM="$LAST_MONTH"
 TO=$FROM
 
