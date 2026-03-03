@@ -4,7 +4,7 @@ on:
   push:
   pull_request:
   schedule:
-    - cron: '25 16 3 3 *'
+    - cron: '5 20 3 * *'
   workflow_dispatch:
 
 permissions:
@@ -59,7 +59,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -b "$BRANCH"
-          git add -A
+          git add data/ images/
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
