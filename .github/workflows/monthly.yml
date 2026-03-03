@@ -1,0 +1,75 @@
+name: Monthly update
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '25 16 3 3 *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  FORCE_COLOR: 1
+  PIP_DISABLE_PIP_VERSION_CHECK: 1
+
+jobs:
+  monthly:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: true
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install -U -r requirements.txt
+
+      - name: Install oxipng
+        run: |
+          gh release download --repo shssoichiro/oxipng --pattern '*-x86_64-unknown-linux-musl.tar.gz'
+          tar xzf oxipng-*-x86_64-unknown-linux-musl.tar.gz
+          sudo install oxipng-*/oxipng /usr/local/bin/
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Fetch data
+        run: make data
+
+      - name: Generate charts
+        run: make -j 10
+
+      - name: Compress images
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: make compress
+
+      - name: Open PR
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          MONTH=$(date -d 'last month' +'%Y-%m')
+          BRANCH="monthly/$MONTH"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Add $MONTH data"
+          git push origin "$BRANCH"
+          gh pr create \
+            --title "Add $MONTH data" \
+            --body "Monthly data update for $MONTH." \
+            --base main \
+            --head "$BRANCH"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -8,6 +8,7 @@ platformdirs
 prettytable >= 3.12
 pybraries
 pypinfo >= 19
+pypistats
 python-dateutil
 python-slugify
 rich
