@@ -4,7 +4,7 @@ on:
   push:
   pull_request:
   schedule:
-    - cron: '5 20 3 * *'
+    - cron: '39 13 11 3 *'
   workflow_dispatch:
 
 permissions:
@@ -71,5 +71,7 @@ jobs:
             --body "Monthly data update for $MONTH." \
             --base main \
             --head "$BRANCH"
+          gh workflow run lint.yml --ref "$BRANCH"
+          gh workflow run test.yml --ref "$BRANCH"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
