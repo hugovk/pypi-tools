@@ -120,17 +120,17 @@ Imaging library
 
 ![](images/pillow.png)
 
-### [Flask](https://github.com/pallets/flask)
-
-Micro framework for building web apps
-
-![](images/flask.png)
-
 ### [Rich](https://github.com/Textualize/rich)
 
 Library for rich text and beautiful formatting in the terminal
 
 ![](images/rich.png)
+
+### [Flask](https://github.com/pallets/flask)
+
+Micro framework for building web apps
+
+![](images/flask.png)
 
 ### [HTTPX](https://github.com/encode/httpx)
 
@@ -174,17 +174,17 @@ Coverage plugin for pytest
 
 ![](images/pytest-cov.png)
 
-### [pycodestyle](https://github.com/PyCQA/pycodestyle)
-
-Style checker
-
-![](images/pycodestyle.png)
-
 ### [termcolor](https://github.com/termcolor/termcolor)
 
 ANSI color formatting for output in terminal
 
 ![](images/termcolor.png)
+
+### [pycodestyle](https://github.com/PyCQA/pycodestyle)
+
+Style checker
+
+![](images/pycodestyle.png)
 
 ### [isort](https://github.com/PyCQA/isort)
 
@@ -204,23 +204,23 @@ Checks source files for errors
 
 ![](images/pyflakes.png)
 
-### [Flake8](https://github.com/PyCQA/flake8)
-
-Linter
-
-![](images/flake8.png)
-
 ### [mypy](https://github.com/python/mypy)
 
 Optional static typing
 
 ![](images/mypy.png)
 
-### [TensorFlow](https://github.com/tensorflow/tensorflow)
+### [Flake8](https://github.com/PyCQA/flake8)
 
-Machine learning library
+Linter
 
-![](images/tensorflow.png)
+![](images/flake8.png)
+
+### [Ruff](https://github.com/charliermarsh/ruff)
+
+Linter
+
+![](images/ruff.png)
 
 ### [Pylint](https://github.com/PyCQA/pylint)
 
@@ -228,11 +228,11 @@ Linter
 
 ![](images/pylint.png)
 
-### [Ruff](https://github.com/charliermarsh/ruff)
+### [TensorFlow](https://github.com/tensorflow/tensorflow)
 
-Linter
+Machine learning library
 
-![](images/ruff.png)
+![](images/tensorflow.png)
 
 ### [pre-commit](https://github.com/pre-commit/pre-commit)
 
