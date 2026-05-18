@@ -48,17 +48,17 @@ Scientific computing library
 
 ![](images/numpy.png)
 
-### [pip](https://github.com/pypa/pip)
-
-The package installer
-
-![](images/pip.png)
-
 ### [cryptography](https://github.com/pyca/cryptography)
 
 Cryptographic recipes and primitives for developers
 
 ![](images/cryptography.png)
+
+### [pip](https://github.com/pypa/pip)
+
+The package installer
+
+![](images/pip.png)
 
 ### [wheel](https://github.com/pypa/wheel)
 
@@ -84,17 +84,17 @@ Historical timezone library and database
 
 ![](images/pytz.png)
 
-### [Colorama](https://github.com/tartley/colorama)
-
-Simple cross-platform colored terminal text in Python
-
-![](images/colorama.png)
-
 ### [pytest](https://github.com/pytest-dev/pytest)
 
 Testing framework
 
 ![](images/pytest.png)
+
+### [Colorama](https://github.com/tartley/colorama)
+
+Simple cross-platform colored terminal text in Python
+
+![](images/colorama.png)
 
 ### [virtualenv](https://github.com/pypa/virtualenv)
 
@@ -126,17 +126,17 @@ Library for rich text and beautiful formatting in the terminal
 
 ![](images/rich.png)
 
-### [Flask](https://github.com/pallets/flask)
-
-Micro framework for building web apps
-
-![](images/flask.png)
-
 ### [HTTPX](https://github.com/encode/httpx)
 
 HTTP client
 
 ![](images/httpx.png)
+
+### [Flask](https://github.com/pallets/flask)
+
+Micro framework for building web apps
+
+![](images/flask.png)
 
 ### [Coverage.py](https://github.com/nedbat/coveragepy)
 
@@ -198,17 +198,17 @@ The uncompromising Python code formatter
 
 ![](images/black.png)
 
-### [Pyflakes](https://github.com/PyCQA/pyflakes)
-
-Checks source files for errors
-
-![](images/pyflakes.png)
-
 ### [mypy](https://github.com/python/mypy)
 
 Optional static typing
 
 ![](images/mypy.png)
+
+### [Pyflakes](https://github.com/PyCQA/pyflakes)
+
+Checks source files for errors
+
+![](images/pyflakes.png)
 
 ### [Flake8](https://github.com/PyCQA/flake8)
 
@@ -222,6 +222,12 @@ Linter
 
 ![](images/ruff.png)
 
+### [pre-commit](https://github.com/pre-commit/pre-commit)
+
+A framework for managing pre-commit hooks
+
+![](images/pre-commit.png)
+
 ### [Pylint](https://github.com/PyCQA/pylint)
 
 Linter
@@ -233,12 +239,6 @@ Linter
 Machine learning library
 
 ![](images/tensorflow.png)
-
-### [pre-commit](https://github.com/pre-commit/pre-commit)
-
-A framework for managing pre-commit hooks
-
-![](images/pre-commit.png)
 
 ### [Django](https://github.com/python-pillow/Pillow)
 
