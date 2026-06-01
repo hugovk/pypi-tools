@@ -18,17 +18,17 @@ HTTP library
 
 ![](images/requests.png)
 
-### [setuptools](https://github.com/pypa/setuptools)
-
-Build system
-
-![](images/setuptools.png)
-
 ### [Certifi](https://github.com/certifi/python-certifi)
 
 Provides Mozilla's CA Bundle
 
 ![](images/certifi.png)
+
+### [setuptools](https://github.com/pypa/setuptools)
+
+Build system
+
+![](images/setuptools.png)
 
 ### [dateutil](https://github.com/dateutil/dateutil)
 
@@ -102,17 +102,17 @@ Virtual Python environment builder
 
 ![](images/virtualenv.png)
 
-### [SciPy](https://github.com/scipy/scipy)
-
-For mathematics, science, and engineering
-
-![](images/scipy.png)
-
 ### [tqdm](https://github.com/tqdm/tqdm)
 
 Extensible progress bar
 
 ![](images/tqdm.png)
+
+### [SciPy](https://github.com/scipy/scipy)
+
+For mathematics, science, and engineering
+
+![](images/scipy.png)
 
 ### [Pillow](https://github.com/python-pillow/Pillow)
 
@@ -120,17 +120,17 @@ Imaging library
 
 ![](images/pillow.png)
 
-### [Rich](https://github.com/Textualize/rich)
-
-Library for rich text and beautiful formatting in the terminal
-
-![](images/rich.png)
-
 ### [HTTPX](https://github.com/encode/httpx)
 
 HTTP client
 
 ![](images/httpx.png)
+
+### [Rich](https://github.com/Textualize/rich)
+
+Library for rich text and beautiful formatting in the terminal
+
+![](images/rich.png)
 
 ### [Flask](https://github.com/pallets/flask)
 
@@ -162,17 +162,17 @@ SSHv2 protocol library
 
 ![](images/paramiko.png)
 
-### [Cython](https://github.com/cython/cython)
-
-Python to C compiler
-
-![](images/cython.png)
-
 ### [pytest-cov](https://github.com/pytest-dev/pytest-cov)
 
 Coverage plugin for pytest
 
 ![](images/pytest-cov.png)
+
+### [Cython](https://github.com/cython/cython)
+
+Python to C compiler
+
+![](images/cython.png)
 
 ### [termcolor](https://github.com/termcolor/termcolor)
 
@@ -204,6 +204,12 @@ Optional static typing
 
 ![](images/mypy.png)
 
+### [Ruff](https://github.com/charliermarsh/ruff)
+
+Linter
+
+![](images/ruff.png)
+
 ### [Pyflakes](https://github.com/PyCQA/pyflakes)
 
 Checks source files for errors
@@ -215,12 +221,6 @@ Checks source files for errors
 Linter
 
 ![](images/flake8.png)
-
-### [Ruff](https://github.com/charliermarsh/ruff)
-
-Linter
-
-![](images/ruff.png)
 
 ### [pre-commit](https://github.com/pre-commit/pre-commit)
 
@@ -246,17 +246,17 @@ Web framework
 
 ![](images/django.png)
 
-### [html5lib](https://github.com/html5lib/html5lib-python)
-
-HTML parser
-
-![](images/html5lib.png)
-
 ### [UltraJSON](https://github.com/ultrajson/ultrajson)
 
 JSON decoder and encoder
 
 ![](images/ujson.png)
+
+### [html5lib](https://github.com/html5lib/html5lib-python)
+
+HTML parser
+
+![](images/html5lib.png)
 
 ### [tox](https://github.com/tox-dev/tox)
 
@@ -276,17 +276,17 @@ Humanization utilities
 
 ![](images/humanize.png)
 
-### [Tablib](https://github.com/jazzband/tablib)
-
-Format-agnostic tabular dataset library
-
-![](images/tablib.png)
-
 ### [prek](https://github.com/j178/prek)
 
 Better pre-commit, re-engineered in Rust
 
 ![](images/prek.png)
+
+### [Tablib](https://github.com/jazzband/tablib)
+
+Format-agnostic tabular dataset library
+
+![](images/tablib.png)
 
 ### [nose2](https://github.com/nose-devs/nose2)
 
