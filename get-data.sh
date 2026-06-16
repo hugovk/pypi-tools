@@ -21,6 +21,7 @@ python3 pypi-trends.py --pypistats -f $FROM -t $TO -p flake8
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p flask
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p html5lib
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p httpx
+python3 pypi-trends.py --pypistats -f $FROM -t $TO -p httpx2
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p humanize
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p isort
 python3 pypi-trends.py --pypistats -f $FROM -t $TO -p matplotlib

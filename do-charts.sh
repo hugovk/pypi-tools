@@ -15,6 +15,7 @@ python3 jsons2img.py --chart --quiet -p flake8
 python3 jsons2img.py --chart --quiet -p flask
 python3 jsons2img.py --chart --quiet -p html5lib
 python3 jsons2img.py --chart --quiet -p httpx
+python3 jsons2img.py --chart --quiet -p httpx2
 python3 jsons2img.py --chart --quiet -p humanize
 python3 jsons2img.py --chart --quiet -p isort
 python3 jsons2img.py --chart --quiet -p matplotlib

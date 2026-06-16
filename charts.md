@@ -324,6 +324,12 @@ Interface to Last.fm
 
 ![](images/pylast.png)
 
+### [HTTPX2](https://github.com/pydantic/httpx2)
+
+HTTP client
+
+![](images/httpx2.png)
+
 [end_generated]: # (end_generated)
 
 ### See also

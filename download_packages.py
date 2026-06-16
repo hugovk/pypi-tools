@@ -22,7 +22,7 @@ from pathlib import Path
 from pprint import pprint  # noqa: F401
 from urllib.parse import urlparse
 
-import httpx  # pip install httpx
+import httpx2 as httpx  # pip install httpx2
 
 import source_finder
 from repo_checker import create_dir

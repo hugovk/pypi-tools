@@ -88,6 +88,11 @@ DETAILS = {
         "url": "https://github.com/encode/httpx",
         "description": "HTTP client",
     },
+    "httpx2": {
+        "name": "HTTPX2",
+        "url": "https://github.com/pydantic/httpx2",
+        "description": "HTTP client",
+    },
     "humanize": {
         "url": "https://github.com/jmoiron/humanize",
         "description": "Humanization utilities",

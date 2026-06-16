@@ -1,4 +1,4 @@
-httpx
+httpx2
 matplotlib
 natsort
 numpy

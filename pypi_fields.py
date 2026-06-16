@@ -64,7 +64,7 @@ import collections
 import string
 from pprint import pprint  # noqa: F401
 
-import httpx
+import httpx2 as httpx
 from prettytable import PrettyTable, TableStyle
 from rich.progress import track
 
