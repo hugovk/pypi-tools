@@ -78,17 +78,17 @@ Python classes without boilerplate
 
 ![](images/attrs.png)
 
-### [pytz](https://github.com/stub42/pytz)
-
-Historical timezone library and database
-
-![](images/pytz.png)
-
 ### [pytest](https://github.com/pytest-dev/pytest)
 
 Testing framework
 
 ![](images/pytest.png)
+
+### [pytz](https://github.com/stub42/pytz)
+
+Historical timezone library and database
+
+![](images/pytz.png)
 
 ### [Colorama](https://github.com/tartley/colorama)
 
@@ -300,6 +300,12 @@ Automatic syntax upgrader
 
 ![](images/pyupgrade.png)
 
+### [HTTPX2](https://github.com/pydantic/httpx2)
+
+HTTP client
+
+![](images/httpx2.png)
+
 ### [cibuildwheel](https://github.com/pypa/cibuildwheel)
 
 Build Python wheels on CI with minimal configuration
@@ -312,23 +318,17 @@ Sphinx and reST linter
 
 ![](images/sphinx-lint.png)
 
-### [Python Twitter Tools](https://github.com/python-twitter-tools/twitter)
-
-Python Twitter API
-
-![](images/twitter.png)
-
 ### [pylast](https://github.com/pylast/pylast)
 
 Interface to Last.fm
 
 ![](images/pylast.png)
 
-### [HTTPX2](https://github.com/pydantic/httpx2)
+### [Python Twitter Tools](https://github.com/python-twitter-tools/twitter)
 
-HTTP client
+Python Twitter API
 
-![](images/httpx2.png)
+![](images/twitter.png)
 
 [end_generated]: # (end_generated)
 
