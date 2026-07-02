@@ -140,9 +140,12 @@ def make_chart(
     )
 
     if project_name:
-        s = "" if project_name.endswith("s") else "s"
+        from generate_readme import DETAILS
+
+        display_name = DETAILS.get(project_name, {}).get("name", project_name)
+        s = "" if display_name.endswith("s") else "s"
         title = (
-            f"{project_name}’{s} pip installs from PyPI over time, by Python version"
+            f"{display_name}’{s} pip installs from PyPI over time, by Python version"
         )
     else:
         title = "pip installs from PyPI over time, by Python version"
