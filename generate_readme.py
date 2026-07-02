@@ -14,7 +14,7 @@ from termcolor import cprint  # pip install termcolor
 from jsons2img import load_data_from_json
 
 # /// script
-# requires-python = ">=3.9"
+# requires-python = ">=3.10"
 # dependencies = [
 #   "packaging",
 #   "natsort",
@@ -263,26 +263,6 @@ DETAILS = {
 }
 
 
-def remove_prefix(text, prefix):
-    # Python 3.9+
-    try:
-        return text.removeprefix(prefix)
-    except AttributeError:
-        if text.startswith(prefix):
-            return text[len(prefix) :]
-        return text
-
-
-def remove_suffix(text, suffix):
-    # Python 3.9+
-    try:
-        return text.removesuffix(suffix)
-    except AttributeError:
-        if text.endswith(suffix):
-            return text[: -len(suffix)]
-        return text
-
-
 def get_output(projects: list[str], number: int | None = 0) -> str:
     output = ""
     if not number:
@@ -339,8 +319,8 @@ def main():
 
     for image in images:
         project = image
-        project = remove_prefix(project, "images/")
-        project = remove_suffix(project, ".png")
+        project = project.removeprefix("images/")
+        project = project.removesuffix(".png")
 
         # Special case, already in the file
         if project == "all":

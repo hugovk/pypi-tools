@@ -1,7 +1,7 @@
 # pypi-tools
 
 [![Test](https://github.com/hugovk/pypi-tools/actions/workflows/test.yml/badge.svg)](https://github.com/hugovk/pypi-tools/actions/workflows/test.yml)
-[![Python: 3.9+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![Python: 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: Black](https://img.shields.io/badge/code%20style-Black-000000.svg)](https://github.com/psf/black)
 
 Command-line Python scripts to do things with the
