@@ -8,7 +8,7 @@ Return a count of the most common values (for strings) or keys (for dicts).
 Start by:
 
 # Fetch fresh copy of top packages
-wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages.min.json -O \
+wget https://hugovk.dev/top-pypi-packages/top-pypi-packages.min.json -O \
     data/top-pypi-packages.json
 
 # Show requires_python for the first 10 packages in data/top-pypi-packages.json

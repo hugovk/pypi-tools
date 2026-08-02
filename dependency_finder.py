@@ -14,7 +14,7 @@ wget https://github.com/DavHau/pypi-deps-db/archive/refs/heads/master.zip -O \
 unzip pypi-deps-db.zip  # extracts to /tmp/pypi-deps-db-master
 
 # Fetch fresh copy of top packages
-wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages.min.json -O \
+wget https://hugovk.dev/top-pypi-packages/top-pypi-packages.min.json -O \
     data/top-pypi-packages.json
 
 Example usage:

@@ -79,17 +79,17 @@ https://github.com/boto/s3transfer
 ## top_repos.py
 
 This will look for the source repo for the most-downloaded packages, using a JSON file
-from [Top PyPI Packages](https://hugovk.github.io/top-pypi-packages/), and save them to
-[`data/top-repos.json`](https://hugovk.github.io/pypi-tools/data/top-repos.json).
+from [Top PyPI Packages](https://hugovk.dev/top-pypi-packages/), and save them to
+[`data/top-repos.json`](https://hugovk.dev/pypi-tools/data/top-repos.json).
 
 First, fetch fresh copy of the top packages:
 
 ```console
-$ wget https://hugovk.github.io/top-pypi-packages/top-pypi-packages.min.json -O  data/top-pypi-packages.json
+$ wget https://hugovk.dev/top-pypi-packages/top-pypi-packages.min.json -O  data/top-pypi-packages.json
 
---2019-10-14 18:12:45--  https://hugovk.github.io/top-pypi-packages/top-pypi-packages.min.json
-Resolving hugovk.github.io (hugovk.github.io)... 185.199.110.153, 185.199.108.153, 185.199.111.153, ...
-Connecting to hugovk.github.io (hugovk.github.io)|185.199.110.153|:443... connected.
+--2019-10-14 18:12:45--  https://hugovk.dev/top-pypi-packages/top-pypi-packages.min.json
+Resolving hugovk.dev (hugovk.dev)... 185.199.110.153, 185.199.108.153, 185.199.111.153, ...
+Connecting to hugovk.dev (hugovk.dev)|185.199.110.153|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 250885 (245K) [application/json]
 Saving to: ‘data/top-pypi-packages.json’
