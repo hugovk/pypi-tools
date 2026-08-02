@@ -42,17 +42,17 @@ Python 2 and 3 compatibility library
 
 ![](images/six.png)
 
-### [NumPy](https://github.com/numpy/numpy)
-
-Scientific computing library
-
-![](images/numpy.png)
-
 ### [cryptography](https://github.com/pyca/cryptography)
 
 Cryptographic recipes and primitives for developers
 
 ![](images/cryptography.png)
+
+### [NumPy](https://github.com/numpy/numpy)
+
+Scientific computing library
+
+![](images/numpy.png)
 
 ### [pip](https://github.com/pypa/pip)
 
@@ -108,11 +108,11 @@ Extensible progress bar
 
 ![](images/tqdm.png)
 
-### [SciPy](https://github.com/scipy/scipy)
+### [HTTPX](https://github.com/encode/httpx)
 
-For mathematics, science, and engineering
+HTTP client
 
-![](images/scipy.png)
+![](images/httpx.png)
 
 ### [Pillow](https://github.com/python-pillow/Pillow)
 
@@ -120,11 +120,11 @@ Imaging library
 
 ![](images/pillow.png)
 
-### [HTTPX](https://github.com/encode/httpx)
+### [SciPy](https://github.com/scipy/scipy)
 
-HTTP client
+For mathematics, science, and engineering
 
-![](images/httpx.png)
+![](images/scipy.png)
 
 ### [Rich](https://github.com/Textualize/rich)
 
@@ -180,17 +180,17 @@ ANSI color formatting for output in terminal
 
 ![](images/termcolor.png)
 
-### [pycodestyle](https://github.com/PyCQA/pycodestyle)
-
-Style checker
-
-![](images/pycodestyle.png)
-
 ### [isort](https://github.com/PyCQA/isort)
 
 Import sorter
 
 ![](images/isort.png)
+
+### [pycodestyle](https://github.com/PyCQA/pycodestyle)
+
+Style checker
+
+![](images/pycodestyle.png)
 
 ### [Black](https://github.com/psf/black)
 
@@ -198,17 +198,17 @@ The uncompromising Python code formatter
 
 ![](images/black.png)
 
-### [mypy](https://github.com/python/mypy)
-
-Optional static typing
-
-![](images/mypy.png)
-
 ### [Ruff](https://github.com/charliermarsh/ruff)
 
 Linter
 
 ![](images/ruff.png)
+
+### [mypy](https://github.com/python/mypy)
+
+Optional static typing
+
+![](images/mypy.png)
 
 ### [Pyflakes](https://github.com/PyCQA/pyflakes)
 
@@ -216,17 +216,17 @@ Checks source files for errors
 
 ![](images/pyflakes.png)
 
-### [Flake8](https://github.com/PyCQA/flake8)
-
-Linter
-
-![](images/flake8.png)
-
 ### [pre-commit](https://github.com/pre-commit/pre-commit)
 
 A framework for managing pre-commit hooks
 
 ![](images/pre-commit.png)
+
+### [Flake8](https://github.com/PyCQA/flake8)
+
+Linter
+
+![](images/flake8.png)
 
 ### [Pylint](https://github.com/PyCQA/pylint)
 
@@ -288,6 +288,12 @@ Format-agnostic tabular dataset library
 
 ![](images/tablib.png)
 
+### [HTTPX2](https://github.com/pydantic/httpx2)
+
+HTTP client
+
+![](images/httpx2.png)
+
 ### [nose2](https://github.com/nose-devs/nose2)
 
 Testing framework
@@ -299,12 +305,6 @@ Testing framework
 Automatic syntax upgrader
 
 ![](images/pyupgrade.png)
-
-### [HTTPX2](https://github.com/pydantic/httpx2)
-
-HTTP client
-
-![](images/httpx2.png)
 
 ### [cibuildwheel](https://github.com/pypa/cibuildwheel)
 
