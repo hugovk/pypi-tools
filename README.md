@@ -13,8 +13,9 @@ Command-line Python scripts to do things with the
 and [pypistats](https://github.com/hugovk/pypistats) to fetch all monthly downloads from
 the PyPI database on Google BigQuery and save them as JSON files.
 
-For the examples below, data was downloaded over many days as getting all months uses up
-a lot of free BigQuery quota.
+With `--clickpy`, it instead queries [ClickPy](https://clickpy.clickhouse.com/)'s
+public ClickHouse mirror of the PyPI downloads dataset: free, no auth needed, and a
+single month's all-PyPI query no longer exceeds the entire free BigQuery quota.
 
 ## jsons2img.py
 

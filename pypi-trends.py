@@ -11,6 +11,11 @@ Alternatively, requires pypistats to be installed
 (note: only has 6 months of stats and output JSON is a different format)
 * pip install -U pypistats
 
+Alternatively, use --clickpy to query ClickPy's public ClickHouse mirror of the
+PyPI downloads dataset: free, no auth or installation needed, full history
+(note: absolute counts differ slightly from BigQuery's, percentages match)
+* https://clickpy.clickhouse.com/
+
 Notes:
     "Data ingestion into the BigQuery data set was spotty prior to June 2016
     (but it shouldn't be biased, so these percentages are likely to be accurate),
@@ -23,14 +28,69 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import json
 import os
 import subprocess
 import sys
+import urllib.request
 
 from dateutil.relativedelta import relativedelta  # pip install python-dateutil
 from termcolor import colored, cprint  # pip install termcolor
 
 now = dt.date.today()
+
+CLICKPY_URL = "https://sql-clickhouse.clickhouse.com/?user=demo"
+
+
+def clickpy_query(package: str, first: dt.date, last: dt.date) -> str:
+    """Build SQL for downloads by Python minor version, in pypinfo's pyversion shape"""
+    # Filter out junk versions from broken user agents such as "Sure.0", "3.11BYHW"
+    where = (
+        f"date BETWEEN '{first}' AND '{last}' "
+        "AND (python_minor = '' OR match(python_minor, '^[0-9]+\\.[0-9]+$'))"
+    )
+    if package:
+        escaped = package.replace("\\", "\\\\").replace("'", "\\'")
+        where += f" AND project = '{escaped}'"
+    return (
+        "SELECT if(python_minor = '', 'None', python_minor) AS python_version, "
+        "sum(count) AS download_count "
+        "FROM pypi.pypi_downloads_per_day_by_version_by_python "
+        f"WHERE {where} "
+        "GROUP BY python_version ORDER BY download_count DESC LIMIT 100 "
+        "FORMAT JSON"
+    )
+
+
+def fetch_clickpy(query: str, outfile: str) -> None:
+    """Run query against ClickPy and save results in pypinfo-style JSON"""
+    request = urllib.request.Request(CLICKPY_URL, data=query.encode())
+    with urllib.request.urlopen(request) as response:
+        result = json.load(response)
+
+    rows = [
+        {
+            # ClickHouse quotes Int64 values in JSON output
+            "download_count": int(row["download_count"]),
+            "python_version": row["python_version"],
+        }
+        for row in result["data"]
+    ]
+    if not rows:
+        msg = "No data returned"
+        raise ValueError(msg)
+
+    total = sum(row["download_count"] for row in rows)
+    for row in rows:
+        row["percent"] = f"{row['download_count'] / total:.2g}"
+
+    output = {
+        "last_update": dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "query": {"source": CLICKPY_URL, "sql": query},
+        "rows": rows,
+    }
+    with open(outfile, "w") as f:
+        json.dump(output, f, separators=(",", ":"))
 
 
 # https://stackoverflow.com/a/5734564/724176
@@ -107,12 +167,19 @@ def main():
     parser.add_argument(
         "-n", "--dry-run", action="store_true", help="Don't execute pypinfo/pypistats"
     )
-    parser.add_argument(
+    source_group = parser.add_mutually_exclusive_group()
+    source_group.add_argument(
         "--pypistats",
         action="store_true",
         help="Use pypistats instead of pypinfo. Note: only has "
         "6 months of stats, and output JSON is a different "
         "format.",
+    )
+    source_group.add_argument(
+        "--clickpy",
+        action="store_true",
+        help="Use ClickPy's public ClickHouse instance instead of pypinfo. "
+        "Free, no auth needed, full history.",
     )
     args = parser.parse_args()
 
@@ -157,6 +224,23 @@ def main():
         if os.path.isfile(outfile):
             cprint(f"  {outfile} exists, skipping", "yellow")
             yellows += 1
+            continue
+
+        if args.clickpy:
+            package = "" if args.package in ['""', "''"] else args.package
+            query = clickpy_query(package, first, last)
+            print(query)
+            if args.dry_run:
+                print("  Dry run, not querying ClickPy")
+                continue
+            try:
+                fetch_clickpy(query, outfile)
+            except (OSError, ValueError) as e:
+                cprint(f"  {e}", "red")
+                reds += 1
+            else:
+                cprint(f"  {outfile}", "green")
+                greens += 1
             continue
 
         if args.pypistats:
