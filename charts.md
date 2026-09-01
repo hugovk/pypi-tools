@@ -102,17 +102,17 @@ Virtual Python environment builder
 
 ![](images/virtualenv.png)
 
-### [tqdm](https://github.com/tqdm/tqdm)
-
-Extensible progress bar
-
-![](images/tqdm.png)
-
 ### [HTTPX](https://github.com/encode/httpx)
 
 HTTP client
 
 ![](images/httpx.png)
+
+### [tqdm](https://github.com/tqdm/tqdm)
+
+Extensible progress bar
+
+![](images/tqdm.png)
 
 ### [Pillow](https://github.com/python-pillow/Pillow)
 
@@ -210,17 +210,17 @@ Optional static typing
 
 ![](images/mypy.png)
 
-### [Pyflakes](https://github.com/PyCQA/pyflakes)
-
-Checks source files for errors
-
-![](images/pyflakes.png)
-
 ### [pre-commit](https://github.com/pre-commit/pre-commit)
 
 A framework for managing pre-commit hooks
 
 ![](images/pre-commit.png)
+
+### [Pyflakes](https://github.com/PyCQA/pyflakes)
+
+Checks source files for errors
+
+![](images/pyflakes.png)
 
 ### [Flake8](https://github.com/PyCQA/flake8)
 
@@ -276,6 +276,12 @@ Humanization utilities
 
 ![](images/humanize.png)
 
+### [HTTPX2](https://github.com/pydantic/httpx2)
+
+HTTP client
+
+![](images/httpx2.png)
+
 ### [prek](https://github.com/j178/prek)
 
 Better pre-commit, re-engineered in Rust
@@ -287,12 +293,6 @@ Better pre-commit, re-engineered in Rust
 Format-agnostic tabular dataset library
 
 ![](images/tablib.png)
-
-### [HTTPX2](https://github.com/pydantic/httpx2)
-
-HTTP client
-
-![](images/httpx2.png)
 
 ### [nose2](https://github.com/nose-devs/nose2)
 
