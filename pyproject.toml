@@ -18,6 +18,7 @@ lint.extend-select = [
   "PYI",    # flake8-pyi
   "RUF022", # unsorted-dunder-all
   "RUF100", # unused noqa (yesqa)
+  "TID251", # flake8-tidy-imports: banned-api
   "UP",     # pyupgrade
   "W",      # pycodestyle warnings
   "YTT",    # flake8-2020
@@ -28,4 +29,6 @@ lint.ignore = [
 lint.flake8-import-conventions.aliases.datetime = "dt"
 lint.flake8-import-conventions.banned-from = [ "datetime" ]
 lint.flake8-pytest-style.parametrize-names-type = "csv"
+lint.flake8-tidy-imports.banned-api."re.match".msg = "use re.fullmatch() or re.search() instead"
+lint.flake8-tidy-imports.banned-api."typing.TYPE_CHECKING".msg = "use TYPE_CHECKING = False instead"
 lint.isort.required-imports = [ "from __future__ import annotations" ]

@@ -75,7 +75,7 @@ def do_sdist(target_package: str, data: dict) -> dict:
 
                 for dependency in install_requires:
                     _print_verbose("    " + dependency)
-                    result = REQUIRES_DIST_NAME_REGEX.match(dependency)
+                    result = REQUIRES_DIST_NAME_REGEX.search(dependency)
                     if result:
                         _print_verbose("    " + result.group(0))
                         if result.group(0) == target_package:
@@ -118,7 +118,7 @@ def do_wheel(target_package: str, data: dict) -> dict:
                 continue
             for dependency in requires_dist:
                 _print_verbose("    " + dependency)
-                result = REQUIRES_DIST_NAME_REGEX.match(dependency)
+                result = REQUIRES_DIST_NAME_REGEX.search(dependency)
                 if result:
                     _print_verbose("    " + result.group(0))
                     if result.group(0) == target_package:
