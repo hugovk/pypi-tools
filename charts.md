@@ -66,17 +66,17 @@ Binary distribution format
 
 ![](images/wheel.png)
 
-### [pandas](https://github.com/pandas-dev/pandas)
-
-Data analysis toolkit
-
-![](images/pandas.png)
-
 ### [attrs](https://github.com/python-attrs/attrs)
 
 Python classes without boilerplate
 
 ![](images/attrs.png)
+
+### [pandas](https://github.com/pandas-dev/pandas)
+
+Data analysis toolkit
+
+![](images/pandas.png)
 
 ### [pytest](https://github.com/pytest-dev/pytest)
 
@@ -96,17 +96,17 @@ Simple cross-platform colored terminal text in Python
 
 ![](images/colorama.png)
 
-### [virtualenv](https://github.com/pypa/virtualenv)
-
-Virtual Python environment builder
-
-![](images/virtualenv.png)
-
 ### [HTTPX](https://github.com/encode/httpx)
 
 HTTP client
 
 ![](images/httpx.png)
+
+### [virtualenv](https://github.com/pypa/virtualenv)
+
+Virtual Python environment builder
+
+![](images/virtualenv.png)
 
 ### [tqdm](https://github.com/tqdm/tqdm)
 
@@ -120,17 +120,17 @@ Imaging library
 
 ![](images/pillow.png)
 
-### [SciPy](https://github.com/scipy/scipy)
-
-For mathematics, science, and engineering
-
-![](images/scipy.png)
-
 ### [Rich](https://github.com/Textualize/rich)
 
 Library for rich text and beautiful formatting in the terminal
 
 ![](images/rich.png)
+
+### [SciPy](https://github.com/scipy/scipy)
+
+For mathematics, science, and engineering
+
+![](images/scipy.png)
 
 ### [Flask](https://github.com/pallets/flask)
 
@@ -180,17 +180,17 @@ ANSI color formatting for output in terminal
 
 ![](images/termcolor.png)
 
+### [Ruff](https://github.com/charliermarsh/ruff)
+
+Linter
+
+![](images/ruff.png)
+
 ### [isort](https://github.com/PyCQA/isort)
 
 Import sorter
 
 ![](images/isort.png)
-
-### [pycodestyle](https://github.com/PyCQA/pycodestyle)
-
-Style checker
-
-![](images/pycodestyle.png)
 
 ### [Black](https://github.com/psf/black)
 
@@ -198,11 +198,11 @@ The uncompromising Python code formatter
 
 ![](images/black.png)
 
-### [Ruff](https://github.com/charliermarsh/ruff)
+### [pycodestyle](https://github.com/PyCQA/pycodestyle)
 
-Linter
+Style checker
 
-![](images/ruff.png)
+![](images/pycodestyle.png)
 
 ### [mypy](https://github.com/python/mypy)
 
@@ -234,17 +234,17 @@ Linter
 
 ![](images/pylint.png)
 
-### [TensorFlow](https://github.com/tensorflow/tensorflow)
-
-Machine learning library
-
-![](images/tensorflow.png)
-
 ### [Django](https://github.com/python-pillow/Pillow)
 
 Web framework
 
 ![](images/django.png)
+
+### [TensorFlow](https://github.com/tensorflow/tensorflow)
+
+Machine learning library
+
+![](images/tensorflow.png)
 
 ### [UltraJSON](https://github.com/ultrajson/ultrajson)
 
@@ -258,17 +258,17 @@ HTML parser
 
 ![](images/html5lib.png)
 
-### [tox](https://github.com/tox-dev/tox)
-
-Generic virtualenv management and test command line tool
-
-![](images/tox.png)
-
 ### [PrettyTable](https://github.com/jazzband/prettytable)
 
 Display data in visually appealing ASCII table format
 
 ![](images/prettytable.png)
+
+### [tox](https://github.com/tox-dev/tox)
+
+Generic virtualenv management and test command line tool
+
+![](images/tox.png)
 
 ### [humanize](https://github.com/jmoiron/humanize)
 
