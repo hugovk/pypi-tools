@@ -88,8 +88,7 @@ def do_cmd(cmd, check_return=True, flip_error=False):
 def repo_url_dir_name(url):
     """Like the Linux command: basename url ".git" """
     url = url.rstrip("/")
-    if url.endswith(".git"):
-        url = url[:-4]
+    url = url.removesuffix(".git")
     url = url.split("/")[-1]
     return url
 
