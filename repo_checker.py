@@ -68,7 +68,7 @@ def recursive_find(inspec):
 
 def do_cmd(cmd, check_return=True, flip_error=False):
     print(cmd)
-    result = subprocess.run(cmd.split(), capture_output=True, text=True)
+    result = subprocess.run(cmd.split(), capture_output=True, text=True, check=False)
     if flip_error:
         result.returncode = 1 if result.returncode == 0 else 0
 

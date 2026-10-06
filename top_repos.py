@@ -84,10 +84,9 @@ def remove_done(packages_todo, packages_done):
 def update_existing(packages, name, new_repo):
     updated = 0
     for package in packages:
-        if package["name"] == name:
-            if package["repo"] != new_repo:
-                package["repo"] = new_repo
-                updated = 1
+        if package["name"] == name and package["repo"] != new_repo:
+            package["repo"] = new_repo
+            updated = 1
     return updated
 
 

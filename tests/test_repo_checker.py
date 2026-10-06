@@ -10,8 +10,8 @@ import repo_checker
     [
         "http://github.com/octocat/Hello-World",
         "http://github.com/octocat/Hello-World/",
+        "http://github.com/octocat/Hello-World.git",
         "https://github.com/octocat/Hello-World",
-        "https://github.com/octocat/Hello-World.git",
         "https://github.com/octocat/Hello-World.git",
         "https://github.com/octocat/Hello-World/",
     ],

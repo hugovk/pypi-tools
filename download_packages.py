@@ -45,9 +45,9 @@ def find_sdist_url(package):
     info = res["info"]
     version = info["version"]
     version_packages = res["releases"][version]
-    for package in version_packages:
-        if package["packagetype"] == "sdist":
-            return package["url"]
+    for release_file in version_packages:
+        if release_file["packagetype"] == "sdist":
+            return release_file["url"]
     return None
 
 

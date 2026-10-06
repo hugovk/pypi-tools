@@ -135,7 +135,7 @@ def main() -> None:
             fields.append(field)
             if isinstance(field, dict):
                 if args.canonical:
-                    keys = {canonicalize_label(k): k for k in field.keys()}
+                    keys = {canonicalize_label(k): k for k in field}
                 else:
                     keys = field.keys()
 
