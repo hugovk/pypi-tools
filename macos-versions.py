@@ -82,7 +82,7 @@ def main():
                 if isinstance(distro_version, int):
                     x, y = distro_version, 0
                 else:
-                    x, y, *rest = str(distro_version).split(".")
+                    x, y, *_ = str(distro_version).split(".")
                 if int(x) >= 11:
                     xy = f"{x}"
                 else:

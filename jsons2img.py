@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 """
 Create a chart image and CSV using JSON files from pypi-trends.py
 """
@@ -54,9 +53,7 @@ def dopplr(name: str) -> str:
 def make_chart(
     data: dict, index: list[int], project_name: str, show: bool, quiet: bool
 ):
-    grand_total_downloads = 0
-    for version in data:
-        grand_total_downloads += sum(dls for dls in data[version])
+    grand_total_downloads = sum(sum(downloads) for downloads in data.values())
 
     import matplotlib.pyplot as plt  # pip install matplotlib
     import numpy as np  # pip install numpy
@@ -242,15 +239,16 @@ def main() -> None:
 
     all_data, all_versions = load_data_from_json(args.inspec, args.quiet)
 
-    f = csv.writer(open(os.path.join("data", "pypi-trends.csv"), "w+"))
-    # f.writerow(["", "Python version"])
-    f.writerow(["Month"] + all_versions)
-    rows = []
-    for x in all_data:
-        row = [x["yyyy-mm"]]
-        row.extend(x.get(version, 0) for version in all_versions)
-        f.writerow(row)
-        rows.append(row)
+    with open(os.path.join("data", "pypi-trends.csv"), "w+") as csv_file:
+        f = csv.writer(csv_file)
+        # f.writerow(["", "Python version"])
+        f.writerow(["Month"] + all_versions)
+        rows = []
+        for x in all_data:
+            row = [x["yyyy-mm"]]
+            row.extend(x.get(version, 0) for version in all_versions)
+            f.writerow(row)
+            rows.append(row)
 
     if args.chart:
         data = defaultdict(list)

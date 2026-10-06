@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 """
 Generate Markdown with charts, showing with most downloads first
 """

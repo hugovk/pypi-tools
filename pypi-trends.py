@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 """
 For a given project, or all projects:
 * Fetch pip installs for each Python in a given month of a year
@@ -32,12 +31,13 @@ import json
 import os
 import subprocess
 import sys
+import time
 import urllib.request
 
 from dateutil.relativedelta import relativedelta  # pip install python-dateutil
 from termcolor import colored, cprint  # pip install termcolor
 
-now = dt.date.today()
+now = dt.datetime.now(tz=dt.UTC).date()
 
 CLICKPY_URL = "https://sql-clickhouse.clickhouse.com/?user=demo"
 
@@ -85,7 +85,7 @@ def fetch_clickpy(query: str, outfile: str) -> None:
         row["percent"] = f"{row['download_count'] / total:.2g}"
 
     output = {
-        "last_update": dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "last_update": dt.datetime.now(tz=dt.UTC).strftime("%Y-%m-%d %H:%M:%S"),
         "query": {"source": CLICKPY_URL, "sql": query},
         "rows": rows,
     }
@@ -140,12 +140,12 @@ def default_end_date() -> str:
 def yyyy_mm_to_ints(yyyy_mm: str) -> tuple[int, int]:
     """Return yyyy-mm as two integers"""
     try:
-        the_date = dt.datetime.strptime(yyyy_mm, "%Y-%m")
+        the_date = time.strptime(yyyy_mm, "%Y-%m")
     except ValueError:
         msg = "Dates must be YYYY-MM"
         raise ValueError(msg)
 
-    return the_date.year, the_date.month
+    return the_date.tm_year, the_date.tm_mon
 
 
 def main():

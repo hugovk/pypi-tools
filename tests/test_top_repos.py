@@ -46,4 +46,4 @@ def test_update_existing(packages, expected_output_packages, expected_changed):
 
     # Assert
     assert packages == expected_output_packages
-    assert output_changed == output_changed
+    assert output_changed == expected_changed

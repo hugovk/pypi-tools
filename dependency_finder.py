@@ -59,19 +59,19 @@ REQUIRES_DIST_NAME_REGEX = re.compile("^([a-z0-9-]+)")
 def do_sdist(target_package: str, data: dict) -> dict:
     found = defaultdict(set)
 
-    for package in data:  # e.g. "a10-neutron-lbaas"
+    for package, versions in data.items():  # e.g. "a10-neutron-lbaas"
         _print_verbose(package)
         last_package = None
         last_version = None
-        for version in data[package]:  # e.g. "1.0.1"
+        for version, py_vers in versions.items():  # e.g. "1.0.1"
             _print_verbose(" " + version)
 
-            if not isinstance(data[package][version], dict):
+            if not isinstance(py_vers, dict):
                 continue
-            for py_ver in data[package][version]:  # e.g. "27"
-                if "install_requires" not in data[package][version][py_ver]:
+            for py_ver_data in py_vers.values():  # e.g. "27"
+                if "install_requires" not in py_ver_data:
                     continue
-                install_requires = data[package][version][py_ver]["install_requires"]
+                install_requires = py_ver_data["install_requires"]
 
                 for dependency in install_requires:
                     _print_verbose("    " + dependency)
@@ -91,25 +91,25 @@ def do_sdist(target_package: str, data: dict) -> dict:
 def do_wheel(target_package: str, data: dict) -> dict:
     found = defaultdict(set)
 
-    for package in data:  # e.g. "aap-client-python"
+    for package, tags in data.items():  # e.g. "aap-client-python"
         _print_verbose(package)
-        for tag in data[package]:  # e.g. "py2.py3"
+        for tag, versions in tags.items():  # e.g. "py2.py3"
             _print_verbose(" " + tag)
             requires_dist = None
             last_package = None
             last_dist = None
 
-            for version in data[package][tag]:  # e.g. "0.1.1"
+            for version, dists in versions.items():  # e.g. "0.1.1"
                 _print_verbose("  " + version)
 
                 # e.g. "aap_client_python-0.1.1-py2.py3-none-any.whl"
-                for dist in data[package][tag][version]:
+                for dist, dist_data in dists.items():
                     _print_verbose("   " + dist)
 
                     # We only want info for the last version, okay to overwrite
-                    if "requires_dist" not in data[package][tag][version][dist]:
+                    if "requires_dist" not in dist_data:
                         continue
-                    requires_dist = data[package][tag][version][dist]["requires_dist"]
+                    requires_dist = dist_data["requires_dist"]
                     last_package = package
                     last_dist = dist
 
