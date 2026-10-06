@@ -14,7 +14,7 @@ from termcolor import cprint  # pip install termcolor
 from jsons2img import load_data_from_json
 
 # /// script
-# requires-python = ">=3.10"
+# requires-python = ">=3.11"
 # dependencies = [
 #   "packaging",
 #   "natsort",
