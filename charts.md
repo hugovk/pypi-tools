@@ -60,6 +60,12 @@ The package installer
 
 ![](images/pip.png)
 
+### [pytest](https://github.com/pytest-dev/pytest)
+
+Testing framework
+
+![](images/pytest.png)
+
 ### [wheel](https://github.com/pypa/wheel)
 
 Binary distribution format
@@ -77,12 +83,6 @@ Python classes without boilerplate
 Data analysis toolkit
 
 ![](images/pandas.png)
-
-### [pytest](https://github.com/pytest-dev/pytest)
-
-Testing framework
-
-![](images/pytest.png)
 
 ### [pytz](https://github.com/stub42/pytz)
 
@@ -174,17 +174,17 @@ Python to C compiler
 
 ![](images/cython.png)
 
-### [termcolor](https://github.com/termcolor/termcolor)
-
-ANSI color formatting for output in terminal
-
-![](images/termcolor.png)
-
 ### [Ruff](https://github.com/charliermarsh/ruff)
 
 Linter
 
 ![](images/ruff.png)
+
+### [termcolor](https://github.com/termcolor/termcolor)
+
+ANSI color formatting for output in terminal
+
+![](images/termcolor.png)
 
 ### [isort](https://github.com/PyCQA/isort)
 
